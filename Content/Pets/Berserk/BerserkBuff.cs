@@ -1,0 +1,21 @@
+﻿using Terraria.ModLoader;
+using Terraria;
+
+namespace Twig.Content.Pets.Berserk
+{
+    internal class BerserkBuff : ModBuff
+    {
+        public override void SetStaticDefaults()
+        {
+            Main.buffNoTimeDisplay[Type] = true;
+            Main.vanityPet[Type] = true;
+        }
+
+        public override void Update(Player player, ref int buffIndex)
+        { // This method gets called every frame your buff is active on your player.
+            bool unused = false;
+            player.BuffHandle_SpawnPetIfNeededAndSetTime(buffIndex, ref unused, ModContent.ProjectileType<BerserkProjectile>());
+        }
+    }
+}
+

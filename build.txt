@@ -1,0 +1,8 @@
+displayName = Rainy Forest [QOL Mode]
+author = Gorffy, Ink of the Eternity
+version = 6.1.0.4
+weakReferences = CalamityMod@2.0.4.3
+modReferences = Luminance, StructureHelper
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, Luminance.dl, Luminance.pdb, Luminance.xml
+hideCode = true
+hideResources = true
