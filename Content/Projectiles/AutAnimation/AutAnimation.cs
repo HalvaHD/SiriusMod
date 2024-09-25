@@ -4,7 +4,7 @@ using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Projectiles.AutAnimation
+namespace ProtoMod.Content.Projectiles.AutAnimation
 {
 	// This file shows an animated projectile
 	// This file also shows advanced drawing to center the drawn projectile correctly

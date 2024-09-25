@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Paintings.Madeline
+namespace ProtoMod.Content.Paintings.Madeline
 {
     internal class MadelineItem : ModItem
     {

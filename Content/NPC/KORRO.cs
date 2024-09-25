@@ -1,5 +1,25 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ProtoMod.Content.Pets.Berserk;
+using ProtoMod.Content.Pets.BlackCat;
+using ProtoMod.Content.Pets.CatX;
+using ProtoMod.Content.Pets.ContractSSS;
+using ProtoMod.Content.Pets.Hello;
+using ProtoMod.Content.Pets.Keksik;
+using ProtoMod.Content.Pets.LightTwig;
+using ProtoMod.Content.Pets.LitosObliterator;
+using ProtoMod.Content.Pets.OldTwig;
+using ProtoMod.Content.Pets.Ror;
+using ProtoMod.Content.Pets.Skuf;
+using ProtoMod.Content.Pets.SlimeHero;
+using ProtoMod.Content.Pets.SlimeR;
+using ProtoMod.Content.Pets.Stardy;
+using ProtoMod.Content.Pets.Stepasha;
+using ProtoMod.Content.Pets.Sum;
+using ProtoMod.Content.Pets.Twig;
+using ProtoMod.Content.Pets.Vedma;
+using ProtoMod.Content.Pets.Yum;
+using ProtoMod.Content.Projectiles;
 using ReLogic.Content;
 using Terraria;
 using Terraria.GameContent;
@@ -9,28 +29,8 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
-using Twig.Content.Pets.Berserk;
-using Twig.Content.Pets.BlackCat;
-using Twig.Content.Pets.CatX;
-using Twig.Content.Pets.ContractSSS;
-using Twig.Content.Pets.Hello;
-using Twig.Content.Pets.Keksik;
-using Twig.Content.Pets.LightTwig;
-using Twig.Content.Pets.LitosObliterator;
-using Twig.Content.Pets.OldTwig;
-using Twig.Content.Pets.Ror;
-using Twig.Content.Pets.Skuf;
-using Twig.Content.Pets.SlimeHero;
-using Twig.Content.Pets.SlimeR;
-using Twig.Content.Pets.Stardy;
-using Twig.Content.Pets.Stepasha;
-using Twig.Content.Pets.Sum;
-using Twig.Content.Pets.Twig;
-using Twig.Content.Pets.Vedma;
-using Twig.Content.Pets.Yum;
-using Twig.Content.Projectiles;
 
-namespace Twig.Content.NPC;
+namespace ProtoMod.Content.NPC;
 
 [AutoloadHead]
 public class KORRO: ModNPC {

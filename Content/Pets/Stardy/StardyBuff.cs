@@ -1,7 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Stardy
+namespace ProtoMod.Content.Pets.Stardy
 {
     internal class StardyBuff : ModBuff
     {

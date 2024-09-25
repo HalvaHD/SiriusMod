@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
-using Twig.Content.Pets.Ror;
-using Microsoft.Xna.Framework;
 
-namespace Twig.Content.Pets.Ror
+namespace ProtoMod.Content.Pets.Ror
 {
     internal class RorItem : ModItem
     {

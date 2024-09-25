@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.Localization;
 
-namespace Twig.Common.ItemDropRules.DropConditions
+namespace ProtoMod.Common.ItemDropRules.DropConditions
 {
     // Very simple drop condition: drop during daytime
     public class NextKillsDropCondition : IItemDropRuleCondition

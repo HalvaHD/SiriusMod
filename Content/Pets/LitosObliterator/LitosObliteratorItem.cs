@@ -4,9 +4,8 @@ using ReLogic.Content;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Pets.ContractSSS;
 
-namespace Twig.Content.Pets.LitosObliterator
+namespace ProtoMod.Content.Pets.LitosObliterator
 {
     internal class LitosObliteratorItem : ModItem
     {

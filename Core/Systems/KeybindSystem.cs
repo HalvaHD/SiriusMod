@@ -1,6 +1,6 @@
 using Terraria.ModLoader;
 
-namespace Twig.Core.Systems
+namespace ProtoMod.Core.Systems
 {
     public class KeybindSystem : ModSystem
     {

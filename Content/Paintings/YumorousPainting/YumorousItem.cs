@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Paintings.YumorousPainting
+namespace ProtoMod.Content.Paintings.YumorousPainting
 {
     internal class YumorousItem : ModItem
     {

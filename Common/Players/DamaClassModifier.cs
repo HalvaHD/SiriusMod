@@ -1,12 +1,12 @@
-using Twig.Content.Buffs;
-using Microsoft.Xna.Framework;
 using System.IO;
+using Microsoft.Xna.Framework;
+using ProtoMod.Content.Buffs;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Common.Players
+namespace ProtoMod.Common.Players
 {
     internal class DamageClassModifier : ModPlayer
     {

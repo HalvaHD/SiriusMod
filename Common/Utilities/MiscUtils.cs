@@ -1,4 +1,4 @@
-namespace Twig
+namespace ProtoMod.Common.Utilities
 {
     public static partial class TwigUtils
     {

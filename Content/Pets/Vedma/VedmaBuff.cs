@@ -1,7 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Vedma
+namespace ProtoMod.Content.Pets.Vedma
 {
     internal class VedmaBuff : ModBuff
     {

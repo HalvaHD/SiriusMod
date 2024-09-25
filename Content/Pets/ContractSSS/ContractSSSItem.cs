@@ -2,9 +2,8 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Pets.CatX;
 
-namespace Twig.Content.Pets.ContractSSS
+namespace ProtoMod.Content.Pets.ContractSSS
 {
     internal class ContractSSSItem : ModItem
     {

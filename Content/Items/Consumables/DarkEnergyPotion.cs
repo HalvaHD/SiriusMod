@@ -1,9 +1,9 @@
 using Microsoft.Xna.Framework;
+using ProtoMod.Content.Items.Placeable;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Items.Placeable;
 
-namespace Twig.Content.Items.Consumables
+namespace ProtoMod.Content.Items.Consumables
 {
     public class DarkEnergyPotion : ModItem
     {

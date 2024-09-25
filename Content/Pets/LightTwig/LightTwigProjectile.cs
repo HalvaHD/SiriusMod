@@ -1,8 +1,8 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
 
-namespace Twig.Content.Pets.LightTwig
+namespace ProtoMod.Content.Pets.LightTwig
 {
     internal class LightTwigProjectile : ModProjectile
     {

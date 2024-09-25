@@ -1,8 +1,8 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
 
-namespace Twig.Content.Pets.BlackCat
+namespace ProtoMod.Content.Pets.BlackCat
 {
     internal class BlackCatProjectile : ModProjectile
     {

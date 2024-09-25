@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Twig.Common.GlobalNPCs
+namespace ProtoMod.Common.GlobalNPCs
 {
     public class GlobalNPCHitModfiy : GlobalNPC
     {

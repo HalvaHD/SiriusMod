@@ -8,214 +8,146 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="693d9287-d650-4440-b5b7-33668646f1e4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig.dir/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig.dir/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig/.idea/dictionaries/GameIncHD.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Twig/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/twig.metadata.v7.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/twig.projects.v7.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/ProjectSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/StarRainMod/v17/.wsuo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Twig/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Twig/FileContentIndex/8caf2bce-a61f-4f78-9d5b-1280daf09e51.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Twig/v17/.futdcache.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Twig/v17/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Twig/v17/.wsuo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Twig/v17/DocumentLayout.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/Players/TwigPlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/Players/TwigPlayerHitHurt.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Items/TwigGlobalItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Localization/en-US_Mods.Twig.hjson" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Localization/ru-RU_Mods.Twig.hjson" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Twig.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Twig.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Twig.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Twig.sln.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TwigSets.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Basic.Reference.Assemblies.Net60.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/CsvHelper.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/FNA.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/FNA.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Hjson.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Humanizer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Ionic.Zip.Reduced.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MP3Sharp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Build.Locator.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.FlowAnalysis.Utilities.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.CodeAnalysis.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Mono.Cecil.Mdb.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Mono.Cecil.Pdb.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Mono.Cecil.Rocks.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Mono.Cecil.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MonoMod.Backports.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MonoMod.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MonoMod.ILHelpers.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MonoMod.Iced.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MonoMod.RuntimeDetour.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/MonoMod.Utils.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/NVorbis.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/RailSDK.Net.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ReLogic.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ReLogic.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ReLogic.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Steamworks.NET.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/SteelSeriesEngineWrapper.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.CodeDom.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.AttributedModel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.Convention.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.Hosting.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.Runtime.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Composition.TypedParts.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Diagnostics.PerformanceCounter.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.IO.Pipelines.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Reflection.MetadataLoadContext.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Security.Permissions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/System.Windows.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/TerrariaHooks.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Twig.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Twig.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/Twig.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/UtfUnknown.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/log4net.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tModLoader.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tModLoader.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tModLoader.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tModPorter.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tModPorter.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net6.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/global.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0.413/.NETCoreApp,Version=v6.0.413.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0.413/Twig.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0.413/Twig.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0.413/Twig.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0.413/Twig.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/Twig.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/ref/Twig.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net6.0/refint/Twig.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Twig.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Twig.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Twig.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/Twig.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Twig.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Twig.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Twig.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Twig.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Twig.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/Twig.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/Twig.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/Twig.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/Twig.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net6.0/Twig.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net8.0/Twig.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net8.0/Twig.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net8.0/Twig.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net8.0/Twig.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Release/net8.0/Twig.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Twig.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Twig.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Twig.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+    <list default="true" id="693d9287-d650-4440-b5b7-33668646f1e4" name="Changes" comment="Updates namespaces">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProtoMod.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProtoMod.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalamityIntegration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CalamityIntegration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/GlobalNPCs/GlobalNPCHitModify.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/GlobalNPCs/GlobalNPCHitModify.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/GlobalNPCs/GlobalNPCLoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/GlobalNPCs/GlobalNPCLoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/GlobalProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/GlobalProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/ItemDropRules/DropConditions/FirstKillDropCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/ItemDropRules/DropConditions/FirstKillDropCondition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/ItemDropRules/DropConditions/NextKillsDropCondition.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/ItemDropRules/DropConditions/NextKillsDropCondition.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Players/DamaClassModifier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Players/DamaClassModifier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Players/ProtoModPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Players/ProtoModPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Players/ProtoModPlayerHitHurt.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Players/ProtoModPlayerHitHurt.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Utilities/MiscUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Utilities/MiscUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Utilities/ProjectileUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Utilities/ProjectileUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Buffs/DarkEnergyBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Buffs/DarkEnergyBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Buffs/DarkEnergyDebuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Buffs/DarkEnergyDebuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Buffs/GracingEnergyBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Buffs/GracingEnergyBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Buffs/LunarGravitationBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Buffs/LunarGravitationBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Buffs/MedicineJokeBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Buffs/MedicineJokeBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Buffs/MedicinePipeBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Buffs/MedicinePipeBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Buffs/MotherOmlett.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Buffs/MotherOmlett.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Buffs/NanoIssue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Buffs/NanoIssue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Currencies/Currency.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Currencies/Currency.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Accessories/QIConvertion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Accessories/QIConvertion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Accessories/RainyBracelet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Accessories/RainyBracelet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Armor/Vanities/DarkSamuraiHat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Armor/Vanities/DarkSamuraiHat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Aut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Aut.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Consumables/DarkEnergyPotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Consumables/DarkEnergyPotion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Consumables/GracingEnergyPotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Consumables/GracingEnergyPotion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Consumables/LunarGravitationPotion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Consumables/LunarGravitationPotion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/CosmicCry.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/CosmicCry.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipeFifthTier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipeFifthTier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipeFourthTier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipeFourthTier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipeSecondTier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipeSecondTier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipeThirdTier.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Healing/MedicinePipeThirdTier.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/MedicineJoke.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/MedicineJoke.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/House1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Placeable/House1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/StarBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Placeable/StarBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/StarOre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Placeable/StarOre.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/ProtoModGlobalItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/ProtoModGlobalItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/ShockwaveSword.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/ShockwaveSword.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/StarTrainTicket.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/StarTrainTicket.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Teleporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Teleporter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Tools/StarPickaxe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Tools/StarPickaxe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/NPC/HALVA.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/NPC/HALVA.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/NPC/KORRO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/NPC/KORRO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/NullBackground.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/NullBackground.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Paintings/Madeline/MadelineItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Paintings/Madeline/MadelineItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Paintings/Madeline/MadelineSheet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Paintings/Madeline/MadelineSheet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Paintings/TwigKnight/TwigKnightItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Paintings/TwigKnight/TwigKnightItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Paintings/TwigKnight/TwigSheet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Paintings/TwigKnight/TwigSheet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Paintings/YumorousPainting/YumorousItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Paintings/YumorousPainting/YumorousItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Paintings/YumorousPainting/YumorousSheet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Paintings/YumorousPainting/YumorousSheet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Berserk/BerserkBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Berserk/BerserkBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Berserk/BerserkItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Berserk/BerserkItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Berserk/BerserkProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Berserk/BerserkProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/BlackCat/BlackCatBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/BlackCat/BlackCatBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/BlackCat/BlackCatItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/BlackCat/BlackCatItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/BlackCat/BlackCatProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/BlackCat/BlackCatProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/CatX/CatXBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/CatX/CatXBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/CatX/CatXItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/CatX/CatXItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/CatX/CatXProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/CatX/CatXProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/ContractSSS/ContractSSSBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/ContractSSS/ContractSSSBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/ContractSSS/ContractSSSItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/ContractSSS/ContractSSSItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/ContractSSS/ContractSSSProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/ContractSSS/ContractSSSProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Hello/HelloBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Hello/HelloBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Hello/HelloItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Hello/HelloItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Hello/HelloProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Hello/HelloProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Keksik/KeksikBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Keksik/KeksikBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Keksik/KeksikItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Keksik/KeksikItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Keksik/KeksikProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Keksik/KeksikProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LightTwig/LightTwigBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LightTwig/LightTwigBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LightTwig/LightTwigItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LightTwig/LightTwigItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LightTwig/LightTwigProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LightTwig/LightTwigProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorDustBlue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorDustBlue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorDustRed.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorDustRed.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/OldTwig/OldTwigBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/OldTwig/OldTwigBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/OldTwig/OldTwigItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/OldTwig/OldTwigItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/OldTwig/OldTwigPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/OldTwig/OldTwigPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/OldTwig/OldTwigProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/OldTwig/OldTwigProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Ror/RorBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Ror/RorBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Ror/RorItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Ror/RorItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Ror/RorProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Ror/RorProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Skuf/SkufBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Skuf/SkufBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Skuf/SkufItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Skuf/SkufItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Skuf/SkufProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Skuf/SkufProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/SlimeHero/SlimeHeroBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/SlimeHero/SlimeHeroBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/SlimeHero/SlimeHeroItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/SlimeHero/SlimeHeroItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/SlimeHero/SlimeHeroProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/SlimeHero/SlimeHeroProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/SlimeR/SlimeRBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/SlimeR/SlimeRBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/SlimeR/SlimeRItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/SlimeR/SlimeRItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/SlimeR/SlimeRProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/SlimeR/SlimeRProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Stardy/StardyBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Stardy/StardyBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Stardy/StardyItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Stardy/StardyItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Stardy/StardyProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Stardy/StardyProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Stepasha/StepashaBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Stepasha/StepashaBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Stepasha/StepashaItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Stepasha/StepashaItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Stepasha/StepashaProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Stepasha/StepashaProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Sum/SumBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Sum/SumBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Sum/SumItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Sum/SumItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Sum/SumProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Sum/SumProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Twig/TwigPetBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Twig/TwigPetBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Twig/TwigPetItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Twig/TwigPetItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Twig/TwigPetProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Twig/TwigPetProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Vedma/VedmaBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Vedma/VedmaBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Vedma/VedmaItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Vedma/VedmaItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Vedma/VedmaProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Vedma/VedmaProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Yum/YumBuff.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Yum/YumBuff.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Yum/YumItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Yum/YumItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/Yum/YumProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/Yum/YumProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/AutAnimation/AutAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/AutAnimation/AutAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/AutPortal/AutPortal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/AutPortal/AutPortal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/DarkEnergyOrb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/DarkEnergyOrb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/GracingEnergyOrb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/GracingEnergyOrb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/HALVAMinions/NUCLEARPOWER.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/HALVAMinions/NUCLEARPOWER.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/HALVAMinions/WarriorMinion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/HALVAMinions/WarriorMinion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/KORROGatling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/KORROGatling.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/Magic/StarPickaxeProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/Magic/StarPickaxeProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/MedicineJokeAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/MedicineJokeAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/MedicinePipeAnimation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/MedicinePipeAnimation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/QIKaboom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/QIKaboom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/QIKaboomDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/QIKaboomDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/StarPickaxeCrystal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/StarPickaxeCrystal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/TeleporterInstance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/TeleporterInstance.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/TwigGlobalProj.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/TwigGlobalProj.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/Typeless/StartingHouseProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/Typeless/StartingHouseProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Projectiles/Typeless/StartingHouseVisual.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Projectiles/Typeless/StartingHouseVisual.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/RainyForestMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/RainyForestMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/StarBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tiles/StarBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/StarRainOre.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tiles/StarRainOre.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/StartingHouseTile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Tiles/StartingHouseTile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Systems/BuildWorldSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Systems/BuildWorldSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Systems/KeybindSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Systems/KeybindSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Systems/RecipeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Systems/RecipeSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Systems/WorldSaveSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Systems/WorldSaveSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProtoMod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProtoMod.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProtoModSets.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProtoModSets.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,6 +179,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/1311974/Documents/My Games/Terraria/tModLoader/ModSources/ProtoMod/Content/Items/Aut.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/1311974/Documents/My Games/Terraria/tModLoader/ModSources/ProtoMod/obj/Debug/net8.0/ProtoMod.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/1311974/Documents/My Games/Terraria/tModLoader/ModSources/ProtoMod/obj/Debug/net8.0/ProtoMod.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/1311974/Documents/My Games/Terraria/tModLoader/ModSources/ProtoMod/obj/Debug/net8.0/ProtoMod.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="Toolset" />
@@ -355,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727278605453</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Also updated">
+      <option name="closed" value="true" />
+      <created>1727279847605</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727279847605</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +317,9 @@
     <MESSAGE value="test" />
     <MESSAGE value="Rebase from Rainy Forest" />
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Also updated" />
+    <MESSAGE value="Updates namespaces" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates namespaces" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

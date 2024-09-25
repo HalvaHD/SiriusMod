@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Buffs
+namespace ProtoMod.Content.Buffs
 {
     public class LunarGravitationBuff : ModBuff
     {

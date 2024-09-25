@@ -1,9 +1,9 @@
-﻿using Terraria.ID;
-using Terraria.ModLoader;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Microsoft.Xna.Framework;
+using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Stepasha
+namespace ProtoMod.Content.Pets.Stepasha
 {
     internal class StepashaItem : ModItem
     {

@@ -4,7 +4,7 @@ using ReLogic.Content;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Twig.Content
+namespace ProtoMod.Content
 {
 	public class ExampleModMenu : ModMenu
 	{

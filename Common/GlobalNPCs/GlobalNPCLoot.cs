@@ -1,10 +1,10 @@
+using ProtoMod.Common.ItemDropRules.DropConditions;
+using ProtoMod.Content.Items;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
-using Twig.Common.ItemDropRules.DropConditions;
-using Twig.Content.Items;
 
-namespace Twig.Common.GlobalNPCs
+namespace ProtoMod.Common.GlobalNPCs
 {
 	// This file shows numerous examples of what you can do with the extensive NPC Loot lootable system.
 	// You can find more info on the wiki: https://github.com/tModLoader/tModLoader/wiki/Basic-NPC-Drops-and-Loot-1.4

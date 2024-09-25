@@ -1,7 +1,8 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
-namespace Twig.Content.Pets.SlimeR
+
+namespace ProtoMod.Content.Pets.SlimeR
 {
     internal class SlimeRProjectile : ModProjectile
     {

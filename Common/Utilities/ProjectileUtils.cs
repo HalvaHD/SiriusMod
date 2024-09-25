@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
 
-namespace Twig
+namespace ProtoMod.Common.Utilities
 {
     public static partial class TwigUtils
     {

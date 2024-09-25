@@ -1,16 +1,11 @@
-using System;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
+using ProtoMod.Content.Items.Accessories;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
-using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Buffs;
-using Twig.Content.Items.Accessories;
-using Twig.Content.NPC;
 
-namespace Twig.Content.Projectiles
+namespace ProtoMod.Content.Projectiles
 {
     public class QIKaboom : ModProjectile
     {

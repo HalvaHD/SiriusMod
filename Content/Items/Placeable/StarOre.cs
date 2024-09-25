@@ -1,8 +1,8 @@
-﻿using Terraria.ID;
+﻿using ProtoMod.Content.Tiles;
+using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Tiles;
 
-namespace Twig.Content.Items.Placeable
+namespace ProtoMod.Content.Items.Placeable
 {
 	public class StarOre : ModItem
 	{

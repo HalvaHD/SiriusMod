@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Projectiles.Typeless
+namespace ProtoMod.Content.Projectiles.Typeless
 {
     public class StartingHouseProjectile : ModProjectile
     {

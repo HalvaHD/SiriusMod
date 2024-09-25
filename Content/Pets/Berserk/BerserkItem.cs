@@ -1,9 +1,9 @@
-﻿using Terraria.ID;
-using Terraria.ModLoader;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Microsoft.Xna.Framework;
+using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Berserk
+namespace ProtoMod.Content.Pets.Berserk
 {
     internal class BerserkItem : ModItem
     {

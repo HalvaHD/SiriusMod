@@ -1,11 +1,9 @@
-using System;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Pets.CatX;
 
-namespace Twig.Content.Pets.ContractSSS
+namespace ProtoMod.Content.Pets.ContractSSS
 {
     public class ContractSSSProjectile : ModProjectile
     {

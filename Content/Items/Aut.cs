@@ -1,16 +1,16 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ProtoMod.Common.Players;
+using ProtoMod.Content.NPC;
+using ProtoMod.Content.Projectiles.AutAnimation;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Twig.Common.Players;
-using Twig.Content.NPC;
-using Twig.Content.Projectiles.AutAnimation;
 
-namespace Twig.Content.Items
+namespace ProtoMod.Content.Items
 {
     public class Aut : ModItem
     {

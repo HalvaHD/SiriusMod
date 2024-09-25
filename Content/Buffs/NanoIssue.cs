@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Buffs
+namespace ProtoMod.Content.Buffs
 {
     public class NanoIssue : ModBuff
     {

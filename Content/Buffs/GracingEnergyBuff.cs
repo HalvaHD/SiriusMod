@@ -1,8 +1,8 @@
+using ProtoMod.Common.Players;
 using Terraria;
 using Terraria.ModLoader;
-using Twig.Common.Players;
 
-namespace Twig.Content.Buffs
+namespace ProtoMod.Content.Buffs
 {
     public class GracingEnergyBuff : ModBuff
     {

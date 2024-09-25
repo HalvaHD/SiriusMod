@@ -1,22 +1,22 @@
-using Terraria;
-using Terraria.ID;
-using Terraria.ModLoader;
-using Terraria.Utilities;
-using Terraria.GameContent.Bestiary;
-using Terraria.GameContent.Personalities;
 using System.Collections.Generic;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ProtoMod.Content.Items;
+using ProtoMod.Content.Items.Healing;
+using ProtoMod.Content.Items.Placeable;
+using ProtoMod.Content.Projectiles.HALVAMinions;
 using ReLogic.Content;
+using Terraria;
 using Terraria.GameContent;
+using Terraria.GameContent.Bestiary;
+using Terraria.GameContent.Personalities;
+using Terraria.ID;
 using Terraria.Localization;
-using Twig.Content.Items;
-using Twig.Content.Items.Healing;
-using Twig.Content.Items.Placeable;
-using Twig.Content.Projectiles.HALVAMinions;
+using Terraria.ModLoader;
+using Terraria.Utilities;
 
-namespace Twig.Content.NPC
+namespace ProtoMod.Content.NPC
 {
     // [AutoloadHead] and NPC.townNPC are extremely important and absolutely both necessary for any Town NPC to work at all.
     [AutoloadHead]

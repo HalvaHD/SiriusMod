@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Items
+namespace ProtoMod.Content.Items
 {
     public class CosmicCry : ModItem
     {

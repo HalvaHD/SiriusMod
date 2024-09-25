@@ -1,7 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.CatX
+namespace ProtoMod.Content.Pets.CatX
 {
     internal class CatXBuff : ModBuff
     {

@@ -1,7 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Sum
+namespace ProtoMod.Content.Pets.Sum
 {
     internal class SumBuff : ModBuff
     {

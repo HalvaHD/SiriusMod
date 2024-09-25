@@ -1,10 +1,8 @@
-﻿using System.Drawing;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
-using Color = Microsoft.Xna.Framework.Color;
 
-namespace Twig.Content.Pets.Twig
+namespace ProtoMod.Content.Pets.Twig
 {
     internal class TwigPetProjectile : ModProjectile
     {

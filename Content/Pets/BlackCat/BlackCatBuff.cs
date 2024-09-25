@@ -1,7 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.BlackCat
+namespace ProtoMod.Content.Pets.BlackCat
 {
     internal class BlackCatBuff : ModBuff
     {

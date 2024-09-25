@@ -1,12 +1,12 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ProtoMod.Content.Projectiles.Typeless;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Projectiles.Typeless;
 
-namespace Twig.Content.Tiles
+namespace ProtoMod.Content.Tiles
 {
     public class StartingHouseTile : ModTile
     {

@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
-using Twig.Content.Pets.Ror;
 
-namespace Twig.Content.Pets.Ror
+namespace ProtoMod.Content.Pets.Ror
 {
     internal class RorProjectile : ModProjectile
     {

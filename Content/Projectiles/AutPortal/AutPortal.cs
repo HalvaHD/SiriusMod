@@ -1,15 +1,15 @@
 using System.Collections.Generic;
 using Luminance.Core.Graphics;
 using Microsoft.Xna.Framework;
+using ProtoMod.Content.Items;
+using ProtoMod.Content.NPC;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Twig.Content.Items;
-using Twig.Content.NPC;
 
-namespace Twig.Content.Projectiles.AutPortal
+namespace ProtoMod.Content.Projectiles.AutPortal
 {
     // This file shows an animated projectile
     // This file also shows advanced drawing to center the drawn projectile correctly

@@ -1,9 +1,9 @@
 using Microsoft.Xna.Framework;
+using ProtoMod.Content.Items.Placeable;
 using Terraria;
 using Terraria.ModLoader;
-using Twig.Content.Items.Placeable;
 
-namespace Twig.Content.Projectiles.Typeless
+namespace ProtoMod.Content.Projectiles.Typeless
 {
     public class StartingHouseVisual : ModProjectile
     {

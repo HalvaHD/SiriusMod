@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
-using Twig.Content.Pets.Keksik;
-using Microsoft.Xna.Framework;
 
-namespace Twig.Content.Pets.Keksik
+namespace ProtoMod.Content.Pets.Keksik
 {
     internal class KeksikItem : ModItem
     {

@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Skuf
+namespace ProtoMod.Content.Pets.Skuf
 {
     internal class SkufItem: ModItem
     {

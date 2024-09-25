@@ -1,16 +1,16 @@
 using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ProtoMod.Content.Projectiles;
+using ProtoMod.Core.Systems;
 using ReLogic.Content;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Twig.Content.Projectiles;
-using Twig.Core.Systems;
 
-namespace Twig.Content.Items
+namespace ProtoMod.Content.Items
 {
     public class Teleporter : ModItem
     {

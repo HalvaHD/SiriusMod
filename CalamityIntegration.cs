@@ -1,9 +1,7 @@
 using System.Runtime.CompilerServices;
-using Terraria;
-using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace Twig
+namespace ProtoMod
 {
 	// This code can be used as an example of weak references.
 	// The most important part of weak references is remembering to test your mod with the referenced .tmod file deleted and a fresh start of tModLoader. (To clear the loaded assemblies.)

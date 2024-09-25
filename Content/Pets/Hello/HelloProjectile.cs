@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
-using Twig.Content.Pets.Hello;
 
-namespace Twig.Content.Pets.Hello
+namespace ProtoMod.Content.Pets.Hello
 {
     internal class HelloProjectile : ModProjectile
     {

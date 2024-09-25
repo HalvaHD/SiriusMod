@@ -1,15 +1,12 @@
-using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ReLogic.Content;
+using ProtoMod.Common.Players;
+using ProtoMod.Content.Items.Tools;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ModLoader;
-using Twig.Common.Players;
-using Twig.Content.Items.Tools;
-using Twig.Content.Projectiles.HALVAMinions;
 
-namespace Twig.Content.Projectiles
+namespace ProtoMod.Content.Projectiles
 {
     // This file shows an animated projectile
     // This file also shows advanced drawing to center the drawn projectile correctly

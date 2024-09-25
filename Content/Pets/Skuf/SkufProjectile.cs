@@ -5,9 +5,8 @@ using Terraria.Audio;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Twig.Content.Pets.Yum;
 
-namespace Twig.Content.Pets.Skuf
+namespace ProtoMod.Content.Pets.Skuf
 {
     internal class SkufProjectile : ModProjectile
     {

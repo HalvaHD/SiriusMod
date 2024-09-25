@@ -1,14 +1,14 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ProtoMod.Common.Players;
+using ProtoMod.Content.Buffs;
+using ProtoMod.Content.Projectiles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Common.Players;
-using Twig.Content.Buffs;
-using Twig.Content.Projectiles;
 
-namespace Twig.Content.Items
+namespace ProtoMod.Content.Items
 {
     public class MedicineJoke : ModItem
     {

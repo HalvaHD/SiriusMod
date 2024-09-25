@@ -1,11 +1,11 @@
 using Microsoft.Xna.Framework;
+using ProtoMod.Content.Projectiles.Typeless;
+using ProtoMod.Content.Tiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Projectiles.Typeless;
-using Twig.Content.Tiles;
 
-namespace Twig.Content.Items.Placeable
+namespace ProtoMod.Content.Items.Placeable
 {
     public class House1 : ModItem
     {

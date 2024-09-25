@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using ProtoMod.Content.Items;
 using Terraria;
 using Terraria.ModLoader;
-using Twig.Content.Items;
 
-namespace Twig.Content.Pets.OldTwig
+namespace ProtoMod.Content.Pets.OldTwig
 {
     internal class OldTwigPlayer : ModPlayer
     {

@@ -1,15 +1,15 @@
 using Microsoft.Xna.Framework;
+using ProtoMod.Content.Items;
+using ProtoMod.Content.Items.Tools;
+using ProtoMod.Content.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameInput;
 using Terraria.Graphics.Effects;
-using Terraria.ModLoader;
-using Twig.Content.Items;
-using Twig.Content.Items.Tools;
 using Terraria.ID;
-using Twig.Content.Projectiles;
+using Terraria.ModLoader;
 
-namespace Twig.Common.Players
+namespace ProtoMod.Common.Players
 {
     public partial class TwigModPlayer
     {

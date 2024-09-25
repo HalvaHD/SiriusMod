@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.LitosObliterator
+namespace ProtoMod.Content.Pets.LitosObliterator
 {
     internal class LitosObliteratorBuff : ModBuff
     {

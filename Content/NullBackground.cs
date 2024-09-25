@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.ModLoader;
 
-namespace Twig.Content
+namespace ProtoMod.Content
 {
     // Thanks to Nycro#0001 <@!262663471189983242> for this null background which cleanly ignores vanilla's parallax mechanics
     internal class NullBackground : ModSurfaceBackgroundStyle

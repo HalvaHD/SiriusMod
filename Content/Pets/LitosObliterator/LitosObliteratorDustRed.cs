@@ -2,7 +2,7 @@ using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.LitosObliterator
+namespace ProtoMod.Content.Pets.LitosObliterator
 {
     public class LitosObliteratorDustRed : ModDust
     {

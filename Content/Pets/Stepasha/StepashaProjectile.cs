@@ -1,8 +1,8 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
 
-namespace Twig.Content.Pets.Stepasha
+namespace ProtoMod.Content.Pets.Stepasha
 {
     internal class StepashaProjectile : ModProjectile
     {

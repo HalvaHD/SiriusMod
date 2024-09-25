@@ -2,7 +2,7 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Items.Placeable
+namespace ProtoMod.Content.Items.Placeable
 {
     public class StarBar : ModItem
     {

@@ -1,9 +1,9 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-using Terraria;
 
-namespace Twig.Content.Paintings.Madeline
+namespace ProtoMod.Content.Paintings.Madeline
 {
     internal class MadelineSheet : ModTile
     {

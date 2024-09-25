@@ -1,8 +1,8 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
 
-namespace Twig.Content.Pets.Stardy
+namespace ProtoMod.Content.Pets.Stardy
 {
     internal class StardyProjectile : ModProjectile
     {

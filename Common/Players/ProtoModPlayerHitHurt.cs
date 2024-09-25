@@ -1,11 +1,12 @@
+using ProtoMod.Common.Utilities;
+using ProtoMod.Content.Items.Accessories;
+using ProtoMod.Content.Projectiles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Items.Accessories;
-using Twig.Content.Projectiles;
 
-namespace Twig.Common.Players
+namespace ProtoMod.Common.Players
 {
     public partial class TwigModPlayer : ModPlayer
     {

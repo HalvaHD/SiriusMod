@@ -1,10 +1,10 @@
+using ProtoMod.Common.Players;
+using ProtoMod.Content.Items.Placeable;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Common.Players;
-using Twig.Content.Items.Placeable;
 
-namespace Twig.Content.Items.Accessories
+namespace ProtoMod.Content.Items.Accessories
 {
 	public class RainyBracelet : ModItem, ILocalizedModType
 	{

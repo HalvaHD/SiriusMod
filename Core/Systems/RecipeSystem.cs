@@ -1,10 +1,10 @@
+using ProtoMod.Content.Items.Accessories;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Twig.Content.Items.Accessories;
 
-namespace Twig.Core.Systems
+namespace ProtoMod.Core.Systems
 {
     public class RecipeSystem : ModSystem
     {

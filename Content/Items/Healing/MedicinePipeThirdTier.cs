@@ -2,16 +2,16 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ProtoMod.Content.Buffs;
+using ProtoMod.Content.Items.Placeable;
+using ProtoMod.Content.Projectiles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
-using Twig.Content.Buffs;
-using Twig.Content.Items.Placeable;
-using Twig.Content.Projectiles;
 
-namespace Twig.Content.Items.Healing
+namespace ProtoMod.Content.Items.Healing
 {
     public class MedicinePipeThirdTier : ModItem
     {

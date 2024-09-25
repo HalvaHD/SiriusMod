@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using Terraria.GameContent.UI;
 
-namespace Twig.Content.Currencies
+namespace ProtoMod.Content.Currencies
 {
 	public class StarCryPrice : CustomCurrencySingleCoin
 	{

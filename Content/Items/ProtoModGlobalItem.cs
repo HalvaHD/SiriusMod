@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Items
+namespace ProtoMod.Content.Items
 {
     internal class TwigGlobalItem : GlobalItem
     {

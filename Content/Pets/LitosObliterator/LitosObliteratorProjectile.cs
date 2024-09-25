@@ -1,18 +1,14 @@
 using System;
-using System.Drawing;
-using Luminance.Common.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.Pets.ContractSSS;
-using Twig.Content.Projectiles.HALVAMinions;
 using Color = Microsoft.Xna.Framework.Color;
 using Rectangle = Microsoft.Xna.Framework.Rectangle;
 
-namespace Twig.Content.Pets.LitosObliterator
+namespace ProtoMod.Content.Pets.LitosObliterator
 {
     internal class LitosObliteratorProjectile : ModProjectile
     {

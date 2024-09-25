@@ -1,14 +1,14 @@
 using Microsoft.Xna.Framework;
+using ProtoMod.Common.Players;
+using ProtoMod.Content.Projectiles;
+using ProtoMod.Content.Projectiles.Magic;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameInput;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Common.Players;
-using Twig.Content.Projectiles;
-using Twig.Content.Projectiles.Magic;
 
-namespace Twig.Content.Items.Tools
+namespace ProtoMod.Content.Items.Tools
 {
     public class StarPickaxe : ModItem
     {

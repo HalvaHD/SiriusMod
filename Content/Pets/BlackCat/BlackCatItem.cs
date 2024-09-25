@@ -1,9 +1,9 @@
-﻿using Terraria.ID;
-using Terraria.ModLoader;
+﻿using Microsoft.Xna.Framework;
 using Terraria;
-using Microsoft.Xna.Framework;
+using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.BlackCat
+namespace ProtoMod.Content.Pets.BlackCat
 {
     internal class BlackCatItem : ModItem
     {

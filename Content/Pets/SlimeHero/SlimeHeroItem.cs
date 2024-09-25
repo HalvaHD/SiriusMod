@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
-using Microsoft.Xna.Framework;
 
-namespace Twig.Content.Pets.SlimeHero
+namespace ProtoMod.Content.Pets.SlimeHero
 {
     internal class SlimeHeroItem : ModItem
     {

@@ -1,10 +1,10 @@
-﻿using Terraria.ID;
-using Terraria.ModLoader;
+﻿using Microsoft.Xna.Framework;
+using ProtoMod.Common.Players;
 using Terraria;
-using Microsoft.Xna.Framework;
-using Twig.Common.Players;
+using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Yum
+namespace ProtoMod.Content.Pets.Yum
 {
     internal class YumItem: ModItem
     {

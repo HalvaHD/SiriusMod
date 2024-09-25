@@ -1,7 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.SlimeR
+namespace ProtoMod.Content.Pets.SlimeR
 {
     internal class SlimeRBuff : ModBuff
     {

@@ -1,8 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
-using Twig.Content.Pets.Yum;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Yum
+namespace ProtoMod.Content.Pets.Yum
 {
     internal class YumBuff : ModBuff
     {

@@ -1,14 +1,11 @@
 using System.Collections.Generic;
-using Terraria;
+using ProtoMod.Content.Currencies;
+using ProtoMod.Content.Items;
+using ProtoMod.Content.Projectiles;
 using Terraria.GameContent.UI;
-using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Common.Players;
-using Twig.Content.Currencies;
-using Twig.Content.Items;
-using Twig.Content.Projectiles;
 
-namespace Twig
+namespace ProtoMod
 {
 	public class Twig : Mod
 	{

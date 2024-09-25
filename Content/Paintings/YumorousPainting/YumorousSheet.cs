@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace Twig.Content.Paintings.YumorousPainting
+namespace ProtoMod.Content.Paintings.YumorousPainting
 {
     internal class YumorousSheet : ModTile
     {

@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Mime;
-using CalamityMod.UI;
-using Humanizer;
+﻿using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using Terraria.ID;
-using Terraria.ModLoader;
 using Terraria;
 using Terraria.Audio;
+using Terraria.ID;
 using Terraria.Localization;
-using Twig.Common.Players;
-using Twig.Content.Pets.Yum;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Yum
+namespace ProtoMod.Content.Pets.Yum
 {
     internal class YumProjectile : ModProjectile
     {

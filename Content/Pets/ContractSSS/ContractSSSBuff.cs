@@ -1,8 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
-using Twig.Content.Pets.CatX;
 
-namespace Twig.Content.Pets.ContractSSS
+namespace ProtoMod.Content.Pets.ContractSSS
 {
     internal class ContractSSSBuff : ModBuff
     {

@@ -1,10 +1,10 @@
+using ProtoMod.Common.Players;
+using ProtoMod.Content.Projectiles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
-using Twig.Common.Players;
-using Twig.Content.Projectiles;
 
-namespace Twig.Common;
+namespace ProtoMod.Common;
 
 public class GlobalProjectiles : GlobalProjectile
 {

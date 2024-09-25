@@ -1,9 +1,9 @@
+using ProtoMod.Common.Players;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Common.Players;
 
-namespace Twig.Content.Items
+namespace ProtoMod.Content.Items
 {
 	public class StarTrainTicket : ModItem
 	{

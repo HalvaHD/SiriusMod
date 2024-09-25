@@ -1,7 +1,7 @@
+using ProtoMod.Common.GlobalNPCs;
 using Terraria.ModLoader;
-using Twig.Common.GlobalNPCs;
 
-namespace Twig.Content.Buffs
+namespace ProtoMod.Content.Buffs
 {
     public class DarkEnergyDebuff : ModBuff
     {

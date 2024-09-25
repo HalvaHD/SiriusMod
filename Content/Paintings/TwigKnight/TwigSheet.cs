@@ -1,9 +1,9 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-using Terraria;
 
-namespace Twig.Content.Paintings.TwigKnight
+namespace ProtoMod.Content.Paintings.TwigKnight
 {
     internal class TwigSheet : ModTile
     {

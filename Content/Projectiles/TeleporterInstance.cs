@@ -1,12 +1,10 @@
 using System.Linq;
-using System.Numerics;
+using ProtoMod.Core.Systems;
 using Terraria;
 using Terraria.ModLoader;
-using Twig.Content.Items;
-using Twig.Core.Systems;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 
-namespace Twig.Content.Projectiles
+namespace ProtoMod.Content.Projectiles
 {
     public class TeleporterInstance : ModProjectile
     {

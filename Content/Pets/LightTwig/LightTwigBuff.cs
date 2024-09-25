@@ -1,7 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.LightTwig
+namespace ProtoMod.Content.Pets.LightTwig
 {
     internal class LightTwigBuff : ModBuff
     {

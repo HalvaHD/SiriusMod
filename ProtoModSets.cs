@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig
+namespace ProtoMod
 {
     public class TwigSets : ModSystem
     {

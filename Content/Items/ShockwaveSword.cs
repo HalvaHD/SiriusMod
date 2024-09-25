@@ -2,13 +2,13 @@ using System;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using Terraria;
-using Terraria.ID;
-using Terraria.ModLoader;
 using Terraria.Graphics.Effects;
 using Terraria.Graphics.Shaders;
+using Terraria.ID;
+using Terraria.ModLoader;
 using Filters = Terraria.Graphics.Effects.Filters;
 
-namespace Twig.Content.Items
+namespace ProtoMod.Content.Items
 {
 		
 	// This is a copy of the Excalibur

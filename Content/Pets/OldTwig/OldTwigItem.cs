@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Xna.Framework;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
-using Twig.Content.Pets.OldTwig;
-using Microsoft.Xna.Framework;
 
-namespace Twig.Content.Pets.OldTwig
+namespace ProtoMod.Content.Pets.OldTwig
 {
     internal class OldTwigItem : ModItem
     {

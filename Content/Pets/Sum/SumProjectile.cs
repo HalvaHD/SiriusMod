@@ -1,8 +1,8 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
 
-namespace Twig.Content.Pets.Sum
+namespace ProtoMod.Content.Pets.Sum
 {
     internal class SumProjectile : ModProjectile
     {

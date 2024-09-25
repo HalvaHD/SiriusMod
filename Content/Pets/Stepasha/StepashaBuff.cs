@@ -1,7 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Stepasha
+namespace ProtoMod.Content.Pets.Stepasha
 {
     internal class StepashaBuff : ModBuff
     {

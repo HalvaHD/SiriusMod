@@ -1,7 +1,7 @@
-﻿using Terraria.ModLoader;
-using Terraria;
+﻿using Terraria;
+using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Berserk
+namespace ProtoMod.Content.Pets.Berserk
 {
     internal class BerserkBuff : ModBuff
     {

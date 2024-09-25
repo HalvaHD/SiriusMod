@@ -1,15 +1,15 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using ProtoMod.Content.NPC;
 using ReLogic.Content;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Twig.Content.NPC;
 
-namespace Twig.Content.Projectiles.HALVAMinions
+namespace ProtoMod.Content.Projectiles.HALVAMinions
 {
 	// This file contains all the code necessary for a minion
 	// - ModItem - the weapon which you use to summon the minion with

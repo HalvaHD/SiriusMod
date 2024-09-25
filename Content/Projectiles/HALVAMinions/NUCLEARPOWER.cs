@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Projectiles.HALVAMinions;
+namespace ProtoMod.Content.Projectiles.HALVAMinions;
 
 public class NUCLEARPOWER : ModProjectile
 {

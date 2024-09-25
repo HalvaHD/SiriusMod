@@ -1,7 +1,7 @@
 ﻿using Terraria;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Pets.Skuf
+namespace ProtoMod.Content.Pets.Skuf
 {
     internal class SkufBuff : ModBuff
     {

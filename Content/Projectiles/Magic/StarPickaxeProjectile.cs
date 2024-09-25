@@ -6,7 +6,7 @@ using Terraria.GameContent.Achievements;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Twig.Content.Projectiles.Magic
+namespace ProtoMod.Content.Projectiles.Magic
 {
     // This file shows an animated projectile
     // This file also shows advanced drawing to center the drawn projectile correctly
