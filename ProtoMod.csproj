@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\tModLoader.targets" />
+  <PropertyGroup>
+    <AssemblyName>Twig</AssemblyName>
+    <TargetFramework>net8.0</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\NPC\KORRO.cs" />
+    <Content Include="Localization\ru-RU_Mods.Twig.hjson" />
+    <Content Include="Common\Players\DamaClassModifier.cs" />
+    <Content Include="Content\Tiles\StarRainOre.png" />
+    <Content Include="Content\Tiles\StarRainOre.cs" />
+    <Content Include="Content\Pets\Yum\YumProjectile.png" />
+    <Content Include="Content\Pets\Yum\YumProjectile.cs" />
+    <Content Include="Content\Pets\Yum\YumItem.png" />
+    <Content Include="Content\Pets\Yum\YumItem.cs" />
+    <Content Include="Content\Pets\Yum\YumBuff.png" />
+    <Content Include="Content\Pets\Yum\YumBuff.cs" />
+    <Content Include="Content\Pets\Vedma\VedmaProjectile.png" />
+    <Content Include="Content\Pets\Vedma\VedmaProjectile.cs" />
+    <Content Include="Content\Pets\Vedma\VedmaItem.png" />
+    <Content Include="Content\Pets\Vedma\VedmaItem.cs" />
+    <Content Include="Content\Pets\Vedma\VedmaBuff.png" />
+    <Content Include="Content\Pets\Vedma\VedmaBuff.cs" />
+    <Content Include="Content\Pets\Twig\TwigPetProjectile.png" />
+    <Content Include="Content\Pets\Twig\TwigPetProjectile.cs" />
+    <Content Include="Content\Pets\Twig\TwigPetItem.png" />
+    <Content Include="Content\Pets\Twig\TwigPetItem.cs" />
+    <Content Include="Content\Pets\Twig\TwigPetBuff.png" />
+    <Content Include="Content\Pets\Twig\TwigPetBuff.cs" />
+    <Content Include="Content\Pets\Sum\SumProjectile.png" />
+    <Content Include="Content\Pets\Sum\SumProjectile.cs" />
+    <Content Include="Content\Pets\Sum\SumItem.png" />
+    <Content Include="Content\Pets\Sum\SumItem.cs" />
+    <Content Include="Content\Pets\Sum\SumBuff.png" />
+    <Content Include="Content\Pets\Sum\SumBuff.cs" />
+    <Content Include="Content\Pets\Stepasha\StepashaProjectile.png" />
+    <Content Include="Content\Pets\Stepasha\StepashaProjectile.cs" />
+    <Content Include="Content\Pets\Stepasha\StepashaItem.png" />
+    <Content Include="Content\Pets\Stepasha\StepashaItem.cs" />
+    <Content Include="Content\Pets\Stepasha\StepashaBuff.png" />
+    <Content Include="Content\Pets\Stepasha\StepashaBuff.cs" />
+    <Content Include="Content\Pets\Stardy\StardyProjectile.png" />
+    <Content Include="Content\Pets\Stardy\StardyProjectile.cs" />
+    <Content Include="Content\Pets\Stardy\StardyItem.png" />
+    <Content Include="Content\Pets\Stardy\StardyItem.cs" />
+    <Content Include="Content\Pets\Stardy\StardyBuff.png" />
+    <Content Include="Content\Pets\Stardy\StardyBuff.cs" />
+    <Content Include="Content\Pets\SlimeR\SlimeRProjectile.png" />
+    <Content Include="Content\Pets\SlimeR\SlimeRProjectile.cs" />
+    <Content Include="Content\Pets\SlimeR\SlimeRItem.png" />
+    <Content Include="Content\Pets\SlimeR\SlimeRItem.cs" />
+    <Content Include="Content\Pets\SlimeR\SlimeRBuff.png" />
+    <Content Include="Content\Pets\SlimeR\SlimeRBuff.cs" />
+    <Content Include="Content\Pets\LightTwig\LightTwigProjectile.png" />
+    <Content Include="Content\Pets\LightTwig\LightTwigProjectile.cs" />
+    <Content Include="Content\Pets\LightTwig\LightTwigItem.png" />
+    <Content Include="Content\Pets\LightTwig\LightTwigItem.cs" />
+    <Content Include="Content\Pets\LightTwig\LightTwigBuff.png" />
+    <Content Include="Content\Pets\LightTwig\LightTwigBuff.cs" />
+    <Content Include="Content\Pets\CatX\CatXProjectile.png" />
+    <Content Include="Content\Pets\CatX\CatXProjectile.cs" />
+    <Content Include="Content\Pets\CatX\CatXItem.png" />
+    <Content Include="Content\Pets\CatX\CatXItem.cs" />
+    <Content Include="Content\Pets\CatX\CatXBuff.png" />
+    <Content Include="Content\Pets\CatX\CatXBuff.cs" />
+    <Content Include="Content\Pets\BlackCat\BlackCatProjectile.png" />
+    <Content Include="Content\Pets\BlackCat\BlackCatProjectile.cs" />
+    <Content Include="Content\Pets\BlackCat\BlackCatItem.png" />
+    <Content Include="Content\Pets\BlackCat\BlackCatItem.cs" />
+    <Content Include="Content\Pets\BlackCat\BlackCatBuff.png" />
+    <Content Include="Content\Pets\BlackCat\BlackCatBuff.cs" />
+    <Content Include="Content\Pets\Berserk\BerserkProjectile.png" />
+    <Content Include="Content\Pets\Berserk\BerserkProjectile.cs" />
+    <Content Include="Content\Pets\Berserk\BerserkItem.png" />
+    <Content Include="Content\Pets\Berserk\BerserkItem.cs" />
+    <Content Include="Content\Pets\Berserk\BerserkBuff.png" />
+    <Content Include="Content\Pets\Berserk\BerserkBuff.cs" />
+    <Content Include="Content\NPC\KORRO_Head.png" />
+    <Content Include="Content\NPC\KORRO.png" />
+    <Content Include="Content\NPC\HALVA_Head.png" />
+    <Content Include="Content\NPC\HALVA.png" />
+    <Content Include="Content\NPC\HALVA.cs" />
+    <Content Include="Content\Buffs\NanoIssue.png" />
+    <Content Include="Content\Buffs\NanoIssue.cs" />
+    <Content Include="Content\Buffs\MotherOmlett.png" />
+    <Content Include="Content\Buffs\MotherOmlett.cs" />
+    <Content Include="Localization\en-US_Mods.Twig.hjson" />
+    <Content Include="obj\Twig.csproj.nuget.g.targets" />
+    <Content Include="obj\Twig.csproj.nuget.g.props" />
+    <Content Include="obj\Twig.csproj.nuget.dgspec.json" />
+    <Content Include="obj\Release\net6.0\Twig.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Release\net6.0\Twig.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Release\net6.0\Twig.assets.cache" />
+    <Content Include="obj\Release\net6.0\Twig.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Release\net6.0\Twig.AssemblyInfo.cs" />
+    <Content Include="obj\Release\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Content Include="obj\project.nuget.cache" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\Debug\net6.0\Twig.GeneratedMSBuildEditorConfig.editorconfig" />
+    <Content Include="obj\Debug\net6.0\Twig.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net6.0\Twig.csproj.AssemblyReference.cache" />
+    <Content Include="obj\Debug\net6.0\Twig.assets.cache" />
+    <Content Include="obj\Debug\net6.0\Twig.AssemblyInfoInputs.cache" />
+    <Content Include="obj\Debug\net6.0\Twig.AssemblyInfo.cs" />
+    <Content Include="obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Content Include="Properties\launchSettings.json" />
+    <Content Include="build.txt" />
+    <Content Include="description.txt" />
+    <Content Include="icon_workshop.png" />
+    <Content Include="icon.png" />
+    <Content Include=".git\COMMIT_EDITMSG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Common\UtilityMethods\**" />
+    <Compile Remove="Content\Projectiles\KOPPO_Projectile.cs" />
+    <Compile Remove="Content\Projectiles\Generic\**" />
+    <Compile Remove="Content\Items\Autum\**" />
+    <Compile Remove="Content\Accessories\**" />
+    <Compile Remove="StarPlayer\**" />
+    <Compile Remove="Content\Pets\BattleCat\**" />
+    <Compile Remove="Content\Pets\Puhla\**" />
+    <Compile Remove=".vs\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Common\UtilityMethods\**" />
+    <EmbeddedResource Remove="Content\Projectiles\Generic\**" />
+    <EmbeddedResource Remove="Content\Items\Autum\**" />
+    <EmbeddedResource Remove="Content\Accessories\**" />
+    <EmbeddedResource Remove="StarPlayer\**" />
+    <EmbeddedResource Remove="Content\Pets\BattleCat\**" />
+    <EmbeddedResource Remove="Content\Pets\Puhla\**" />
+    <EmbeddedResource Remove=".vs\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <AdditionalFiles Remove="Common\UtilityMethods\**" />
+    <AdditionalFiles Remove="Content\Projectiles\Generic\**" />
+    <AdditionalFiles Remove="Content\Items\Autum\**" />
+    <AdditionalFiles Remove="Content\Accessories\**" />
+    <AdditionalFiles Remove="StarPlayer\**" />
+    <AdditionalFiles Remove="Content\Pets\BattleCat\**" />
+    <AdditionalFiles Remove="Content\Pets\Puhla\**" />
+    <AdditionalFiles Remove=".vs\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Common\UtilityMethods\**" />
+    <None Remove="Content\Projectiles\KOPPO_Projectile.png" />
+    <None Remove="Content\Projectiles\Generic\**" />
+    <None Remove="Content\Items\Autum\**" />
+    <None Remove="Content\Accessories\**" />
+    <None Remove="StarPlayer\**" />
+    <None Remove="Content\Pets\BattleCat\**" />
+    <None Remove="Content\Pets\Puhla\**" />
+    <None Remove=".vs\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="tModLoader.CodeAssist" Version="0.1.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CalamityMod">
+      <HintPath>..\ModAssemblies\CalamityMod_v2.0.4.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Luminance">
+      <HintPath>Luminance.dll</HintPath>
+    </Reference>
+    <Reference Include="ParticleLibrary">
+      <HintPath>..\ModAssemblies\ParticleLibrary_v2.0.0.2.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureHelper">
+      <HintPath>..\ModAssemblies\StructureHelper_v2.5.3.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\GlobalItems\" />
+    <Folder Include="Common\UI\" />
+  </ItemGroup>
+</Project>
