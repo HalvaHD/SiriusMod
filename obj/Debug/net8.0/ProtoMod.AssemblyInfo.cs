@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Twig")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74108e83edeae009e81709677a28aee3d54be5c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0507c4c235c9351fb3dc2f1f0d05434bb5439d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Twig")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Twig")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

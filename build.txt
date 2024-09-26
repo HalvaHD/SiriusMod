@@ -1,8 +1,6 @@
-displayName = Rainy Forest [QOL Mode]
-author = Gorffy, Ink of the Eternity
-version = 6.1.0.4
-weakReferences = CalamityMod@2.0.4.3
+displayName = ProtoGenesis
+author = ProtoTeam
+version = 0.1.0.0
+weakReferences = CalamityMod
 modReferences = Luminance, StructureHelper
-buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, Luminance.dl, Luminance.pdb, Luminance.xml
-hideCode = true
-hideResources = true
+buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, Luminance.dl, Luminance.pdb, Luminance.xml, .idea\*

@@ -39,18 +39,18 @@ namespace ProtoMod.Content.Projectiles
             Projectile.rotation = Projectile.velocity.ToRotation();
             if (Math.Abs(Projectile.Center.X - Main.LocalPlayer.Center.X) < 20)
             {
-                if (TwigModPlayer.DamageTypeForGracing == DamageClass.SummonMeleeSpeed ||
-                    TwigModPlayer.DamageTypeForGracing == DamageClass.Summon)
+                if (ProtoModPlayer.DamageTypeForGracing == DamageClass.SummonMeleeSpeed ||
+                    ProtoModPlayer.DamageTypeForGracing == DamageClass.Summon)
                 {
                     Main.LocalPlayer.Heal(1);
                 }
 
-                if (TwigModPlayer.DamageTypeForGracing == DamageClass.Ranged ||
-                    TwigModPlayer.DamageTypeForGracing == DamageClass.Magic ||
-                    TwigModPlayer.DamageTypeForGracing == DamageClass.Melee ||
-                    TwigModPlayer.DamageTypeForGracing == DamageClass.Generic ||
-                    TwigModPlayer.DamageTypeForGracing == DamageClass.Throwing ||
-                    TwigModPlayer.DamageTypeForGracing == DamageClass.Default)
+                if (ProtoModPlayer.DamageTypeForGracing == DamageClass.Ranged ||
+                    ProtoModPlayer.DamageTypeForGracing == DamageClass.Magic ||
+                    ProtoModPlayer.DamageTypeForGracing == DamageClass.Melee ||
+                    ProtoModPlayer.DamageTypeForGracing == DamageClass.Generic ||
+                    ProtoModPlayer.DamageTypeForGracing == DamageClass.Throwing ||
+                    ProtoModPlayer.DamageTypeForGracing == DamageClass.Default)
                 {
                     if (Main.LocalPlayer.HeldItem.useTime <= 8)
                     {

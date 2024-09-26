@@ -58,7 +58,7 @@ namespace ProtoMod.Content.Projectiles
                 {
 	                if (Projectile.timeLeft == 164)
 	                {
-		                SoundStyle style = new SoundStyle("Twig/Assets/Sounds/MedicinePipeSweetWoosh");
+		                SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/MedicinePipeSweetWoosh");
 		                SoundEngine.PlaySound(style);
 	                }
                 	if (Main.LocalPlayer.direction == -1)

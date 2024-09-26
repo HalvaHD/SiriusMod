@@ -8,7 +8,7 @@ namespace ProtoMod.Content.Buffs
     {
         public override void Update(Player player, ref int buffIndex)
         {
-            player.GetModPlayer<TwigModPlayer>().GracingEnergy = true;
+            player.GetModPlayer<ProtoModPlayer>().GracingEnergy = true;
         }
     }
 }   

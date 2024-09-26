@@ -56,9 +56,9 @@ namespace ProtoMod.Content.Projectiles
             {
                 return false;
             }
-            bool noDungeon = !Terraria.NPC.downedBoss3 && (TwigSets.Walls.DungeonWall[tile.WallType] || TwigSets.Tiles.DungeonTile[tile.TileType]);
+            bool noDungeon = !Terraria.NPC.downedBoss3 && (ProtoModSets.Walls.DungeonWall[tile.WallType] || ProtoModSets.Tiles.DungeonTile[tile.TileType]);
 
-            bool noHMOre = TwigSets.Tiles.HardmodeOre[tile.TileType] && !Terraria.NPC.downedMechBossAny;
+            bool noHMOre = ProtoModSets.Tiles.HardmodeOre[tile.TileType] && !Terraria.NPC.downedMechBossAny;
             bool noChloro = tile.TileType == TileID.Chlorophyte && !(Terraria.NPC.downedMechBoss1 && Terraria.NPC.downedMechBoss2 && Terraria.NPC.downedMechBoss3);
             bool noLihzahrd = (tile.TileType == TileID.LihzahrdBrick || tile.WallType == WallID.LihzahrdBrickUnsafe) && !Terraria.NPC.downedGolemBoss;
             bool noAbyss = false;
@@ -70,8 +70,8 @@ namespace ProtoMod.Content.Projectiles
             }
 
             if (noDungeon || noHMOre || noChloro || noLihzahrd || noAbyss ||
-                TwigSets.Tiles.InstaCannotDestroy[tile.TileType] ||
-                TwigSets.Walls.InstaCannotDestroy[tile.WallType])
+                ProtoModSets.Tiles.InstaCannotDestroy[tile.TileType] ||
+                ProtoModSets.Walls.InstaCannotDestroy[tile.WallType])
                 return false;
 
             return true;

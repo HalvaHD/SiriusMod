@@ -25,12 +25,12 @@ namespace ProtoMod.Content.Items
 		public override bool? UseItem(Player player)
 		{
 			TicketTeleport(player);
-			player.GetModPlayer<TwigModPlayer>().StarTrainTicketCD = 4 * 3600;
+			player.GetModPlayer<ProtoModPlayer>().StarTrainTicketCD = 4 * 3600;
 			DamageReceiveTime = 600;
 			return true;
 		}
 
-		public override bool CanUseItem(Player player) => player.GetModPlayer<TwigModPlayer>().StarTrainTicketCD == 0;
+		public override bool CanUseItem(Player player) => player.GetModPlayer<ProtoModPlayer>().StarTrainTicketCD == 0;
 
 		public static void TicketTeleport(Player player)
 		{

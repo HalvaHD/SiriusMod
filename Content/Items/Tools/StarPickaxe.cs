@@ -50,10 +50,10 @@ namespace ProtoMod.Content.Items.Tools
 
         public override bool AltFunctionUse(Player player)
         {
-            if (PlayerInput.Triggers.Current.MouseRight && TwigModPlayer.StarPickaxeHoldTime == 0 && TwigModPlayer.StarPickaxeCD == -1)
+            if (PlayerInput.Triggers.Current.MouseRight && ProtoModPlayer.StarPickaxeHoldTime == 0 && ProtoModPlayer.StarPickaxeCD == -1)
             {
-                TwigModPlayer.StarPickaxeHoldTime = 60;
-                TwigModPlayer.StarPickaxeAvailable = true;
+                ProtoModPlayer.StarPickaxeHoldTime = 60;
+                ProtoModPlayer.StarPickaxeAvailable = true;
             }
             return true;
         }
@@ -62,7 +62,7 @@ namespace ProtoMod.Content.Items.Tools
                 Projectile.NewProjectile(new EntitySource_ItemUse(player, player.HeldItem),
                     new Vector2(player.Center.X, player.Center.Y - 32), Vector2.Zero,
                     ModContent.ProjectileType<StarPickaxeProjectile>(), 10, 1f);
-                TwigModPlayer.StarPickaxeCD = 720;
+                ProtoModPlayer.StarPickaxeCD = 720;
         }
 
         public override bool CanUseItem(Player player)

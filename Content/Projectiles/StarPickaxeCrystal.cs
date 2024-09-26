@@ -52,7 +52,7 @@ namespace ProtoMod.Content.Projectiles
             Texture2D texture2D13 = Terraria.GameContent.TextureAssets.Projectile[Projectile.type].Value;
             int num156 = Terraria.GameContent.TextureAssets.Projectile[Projectile.type].Value.Height / Main.projFrames[Projectile.type]; //ypos of lower right corner of sprite to draw
             int y3;
-            if (TwigModPlayer.IsLastRealFrame)
+            if (ProtoModPlayer.IsLastRealFrame)
             {
                 y3 = num156 * 7;
             }
@@ -103,11 +103,11 @@ namespace ProtoMod.Content.Projectiles
                 
                 if (Projectile.frameCounter % 5 == 0)
                 {
-                    if (Projectile.frame < 7 && TwigModPlayer.IsLastRealFrame == false)
+                    if (Projectile.frame < 7 && ProtoModPlayer.IsLastRealFrame == false)
                     {
                         if (Projectile.frame == 0)
                         {
-                            SoundStyle style = new SoundStyle("Twig/Assets/Sounds/StarPickaxeCrystalBreakage");
+                            SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/StarPickaxeCrystalBreakage");
                             SoundEngine.PlaySound(style);
                         }
                         Projectile.frame++;
@@ -115,19 +115,19 @@ namespace ProtoMod.Content.Projectiles
                     else
                     {
                         Projectile.frame = 7;
-                        TwigModPlayer.IsLastRealFrame = true;
+                        ProtoModPlayer.IsLastRealFrame = true;
                     } 
                 }
                 
             }
             else
             {
-                if (TwigModPlayer.IsLastRealFrame == true)
+                if (ProtoModPlayer.IsLastRealFrame == true)
                 {
-                    SoundStyle style = new SoundStyle("Twig/Assets/Sounds/StarPickaxeCrystalRecovery");
+                    SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/StarPickaxeCrystalRecovery");
                     SoundEngine.PlaySound(style);
                 }
-                TwigModPlayer.IsLastRealFrame = false;
+                ProtoModPlayer.IsLastRealFrame = false;
                 if (Projectile.frameCounter % 5 == 0 && Projectile.frame > 0)
                 {
                     // if (Projectile.frame == 7)

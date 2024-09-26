@@ -102,7 +102,7 @@ namespace ProtoMod.Content.Items
             else
             {
                 int text = CombatText.NewText(player.Hitbox, Color.Aqua,
-                Language.GetTextValue($"Mods.Twig.Status.NoGates"), true);
+                Language.GetTextValue($"Mods.ProtoMod.Status.NoGates"), true);
             }
             return true;
         }
@@ -123,7 +123,7 @@ namespace ProtoMod.Content.Items
         {
             orig.Invoke(self);
 
-            if (self.text == Language.GetTextValue($"Mods.Twig.Status.NoGates"))
+            if (self.text == Language.GetTextValue($"Mods.ProtoMod.Status.NoGates"))
                 self.scale = 0.75f;
         }
     }

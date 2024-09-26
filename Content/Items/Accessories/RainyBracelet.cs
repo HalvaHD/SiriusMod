@@ -22,7 +22,7 @@ namespace ProtoMod.Content.Items.Accessories
 		public override void UpdateAccessory(Player player, bool hideVisual) {
 			player.GetModPlayer<RainyBraceletPlayer>().RainyBracelet = true;
 			player.moveSpeed += 0.1f;
-			TwigModPlayer.RainyB = true;
+			ProtoModPlayer.RainyB = true;
 		}
 
 		public override void AddRecipes()

@@ -43,7 +43,7 @@ public class KORRO: ModNPC {
     public static bool Shop2 = false;
     public override void SetStaticDefaults()
     {
-        Texture_Glow = ModContent.Request<Texture2D>("Twig/Content/NPC/KORRO_Glowmask", AssetRequestMode.ImmediateLoad);
+        Texture_Glow = ModContent.Request<Texture2D>("ProtoMod/Content/NPC/KORRO_Glowmask", AssetRequestMode.ImmediateLoad);
         NPC.Happiness
             .SetBiomeAffection<OceanBiome>(AffectionLevel.Like)
             .SetBiomeAffection<DesertBiome>(AffectionLevel.Dislike)
@@ -101,7 +101,7 @@ public class KORRO: ModNPC {
             BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Snow,
 
             // Sets your NPC's flavor text in the bestiary.
-            new FlavorTextBestiaryInfoElement("Mods.Twig.Bestiary.KORRO"),
+            new FlavorTextBestiaryInfoElement("Mods.ProtoMod.Bestiary.KORRO"),
         });
     }
     public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color drawColor)
@@ -133,12 +133,10 @@ public class KORRO: ModNPC {
         if (firstButton)
         {
             shopName = "Shop";
-            Main.NewText("Первый магаз");
         }
         else
         {
             shopName = "CustomPets";
-            Main.NewText("Второй магаз");
         }
     }
     public override void AddShops()

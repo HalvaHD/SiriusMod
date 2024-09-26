@@ -15,7 +15,7 @@ namespace ProtoMod.Content.Items.Healing
 {
     public class MedicinePipeSecondTier : ModItem
     {
-        public override string Texture => "Twig/Content/Items/Healing/MedicinePipe";
+        public override string Texture => "ProtoMod/Content/Items/Healing/MedicinePipe";
         public static LocalizedText RestoreLifeText { get; private set; }
         public static int HealAmount = 150;
 
@@ -36,7 +36,7 @@ namespace ProtoMod.Content.Items.Healing
             Item.consumable = false;
             Item.rare = ItemRarityID.Lime;
             Item.shopCustomPrice = 2;
-            Item.shopSpecialCurrency = Twig.CosmicCryCurrencyID2;
+            Item.shopSpecialCurrency = ProtoMod.CosmicCryCurrencyID2;
             Item.potion = true;
             Item.healLife = 100;
             Item.noUseGraphic = true;

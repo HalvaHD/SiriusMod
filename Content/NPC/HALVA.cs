@@ -33,7 +33,7 @@ namespace ProtoMod.Content.NPC
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[Type] = 23; // The total amount of frames the NPC has|
-            Texture_Glow = ModContent.Request<Texture2D>("Twig/Content/NPC/HALVA_Glowmask", AssetRequestMode.ImmediateLoad);
+            Texture_Glow = ModContent.Request<Texture2D>("ProtoMod/Content/NPC/HALVA_Glowmask", AssetRequestMode.ImmediateLoad);
             NPCID.Sets.ExtraFramesCount[Type] = 7; // Generally for Town NPCs, but this is how the NPC does extra things such as sitting in a chair and talking to other NPCs. This is the remaining frames after the walking frames.
             NPCID.Sets.AttackFrameCount[Type] = 2; // The amount of frames in the attacking animation.
             NPCID.Sets.DangerDetectRange[Type] = 400; // The amount of pixels away from the center of the NPC that it tries to attack enemies.
@@ -109,7 +109,7 @@ namespace ProtoMod.Content.NPC
                 new NamePlateInfoElement(this.GetLocalizedValue("NameHALVA"), -1),
 
 				// Sets your NPC's flavor text in the bestiary.
-				new FlavorTextBestiaryInfoElement("Mods.Twig.Bestiary.HALVA"),
+				new FlavorTextBestiaryInfoElement("Mods.ProtoMod.Bestiary.HALVA"),
             });
         }
 

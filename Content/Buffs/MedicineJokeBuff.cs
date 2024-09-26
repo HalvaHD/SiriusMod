@@ -59,7 +59,7 @@ namespace ProtoMod.Content.Buffs
             player.jumpSpeedBoost += 0.05f; // Plus 1% to jump speed as I assume
             player.maxMinions += 1;
             player.maxTurrets += 1;
-            player.GetModPlayer<TwigModPlayer>().MedicineJokeBuffActive = true;
+            player.GetModPlayer<ProtoModPlayer>().MedicineJokeBuffActive = true;
 
 
         }

@@ -17,7 +17,7 @@ namespace ProtoMod.Content.Items.Healing
     [JITWhenModsEnabled("CalamityMod")]
     public class MedicinePipeFourthTier: ModItem
     {
-        public override string Texture => "Twig/Content/Items/Healing/MedicinePipe";
+        public override string Texture => "ProtoMod/Content/Items/Healing/MedicinePipe";
         
         public override bool IsLoadingEnabled(Mod mod)
         {

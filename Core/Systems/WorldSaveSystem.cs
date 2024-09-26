@@ -22,12 +22,12 @@ namespace ProtoMod.Core.Systems
                 return;
             tag["TeleporterLocationX"] = TeleporterLocation.X;
             tag["TeleporterLocationY"] = TeleporterLocation.Y;
-            tag["KilledBosses"] = Twig.CheckKilledBosses;
+            tag["KilledBosses"] = ProtoMod.CheckKilledBosses;
         }
 
         public override void LoadWorldData(TagCompound tag)
         {
-            Twig.CheckKilledBosses = new List<int>(tag.GetList<int>("KilledBosses"));
+            ProtoMod.CheckKilledBosses = new List<int>(tag.GetList<int>("KilledBosses"));
             TeleporterLocation = new(tag.GetFloat("TeleporterLocationX"), tag.GetFloat("TeleporterLocationY"));
             if (TeleporterLocation != Vector2.Zero)
             {

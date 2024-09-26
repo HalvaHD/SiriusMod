@@ -11,11 +11,10 @@ using Terraria.ModLoader;
 
 namespace ProtoMod.Common.Players
 {
-    public partial class TwigModPlayer
+    public partial class ProtoModPlayer : ModPlayer
     {
-        #region Variables
         
-        #region No Category
+        #region Variables
         
         public static bool RainyB;
         public static bool YumShiza;
@@ -44,7 +43,6 @@ namespace ProtoMod.Common.Players
             DarkSamurai = false;
             MedicineJokeBuffActive = false;
         }
-        #endregion
         #endregion
         
         public Item FindAccessory(int itemID)
@@ -150,7 +148,7 @@ namespace ProtoMod.Common.Players
                             Dust dust =
                             Main.dust[
                                 Dust.NewDust(position, 10, 10, DustID.TintableDustLighted, 0f, 0f, 0,
-                                    new Color(255, 255, 255), 3f)]; // You need to set position depending on what you are doing. You may need to subtract width/2 and height/2 as well to center the spawn rectangle.
+                                    new Color(255, 255, 255), 3f)];
                         }
 
                     }

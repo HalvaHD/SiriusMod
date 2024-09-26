@@ -148,7 +148,7 @@ namespace ProtoMod.Content.Projectiles.AutPortal
                     (int)Projectile.Center.Y,
                     ModContent.NPCType<HALVA>(), Target: 255);
             }
-            Main.NewText((object)Language.GetTextValue("Mods.Twig.ItemChat.AutNPCs"));
+            Main.NewText((object)Language.GetTextValue("ProtoMod.Twig.ItemChat.AutNPCs"));
             AutAnimation.AutAnimation.AutCanSpawn = true;
         }
     }

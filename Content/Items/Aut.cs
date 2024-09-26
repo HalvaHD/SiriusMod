@@ -72,10 +72,10 @@ namespace ProtoMod.Content.Items
             {
                 if (AutAnimation.AutCanSpawn)
                 {
-                    Main.NewText((object)Language.GetTextValue("Mods.Twig.ItemChat.AutSpawn"));
+                    Main.NewText((object)Language.GetTextValue("Mods.ProtoMod.ItemChat.AutSpawn"));
                     Projectile.NewProjectile(new EntitySource_ItemUse(player, Item), Main.LocalPlayer.position.X,
                         Main.LocalPlayer.position.Y, 0f, -3f, ModContent.ProjectileType<AutAnimation>(), 0, 0);
-                    SoundStyle style = new SoundStyle("Twig/Assets/Sounds/AncientRoar") { Volume = 10f };
+                    SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/AncientRoar") { Volume = 10f };
                     SoundEngine.PlaySound(style);
                     return true;
                 }
@@ -92,9 +92,9 @@ namespace ProtoMod.Content.Items
 
         public void TextShowUps()
         {
-            Main.NewText((object)Language.GetTextValue("Mods.Twig.ItemChat.AutExist"));
+            Main.NewText((object)Language.GetTextValue("Mods.ProtoMod.ItemChat.AutExist"));
             TextShowUp = true;
-            TwigModPlayer.TextShowUpCD = 18;
+            ProtoModPlayer.TextShowUpCD = 18;
 
         }
     }

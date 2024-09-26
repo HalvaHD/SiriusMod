@@ -12,7 +12,7 @@ namespace ProtoMod.Content.Projectiles.Magic
     // This file also shows advanced drawing to center the drawn projectile correctly
     public class StarPickaxeProjectile : ModProjectile
     {
-        public override string Texture => $"Twig/Content/Items/Tools/StarPickaxe";
+        public override string Texture => $"ProtoMod/Content/Items/Tools/StarPickaxe";
         
         public override void SetStaticDefaults()
         {

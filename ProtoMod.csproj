@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\tModLoader.targets" />
   <PropertyGroup>
     <AssemblyName>Twig</AssemblyName>
-    <TargetFramework>net8.0</TargetFramework>
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Content\NPC\KORRO.cs" />
-    <Content Include="Localization\ru-RU_Mods.Twig.hjson" />
     <Content Include="Common\Players\DamaClassModifier.cs" />
     <Content Include="Content\Tiles\StarRainOre.png" />
     <Content Include="Content\Tiles\StarRainOre.cs" />
@@ -88,7 +85,6 @@
     <Content Include="Content\Buffs\NanoIssue.cs" />
     <Content Include="Content\Buffs\MotherOmlett.png" />
     <Content Include="Content\Buffs\MotherOmlett.cs" />
-    <Content Include="Localization\en-US_Mods.Twig.hjson" />
     <Content Include="obj\Twig.csproj.nuget.g.targets" />
     <Content Include="obj\Twig.csproj.nuget.g.props" />
     <Content Include="obj\Twig.csproj.nuget.dgspec.json" />
@@ -124,6 +120,8 @@
     <Compile Remove="Content\Pets\BattleCat\**" />
     <Compile Remove="Content\Pets\Puhla\**" />
     <Compile Remove=".vs\**" />
+    <Compile Remove="obj\Release\**" />
+    <Compile Remove="obj\Debug\**" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Common\UtilityMethods\**" />
@@ -134,6 +132,8 @@
     <EmbeddedResource Remove="Content\Pets\BattleCat\**" />
     <EmbeddedResource Remove="Content\Pets\Puhla\**" />
     <EmbeddedResource Remove=".vs\**" />
+    <EmbeddedResource Remove="obj\Release\**" />
+    <EmbeddedResource Remove="obj\Debug\**" />
   </ItemGroup>
   <ItemGroup>
     <AdditionalFiles Remove="Common\UtilityMethods\**" />
@@ -144,6 +144,8 @@
     <AdditionalFiles Remove="Content\Pets\BattleCat\**" />
     <AdditionalFiles Remove="Content\Pets\Puhla\**" />
     <AdditionalFiles Remove=".vs\**" />
+    <AdditionalFiles Remove="obj\Release\**" />
+    <AdditionalFiles Remove="obj\Debug\**" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Common\UtilityMethods\**" />
@@ -155,9 +157,8 @@
     <None Remove="Content\Pets\BattleCat\**" />
     <None Remove="Content\Pets\Puhla\**" />
     <None Remove=".vs\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Update="tModLoader.CodeAssist" Version="0.1.5" />
+    <None Remove="obj\Release\**" />
+    <None Remove="obj\Debug\**" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CalamityMod">
@@ -176,5 +177,8 @@
   <ItemGroup>
     <Folder Include="Common\GlobalItems\" />
     <Folder Include="Common\UI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Update="tModLoader.CodeAssist" Version="0.1.5" />
   </ItemGroup>
 </Project>

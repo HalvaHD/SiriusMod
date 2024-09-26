@@ -24,7 +24,7 @@ public class GlobalProjectiles : GlobalProjectile
     {
         if (projectile.type == ModContent.ProjectileType<DarkEnergyOrb>())
         {
-            new TwigModPlayer().DarkEnergy = false;
+            new ProtoModPlayer().DarkEnergy = false;
         }
     }
 }

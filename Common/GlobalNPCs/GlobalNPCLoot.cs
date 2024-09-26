@@ -13,9 +13,9 @@ namespace ProtoMod.Common.GlobalNPCs
 	{
 		public override void OnKill(NPC npc)
 		{
-			if (npc.boss && !Twig.CheckKilledBosses.Contains(npc.type))
+			if (npc.boss && !ProtoMod.CheckKilledBosses.Contains(npc.type))
 			{	
-				Twig.CheckKilledBosses.Add(npc.type);
+				ProtoMod.CheckKilledBosses.Add(npc.type);
 			}
 		}
 		// ModifyNPCLoot uses a unique system called the ItemDropDatabase, which has many different rules for many different drop use cases.

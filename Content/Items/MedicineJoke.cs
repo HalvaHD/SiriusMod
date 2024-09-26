@@ -38,7 +38,7 @@ namespace ProtoMod.Content.Items
             Item.consumable = false;
             Item.rare = ItemRarityID.Lime;
             Item.shopCustomPrice = 2;
-            Item.shopSpecialCurrency = Twig.CosmicCryCurrencyID2;
+            Item.shopSpecialCurrency = ProtoMod.CosmicCryCurrencyID2;
             Item.noUseGraphic = true;
         }
 
@@ -46,11 +46,11 @@ namespace ProtoMod.Content.Items
         {
             Projectile.NewProjectile(new EntitySource_ItemUse(player, Item), 64,
                 64, 0f, 0, ModContent.ProjectileType<MedicineJokeAnimation>(), 0, 0);
-            if (player.GetModPlayer<TwigModPlayer>().MedicineJokeBuffActive && player.whoAmI == Main.myPlayer && TwigModPlayer.MedicineJokeUseCD == 0)
+            if (player.GetModPlayer<ProtoModPlayer>().MedicineJokeBuffActive && player.whoAmI == Main.myPlayer && ProtoModPlayer.MedicineJokeUseCD == 0)
             {
                 int buff = player.FindBuffIndex(ModContent.BuffType<MedicineJokeBuff>());
                 player.buffTime[buff] += 3600;
-                TwigModPlayer.MedicineJokeUseCD = 170;    
+                ProtoModPlayer.MedicineJokeUseCD = 170;    
             }
             else
             {

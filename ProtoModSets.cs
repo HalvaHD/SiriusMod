@@ -3,9 +3,9 @@ using Terraria.ModLoader;
 
 namespace ProtoMod
 {
-    public class TwigSets : ModSystem
+    public class ProtoModSets : ModSystem
     {
-        // Спасибо тем, кто придумал эту систему и дал мне её стырить
+        // Спасибо тем, кто придумал эту систему!
         public class Items
         {
             public static bool[] MechanicalAccessory;

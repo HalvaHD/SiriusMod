@@ -29,7 +29,7 @@ namespace ProtoMod.Content
             }
         }
 
-        private static readonly string TexPath = "Twig/Assets/Textures/Menu/BlankPixel";
+        private static readonly string TexPath = "ProtoMod/Assets/Textures/Menu/BlankPixel";
         public override int ChooseCloseTexture(ref float scale, ref double parallax, ref float a, ref float b) => BackgroundTextureLoader.GetBackgroundSlot(TexPath);
         public override int ChooseFarTexture() => BackgroundTextureLoader.GetBackgroundSlot(TexPath);
         public override int ChooseMiddleTexture() => BackgroundTextureLoader.GetBackgroundSlot(TexPath);

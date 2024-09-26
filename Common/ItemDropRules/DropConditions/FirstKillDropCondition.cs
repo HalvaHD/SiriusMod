@@ -10,14 +10,14 @@ namespace ProtoMod.Common.ItemDropRules.DropConditions
         private static LocalizedText Description;
 
         public FirstKillDropCondition() {
-            Description ??= Language.GetOrRegister("Mods.Twig.DropConditions.FirstKill");
+            Description ??= Language.GetOrRegister("Mods.ProtoMod.DropConditions.FirstKill");
         }
 
         public bool CanDrop(DropAttemptInfo info)
         {
             NPC npc = info.npc;
             return npc.boss
-                   && !Twig.CheckKilledBosses.Contains(npc.type);
+                   && !ProtoMod.CheckKilledBosses.Contains(npc.type);
         }
 
         public bool CanShowItemDropInUI() {

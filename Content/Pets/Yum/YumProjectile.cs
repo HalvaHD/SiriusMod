@@ -151,7 +151,7 @@ namespace ProtoMod.Content.Pets.Yum
             }
 
             Vector2 pos = Projectile.Center;
-            text = Language.GetTextValue($"Mods.Twig.Items.YumItem.YumChatter.Phrase{key}");
+            text = Language.GetTextValue($"Mods.ProtoMod.Items.YumItem.YumChatter.Phrase{key}");
 
             PopupText.NewText(new AdvancedPopupRequest()
             {

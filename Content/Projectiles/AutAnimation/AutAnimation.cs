@@ -68,7 +68,7 @@ namespace ProtoMod.Content.Projectiles.AutAnimation
 			}
 			if (Projectile.timeLeft == 1)
 			{
-				SoundStyle style = new SoundStyle("Twig/Assets/Sounds/AncientPortal") { Volume = 10f };
+				SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/AncientPortal") { Volume = 10f };
 				SoundEngine.PlaySound(style);
 				/*for (int i = 0; i < 300; i++)
 				{

@@ -44,7 +44,7 @@ namespace ProtoMod.Content.Items.Healing
             Item.consumable = false;
             Item.rare = ItemRarityID.Lime;
             Item.shopCustomPrice = 2;
-            Item.shopSpecialCurrency = Twig.CosmicCryCurrencyID2;
+            Item.shopSpecialCurrency = ProtoMod.CosmicCryCurrencyID2;
             Item.potion = true;
             Item.healLife = 100;
             Item.noUseGraphic = true;

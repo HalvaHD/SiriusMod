@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 
 namespace ProtoMod.Common.Players
 {
-    public partial class TwigModPlayer : ModPlayer
+    public partial class ProtoModPlayer
     {
         public static DamageClass DamageTypeForGracing;
         public override void PostHurt(Player.HurtInfo info)

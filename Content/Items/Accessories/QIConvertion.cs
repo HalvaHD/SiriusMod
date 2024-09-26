@@ -36,7 +36,7 @@ namespace ProtoMod.Content.Items.Accessories
 			{
 				targett = FindClosestNPC(50);
 					// Main.NewText("ПРОВЕРКА УДАЛАСЬ");
-				SoundStyle style = new SoundStyle("Twig/Assets/Sounds/QIKaboomActivation");
+				SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/QIKaboomActivation");
 				SoundEngine.PlaySound(style);
 				Projectile.NewProjectile(new EntitySource_Misc("QIKaboom"), targett.Center, Vector2.Zero,
 					ModContent.ProjectileType<QIKaboom>(), 0, 0, Main.LocalPlayer.whoAmI);
@@ -49,7 +49,7 @@ namespace ProtoMod.Content.Items.Accessories
 		}
 		public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float  scale, int whoAmI) 	
 		{
-			Texture2D texture = ModContent.Request<Texture2D>("Twig/Content/Items/Accessories/QIConvertion_Glowmask", AssetRequestMode.ImmediateLoad).Value;
+			Texture2D texture = ModContent.Request<Texture2D>("ProtoMod/Content/Items/Accessories/QIConvertion_Glowmask", AssetRequestMode.ImmediateLoad).Value;
 			spriteBatch.Draw
 			(
 				texture,

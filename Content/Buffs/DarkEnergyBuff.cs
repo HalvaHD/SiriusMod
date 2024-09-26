@@ -8,7 +8,7 @@ namespace ProtoMod.Content.Buffs
     {
         public override void Update(Player player, ref int buffIndex)
         {
-            player.GetModPlayer<TwigModPlayer>().DarkEnergy = true;
+            player.GetModPlayer<ProtoModPlayer>().DarkEnergy = true;
         }
     }
 }   

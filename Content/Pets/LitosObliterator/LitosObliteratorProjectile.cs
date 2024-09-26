@@ -73,7 +73,7 @@ namespace ProtoMod.Content.Pets.LitosObliterator
             Main.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, Main.DefaultSamplerState, DepthStencilState.None, RasterizerState.CullCounterClockwise, null, Main.GameViewMatrix.ZoomMatrix);
          
             Main.EntitySpriteDraw(texture2D13, Projectile.Center - Main.screenPosition + new Vector2(0f, Projectile.gfxOffY), new Microsoft.Xna.Framework.Rectangle?(rectangle), Projectile.GetAlpha(lightColor), Projectile.rotation + rotationOffset, origin2, Projectile.scale, effects, 0);
-            Texture2D texture = ModContent.Request<Texture2D>("Twig/Content/Pets/LitosObliterator/LitosObliteratorProjectile_Glowmask", AssetRequestMode.ImmediateLoad).Value;
+            Texture2D texture = ModContent.Request<Texture2D>("ProtoMod/Content/Pets/LitosObliterator/LitosObliteratorProjectile_Glowmask", AssetRequestMode.ImmediateLoad).Value;
             Main.EntitySpriteDraw(texture, Projectile.Center - Main.screenPosition + new Vector2(0f, Projectile.gfxOffY), new Microsoft.Xna.Framework.Rectangle?(rectangle), Color.White * Projectile.Opacity, Projectile.rotation + rotationOffset, origin2, Projectile.scale, effects, 0);
             for (int i = 0; i < ProjectileID.Sets.TrailCacheLength[Projectile.type]; i+= 4)
             {

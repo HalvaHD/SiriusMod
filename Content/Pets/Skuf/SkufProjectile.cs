@@ -104,7 +104,7 @@ namespace ProtoMod.Content.Pets.Skuf
                 }
                 Vector2 pos = Projectile.Center;
                 // pos = Vector2.Lerp(pos, new Vector2(Main.player[Projectile.owner].Center.X, Main.player[Projectile.owner].Center.Y - 32) , 0.5f);
-                text = Language.GetTextValue($"Mods.Twig.Items.SkufItem.BrotKripChatter.Phrase{key}");
+                text = Language.GetTextValue($"Mods.ProtoMod.Items.SkufItem.BrotKripChatter.Phrase{key}");
                 PopupText.NewText(new AdvancedPopupRequest()
                 {
                     Text = text,

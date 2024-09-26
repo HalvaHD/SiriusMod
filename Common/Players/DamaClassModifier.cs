@@ -109,7 +109,7 @@ namespace ProtoMod.Common.Players
         public static void SendDodgeMessage(int whoAmI)
         {
             // This code is called by both the initial 
-            ModPacket packet = ModContent.GetInstance<Twig>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<ProtoMod>().GetPacket();
             // packet.Write((byte)Twig.MessageType.NanoDodge);
             packet.Write((byte)whoAmI);
             packet.Send(ignoreClient: whoAmI);

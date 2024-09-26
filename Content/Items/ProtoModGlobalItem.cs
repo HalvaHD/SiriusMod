@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace ProtoMod.Content.Items
 {
-    internal class TwigGlobalItem : GlobalItem
+    internal class ProtoModPGlobalProjectile : GlobalItem
     {
         public override void SetDefaults(Item entity)
         {
