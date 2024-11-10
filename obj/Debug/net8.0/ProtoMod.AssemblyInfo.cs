@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProtoMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0205d786bf84593c1b6eb3fc6142db8d79712faa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+529515cd74dcc2e09c8efa201b6909da8a65e18f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProtoMod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProtoMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
