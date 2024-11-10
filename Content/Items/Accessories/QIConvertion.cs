@@ -22,7 +22,7 @@ namespace ProtoMod.Content.Items.Accessories
 		{
 			Item.width = 32;
 			Item.height = 32;
-			Item.value = Item.buyPrice(1);
+			Item.value = Terraria.Item.buyPrice(1);
 			Item.rare = ItemRarityID.LightRed;
 			Item.accessory = true;
 			Item.defense = 10;

@@ -24,7 +24,7 @@ namespace ProtoMod.Content.Items.Placeable
             Item.UseSound = SoundID.Item1;
             Item.useAnimation = 20;
             Item.useTime = 20;
-            Item.value = Item.buyPrice(0, 0, 3);
+            Item.value = Terraria.Item.buyPrice(0, 0, 3);
             Item.createTile = ModContent.TileType<StartingHouseTile>();
         } 
         public override void HoldItem(Player player)

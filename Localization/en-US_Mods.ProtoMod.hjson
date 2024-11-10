@@ -679,6 +679,86 @@ Items: {
 		DisplayName: Star Train Ticket
 		Tooltip: ""
 	}
+
+	SoulBlade: {
+		UsesXSoulResource: Mods.ProtoMod.Items.SoulBlade.UsesXSoulResource
+		DisplayName: Soul Blade
+	}
+
+	YellowCrystalShard: {
+		DisplayName: Yellow Crystal Shard
+		Tooltip: ""
+	}
+
+	TechTrashItem: {
+		DisplayName: Tech Trash Item
+		Tooltip: ""
+	}
+
+	LabChest: {
+		DisplayName: Lab Chest
+		Tooltip: ""
+	}
+
+	LabLamp: {
+		DisplayName: Lab Lamp
+		Tooltip: ""
+	}
+
+	LabLampAlt: {
+		DisplayName: Lab Lamp Alt
+		Tooltip: ""
+	}
+
+	LabLustra: {
+		DisplayName: Lab Lustra
+		Tooltip: ""
+	}
+
+	LabPlatform: {
+		DisplayName: Lab Platform
+		Tooltip: ""
+	}
+
+	LabPlating: {
+		DisplayName: Lab Plating
+		Tooltip: ""
+	}
+
+	LabPlatingMossy: {
+		DisplayName: Lab Plating Mossy
+		Tooltip: ""
+	}
+
+	LabPlatingWall: {
+		DisplayName: Lab Plating Wall
+		Tooltip: ""
+	}
+
+	LabPlatingWallMossy: {
+		DisplayName: Lab Plating Wall Mossy
+		Tooltip: ""
+	}
+
+	Tesla: {
+		DisplayName: Tesla
+		Tooltip: ""
+	}
+
+	TrashcanItem: {
+		DisplayName: Trashcan Item
+		Tooltip: ""
+	}
+
+	GlassblackMoss: {
+		DisplayName: Glassblack Moss
+		Tooltip: ""
+	}
+
+	Server: {
+		DisplayName: Server
+		Tooltip: ""
+	}
 }
 
 ItemChat: {
@@ -735,6 +815,11 @@ Projectiles: {
 	StarPickaxeHoldout.DisplayName: Star Pickaxe Holdout
 	LitosObliteratorProjectile.DisplayName: Litos Obliterator Projectile
 	StarPickaxeCrystal.DisplayName: Star Pickaxe Crystal
+	ChargedExplosion.DisplayName: Charged Explosion
+	AresPulseBlast.DisplayName: Ares Pulse Blast
+	ProtectorBlast.DisplayName: Protector Blast
+	ProtectorLightning.DisplayName: Protector Lightning
+	YellowCrystalProjectile.DisplayName: Yellow Crystal Projectile
 }
 
 NPCs: {
@@ -864,6 +949,7 @@ NPCs: {
 
 	WarriorMinion.DisplayName: Warrior Minion
 	FABSOLO.DisplayName: F A B S O L O
+	Protector.DisplayName: Protector
 }
 
 Bestiary: {
@@ -887,7 +973,12 @@ Status: {
 	ClosedGates: Portal deactivated!
 }
 
-UI.SoulsCurrent: "{0}"
+UI: {
+	SoulsCurrent: "{0}"
+	SoulResource: Mods.ProtoMod.UI.SoulResource
+	ExampleResource: Mods.ProtoMod.UI.ExampleResource
+	Dialogue: Mods.ProtoMod.UI.Dialogue
+}
 
 Currency: {
 	StarCry: Star tear
@@ -901,4 +992,13 @@ Currency: {
 DropConditions: {
 	FirstKill: On first kill
 	NextKills: On subsequent kills
+}
+
+DamageClasses.SoulDamage.DisplayName: Soul Damage
+
+Dialogues: {
+	Test: Это че за хуйня....?
+	Test2: Ты че творишь!!!
+	Test3: Увы.
+	TrashCan0: Засёек открытый шлюз, перенаправляю потоки воздуха, через пару секунд получишь подарок.
 }

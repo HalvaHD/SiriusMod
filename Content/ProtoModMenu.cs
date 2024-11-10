@@ -11,7 +11,7 @@ namespace ProtoMod.Content
 {
 	public class ProtoModMenu : ModMenu
 	{
-		private const string menuAssetPath = "ProtoMod/Assets/Textures/Menu"; // Creates a constant variable representing the texture path, so we don't have to write it out multiple times
+		private const string menuAssetPath = "ProtoMod/Assets/Textures/Menu";
 			// TODO: According to playthrough, needed a way to save these vars
 		public bool IsHALVAMet = true;
 		public Texture2D HALVAAsset => ModContent.Request<Texture2D>($"{menuAssetPath}/HALVA_Menu").Value;
@@ -78,13 +78,6 @@ namespace ProtoMod.Content
 			Main.dayTime = false;
 			Main.time = 27000;
 			spriteBatch.End();
-			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.LinearClamp, DepthStencilState.None, Main.Rasterizer, null, Main.UIScaleMatrix);
-			Vector2 drawPos = new(Main.screenWidth * 0.5f, 100f);
-			float interpolant = (1f + (float)Math.Sin(Main.GlobalTimeWrappedHourly * 0.5f)) * 0.5f;
-			logoScale = MathHelper.Lerp(0.75f, 0.85f, interpolant);
-			spriteBatch.Draw(Logo.Value, drawPos, null, Color.White, logoRotation, Logo.Value.Size() * 0.5f, logoScale, SpriteEffects.None, 0f);
-			// spriteBatch.Draw(FogTexture, FogPosition, new Rectangle?(), Color.White, 0.0f, Vector2.Zero, num3, 0, 0.0f);
-			spriteBatch.End();
 			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, Main.Rasterizer, null, Main.UIScaleMatrix);
 			Texture2D pixel = Pixel.Value;
 			Vector2 scale = new Vector2(Main.screenWidth, Main.screenHeight) / pixel.Size() * 1.1f;
@@ -95,6 +88,14 @@ namespace ProtoMod.Content
 			FogFog.SetShaderTexture(FoggyNoise);
 			spriteBatch.Draw(pixel, new Vector2(zero.X + 880, zero.Y + 336), null, new Color(0,139,139, 255), 0f, pixel.Size() * 0.5f, scale, 0, 0f);
 			spriteBatch.ExitShaderRegion();
+			spriteBatch.End();
+			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.LinearClamp, DepthStencilState.None, Main.Rasterizer, null, Main.UIScaleMatrix);
+			Vector2 drawPos = new(Main.screenWidth * 0.5f, 100f);
+			float interpolant = (1f + (float)Math.Sin(Main.GlobalTimeWrappedHourly * 0.5f)) * 0.5f;
+			logoScale = MathHelper.Lerp(0.75f, 0.85f, interpolant);
+			spriteBatch.Draw(Logo.Value, drawPos, null, Color.White, logoRotation, Logo.Value.Size() * 0.5f, logoScale, SpriteEffects.None, 0f);
+			spriteBatch.End();
+			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, Main.Rasterizer, null, Main.UIScaleMatrix);
 			if (IsZeleMet)
 			{
 				spriteBatch.Draw(ZeleAsset, new Vector2(zero.X + 609 , zero.Y + 730), new Rectangle?(), Color.White, 0.0f, Vector2.Zero, 0.4f, 0, 0.0f);

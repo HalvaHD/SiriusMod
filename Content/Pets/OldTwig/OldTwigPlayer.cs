@@ -7,11 +7,11 @@ namespace ProtoMod.Content.Pets.OldTwig
 {
     internal class OldTwigPlayer : ModPlayer
     {
-        public override IEnumerable<Item> AddStartingItems(bool mediumCoreDeath)
+        public override IEnumerable<Terraria.Item> AddStartingItems(bool mediumCoreDeath)
         {
             return new[]
         {
-            new Item(ModContent.ItemType<Aut>()),
+            new Terraria.Item(ModContent.ItemType<Aut>()),
         };
         }
     }

@@ -12,7 +12,7 @@ namespace ProtoMod.Content.Pets.Vedma
         {
 
             Item.CloneDefaults(ItemID.ZephyrFish); // Copy the Defaults of the Zephyr Fish Item.
-            Item.value = Item.buyPrice(0, 0, 10, 0);
+            Item.value = Terraria.Item.buyPrice(0, 0, 10, 0);
             Item.rare = ItemRarityID.LightRed;
 
             Item.shoot = ModContent.ProjectileType<VedmaProjectile>(); // "Shoot" your pet projectile.

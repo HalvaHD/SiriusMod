@@ -32,7 +32,7 @@ namespace ProtoMod.Content.Items
             Item.height = 17;
             Item.maxStack = 1;
             Item.scale = 2f;
-            Item.value = Item.sellPrice(0,0,50);
+            Item.value = Terraria.Item.sellPrice(0,0,50);
             Item.rare = ItemRarityID.Orange;
             Item.consumable = false;
             Item.useTurn = false;

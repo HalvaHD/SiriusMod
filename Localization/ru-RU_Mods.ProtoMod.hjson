@@ -670,6 +670,86 @@ Items: {
 		// DisplayName: Star Train Ticket
 		// Tooltip: ""
 	}
+
+	SoulBlade: {
+		// UsesXSoulResource: Mods.ProtoMod.Items.SoulBlade.UsesXSoulResource
+		// DisplayName: Soul Blade
+	}
+
+	YellowCrystalShard: {
+		// DisplayName: Yellow Crystal Shard
+		// Tooltip: ""
+	}
+
+	TechTrashItem: {
+		// DisplayName: Tech Trash Item
+		// Tooltip: ""
+	}
+
+	LabChest: {
+		// DisplayName: Lab Chest
+		// Tooltip: ""
+	}
+
+	LabLamp: {
+		// DisplayName: Lab Lamp
+		// Tooltip: ""
+	}
+
+	LabLampAlt: {
+		// DisplayName: Lab Lamp Alt
+		// Tooltip: ""
+	}
+
+	LabLustra: {
+		// DisplayName: Lab Lustra
+		// Tooltip: ""
+	}
+
+	LabPlatform: {
+		// DisplayName: Lab Platform
+		// Tooltip: ""
+	}
+
+	LabPlating: {
+		// DisplayName: Lab Plating
+		// Tooltip: ""
+	}
+
+	LabPlatingMossy: {
+		// DisplayName: Lab Plating Mossy
+		// Tooltip: ""
+	}
+
+	LabPlatingWall: {
+		// DisplayName: Lab Plating Wall
+		// Tooltip: ""
+	}
+
+	LabPlatingWallMossy: {
+		// DisplayName: Lab Plating Wall Mossy
+		// Tooltip: ""
+	}
+
+	Tesla: {
+		// DisplayName: Tesla
+		// Tooltip: ""
+	}
+
+	TrashcanItem: {
+		// DisplayName: Trashcan Item
+		// Tooltip: ""
+	}
+
+	GlassblackMoss: {
+		// DisplayName: Glassblack Moss
+		// Tooltip: ""
+	}
+
+	Server: {
+		// DisplayName: Server
+		// Tooltip: ""
+	}
 }
 
 ItemChat: {
@@ -726,6 +806,11 @@ Projectiles: {
 	// StarPickaxeHoldout.DisplayName: Star Pickaxe Holdout
 	// LitosObliteratorProjectile.DisplayName: Litos Obliterator Projectile
 	// StarPickaxeCrystal.DisplayName: Star Pickaxe Crystal
+	// ChargedExplosion.DisplayName: Charged Explosion
+	// AresPulseBlast.DisplayName: Ares Pulse Blast
+	// ProtectorBlast.DisplayName: Protector Blast
+	// ProtectorLightning.DisplayName: Protector Lightning
+	// YellowCrystalProjectile.DisplayName: Yellow Crystal Projectile
 }
 
 NPCs: {
@@ -855,6 +940,7 @@ NPCs: {
 
 	// WarriorMinion.DisplayName: Warrior Minion
 	// FABSOLO.DisplayName: F A B S O L O
+	// Protector.DisplayName: Protector
 }
 
 Bestiary: {
@@ -878,7 +964,12 @@ Status: {
 	ClosedGates: Портал деактивирован!
 }
 
-UI.SoulsCurrent: "{0}"
+UI: {
+	SoulsCurrent: "{0}"
+	// SoulResource: Mods.ProtoMod.UI.SoulResource
+	// ExampleResource: Mods.ProtoMod.UI.ExampleResource
+	// Dialogue: Mods.ProtoMod.UI.Dialogue
+}
 
 Currency: {
 	StarCry: Слеза звёзд
@@ -892,4 +983,13 @@ Currency: {
 DropConditions: {
 	FirstKill: При первом убийстве
 	NextKills: При последующих убийствах
+}
+
+// DamageClasses.SoulDamage.DisplayName: Soul Damage
+
+Dialogues: {
+	Test: Это че за хуйня....? Я конечно понимаю, что всё в целом возможно. Но какого хуя я с тобой связываюсь прям в начале игры. Разрабы дауны, опять что то тупое создали. Я хую.
+	Test2: Зеле, ты че творишь, какие нахуй ядерные вечеринки на Скалдроне?!!! Остановись бляяяя
+	Test3: ЭТО ПИЗДЕЦ! БЕГИ, БЕГИ, БЕГИ. Не дай его лазеру попасть по тебе!
+	TrashCan0: Засёек открытый шлюз, перенаправляю потоки воздуха, через пару секунд получишь подарок.
 }

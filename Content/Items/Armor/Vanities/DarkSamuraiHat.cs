@@ -34,7 +34,7 @@ namespace ProtoMod.Content.Items.Armor.Vanities
 
             // Common values for every boss mask
             Item.rare = ItemRarityID.Blue;
-            Item.value = Item.sellPrice(silver: 75);
+            Item.value = Terraria.Item.sellPrice(silver: 75);
             Item.vanity = true;
             Item.maxStack = 1;
         }

@@ -11,7 +11,7 @@ namespace ProtoMod.Content.Pets.Twig
         public override void SetDefaults()
         {
             Item.CloneDefaults(ItemID.ZephyrFish); // Copy the Defaults of the Zephyr Fish Item.
-            Item.value = Item.buyPrice(0, 0, 10, 0);
+            Item.value = Terraria.Item.buyPrice(0, 0, 10, 0);
             Item.rare = ItemRarityID.Cyan;
 
             Item.shoot = ModContent.ProjectileType<TwigPetProjectile>(); // "Shoot" your pet projectile.

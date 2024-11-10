@@ -49,7 +49,7 @@ namespace ProtoMod.Content.Items
 			Item.scale = 1f;
 			Item.UseSound = SoundID.Item1;
 			Item.rare = ItemRarityID.Master;
-			Item.value = Item.buyPrice(gold: 23); // Sell price is 5 times less than the buy price.
+			Item.value = Terraria.Item.buyPrice(gold: 23); // Sell price is 5 times less than the buy price.
 			Item.DamageType = DamageClass.Melee;
 			// Item.shoot = ModContent.ProjectileType<ExampleSwingingEnergySwordProjectile>();
 			Item.autoReuse = true;
@@ -64,16 +64,11 @@ namespace ProtoMod.Content.Items
 		// }
 		public override bool? UseItem(Player player)
 		{
-			player.TeleportationPotion();
-			Main.NewText(Filters.Scene["Shockwave"].IsActive());
 			if (Main.netMode != NetmodeID.Server && !Filters.Scene["Shockwave"].IsActive())
 			{
 				Filters.Scene.Activate("Shockwave", player.Center).GetShader()
-					.UseColor(rippleCount, rippleSize, rippleSpeed).UseTargetPosition(player.Center);
-			}
-
-			if (player.HasItem(ItemID.RottenEgg))
-			{
+					.UseColor(rippleCount, rippleSize, rippleSpeed).UseTargetPosition(player.Center + Main.rand.NextVector2CircularEdge(20f,20f));
+				
 			}
 		
 			return true;

@@ -19,7 +19,7 @@ namespace ProtoMod.Content.Items
 			Item.scale = 1f;
 			Item.UseSound = SoundID.Item1;
 			Item.rare = ItemRarityID.Cyan;
-			Item.value = Item.buyPrice(gold: 23);
+			Item.value = Terraria.Item.buyPrice(gold: 23);
 		}
 		
 		public override bool? UseItem(Player player)

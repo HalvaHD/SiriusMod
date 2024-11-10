@@ -12,7 +12,7 @@ namespace ProtoMod.Content.Pets.LitosObliterator
         // Names and descriptions of all ExamplePetX classes are defined using .hjson files in the Localization folder
         public override void SetDefaults()
         {
-            Item.value = Item.buyPrice(0, 0, 20, 0);
+            Item.value = Terraria.Item.buyPrice(0, 0, 20, 0);
             Item.rare = ItemRarityID.Cyan;
             Item.shoot = ModContent.ProjectileType<LitosObliteratorProjectile>(); // "Shoot" your pet projectile.
             Item.buffType = ModContent.BuffType<LitosObliteratorBuff>(); // Apply buff upon usage of the Item.

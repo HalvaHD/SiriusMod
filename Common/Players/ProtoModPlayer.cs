@@ -1,7 +1,9 @@
 using Microsoft.Xna.Framework;
 using ProtoMod.Content.Items;
 using ProtoMod.Content.Items.Tools;
+using ProtoMod.Content.NPC;
 using ProtoMod.Content.Projectiles;
+using ProtoMod.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameInput;
@@ -30,6 +32,7 @@ namespace ProtoMod.Common.Players
         public static int JumpAvailability;
         public static bool IsLastRealFrame;
         public int StarTrainTicketCD;
+        public bool DialogueShown;
         
         #endregion
         #region ResetEffects
@@ -44,6 +47,11 @@ namespace ProtoMod.Common.Players
             MedicineJokeBuffActive = false;
         }
         #endregion
+
+        public int Counter;
+        public static string textt = "1";
+        public static int i = 1;
+        
         
         public Item FindAccessory(int itemID)
         {
@@ -67,6 +75,7 @@ namespace ProtoMod.Common.Players
 
         public override void PreUpdate()
         {
+            // DialougeSystem.WriteDialogue("HALVAVahue", "Test2", Color.Aqua);
             if (Player.whoAmI == Main.myPlayer)
             {
                 if (StarTrainTicket.DamageReceiveTime > 0)

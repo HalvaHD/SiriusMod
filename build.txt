@@ -1,6 +1,6 @@
 displayName = ProtoGenesis
 author = ProtoTeam
 version = 0.1.0.0
-weakReferences = CalamityMod
+weakReferences = CalamityMod, ParticleLibrary
 modReferences = Luminance, StructureHelper
 buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, Luminance.dl, Luminance.pdb, Luminance.xml, .idea\*

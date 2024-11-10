@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <Import Project="..\tModLoader.targets" />
   <PropertyGroup>
-    <AssemblyName>Twig</AssemblyName>
+    <AssemblyName>ProtoMod</AssemblyName>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <ItemGroup>
@@ -176,7 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Common\GlobalItems\" />
-    <Folder Include="Common\UI\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="tModLoader.CodeAssist" Version="0.1.5" />

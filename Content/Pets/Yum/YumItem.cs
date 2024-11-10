@@ -17,7 +17,7 @@ namespace ProtoMod.Content.Pets.Yum
         {
          
             Item.CloneDefaults(ItemID.ZephyrFish); // Copy the Defaults of the Zephyr Fish Item.
-            Item.value = Item.buyPrice(0, 0, 10, 0);
+            Item.value = Terraria.Item.buyPrice(0, 0, 10, 0);
             Item.rare = ItemRarityID.Gray;
 
             Item.shoot = ModContent.ProjectileType<YumProjectile>(); // "Shoot" your pet projectile.

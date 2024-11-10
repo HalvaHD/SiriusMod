@@ -12,7 +12,7 @@ namespace ProtoMod.Content.Pets.BlackCat
         {
 
             Item.CloneDefaults(ItemID.ZephyrFish); // Copy the Defaults of the Zephyr Fish Item.
-            Item.value = Item.buyPrice(0, 0, 10);
+            Item.value = Terraria.Item.buyPrice(0, 0, 10);
             Item.rare = ItemRarityID.LightRed;
 
             Item.shoot = ModContent.ProjectileType<BlackCatProjectile>(); // "Shoot" your pet projectile.

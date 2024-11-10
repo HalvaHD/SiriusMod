@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Twig")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ProtoMod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c0507c4c235c9351fb3dc2f1f0d05434bb5439d8")]
-[assembly: System.Reflection.AssemblyProductAttribute("Twig")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Twig")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0205d786bf84593c1b6eb3fc6142db8d79712faa")]
+[assembly: System.Reflection.AssemblyProductAttribute("ProtoMod")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ProtoMod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.

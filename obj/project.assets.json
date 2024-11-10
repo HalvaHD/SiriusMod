@@ -37,7 +37,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\1311974\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ProtoMod\\ProtoMod.csproj",
-      "projectName": "Twig",
+      "projectName": "ProtoMod",
       "projectPath": "C:\\Users\\1311974\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ProtoMod\\ProtoMod.csproj",
       "packagesPath": "C:\\Users\\1311974\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\1311974\\Documents\\My Games\\Terraria\\tModLoader\\ModSources\\ProtoMod\\obj\\",
@@ -62,6 +62,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {

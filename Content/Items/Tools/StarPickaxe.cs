@@ -22,7 +22,7 @@ namespace ProtoMod.Content.Items.Tools
             Item.useAnimation = 10;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 7;
-            Item.value = Item.buyPrice(gold: 1); // Buy this item for one gold - change gold to any coin and change the value to any number <= 100
+            Item.value = Terraria.Item.buyPrice(gold: 1); // Buy this item for one gold - change gold to any coin and change the value to any number <= 100
             Item.rare = ItemRarityID.Cyan;
             Item.UseSound = SoundID.Item1;
             // Item.shoot = ModContent.ProjectileType<StarPickaxeProjectile>();

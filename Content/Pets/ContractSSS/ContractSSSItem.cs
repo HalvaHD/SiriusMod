@@ -11,7 +11,7 @@ namespace ProtoMod.Content.Pets.ContractSSS
         public override void SetDefaults()
         {
             Item.CloneDefaults(ItemID.ZephyrFish); // Copy the Defaults of the Zephyr Fish Item.
-            Item.value = Item.buyPrice(0, 0, 20, 0);
+            Item.value = Terraria.Item.buyPrice(0, 0, 20, 0);
             Item.rare = ItemRarityID.Cyan;
             Item.shoot = ModContent.ProjectileType<ContractSSSProjectile>(); // "Shoot" your pet projectile.
             Item.buffType = ModContent.BuffType<ContractSSSBuff>(); // Apply buff upon usage of the Item.

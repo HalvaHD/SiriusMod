@@ -252,48 +252,48 @@ namespace ProtoMod.Content.NPC
         public override void AddShops()
         {
             NPCShop LostThings = new NPCShop(Type, "LostThings")
-                .Add(new Item(ModContent.ItemType<MedicinePipe>()))
-                .Add(new Item(ModContent.ItemType<Teleporter>()));
+                .Add(new Terraria.Item(ModContent.ItemType<MedicinePipe>()))
+                .Add(new Terraria.Item(ModContent.ItemType<Teleporter>()));
 
             NPCShop CoinsShop = new NPCShop(Type, "ShopPH")
                 // Pre-Hardmode items (they disappear after Wall of Flesh)
-                .Add(new Item(ItemID.HealingPotion) { shopCustomPrice = Item.buyPrice(silver: 30) }, Condition.PreHardmode)
-                .Add(new Item(ItemID.ManaPotion) { shopCustomPrice = Item.buyPrice(silver: 15) }, Condition.PreHardmode)
-                .Add(new Item(ItemID.LifeCrystal) { shopCustomPrice = Item.buyPrice(gold: 5) }, Condition.PreHardmode)
-                .Add(new Item(ItemID.ManaCrystal) { shopCustomPrice = Item.buyPrice(silver: 50) }, Condition.PreHardmode)
-                .Add(new Item(ItemID.FallenStar, 5) { shopCustomPrice = Item.buyPrice(gold: 1) }, Condition.PreHardmode)
-                .Add(new Item(ItemID.CreativeWings) { shopCustomPrice = Item.buyPrice(gold: 8) },
+                .Add(new Terraria.Item(ItemID.HealingPotion) { shopCustomPrice = Terraria.Item.buyPrice(silver: 30) }, Condition.PreHardmode)
+                .Add(new Terraria.Item(ItemID.ManaPotion) { shopCustomPrice = Terraria.Item.buyPrice(silver: 15) }, Condition.PreHardmode)
+                .Add(new Terraria.Item(ItemID.LifeCrystal) { shopCustomPrice = Terraria.Item.buyPrice(gold: 5) }, Condition.PreHardmode)
+                .Add(new Terraria.Item(ItemID.ManaCrystal) { shopCustomPrice = Terraria.Item.buyPrice(silver: 50) }, Condition.PreHardmode)
+                .Add(new Terraria.Item(ItemID.FallenStar, 5) { shopCustomPrice = Terraria.Item.buyPrice(gold: 1) }, Condition.PreHardmode)
+                .Add(new Terraria.Item(ItemID.CreativeWings) { shopCustomPrice = Terraria.Item.buyPrice(gold: 8) },
                     Condition.DownedEyeOfCthulhu, Condition.PreHardmode)
-                .Add(new Item(ItemID.WaterCandle) { shopCustomPrice = Item.buyPrice(gold: 1, silver: 50) },
+                .Add(new Terraria.Item(ItemID.WaterCandle) { shopCustomPrice = Terraria.Item.buyPrice(gold: 1, silver: 50) },
                     Condition.DownedSkeletron, Condition.PreHardmode)
-                .Add(new Item(ItemID.StrangePlant1) { shopCustomPrice = Item.buyPrice(silver: 50) }, Condition.PreHardmode)
+                .Add(new Terraria.Item(ItemID.StrangePlant1) { shopCustomPrice = Terraria.Item.buyPrice(silver: 50) }, Condition.PreHardmode)
                 // Hardmode items (they appear after WOF)
-                .Add(new Item(ItemID.GreaterHealingPotion) { shopCustomPrice = Item.buyPrice(silver: 60) }, Condition.Hardmode)
-                .Add(new Item(ItemID.GreaterManaPotion) { shopCustomPrice = Item.buyPrice(silver: 30) }, Condition.Hardmode)
-                .Add(new Item(ItemID.FallenStar, 10) { shopCustomPrice = Item.buyPrice(gold: 2) }, Condition.Hardmode)
-                .Add(new Item(ModContent.ItemType<StarOre>(), 5) { shopCustomPrice = Item.buyPrice(silver: 50) }, Condition.Hardmode)
-                .Add(new Item(ItemID.LeafWings) { shopCustomPrice = Item.buyPrice(silver: 30) }, Condition.Hardmode)
-                .Add(new Item(ItemID.WaterCandle) { shopCustomPrice = Item.buyPrice(gold: 2) },
+                .Add(new Terraria.Item(ItemID.GreaterHealingPotion) { shopCustomPrice = Terraria.Item.buyPrice(silver: 60) }, Condition.Hardmode)
+                .Add(new Terraria.Item(ItemID.GreaterManaPotion) { shopCustomPrice = Terraria.Item.buyPrice(silver: 30) }, Condition.Hardmode)
+                .Add(new Terraria.Item(ItemID.FallenStar, 10) { shopCustomPrice = Terraria.Item.buyPrice(gold: 2) }, Condition.Hardmode)
+                .Add(new Terraria.Item(ModContent.ItemType<StarOre>(), 5) { shopCustomPrice = Terraria.Item.buyPrice(silver: 50) }, Condition.Hardmode)
+                .Add(new Terraria.Item(ItemID.LeafWings) { shopCustomPrice = Terraria.Item.buyPrice(silver: 30) }, Condition.Hardmode)
+                .Add(new Terraria.Item(ItemID.WaterCandle) { shopCustomPrice = Terraria.Item.buyPrice(gold: 2) },
                     Condition.DownedSkeletron, Condition.Hardmode)
-                .Add(new Item(ItemID.PlaguebringerChestplate) { shopCustomPrice = Item.buyPrice(gold: 10) }, Condition.Hardmode)
+                .Add(new Terraria.Item(ItemID.PlaguebringerChestplate) { shopCustomPrice = Terraria.Item.buyPrice(gold: 10) }, Condition.Hardmode)
             // Independent items (always presented)
-                .Add(new Item(ItemID.VanityTreeYellowWillowSeed) { shopCustomPrice = Item.buyPrice(silver: 5) })
-                .Add(new Item(ItemID.VanityTreeSakuraSeed) { shopCustomPrice = Item.buyPrice(silver: 5) })
-                .Add(new Item(ItemID.PotSuspended) { shopCustomPrice = Item.buyPrice(silver: 5) })
-                .Add(new Item(ItemID.PottedForestCedar) { shopCustomPrice = Item.buyPrice(silver: 15) })
-                .Add(new Item(ItemID.PottedForestTree) { shopCustomPrice = Item.buyPrice(silver: 15) })
-                .Add(new Item(ItemID.PottedForestPalm) { shopCustomPrice = Item.buyPrice(silver: 15) })
-                .Add(new Item(ItemID.PottedForestBamboo) { shopCustomPrice = Item.buyPrice(silver: 15) })
-                .Add(new Item(ItemID.OasisFountain) { shopCustomPrice = Item.buyPrice(silver: 30) })
-                .Add(new Item(ItemID.MysteriousCape) { shopCustomPrice = Item.buyPrice(gold: 1) })
-                .Add(new Item(ItemID.RedCape) { shopCustomPrice = Item.buyPrice(gold: 1) })
-                .Add(new Item(ItemID.WinterCape) { shopCustomPrice = Item.buyPrice(gold: 1) })
-                .Add(new Item(ItemID.LavaMoss) { shopCustomPrice = Item.buyPrice(copper: 30) })
-                .Add(new Item(ItemID.KryptonMoss) { shopCustomPrice = Item.buyPrice(copper: 30) })
-                .Add(new Item(ItemID.XenonMoss) { shopCustomPrice = Item.buyPrice(copper: 30) })
-                .Add(new Item(ItemID.ArgonMoss) { shopCustomPrice = Item.buyPrice(copper: 30) })
-                .Add(new Item(ItemID.VioletMoss) { shopCustomPrice = Item.buyPrice(copper: 30) })
-                .Add(new Item(ItemID.RainbowMoss) { shopCustomPrice = Item.buyPrice(copper: 30) });
+                .Add(new Terraria.Item(ItemID.VanityTreeYellowWillowSeed) { shopCustomPrice = Terraria.Item.buyPrice(silver: 5) })
+                .Add(new Terraria.Item(ItemID.VanityTreeSakuraSeed) { shopCustomPrice = Terraria.Item.buyPrice(silver: 5) })
+                .Add(new Terraria.Item(ItemID.PotSuspended) { shopCustomPrice = Terraria.Item.buyPrice(silver: 5) })
+                .Add(new Terraria.Item(ItemID.PottedForestCedar) { shopCustomPrice = Terraria.Item.buyPrice(silver: 15) })
+                .Add(new Terraria.Item(ItemID.PottedForestTree) { shopCustomPrice = Terraria.Item.buyPrice(silver: 15) })
+                .Add(new Terraria.Item(ItemID.PottedForestPalm) { shopCustomPrice = Terraria.Item.buyPrice(silver: 15) })
+                .Add(new Terraria.Item(ItemID.PottedForestBamboo) { shopCustomPrice = Terraria.Item.buyPrice(silver: 15) })
+                .Add(new Terraria.Item(ItemID.OasisFountain) { shopCustomPrice = Terraria.Item.buyPrice(silver: 30) })
+                .Add(new Terraria.Item(ItemID.MysteriousCape) { shopCustomPrice = Terraria.Item.buyPrice(gold: 1) })
+                .Add(new Terraria.Item(ItemID.RedCape) { shopCustomPrice = Terraria.Item.buyPrice(gold: 1) })
+                .Add(new Terraria.Item(ItemID.WinterCape) { shopCustomPrice = Terraria.Item.buyPrice(gold: 1) })
+                .Add(new Terraria.Item(ItemID.LavaMoss) { shopCustomPrice = Terraria.Item.buyPrice(copper: 30) })
+                .Add(new Terraria.Item(ItemID.KryptonMoss) { shopCustomPrice = Terraria.Item.buyPrice(copper: 30) })
+                .Add(new Terraria.Item(ItemID.XenonMoss) { shopCustomPrice = Terraria.Item.buyPrice(copper: 30) })
+                .Add(new Terraria.Item(ItemID.ArgonMoss) { shopCustomPrice = Terraria.Item.buyPrice(copper: 30) })
+                .Add(new Terraria.Item(ItemID.VioletMoss) { shopCustomPrice = Terraria.Item.buyPrice(copper: 30) })
+                .Add(new Terraria.Item(ItemID.RainbowMoss) { shopCustomPrice = Terraria.Item.buyPrice(copper: 30) });
             
             // Calamtiy collaboration items (shit code i suppose)
             if (ModContent.TryFind("CalamityMod", "DubiousPlating", out ModItem DubiousPlating)
@@ -301,10 +301,10 @@ namespace ProtoMod.Content.NPC
                 && ModContent.TryFind("CalamityMod", "AshesofCalamity", out ModItem AshesofCalamity)
                 && ModContent.TryFind("CalamityMod", "LifeAlloy", out ModItem LifeAlloy)) 
             {
-                CoinsShop.Add(new Item(DubiousPlating.Type) { shopCustomPrice = Item.buyPrice(silver: 1) });
-                CoinsShop.Add(new Item(MysteriousCircuitry.Type) { shopCustomPrice = Item.buyPrice(silver: 1) });
-                CoinsShop.Add(new Item(AshesofCalamity.Type) { shopCustomPrice = Item.buyPrice(gold: 1) }, DownedCalamitasClone);
-                CoinsShop.Add(new Item(LifeAlloy.Type) { shopCustomPrice = Item.buyPrice(gold: 8) }, DownedRavager);
+                CoinsShop.Add(new Terraria.Item(DubiousPlating.Type) { shopCustomPrice = Terraria.Item.buyPrice(silver: 1) });
+                CoinsShop.Add(new Terraria.Item(MysteriousCircuitry.Type) { shopCustomPrice = Terraria.Item.buyPrice(silver: 1) });
+                CoinsShop.Add(new Terraria.Item(AshesofCalamity.Type) { shopCustomPrice = Terraria.Item.buyPrice(gold: 1) }, DownedCalamitasClone);
+                CoinsShop.Add(new Terraria.Item(LifeAlloy.Type) { shopCustomPrice = Terraria.Item.buyPrice(gold: 8) }, DownedRavager);
             }
             CoinsShop.Register();
             LostThings.Register();

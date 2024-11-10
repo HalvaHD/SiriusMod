@@ -22,7 +22,7 @@ namespace ProtoMod.Content.Items
         public override void SetDefaults() {
             Item.width = 18;
             Item.height = 18;
-            Item.maxStack = Item.CommonMaxStack;
+            Item.maxStack = Terraria.Item.CommonMaxStack;
             Item.value = 100; // Makes the item worth 1 gold.
             Item.rare = ItemRarityID.LightPurple;
         }

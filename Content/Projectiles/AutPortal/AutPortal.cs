@@ -136,14 +136,14 @@ namespace ProtoMod.Content.Projectiles.AutPortal
             int type = ModContent.ItemType<Aut>();
             if (Terraria.NPC.FindFirstNPC(ModContent.NPCType<KORRO>()) == -1)
             {
-                Terraria.NPC.NewNPC(new EntitySource_ItemUse(player, new Item(type)), (int)Projectile.Center.X,
+                Terraria.NPC.NewNPC(new EntitySource_ItemUse(player, new Terraria.Item(type)), (int)Projectile.Center.X,
                     (int)Projectile.Center.Y,
                     ModContent.NPCType<KORRO>(), Target: 255);
             }
 
             if (Terraria.NPC.FindFirstNPC(ModContent.NPCType<HALVA>()) == -1)
             {
-                Terraria.NPC.NewNPC(new EntitySource_ItemUse(player, new Item(type)),
+                Terraria.NPC.NewNPC(new EntitySource_ItemUse(player, new Terraria.Item(type)),
                     (int)Projectile.Center.X,
                     (int)Projectile.Center.Y,
                     ModContent.NPCType<HALVA>(), Target: 255);
