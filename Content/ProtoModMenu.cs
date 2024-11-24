@@ -13,18 +13,18 @@ namespace ProtoMod.Content
 	{
 		private const string menuAssetPath = "ProtoMod/Assets/Textures/Menu";
 			// TODO: According to playthrough, needed a way to save these vars
-		public bool IsHALVAMet = true;
+		public bool IsHALVAMet = false;
 		public Texture2D HALVAAsset => ModContent.Request<Texture2D>($"{menuAssetPath}/HALVA_Menu").Value;
 		
-		public bool IsZeleMet = true;
+		public bool IsZeleMet = false;
 		public Texture2D ZeleAsset => ModContent.Request<Texture2D>($"{menuAssetPath}/Zele_Menu").Value;
 		
-		public bool IsLitosMet = true;
+		public bool IsLitosMet = false;
 		public Texture2D LitosAsset => ModContent.Request<Texture2D>($"{menuAssetPath}/Litos_Menu").Value;
 		
-		public bool IsKORROMet = true;
+		public bool IsKORROMet = false;
 		public Texture2D KORROAsset => ModContent.Request<Texture2D>($"{menuAssetPath}/KORRO_Menu").Value;
-		public bool IsChloreMet = true;
+		public bool IsChloreMet = false;
 		public Texture2D ChloreAsset => ModContent.Request<Texture2D>($"{menuAssetPath}/Chlore_Menu").Value;
 	
 		public static Asset<Texture2D> FoggyNoise { get; private set; }
