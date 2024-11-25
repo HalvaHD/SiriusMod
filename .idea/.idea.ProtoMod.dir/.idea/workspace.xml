@@ -8,14 +8,193 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="693d9287-d650-4440-b5b7-33668646f1e4" name="Changes" comment="" />
+    <list default="true" id="693d9287-d650-4440-b5b7-33668646f1e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/GlassblackMoss.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/GlassblackMoss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/GlassblackMossVines.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabChain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabChest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabChest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabChest_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabLamp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabLamp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabLampAlt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabLampAlt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabLampAlt_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabLamp_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabLustra.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabLustra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabLustra_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatform.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlating.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlating.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatingBetter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatingBetter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatingMossy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatingMossy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatingWall.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatingWall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatingWallMossy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabPlatingWallMossy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabTV.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/LabTV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/PinkLabLamp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/PinkLabLamp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/Server.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/Server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/Server_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/Tesla.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/Tesla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Items/Placeable/LaboratoryItems/Tesla_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/GlassblackMoss.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/GlassblackMoss.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/GlassblackMossGrass.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/GlassblackMossGrass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/GlassblackMossVines.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabChain.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabChest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabChest.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabChest_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabChest_Highlight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLamp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLamp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLampAlt.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLampAlt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLampAlt_Flame.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLampAlt_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLamp_Flame.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLamp_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLustra.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLustra.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabLustra_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatform.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatform.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlating.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlating.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatingBetter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatingBetter.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatingMossy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatingMossy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatingWall.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatingWall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatingWallMossy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabPlatingWallMossy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabTV.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabTV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/LabTV_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/PinkLabLamp.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/PinkLabLamp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/PinkLabLamp_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/Server.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/Server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/Server_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/TechTrash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/TechTrashTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/TechTrashTile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/TechTrashTile_Glow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/Tesla.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/Tesla.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Tiles/LaboratoryTiles/Tesla_Glow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProtoMod.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProtoMod.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/GlassblackMoss.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/GlassblackMoss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/GlassblackMossVines.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabChain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabChest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabChest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabChest_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabLamp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabLamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabLampAlt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabLampAlt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabLampAlt_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabLamp_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabLustra.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabLustra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabLustra_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlating.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlating.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatingBetter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatingBetter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatingMossy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatingMossy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatingWall.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatingWall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatingWallMossy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/LabPlatingWallMossy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/Server.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/Server.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/Server_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/Tesla.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/Tesla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/Lab/Tesla_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Items/Placeable/TrashcanItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Items/Placeable/TrashcanItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorDustBlue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorDustBlue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorProjectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Pets/LitosObliterator/LitosObliteratorProjectile.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/GlassblackMoss.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/GlassblackMoss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/GlassblackMossVines.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabChain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabChest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabChest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabChest_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabChest_Highlight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLamp.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLampAlt.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLampAlt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLampAlt_Flame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLampAlt_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLamp_Flame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLamp_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLustra.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLustra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabLustra_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatform.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlating.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlating.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatingBetter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatingBetter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatingMossy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatingMossy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatingWall.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatingWall.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatingWallMossy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/LabPlatingWallMossy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/Server.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/Server.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/Server_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/Tesla.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/Tesla.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/Lab/Tesla_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/TechTrash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/TechTrashTile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/TechTrashTile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Tiles/TechTrashTile_Glow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Localization/en-US_Mods.ProtoMod.hjson" beforeDir="false" afterPath="$PROJECT_DIR$/Localization/en-US_Mods.ProtoMod.hjson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Localization/ru-RU_Mods.ProtoMod.hjson" beforeDir="false" afterPath="$PROJECT_DIR$/Localization/ru-RU_Mods.ProtoMod.hjson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ProtoMod.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ProtoMod.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ProtoMod.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ProtoMod.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ProtoMod.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ProtoMod.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/ProtoMod.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/ProtoMod.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/ProtoMod.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/ProtoMod.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DpaMonitoringSettings">
-    <option name="autoShow" value="false" />
+    <option name="firstShow" value="false" />
   </component>
   <component name="Git.Rebase.Settings">
     <option name="NEW_BASE" value="main" />
@@ -110,6 +289,7 @@
     <setting file="file://$PROJECT_DIR$/../ExampleMod/Content/Tiles/Example3x2Rubble.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ExampleMod/Content/Tiles/ExampleAnimatedGlowmaskTile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ExampleMod/Content/Tiles/ExampleAnimatedTile.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../ExampleMod/Content/Tiles/ExampleHerb.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ExampleMod/Content/Tiles/ExampleLamp.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ExampleMod/Content/Tiles/ExampleTorch.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../ExampleMod/Content/Tiles/Furniture/ExampleClock.cs" root0="SKIP_HIGHLIGHTING" />
@@ -118,13 +298,14 @@
     <setting file="file://$PROJECT_DIR$/../ExampleMod/Content/Tiles/Furniture/MinionBossTrophy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../FargowiltasSouls-master/Content/Sky/MainMenuBackgroundStyle.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../FargowiltasSouls-master/Content/UI/FargoMenuScreen.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/1311974/Documents/My Games/Terraria/tModLoader/ModSources/ProtoMod/obj/Debug/net8.0/ProtoMod.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Terraria/GameContent/ItemDropRules/Chains.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Terraria/Graphics/Effects/EffectManager`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Terraria/ID/BuffID.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Terraria/ID/ChainID.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Terraria/ID/TileID.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Terraria/Main.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../Terraria/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Terraria/Tile.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -145,6 +326,7 @@
     &quot;.NET Launch Settings Profile.ProtoMod: Terraria.executor&quot;: &quot;Run&quot;,
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;ToolWindowChanges.ShowToolbar&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -152,7 +334,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;HotReloadSettingsPage&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -215,6 +397,8 @@
       <workItem from="1731086173741" duration="9034000" />
       <workItem from="1731248992019" duration="5132000" />
       <workItem from="1732386366885" duration="555000" />
+      <workItem from="1732540990614" duration="1535000" />
+      <workItem from="1732543192735" duration="12454000" />
     </task>
     <task id="LOCAL-00001" summary="Small test change">
       <option name="closed" value="true" />

@@ -1,4 +1,5 @@
 using ProtoMod.Content.Tiles;
+using ProtoMod.Content.Tiles.LaboratoryTiles;
 using Terraria.ID;
 using Terraria.ModLoader;
 

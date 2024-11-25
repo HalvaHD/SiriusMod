@@ -9,6 +9,8 @@ using Color = Microsoft.Xna.Framework.Color;
 using Rectangle = Microsoft.Xna.Framework.Rectangle;
 
 namespace ProtoMod.Content.Pets.LitosObliterator
+
+    // TODO: Fix its position on player choosing screen
 {
     internal class LitosObliteratorProjectile : ModProjectile
     {
@@ -99,15 +101,15 @@ namespace ProtoMod.Content.Pets.LitosObliterator
                 if (player.statLife > (player.statLifeMax2 / 2))
                 {
                     dust = Main.dust[
-                        Terraria.Dust.NewDust(dustposition, 0, 30, 330, -Projectile.velocity.X, -Projectile.velocity.Y * player.gravDir,
-                            0, new Color(255, 255, 255), 0.87209296f)];
+                        Dust.NewDust(dustposition, 0, 30, ModContent.DustType<LitosObliteratorDustBlue>(), -Projectile.velocity.X, -Projectile.velocity.Y * player.gravDir,
+                            0, Color.White, 0.87209296f)];
                 }
                 else
                 {
                     // Red dust if player's life < 50%
                     dust = Main.dust[
-                        Terraria.Dust.NewDust(dustposition, 0, 30, 331, -Projectile.velocity.X, -Projectile.velocity.Y * player.gravDir,
-                            0, new Color(255, 255, 255), 0.87209296f)];
+                        Dust.NewDust(dustposition, 0, 30, ModContent.DustType<LitosObliteratorDustRed>(), -Projectile.velocity.X, -Projectile.velocity.Y * player.gravDir,
+                            0, Color.White, 0.87209296f)];
                 }
             }
             

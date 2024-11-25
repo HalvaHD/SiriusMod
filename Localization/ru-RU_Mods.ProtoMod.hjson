@@ -750,6 +750,26 @@ Items: {
 		// DisplayName: Server
 		// Tooltip: ""
 	}
+
+	LabPlatingBetter: {
+		// DisplayName: Lab Plating Better
+		// Tooltip: ""
+	}
+
+	LabTV: {
+		// DisplayName: Lab T V
+		// Tooltip: ""
+	}
+
+	PinkLabLamp: {
+		// DisplayName: Pink Lab Lamp
+		// Tooltip: ""
+	}
+
+	LabBalk: {
+		// DisplayName: Lab Balk
+		// Tooltip: ""
+	}
 }
 
 ItemChat: {
@@ -951,6 +971,7 @@ Bestiary: {
 Tiles: {
 	StarRainOre.MapEntry: Руда звёздного дождя
 	StarBar.MapObject: Слиток звёздного дождя
+	// GlassblackMossGrass.MapEntry: Glassblack Moss Grass
 }
 
 Keybinds: {
