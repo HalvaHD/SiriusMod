@@ -1,4 +1,4 @@
-displayName = ProtoGenesis
+displayName = ProtoGenesis [Alpha]
 author = ProtoTeam
 version = 0.1.0.0
 weakReferences = CalamityMod, ParticleLibrary
