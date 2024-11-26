@@ -779,6 +779,26 @@ Items: {
 		DisplayName: Lab Balk
 		Tooltip: ""
 	}
+
+	LabBarrel: {
+		DisplayName: Lab Barrel
+		Tooltip: ""
+	}
+
+	LabBarrelAtomic: {
+		DisplayName: Lab Barrel Atomic
+		Tooltip: ""
+	}
+
+	LabDoor: {
+		DisplayName: Lab Door
+		Tooltip: ""
+	}
+
+	LabDoorDefault: {
+		DisplayName: Lab Door Default
+		Tooltip: ""
+	}
 }
 
 ItemChat: {

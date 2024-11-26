@@ -35,7 +35,7 @@ namespace ProtoMod.Content.Pets.LitosObliterator
             // * To set offset and direction, use .WithOffset(x, y) and .WithSpriteDirection(-1)
             // * To further customize the behavior and animation of the pet (as its AI does not run), you have access to a few vanilla presets in DelegateMethods.CharacterPreview to use via .WithCode(). You can also make your own, showcased in MinionBossPetProjectile
             ProjectileID.Sets.CharacterPreviewAnimations[Projectile.type] = ProjectileID.Sets.SimpleLoop(0, 5, 10)
-                .WhenNotSelected(0, 5, 10).WithOffset(210f, 120f)
+                .WhenNotSelected(0, 5, 10).WithOffset(241f, 148f)
                 .WithSpriteDirection((int)Math.PI);
 
         }
