@@ -4,16 +4,15 @@ using Terraria.ModLoader;
 
 namespace ProtoMod.Content.Tiles.LaboratoryTiles
 {
-    public class LabBalk : ModTile
+    public class LabBalk : ModWall
     {
+
+
         public override void SetStaticDefaults()
         {
-            Main.tileSolid[Type] = true;
-            Main.tileMergeDirt[Type] = false;
-            Main.tileBlockLight[Type] = true;
+            Main.wallHouse[Type] = false;
+            AddMapEntry(new Color(36, 35, 37));
             
-
-            AddMapEntry(new Color(123, 134, 145));
-        }
+        
     }
 }
