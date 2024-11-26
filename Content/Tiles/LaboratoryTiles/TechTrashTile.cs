@@ -88,8 +88,8 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 
 		public override bool PreDraw(int i, int j, SpriteBatch spriteBatch) {
 			Tile tile = Main.tile[i, j];
-			Texture2D texture = ModContent.Request<Texture2D>("ProtoMod/Content/Tiles/TechTrashTile").Value;
-			Texture2D glowTexture = ModContent.Request<Texture2D>("ProtoMod/Content/Tiles/TechTrashTile_Glow").Value;
+			Texture2D texture = ModContent.Request<Texture2D>("ProtoMod/Content/Tiles/LaboratoryTiles/TechTrashTile").Value;
+			Texture2D glowTexture = ModContent.Request<Texture2D>("ProtoMod/Content/Tiles/LaboratoryTiles/TechTrashTile_Glow").Value;
 
 			// If you are using ModTile.SpecialDraw or PostDraw or PreDraw, use this snippet and add zero to all calls to spriteBatch.Draw
 			// The reason for this is to accommodate the shift in drawing coordinates that occurs when using the different Lighting mode

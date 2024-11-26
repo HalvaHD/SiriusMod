@@ -790,6 +790,16 @@ Items: {
 		// DisplayName: Lab Door Default
 		// Tooltip: ""
 	}
+
+	LabPlateBeam: {
+		// DisplayName: Lab Plate Beam
+		// Tooltip: ""
+	}
+
+	LabPlatePillar: {
+		// DisplayName: Lab Plate Pillar
+		// Tooltip: ""
+	}
 }
 
 ItemChat: {
