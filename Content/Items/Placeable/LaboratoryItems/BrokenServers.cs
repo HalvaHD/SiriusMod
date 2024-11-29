@@ -4,12 +4,12 @@ using Terraria.ModLoader;
 
 namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabDoor : ModItem
+    public class BrokenServers : ModItem
     {
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 136;
+            Item.width = 20;
+            Item.height = 76;
             Item.maxStack = Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;
@@ -23,6 +23,5 @@ namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
         public override void AddRecipes()
         {
         }
-        
     }
 }

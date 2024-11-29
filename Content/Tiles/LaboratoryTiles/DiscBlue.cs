@@ -1,4 +1,4 @@
-﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ProtoMod.Content.Dusts;
 using Terraria;
@@ -7,27 +7,26 @@ using Terraria.ObjectData;
 
 namespace ProtoMod.Content.Tiles.LaboratoryTiles
 {
-    public class RedCrateSmall : ModTile
+    public class DiscBlue : ModTile
     {
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
-            Main.tileSolidTop[Type] = true;
-            Main.tileTable[Type] = true;
+            Main.tileNoAttach[Type] = false;
             Main.tileLavaDeath[Type] = false;
-            
             Main.tileWaterDeath[Type] = false;
-            
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
-            TileObjectData.newTile.Height = 3;
-            TileObjectData.newTile.Width = 4;
-            TileObjectData.newTile.CoordinateHeights = [16, 16, 16];
-            TileObjectData.newTile.CoordinateWidth = 16;
+			
+            TileObjectData.newTile.CopyFrom(TileObjectData.Style3x4);
+            TileObjectData.newTile.Height = 5;
+            TileObjectData.newTile.Width = 3;
+            TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16];
             TileObjectData.newTile.CoordinatePadding = 2;
             TileObjectData.newTile.LavaDeath = false;
 
             TileObjectData.addTile(Type);
             AddMapEntry(new Color(123, 134, 145));
+
+            base.SetStaticDefaults();
         }
 
         public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
@@ -40,9 +39,9 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
             Color drawColour = Color.White;
             Tile trackTile = Main.tile[i, j];
             if (!trackTile.IsHalfBlock && trackTile.Slope == 0)
-                spriteBatch.Draw(glowmask, drawPosition, new Rectangle(xFrameOffset, yFrameOffset, 16, 16), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
+                spriteBatch.Draw(glowmask, drawPosition, new Rectangle(xFrameOffset, yFrameOffset, 18, 18), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
             else if (trackTile.IsHalfBlock)
-                spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 16, 16), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
+                spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 18, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
         }
     }
 }
