@@ -809,6 +809,26 @@ Items: {
 		DisplayName: Lab Plate Pillar
 		Tooltip: ""
 	}
+
+	RedCrate: {
+		DisplayName: Red Crate
+		Tooltip: ""
+	}
+
+	RedCrateSmall: {
+		DisplayName: Red Crate Small
+		Tooltip: ""
+	}
+
+	YellowCrate: {
+		DisplayName: Yellow Crate
+		Tooltip: ""
+	}
+
+	YellowCrateSmall: {
+		DisplayName: Yellow Crate Small
+		Tooltip: ""
+	}
 }
 
 ItemChat: {
