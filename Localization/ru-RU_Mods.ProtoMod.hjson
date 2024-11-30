@@ -840,6 +840,26 @@ Items: {
 		// DisplayName: Disc Yellow
 		// Tooltip: ""
 	}
+
+	BrokenServerChest: {
+		// DisplayName: Broken Server Chest
+		// Tooltip: ""
+	}
+
+	BrokenServers_DiscBlue: {
+		// DisplayName: Broken Servers_ Disc Blue
+		// Tooltip: ""
+	}
+
+	BrokenServers_DiscRed: {
+		// DisplayName: Broken Servers_ Disc Red
+		// Tooltip: ""
+	}
+
+	BrokenServers_DiscYellow: {
+		// DisplayName: Broken Servers_ Disc Yellow
+		// Tooltip: ""
+	}
 }
 
 ItemChat: {

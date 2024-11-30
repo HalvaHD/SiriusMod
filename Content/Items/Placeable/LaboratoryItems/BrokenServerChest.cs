@@ -4,11 +4,11 @@ using Terraria.ModLoader;
 
 namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class BrokenServers : ModItem
+    public class BrokenServerChest : ModItem
     {
         public override void SetDefaults()
         {
-            Item.width = 60;
+            Item.width = 20;
             Item.height = 76;
             Item.maxStack = Item.CommonMaxStack;
             Item.useTurn = true;

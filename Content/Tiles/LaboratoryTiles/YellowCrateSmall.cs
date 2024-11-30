@@ -30,8 +30,6 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newTile.UsesCustomCanPlace    = true;
 			TileObjectData.newTile.HookPostPlaceMyPlayer =
 				new PlacementHook(ModContent.GetInstance<YellowCrateSmallTileEntity>().Hook_AfterPlacement, -1, 0, true);
-			
-			
 			TileObjectData.addTile(Type);
 			
 			AddMapEntry(new Color(88,94,107));

@@ -6,6 +6,7 @@ using ProtoMod.Content.NPC.Bosses.Protector;
 using ProtoMod.Systems;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.Enums;
 using Terraria.GameContent.ObjectInteractions;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -26,10 +27,10 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newTile.Height = 6;
 			TileObjectData.newTile.Width = 7;
 			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16, 16];
+			TileObjectData.newTile.CoordinateWidth = 16;
 			TileObjectData.newTile.UsesCustomCanPlace = true;
 			TileObjectData.newTile.HookPostPlaceMyPlayer =
 				new PlacementHook(ModContent.GetInstance<YellowCrateTileEntity>().Hook_AfterPlacement, -1, 0, true); 
-			
 			TileObjectData.addTile(Type);
 			
 			AddMapEntry(new Color(88,94,107));
@@ -131,6 +132,8 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 			int i = Position.X;
 			int j = Position.Y;
 			Tile tile = Main.tile[i, j];
+			// Main.tileSolid[tile.TileType] = true;
+
 			if (tile.HasTile && IsOpened == true)
 			{
 				if (++FrameCounter % 10 == 0)
@@ -143,9 +146,10 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 						for (int x = topX; x < topX + 7; x++) {
 							for (int y = topY; y < topY + 6; y++) {
 								Main.tile[x, y].TileFrameY += 108;
-            							
+								
 							}
 						}
+						
 					}
 					if (AnimationCounter == 0)
 					{

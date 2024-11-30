@@ -11,22 +11,22 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
     {
         public override void SetStaticDefaults()
         {
+            Main.tileSolid[Type] = false;
             Main.tileFrameImportant[Type] = true;
-            Main.tileNoAttach[Type] = false;
+            Main.tileNoAttach[Type] = true;
             Main.tileLavaDeath[Type] = false;
             Main.tileWaterDeath[Type] = false;
-			
-            TileObjectData.newTile.CopyFrom(TileObjectData.Style3x4);
-            TileObjectData.newTile.Height = 5;
-            TileObjectData.newTile.Width = 3;
-            TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16];
-            TileObjectData.newTile.CoordinatePadding = 2;
+
+            TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3);
+            TileObjectData.newTile.Height = 1;
+            TileObjectData.newTile.Width = 5;
+            TileObjectData.newTile.CoordinateHeights = [16];
+            TileObjectData.newTile.CoordinatePadding = 0;
             TileObjectData.newTile.LavaDeath = false;
 
             TileObjectData.addTile(Type);
             AddMapEntry(new Color(123, 134, 145));
-
-            base.SetStaticDefaults();
+            
         }
 
         public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
@@ -44,4 +44,5 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
                 spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 18, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
         }
     }
+    
 }

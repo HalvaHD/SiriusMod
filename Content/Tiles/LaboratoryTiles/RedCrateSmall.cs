@@ -2,6 +2,8 @@
 using Microsoft.Xna.Framework.Graphics;
 using ProtoMod.Content.Dusts;
 using Terraria;
+using Terraria.DataStructures;
+using Terraria.Enums;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
@@ -25,7 +27,7 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
             TileObjectData.newTile.CoordinateWidth = 16;
             TileObjectData.newTile.CoordinatePadding = 2;
             TileObjectData.newTile.LavaDeath = false;
-
+            
             TileObjectData.addTile(Type);
             AddMapEntry(new Color(123, 134, 145));
         }

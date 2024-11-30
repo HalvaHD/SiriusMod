@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class BrokenServers : ModItem
+    public class BrokenServers_DiscYellow : ModItem
     {
         public override void SetDefaults()
         {
@@ -17,7 +17,7 @@ namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 10;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
+            // Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
         }
 
         public override void AddRecipes()
