@@ -1,4 +1,6 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using CalamityMod;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ProtoMod.Common.Utilities;
 using ProtoMod.Content.Items;
@@ -31,6 +33,31 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newTile.UsesCustomCanPlace = true;
 			TileObjectData.newTile.HookPostPlaceMyPlayer =
 				new PlacementHook(ModContent.GetInstance<YellowCrateTileEntity>().Hook_AfterPlacement, -1, 0, true); 
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 0);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 1);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 2);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 3);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 4);
+			TileObjectData.addAlternate(0);
+			
+			
+			
+			
+			
 			TileObjectData.addTile(Type);
 			
 			AddMapEntry(new Color(88,94,107));
@@ -62,6 +89,8 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 			Player player = Main.LocalPlayer;
 			YellowCrateTileEntity tileEntity = TileUtils.FindTileEntity<YellowCrateTileEntity>(i, j, 7, 6, 16);
 			Tile tile = Main.tile[i, j];
+			Main.NewText(Main.tileSolidTop[Main.tile[i, j].TileType]);
+
 
 			if (tileEntity != null && tileEntity.IsOpened != true)
 			{
@@ -125,13 +154,17 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 
 		public override void Update()
 		{
-			if (AnimationCounter > 0)
-			{
-				AnimationCounter--;
-			}
 			int i = Position.X;
 			int j = Position.Y;
 			Tile tile = Main.tile[i, j];
+			
+			
+			if (AnimationCounter > 0)
+			{
+				AnimationCounter--;
+				
+			}
+			
 			// Main.tileSolid[tile.TileType] = true;
 
 			if (tile.HasTile && IsOpened == true)
@@ -142,14 +175,23 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 					{
 						int topX = i - tile.TileFrameX % 126 / 16;
 						int topY = j - tile.TileFrameY % 108 / 16;
-            
 						for (int x = topX; x < topX + 7; x++) {
 							for (int y = topY; y < topY + 6; y++) {
 								Main.tile[x, y].TileFrameY += 108;
-								
+															
 							}
 						}
 						
+					}
+
+					if (tile.TileFrameY == 108)
+					{
+						int topX = i - tile.TileFrameX % 126 / 16;
+
+						for (int x = topX; x < topX + 7; x++)
+						{
+							Main.tileSolid[Main.tile[x, 108].TileType] = true;
+						}
 					}
 					if (AnimationCounter == 0)
 					{

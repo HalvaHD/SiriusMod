@@ -26,8 +26,35 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newTile.Width = 7;
 			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16, 16];
 			TileObjectData.newTile.CoordinatePadding = 2;
+			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, 3, 0);
 			TileObjectData.newTile.LavaDeath = false;
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 0);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 1);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 2);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 3);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 4);
+			TileObjectData.addAlternate(0);
+			
+			
 			TileObjectData.addTile(Type);
+			
+			
+			
+			
 			
 			
 			AddMapEntry(new Color(123, 134, 145));

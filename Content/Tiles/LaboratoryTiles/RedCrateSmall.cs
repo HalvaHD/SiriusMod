@@ -28,6 +28,20 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
             TileObjectData.newTile.CoordinatePadding = 2;
             TileObjectData.newTile.LavaDeath = false;
             
+            TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+            TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 2, 0);
+            TileObjectData.addAlternate(0);
+			
+            TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+            TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 2, 1);
+            TileObjectData.addAlternate(0);
+			
+            TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+            TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 2, 2);
+            TileObjectData.addAlternate(0);
+            
+            
+            
             TileObjectData.addTile(Type);
             AddMapEntry(new Color(123, 134, 145));
         }

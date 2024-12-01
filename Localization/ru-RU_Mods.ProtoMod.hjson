@@ -860,6 +860,11 @@ Items: {
 		// DisplayName: Broken Servers_ Disc Yellow
 		// Tooltip: ""
 	}
+
+	LabDoorDefault_Horizontal: {
+		// DisplayName: Lab Door Default_ Horizontal
+		// Tooltip: ""
+	}
 }
 
 ItemChat: {

@@ -30,6 +30,24 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newTile.UsesCustomCanPlace    = true;
 			TileObjectData.newTile.HookPostPlaceMyPlayer =
 				new PlacementHook(ModContent.GetInstance<YellowCrateSmallTileEntity>().Hook_AfterPlacement, -1, 0, true);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 2, 0);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 2, 1);
+			TileObjectData.addAlternate(0);
+			
+			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 2, 2);
+			TileObjectData.addAlternate(0);
+			
+			
+			
+			
+			
+			
 			TileObjectData.addTile(Type);
 			
 			AddMapEntry(new Color(88,94,107));
