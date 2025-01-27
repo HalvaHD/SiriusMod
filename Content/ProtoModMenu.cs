@@ -47,7 +47,7 @@ namespace ProtoMod.Content
 		internal static readonly FieldInfo UImageFieldMisc1 = typeof (MiscShaderData).GetField("_uImage1", BindingFlags.Instance | BindingFlags.NonPublic);
 
 
-		public override string DisplayName => "ProtoGenesis Style";
+		public override string DisplayName => "Sirius Style";
 
 		public int MoveCount;
 		public int Count;
