@@ -1,5 +1,5 @@
-displayName = ProtoGenesis [Alpha]
-author = ProtoTeam
+displayName = Sirius [Alpha]
+author = WhySoSirius Team
 version = 0.1.0.0
 weakReferences = CalamityMod, ParticleLibrary
 modReferences = Luminance, StructureHelper
