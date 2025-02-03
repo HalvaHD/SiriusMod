@@ -70,62 +70,6 @@ namespace ProtoMod.Content.Projectiles.AutAnimation
 			{
 				SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/AncientPortal") { Volume = 10f };
 				SoundEngine.PlaySound(style);
-				/*for (int i = 0; i < 300; i++)
-				{
-					// You need to set position depending on what you are doing. You may need to subtract width/2 and height/2 as well to center the spawn rectangle.
-					Vector2 position = Main.rand.NextVector2CircularEdge(2f, 1.8f);
-					Vector2 spawncenter = new Vector2(Projectile.position.X + 13*16, Projectile.position.Y + 190);
-						
-					var dust = Dust.NewDustPerfect(spawncenter + position, 27, position * 5, 150, new Color(255,0,0), 2f);
-					
-					dust.shader = GameShaders.Armor.GetSecondaryShader(46, Main.LocalPlayer);
-
-				}*/
-				// for (int i = 0; i < 300; i++)
-				// {
-				// 	// You need to set position depending on what you are doing. You may need to subtract width/2 and height/2 as well to center the spawn rectangle.
-				// 	Vector2 position = Main.rand.NextVector2CircularEdge(1.6f, 1.4f);
-				// 	Vector2 spawncenter = new Vector2(Projectile.position.X + 12.5f*16, Projectile.position.Y + 200);
-				// 		
-				// 	var dust = Dust.NewDustPerfect(spawncenter + position, 27, position * 5, 50, new Color(255,0,0), 2f);
-				// 	
-				// 	dust.shader = GameShaders.Armor.GetSecondaryShader(46, Main.LocalPlayer);
-				//
-				// }
-				/*for (int i = 0; i < 300; i++)
-				{
-					// You need to set position depending on what you are doing. You may need to subtract width/2 and height/2 as well to center the spawn rectangle.
-					Vector2 position = Main.rand.NextVector2CircularEdge(1.6f, 1.4f);
-					Vector2 spawncenter = new Vector2(Projectile.position.X + 13*16, Projectile.position.Y + 190);
-						
-					var dust = Dust.NewDustPerfect(spawncenter + position, 27, position * 5, 0, new Color(255,0,0), 2f);
-						
-					dust.shader = GameShaders.Armor.GetSecondaryShader(46, Main.LocalPlayer);
-
-				}
-				for (int i = 0; i < 300; i++)
-				{
-					// You need to set position depending on what you are doing. You may need to subtract width/2 and height/2 as well to center the spawn rectangle.
-					Vector2 position = Main.rand.NextVector2CircularEdge(1.5f, 0.5f);
-					Vector2 spawncenter = new Vector2(Projectile.position.X + 13*16, Projectile.position.Y + 190);
-						
-					var dust = Dust.NewDustPerfect(spawncenter + position, 27, position * 5, 0, Color.Black, 2f);
-					
-					dust.shader = GameShaders.Armor.GetSecondaryShader(46, Main.LocalPlayer);
-
-				}
-				/*for (int i = 0; i < 300; i++)
-				{
-					// You need to set position depending on what you are doing. You may need to subtract width/2 and height/2 as well to center the spawn rectangle.
-					Vector2 position = Main.rand.NextVector2Circular(0.1f,1.6f);
-					Vector2 spawncenter = new Vector2(Projectile.position.X + 13*16, Projectile.position.Y + 190);
-						
-					var dust = Dust.NewDustPerfect(spawncenter, 27, position, 255, new Color(255,255,255));
-					
-					dust.shader = GameShaders.Armor.GetSecondaryShader(46, Main.LocalPlayer);
-
-				}*/
-				
 				Projectile.NewProjectile(new EntitySource_Film(), Projectile.Center, new Vector2(0),
 					ModContent.ProjectileType<AutPortal.AutPortal>(), 0, 0);	
 					

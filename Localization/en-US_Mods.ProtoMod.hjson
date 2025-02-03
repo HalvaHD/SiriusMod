@@ -874,6 +874,196 @@ Items: {
 		DisplayName: Lab Door Default_ Horizontal
 		Tooltip: ""
 	}
+
+	LabPlatingWallBetter: {
+		Tooltip: ""
+		DisplayName: Lab Plating Wall Better
+	}
+
+	GlassblackMossWall: {
+		Tooltip: ""
+		DisplayName: Glassblack Moss Wall
+	}
+
+	ControlPanelKey_Green: {
+		DisplayName: Control Panel Key_ Green
+		Tooltip: ""
+	}
+
+	ControlPanelKey_Purple: {
+		DisplayName: Control Panel Key_ Purple
+		Tooltip: ""
+	}
+
+	ControlPanelKey_Yellow: {
+		DisplayName: Control Panel Key_ Yellow
+		Tooltip: ""
+	}
+
+	MegaChestKey: {
+		DisplayName: Mega Chest Key
+		Tooltip: ""
+	}
+
+	MegaChest: {
+		DisplayName: Mega Chest
+		Tooltip: ""
+	}
+
+	ControlPanel_Green: {
+		DisplayName: Control Panel_ Green
+		Tooltip: ""
+	}
+
+	ControlPanel_Purple: {
+		DisplayName: Control Panel_ Purple
+		Tooltip: ""
+	}
+
+	ControlPanel_Yellow: {
+		DisplayName: Control Panel_ Yellow
+		Tooltip: ""
+	}
+
+	ControlPanelLocked_Green: {
+		DisplayName: Control Panel Locked_ Green
+		Tooltip: ""
+	}
+
+	ControlPanelLocked_Purple: {
+		DisplayName: Control Panel Locked_ Purple
+		Tooltip: ""
+	}
+
+	ControlPanelLocked_Yellow: {
+		DisplayName: Control Panel Locked_ Yellow
+		Tooltip: ""
+	}
+
+	LabChair: {
+		DisplayName: Lab Chair
+		Tooltip: ""
+	}
+
+	LabCryoCapsule: {
+		DisplayName: Lab Cryo Capsule
+		Tooltip: ""
+	}
+
+	LabDristalnik: {
+		DisplayName: Lab Dristalnik
+		Tooltip: ""
+	}
+
+	LabScreen_Beer: {
+		DisplayName: Lab Screen_ Beer
+		Tooltip: ""
+	}
+
+	LabScreen_BestWorker: {
+		DisplayName: Lab Screen_ Best Worker
+		Tooltip: ""
+	}
+
+	LabScreen_Formula1: {
+		DisplayName: Lab Screen_ Formula1
+		Tooltip: ""
+	}
+
+	LabScreen_Formula2: {
+		DisplayName: Lab Screen_ Formula2
+		Tooltip: ""
+	}
+
+	LabScreen_Formula3: {
+		DisplayName: Lab Screen_ Formula3
+		Tooltip: ""
+	}
+
+	LabScreen_Formula4: {
+		DisplayName: Lab Screen_ Formula4
+		Tooltip: ""
+	}
+
+	LabScreen_Formula5: {
+		DisplayName: Lab Screen_ Formula5
+		Tooltip: ""
+	}
+
+	LabScreen_Formula6: {
+		DisplayName: Lab Screen_ Formula6
+		Tooltip: ""
+	}
+
+	LabScreen_Formula7: {
+		DisplayName: Lab Screen_ Formula7
+		Tooltip: ""
+	}
+
+	LabScreen_Formula8: {
+		DisplayName: Lab Screen_ Formula8
+		Tooltip: ""
+	}
+
+	LabScreen_Formula9: {
+		DisplayName: Lab Screen_ Formula9
+		Tooltip: ""
+	}
+
+	LabTable_One: {
+		DisplayName: Lab Table_ One
+		Tooltip: ""
+	}
+
+	LabTable_Two: {
+		DisplayName: Lab Table_ Two
+		Tooltip: ""
+	}
+
+	LabTV_Left: {
+		DisplayName: Lab T V_ Left
+		Tooltip: ""
+	}
+
+	LabTV_Right: {
+		DisplayName: Lab T V_ Right
+		Tooltip: ""
+	}
+
+	LabTVBroken: {
+		DisplayName: Lab T V Broken
+		Tooltip: ""
+	}
+
+	LabTVBroken_Left: {
+		DisplayName: Lab T V Broken_ Left
+		Tooltip: ""
+	}
+
+	LabTVBroken_Right: {
+		DisplayName: Lab T V Broken_ Right
+		Tooltip: ""
+	}
+
+	MegaChestLocked: {
+		DisplayName: Mega Chest Locked
+		Tooltip: ""
+	}
+
+	SignPlate: {
+		DisplayName: Sign Plate
+		Tooltip: ""
+	}
+
+	MegaChestLockedWall: {
+		DisplayName: Mega Chest Locked Wall
+		Tooltip: ""
+	}
+
+	MegaChestWall: {
+		DisplayName: Mega Chest Wall
+		Tooltip: ""
+	}
 }
 
 ItemChat: {
@@ -1065,6 +1255,30 @@ NPCs: {
 	WarriorMinion.DisplayName: Warrior Minion
 	FABSOLO.DisplayName: F A B S O L O
 	Protector.DisplayName: Protector
+
+	HALVA_Prime: {
+		Census.SpawnCondition: Conditions unknown
+
+		TownNPCMood: {
+			Princess_LovesNPC: Мне нравится {NPCName}.
+			LikeNPC_Princess: Мне нравится {NPCName}.
+			HateNPC: Не терплю таких, как {NPCName}.
+			DislikeNPC: Мне не нравится {NPCName}.
+			LikeNPC: Мне нравится {NPCName}.
+			LoveNPC: Мне по душе {NPCName}.
+			HateBiome: Я ненавижу {BiomeName}.
+			LikeBiome: Мне нравится {BiomeName}.
+			LoveBiome: Мне по душе {BiomeName}.
+			HateCrowded: Я ненавижу, что тут людно.
+			DislikeCrowded: Мне не нравится, что тут людно.
+			LoveSpace: Мне нравится, как тут просторно.
+			FarFromHome: Я далеко от дома.
+			NoHome: Ужасно, что у меня нет дома.
+			Content: Я доволен.
+		}
+
+		DisplayName: H A L V A_ Prime
+	}
 }
 
 Bestiary: {

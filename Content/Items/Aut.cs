@@ -67,8 +67,9 @@ namespace ProtoMod.Content.Items
 
         public override bool? UseItem(Player player)
         {
+            
             if (Terraria.NPC.FindFirstNPC(ModContent.NPCType<KORRO>()) == -1 ||
-                Terraria.NPC.FindFirstNPC(ModContent.NPCType<HALVA>()) == -1)
+                Terraria.NPC.FindFirstNPC(ModContent.NPCType<HALVA_Prime>()) == -1)
             {
                 if (AutAnimation.AutCanSpawn)
                 {

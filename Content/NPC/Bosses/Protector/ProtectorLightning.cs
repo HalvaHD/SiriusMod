@@ -1,7 +1,6 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Items.Accessories;
 using ProtoMod.Content.Projectiles;
 using Terraria;
 using Terraria.Audio;

@@ -90,7 +90,7 @@ namespace ProtoMod.Content.Projectiles.HALVAMinions
 			{
 				Projectile.ai[1] = 0;
 			}
-			Terraria.NPC owner = ModContent.GetModNPC(ModContent.NPCType<HALVA>()).NPC;
+			Terraria.NPC owner = ModContent.GetModNPC(ModContent.NPCType<HALVA_Prime>()).NPC;
 			if (owner.active)
 			{
 				Projectile.timeLeft = 2;
@@ -151,7 +151,7 @@ namespace ProtoMod.Content.Projectiles.HALVAMinions
 		private void GeneralBehavior(out Vector2 vectorToIdlePosition, out float distanceToIdlePosition) {
 			foreach (var npc in Main.ActiveNPCs)
 			{
-				if (npc.type == ModContent.NPCType<HALVA>())
+				if (npc.type == ModContent.NPCType<HALVA_Prime>())
 				{
 					owner = npc;
 				}

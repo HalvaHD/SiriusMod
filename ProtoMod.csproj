@@ -22,4 +22,7 @@
   <ItemGroup>
     <PackageReference Update="tModLoader.CodeAssist" Version="0.1.5" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Projectiles\Magic\" />
+  </ItemGroup>
 </Project>

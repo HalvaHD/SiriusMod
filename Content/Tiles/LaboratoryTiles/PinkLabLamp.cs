@@ -15,35 +15,30 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 	{
 		public override void SetStaticDefaults()
 		{
-			RegisterItemDrop(ModContent.ItemType<Items.Placeable.LaboratoryItems.PinkLabLamp>());
-
 			Main.tileLighted[Type] = true;
 			Main.tileFrameImportant[Type] = true;
 			Main.tileNoAttach[Type] = true;
 			Main.tileLavaDeath[Type] = false;
 			Main.tileWaterDeath[Type] = false;
+			
+			
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3Wall);
 			TileObjectData.newTile.Height = 2;
 			TileObjectData.newTile.Width = 2;
-			TileObjectData.newTile.CoordinatePadding = 0;
-			// TileObjectData.newTile.Origin = new Point16(1, 0);
-			TileObjectData.newTile.UsesCustomCanPlace = true;
+			TileObjectData.newTile.CoordinatePadding = 2;
+			TileObjectData.newTile.CoordinateWidth = 16;
+			TileObjectData.newTile.CoordinateHeights = new[] { 16, 16 };
+			
 			TileObjectData.newTile.LavaDeath = false;
 			TileObjectData.newTile.WaterPlacement = LiquidPlacement.Allowed;
 			TileObjectData.newTile.LavaPlacement = LiquidPlacement.Allowed;
 			TileObjectData.addTile(Type);
 
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
-			AddMapEntry(new Color(255, 192, 203), Language.GetText("MapObject.Chandelier"));
-			DustType = ModContent.DustType<LabDust>();
 			AdjTiles = [TileID.Chandeliers];
+			AddMapEntry(new Color(255, 192, 203), Language.GetText("MapObject.Chandelier"));
 		}
-
-		public override void NumDust(int i, int j, bool fail, ref int num)
-		{
-			num = fail ? 1 : 3;
-		}
-
+		
 		public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)
 		{
 			if (Main.tile[i, j].TileFrameX < 18)
@@ -59,12 +54,6 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 				b = 0f;
 			}
 		}
-
-		public override void AnimateTile(ref int frame, ref int frameCounter)
-		{
-			frame = 0;
-		}
-
 		public override void HitWire(int i, int j)
 		{
 			Luminance.Common.Utilities.Utilities.LightHitWire(Type, i, j, 3, 3);
@@ -80,10 +69,9 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 			Color drawColour = Color.White;
 			Tile trackTile = Main.tile[i, j];
 			if (!trackTile.IsHalfBlock && trackTile.Slope == 0)
-				spriteBatch.Draw(glowmask, drawPosition, new Rectangle(xFrameOffset, yFrameOffset, 18, 18), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
+				spriteBatch.Draw(glowmask, drawPosition, new Rectangle(xFrameOffset, yFrameOffset, 16, 16), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
 			else if (trackTile.IsHalfBlock)
 				spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 18, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
-
 		}
 	}
 }

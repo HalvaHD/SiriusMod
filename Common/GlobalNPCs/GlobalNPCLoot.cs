@@ -26,13 +26,10 @@ namespace ProtoMod.Common.GlobalNPCs
 		{
 			if (npc.boss)
 			{
-				npcLoot.Add(ItemDropRule.ByCondition(new FirstKillDropCondition(), ModContent.ItemType<CosmicCry>()));
-				npcLoot.Add(ItemDropRule.ByCondition(new NextKillsDropCondition(), ModContent.ItemType<CosmicCry>(), 10));
 			}
 
 			if (npc.rarity == 4)
 			{
-				npcLoot.Add(ItemDropRule.ByCondition(new FirstKillDropCondition(), ModContent.ItemType<CosmicCry>()));
 			}
 		}
 	}

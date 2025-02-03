@@ -1,6 +1,6 @@
 using Terraria.ModLoader;
 
-namespace ProtoMod.Core.Systems
+namespace ProtoMod.Systems
 {
     public class KeybindSystem : ModSystem
     {

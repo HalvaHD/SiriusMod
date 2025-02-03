@@ -27,14 +27,7 @@ namespace ProtoMod.Core.Systems
 
         public override void LoadWorldData(TagCompound tag)
         {
-            ProtoMod.CheckKilledBosses = new List<int>(tag.GetList<int>("KilledBosses"));
-            TeleporterLocation = new(tag.GetFloat("TeleporterLocationX"), tag.GetFloat("TeleporterLocationY"));
-            if (TeleporterLocation != Vector2.Zero)
-            {
-                Projectile.NewProjectile(new EntitySource_WorldGen(), TeleporterLocation, Vector2.Zero,
-                    ModContent.ProjectileType<TeleporterInstance>(), 0, 0);
-            }
-            
+            ProtoMod.CheckKilledBosses = new List<int>(tag.GetList<int>("KilledBoss"));
         }
     }
 }

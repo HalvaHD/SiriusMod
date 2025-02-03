@@ -11,6 +11,7 @@ namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
 
         public override void SetDefaults()
         {
+            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabTV>(), 0);
             Item.width = 28;
             Item.height = 22;
             Item.maxStack = Item.CommonMaxStack;
@@ -20,7 +21,6 @@ namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 7;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
         }
 
         public override void AddRecipes()

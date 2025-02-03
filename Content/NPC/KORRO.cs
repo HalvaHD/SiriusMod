@@ -1,24 +1,5 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Pets.Berserk;
-using ProtoMod.Content.Pets.BlackCat;
-using ProtoMod.Content.Pets.CatX;
-using ProtoMod.Content.Pets.ContractSSS;
-using ProtoMod.Content.Pets.Hello;
-using ProtoMod.Content.Pets.Keksik;
-using ProtoMod.Content.Pets.LightTwig;
-using ProtoMod.Content.Pets.LitosObliterator;
-using ProtoMod.Content.Pets.OldTwig;
-using ProtoMod.Content.Pets.Ror;
-using ProtoMod.Content.Pets.Skuf;
-using ProtoMod.Content.Pets.SlimeHero;
-using ProtoMod.Content.Pets.SlimeR;
-using ProtoMod.Content.Pets.Stardy;
-using ProtoMod.Content.Pets.Stepasha;
-using ProtoMod.Content.Pets.Sum;
-using ProtoMod.Content.Pets.Twig;
-using ProtoMod.Content.Pets.Vedma;
-using ProtoMod.Content.Pets.Yum;
 using ProtoMod.Content.Projectiles;
 using ReLogic.Content;
 using Terraria;
@@ -47,7 +28,7 @@ public class KORRO: ModNPC {
         NPC.Happiness
             .SetBiomeAffection<OceanBiome>(AffectionLevel.Like)
             .SetBiomeAffection<DesertBiome>(AffectionLevel.Dislike)
-            .SetNPCAffection(ModContent.NPCType<HALVA>(), AffectionLevel.Love)
+            .SetNPCAffection(ModContent.NPCType<HALVA_Prime>(), AffectionLevel.Love)
             .SetNPCAffection(NPCID.BestiaryGirl, AffectionLevel.Like)
             .SetNPCAffection(NPCID.Pirate, AffectionLevel.Dislike)
             .SetNPCAffection(NPCID.Demolitionist, AffectionLevel.Hate); 
@@ -160,29 +141,8 @@ public class KORRO: ModNPC {
             .Add(new Terraria.Item(ItemID.DirtiestBlock))
             .Add(new Terraria.Item(ItemID.SpiderEgg));
         
-
-        NPCShop shop2 = new NPCShop(Type, Shop)
-            .Add(new Terraria.Item(ModContent.ItemType<TwigPetItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<ContractSSSItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<LitosObliteratorItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<KeksikItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<RorItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<HelloItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<StardyItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<SlimeRItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<BlackCatItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<VedmaItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<CatXItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<BerserkItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<SlimeHeroItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<OldTwigItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<LightTwigItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<YumItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<StepashaItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<SumItem>()))
-            .Add(new Terraria.Item(ModContent.ItemType<SkufItem>()));
+        
         shop1.Register();
-        shop2.Register();
     }
     public override string GetChat() {
         WeightedRandom<string> weightedRandom = new WeightedRandom<string>();

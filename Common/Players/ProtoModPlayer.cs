@@ -1,6 +1,5 @@
 using Microsoft.Xna.Framework;
 using ProtoMod.Content.Items;
-using ProtoMod.Content.Items.Tools;
 using ProtoMod.Content.NPC;
 using ProtoMod.Content.Projectiles;
 using ProtoMod.Systems;
@@ -65,11 +64,7 @@ namespace ProtoMod.Common.Players
 
         public override void OnHurt(Player.HurtInfo info)
         {
-            if (StarTrainTicket.DamageReceiveTime > 0)
-            {
-                StarTrainTicket.TicketTeleport(Main.LocalPlayer);
-                StarTrainTicket.DamageReceiveTime = 600;
-            }
+            
         }
         
 
@@ -78,52 +73,12 @@ namespace ProtoMod.Common.Players
             // DialougeSystem.WriteDialogue("HALVAVahue", "Test2", Color.Aqua);
             if (Player.whoAmI == Main.myPlayer)
             {
-                if (StarTrainTicket.DamageReceiveTime > 0)
-                {
-                    StarTrainTicket.DamageReceiveTime--;
-                }
 
                 if (StarTrainTicketCD > 0)
                 {
                     StarTrainTicketCD--;
                 }
-
-                if (Filters.Scene["Shockwave"].IsActive())
-                {
-                    ShockwaveSword.ShockwaveTimeLeft--;
-                    if (ShockwaveSword.ShockwaveTimeLeft == 0)
-                    {
-                        ShockwaveSword.ShockwaveTimeLeft = 180;
-                        Filters.Scene["Shockwave"].Deactivate();
-                    }
-                }
-
-                if (Main.netMode != NetmodeID.Server && Filters.Scene["Shockwave"].IsActive())
-                {
-                    float progress = (180f - ShockwaveSword.ShockwaveTimeLeft) / 60f;
-                    Filters.Scene["Shockwave"].GetShader().UseProgress(progress)
-                        .UseOpacity(ShockwaveSword.distortStrength * (1 - progress / 3f));
-                }
-
-                if (StarPickaxeAvailable)
-                {
-                    if (Player.HeldItem.type == ModContent.ItemType<StarPickaxe>() &&
-                        PlayerInput.Triggers.Current.MouseRight)
-                    {
-                        StarPickaxeHoldTime--;
-                        if (StarPickaxeHoldTime == 0)
-                        {
-                            StarPickaxeAvailable = false;
-                            StarPickaxe.PickaxeShoot(Player);
-                        }
-                    }
-                    else
-                    {
-                        StarPickaxeAvailable = false;
-                        StarPickaxeHoldTime = 0;
-
-                    }
-                }
+                
 
                 // mouseRight = PlayerInput.Triggers.Current.MouseRight;
                 if (TextShowUpCD > 0)
@@ -161,24 +116,6 @@ namespace ProtoMod.Common.Players
                         }
 
                     }
-                }
-
-                if (Player.HeldItem.type == ModContent.ItemType<StarPickaxe>())
-                {
-                    StarPickaxeCrystal.IsStarPickaxeHeld = true;
-                    if (StarPickaxeCD > 0)
-                    {
-                        StarPickaxe.CrystalikState = 1;
-                    }
-                    else
-                    {
-                        StarPickaxe.CrystalikState = 0;
-                    }
-
-                }
-                else if (StarPickaxeCrystal.IsStarPickaxeHeld)
-                {
-                    StarPickaxeCrystal.IsStarPickaxeHeld = false;
                 }
             }
         }
