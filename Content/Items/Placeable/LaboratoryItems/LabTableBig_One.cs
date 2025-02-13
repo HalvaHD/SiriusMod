@@ -3,12 +3,12 @@ using Terraria.ModLoader;
 
 namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabChair : ModItem
+    public class LabTable_One : ModItem
     {
         public override void SetDefaults()
         {
-            Item.width = 26;
-            Item.height = 41;
+            Item.width = 32;
+            Item.height = 22;
             Item.maxStack = Terraria.Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;
