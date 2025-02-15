@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Paintings.TwigKnight
+namespace SiriusMod.Content.Paintings.TwigKnight
 {
     internal class TwigSheet : ModTile
     {

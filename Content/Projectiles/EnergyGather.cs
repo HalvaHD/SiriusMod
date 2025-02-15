@@ -7,11 +7,11 @@
 // using Terraria.ID;
 // using Terraria.ModLoader;
 //
-// namespace ProtoMod.Content.Projectiles
+// namespace SiriusMod.Content.Projectiles
 // {
 //     public class AnglonPortal_EnergyGather : ParticleLibrary.Core.Particle
 //     {
-//         public override string Texture => "ProtoMod/Assets/Textures/Menu/BlankPixel";
+//         public override string Texture => "SiriusMod/Assets/Textures/Menu/BlankPixel";
 //         private readonly int NUMPOINTS = 30;
 //
 //         public Color baseColor = new(1, 1, 1);

@@ -1,13 +1,11 @@
-using System.Collections;
-using System.Reflection.PortableExecutable;
 using Microsoft.Xna.Framework;
-using ProtoMod.Common.Players;
+using SiriusMod.Common.Players;
 using Terraria;
 using Terraria.Audio;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Systems
+namespace SiriusMod.Systems
 {
     public class DialogueSystem : ModSystem
     {
@@ -16,18 +14,18 @@ namespace ProtoMod.Systems
         public static string DialogueImage;
         public static Color DialougeColor;
         public static int DialogueSpeed = 1;
-        public static SoundStyle TextSound = new SoundStyle("ProtoMod/Assets/Sounds/TextSound");
-        // public static SoundStyle RoboticTextSound = new SoundStyle("ProtoMod/Assets/Sounds/TextSound_Robotic");
+        public static SoundStyle TextSound = new SoundStyle("SiriusMod/Assets/Sounds/TextSound");
+        // public static SoundStyle RoboticTextSound = new SoundStyle("SiriusMod/Assets/Sounds/TextSound_Robotic");
         public static void WriteDialogue(string character, string dialogue, Color textcolor, int dialogueSpeed, string dialogueSound)
         {
             if (Main.LocalPlayer.GetModPlayer<ProtoModPlayer>().DialogueShown == false)
             {
-                DialogueLine = Language.GetTextValue($"Mods.ProtoMod.Dialogues.{dialogue}");
+                DialogueLine = Language.GetTextValue($"Mods.SiriusMod.Dialogues.{dialogue}");
                 DialogueLimit = DialogueLine.Length;
                 DialogueImage = character;
                 DialougeColor = textcolor;
                 DialogueSpeed = dialogueSpeed;
-                TextSound = new SoundStyle($"ProtoMod/Assets/Sounds/{dialogueSound}");
+                TextSound = new SoundStyle($"SiriusMod/Assets/Sounds/{dialogueSound}");
                 Main.LocalPlayer.GetModPlayer<ProtoModPlayer>().DialogueShown = true;
             }
             

@@ -1,16 +1,11 @@
 using Microsoft.Xna.Framework;
-using ProtoMod.Content.Items;
-using ProtoMod.Content.NPC;
-using ProtoMod.Content.Projectiles;
-using ProtoMod.Systems;
+using SiriusMod.Content.Items;
 using Terraria;
 using Terraria.Audio;
-using Terraria.GameInput;
-using Terraria.Graphics.Effects;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Common.Players
+namespace SiriusMod.Common.Players
 {
     public partial class ProtoModPlayer : ModPlayer
     {

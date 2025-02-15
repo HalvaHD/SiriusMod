@@ -1,11 +1,7 @@
-using ProtoMod.Common.Utilities;
-using ProtoMod.Content.Projectiles;
 using Terraria;
-using Terraria.DataStructures;
-using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Common.Players
+namespace SiriusMod.Common.Players
 {
     public partial class ProtoModPlayer
     {

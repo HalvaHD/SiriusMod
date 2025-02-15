@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Buffs
+namespace SiriusMod.Content.Buffs
 {
     public class NanoIssue : ModBuff
     {

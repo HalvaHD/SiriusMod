@@ -2,8 +2,8 @@ using System.Collections.Generic;
 using CalamityMod;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Projectiles.HALVAMinions;
 using ReLogic.Content;
+using SiriusMod.Content.Projectiles;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
@@ -13,7 +13,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
 
-namespace ProtoMod.Content.NPC
+namespace SiriusMod.Content.NPC
 {
     [AutoloadHead]
     public class HALVA_Prime : ModNPC
@@ -29,7 +29,7 @@ namespace ProtoMod.Content.NPC
         public override void SetStaticDefaults()
         {
             Main.npcFrameCount[Type] = 23; 
-            Texture_Glow = ModContent.Request<Texture2D>("ProtoMod/Content/NPC/HALVA_Prime_Glowmask", AssetRequestMode.ImmediateLoad);
+            Texture_Glow = ModContent.Request<Texture2D>("SiriusMod/Content/NPC/HALVA_Prime_Glowmask", AssetRequestMode.ImmediateLoad);
             NPCID.Sets.ExtraFramesCount[Type] = 7; 
             NPCID.Sets.AttackFrameCount[Type] = 2; 
             NPCID.Sets.DangerDetectRange[Type] = 400; 
@@ -101,7 +101,7 @@ namespace ProtoMod.Content.NPC
                 new NamePlateInfoElement(this.GetLocalizedValue("NameHALVA"), -1),
 
 				// Sets your NPC's flavor text in the bestiary.
-				new FlavorTextBestiaryInfoElement("Mods.ProtoMod.Bestiary.HALVA_Prime"),
+				new FlavorTextBestiaryInfoElement("Mods.SiriusMod.Bestiary.HALVA_Prime"),
             });
         }
 

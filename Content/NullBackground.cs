@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content
+namespace SiriusMod.Content
 {
     // Thanks to Nycro#0001 <@!262663471189983242> for this null background which cleanly ignores vanilla's parallax mechanics
     internal class NullBackground : ModSurfaceBackgroundStyle
@@ -29,7 +29,7 @@ namespace ProtoMod.Content
             }
         }
 
-        private static readonly string TexPath = "ProtoMod/Assets/Textures/Menu/BlankPixel";
+        private static readonly string TexPath = "SiriusMod/Assets/Textures/Menu/BlankPixel";
         public override int ChooseCloseTexture(ref float scale, ref double parallax, ref float a, ref float b) => BackgroundTextureLoader.GetBackgroundSlot(TexPath);
         public override int ChooseFarTexture() => BackgroundTextureLoader.GetBackgroundSlot(TexPath);
         public override int ChooseMiddleTexture() => BackgroundTextureLoader.GetBackgroundSlot(TexPath);

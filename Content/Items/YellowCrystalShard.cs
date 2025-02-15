@@ -1,12 +1,11 @@
-using Luminance.Common.Utilities;
 using Microsoft.Xna.Framework;
-using ProtoMod.Content.Projectiles;
+using SiriusMod.Content.Projectiles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Items
+namespace SiriusMod.Content.Items
 {
     public class YellowCrystalShard : ModItem
     {

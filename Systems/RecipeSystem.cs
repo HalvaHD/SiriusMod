@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Systems
+namespace SiriusMod.Systems
 {
     public class RecipeSystem : ModSystem
     {

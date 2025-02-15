@@ -1,14 +1,11 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Projectiles;
 using Terraria;
-using Terraria.Audio;
-using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.NPC.Bosses.Protector
+namespace SiriusMod.Content.Bosses.Protector
 {
     public class ProtectorLightning : ModProjectile
     {

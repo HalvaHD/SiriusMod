@@ -3,7 +3,7 @@ using Terraria.DataStructures;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Common.Utilities
+namespace SiriusMod.Common.Utilities
 {
 	public static class TileUtils
 	{

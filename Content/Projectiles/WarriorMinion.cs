@@ -1,15 +1,15 @@
 using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.NPC;
 using ReLogic.Content;
+using SiriusMod.Content.NPC;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Projectiles.HALVAMinions
+namespace SiriusMod.Content.Projectiles
 {
 	// This file contains all the code necessary for a minion
 	// - ModItem - the weapon which you use to summon the minion with
@@ -52,7 +52,7 @@ namespace ProtoMod.Content.Projectiles.HALVAMinions
 		public override bool PreDraw(ref Color lightColor)
         {
 	        Texture2D texture2D13 = TextureAssets.Projectile[Projectile.type].Value;
-	        Texture2D textureBomb = ModContent.Request<Texture2D>("ProtoMod/Content/Projectiles/HALVAMinions/NUCLEARPOWER", AssetRequestMode.ImmediateLoad).Value;
+	        Texture2D textureBomb = ModContent.Request<Texture2D>("SiriusMod/Content/Projectiles/HALVAMinions/NUCLEARPOWER", AssetRequestMode.ImmediateLoad).Value;
             int num156 = TextureAssets.Projectile[Projectile.type].Value.Height / Main.projFrames[Projectile.type]; //ypos of lower right corner of sprite to draw
             int y3 = num156 * Projectile.frame; //ypos of upper left corner of sprite to draw
             Rectangle rectangle = new(0, y3, texture2D13.Width, num156);
@@ -75,7 +75,7 @@ namespace ProtoMod.Content.Projectiles.HALVAMinions
             Main.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, Main.DefaultSamplerState, DepthStencilState.None, RasterizerState.CullCounterClockwise, null, Main.GameViewMatrix.ZoomMatrix);
 
             Main.EntitySpriteDraw(texture2D13, Projectile.Center - Main.screenPosition + new Vector2(0f, Projectile.gfxOffY), rectangle, Projectile.GetAlpha(lightColor), Projectile.rotation + rotationOffset, origin2, Projectile.scale, effects);
-            Texture2D texture = ModContent.Request<Texture2D>("ProtoMod/Content/Projectiles/HALVAMinions/WarriorMinion_Glowmask", AssetRequestMode.ImmediateLoad).Value;
+            Texture2D texture = ModContent.Request<Texture2D>("SiriusMod/Content/Projectiles/HALVAMinions/WarriorMinion_Glowmask", AssetRequestMode.ImmediateLoad).Value;
             Main.EntitySpriteDraw(texture, Projectile.Center - Main.screenPosition + new Vector2(0f, Projectile.gfxOffY), rectangle, Color.White * Projectile.Opacity, Projectile.rotation + rotationOffset, origin2, Projectile.scale, effects);
             if (Main.hardMode)
             {

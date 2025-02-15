@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles
+namespace SiriusMod.Content.Tiles
 {
 	public class StarBar : ModTile
 	{

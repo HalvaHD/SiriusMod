@@ -1,8 +1,8 @@
-using ProtoMod.Common.Players;
+using SiriusMod.Common.Players;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Buffs
+namespace SiriusMod.Content.Buffs
 {
     public class GracingEnergyBuff : ModBuff
     {

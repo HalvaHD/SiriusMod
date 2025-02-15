@@ -1,26 +1,19 @@
-﻿using System;
-using CalamityMod;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Common.Utilities;
-using ProtoMod.Content.Items;
-using ProtoMod.Content.NPC.Bosses.Protector;
-using ProtoMod.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.Enums;
-using Terraria.GameContent.ObjectInteractions;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
 	public class MegaChest : ModTile
 	{
-		public override string Texture => "ProtoMod/Content/Tiles/LaboratoryTiles/MegaChestAtlas";
+		public override string Texture => "SiriusMod/Content/Tiles/LaboratoryTiles/MegaChestAtlas";
 		
 		public override void SetStaticDefaults() 
 		{

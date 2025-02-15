@@ -3,7 +3,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
     public class GlassblackMoss : ModTile
     {

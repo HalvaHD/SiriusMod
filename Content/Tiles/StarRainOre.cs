@@ -7,7 +7,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.WorldBuilding;
 
-namespace ProtoMod.Content.Tiles
+namespace SiriusMod.Content.Tiles
 {
     public class StarRainOre : ModTile
     {

@@ -1,10 +1,7 @@
-using ProtoMod.Common.ItemDropRules.DropConditions;
-using ProtoMod.Content.Items;
 using Terraria;
-using Terraria.GameContent.ItemDropRules;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Common.GlobalNPCs
+namespace SiriusMod.Common.GlobalNPCs
 {
 	// This file shows numerous examples of what you can do with the extensive NPC Loot lootable system.
 	// You can find more info on the wiki: https://github.com/tModLoader/tModLoader/wiki/Basic-NPC-Drops-and-Loot-1.4
@@ -13,9 +10,9 @@ namespace ProtoMod.Common.GlobalNPCs
 	{
 		public override void OnKill(NPC npc)
 		{
-			if (npc.boss && !ProtoMod.CheckKilledBosses.Contains(npc.type))
+			if (npc.boss && !SiriusMod.CheckKilledBosses.Contains(npc.type))
 			{	
-				ProtoMod.CheckKilledBosses.Add(npc.type);
+				SiriusMod.CheckKilledBosses.Add(npc.type);
 			}
 		}
 		// ModifyNPCLoot uses a unique system called the ItemDropDatabase, which has many different rules for many different drop use cases.

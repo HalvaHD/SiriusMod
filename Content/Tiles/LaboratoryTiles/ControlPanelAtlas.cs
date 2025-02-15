@@ -1,20 +1,18 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Dusts;
 using Terraria;
-using Terraria.ModLoader;
-using Terraria.ObjectData;
-using ProtoMod;
 using Terraria.DataStructures;
 using Terraria.Enums;
 using Terraria.GameContent;
 using Terraria.GameContent.ObjectInteractions;
+using Terraria.ModLoader;
+using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
 	public class ControlPanelAtlas : ModTile
 	{
-		public override string Texture => "ProtoMod/Content/Tiles/LaboratoryTiles/ControlPanelAtlas";
+		public override string Texture => "SiriusMod/Content/Tiles/LaboratoryTiles/ControlPanelAtlas";
 		
 		
 		public override void SetStaticDefaults()

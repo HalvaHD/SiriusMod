@@ -1,8 +1,7 @@
-﻿using Terraria;
-using Terraria.ID;
+﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Items
+namespace SiriusMod.Content.Items
 {
     internal class ProtoModPGlobalProjectile : GlobalItem
     {

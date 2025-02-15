@@ -1,16 +1,11 @@
-using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Items;
-using ProtoMod.Content.Projectiles;
-using ProtoMod.Content.Projectiles.HALVAMinions;
-using ProtoMod.Content.Tiles;
-using ProtoMod.Core.Systems;
-using ProtoMod.Systems;
-using ReLogic.Content;
 using ReLogic.Utilities;
+using SiriusMod.Content.Items;
+using SiriusMod.Content.Projectiles;
+using SiriusMod.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -19,7 +14,7 @@ using Terraria.GameContent.Bestiary;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.NPC.Bosses.Protector
+namespace SiriusMod.Content.Bosses.Protector
 {
     [AutoloadBossHead]
     public class Protector : ModNPC
@@ -37,7 +32,7 @@ namespace ProtoMod.Content.NPC.Bosses.Protector
         public float EyeOpacity = 0f;
         public float EyeScale = 0f;
         private SlotId ProtectorSpawnID;
-        readonly SoundStyle ProtectorSpawn = new SoundStyle("ProtoMod/Assets/Sounds/ProtectorSpawn");
+        readonly SoundStyle ProtectorSpawn = new SoundStyle("SiriusMod/Assets/Sounds/ProtectorSpawn");
         public static bool TrashCanOpen = false;
         public static int TrashCansOpened = 0;
         public static int TrashCanCutSceneTime = 0;

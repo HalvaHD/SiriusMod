@@ -1,10 +1,8 @@
-using ProtoMod.Common.Players;
-using ProtoMod.Content.Projectiles;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Common;
+namespace SiriusMod.Common;
 
 public class GlobalProjectiles : GlobalProjectile
 {

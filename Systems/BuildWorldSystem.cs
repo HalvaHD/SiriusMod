@@ -1,6 +1,6 @@
 using Terraria.ModLoader;
 
-namespace ProtoMod.Core.Systems;
+namespace SiriusMod.Systems;
 
 public class BuildWorldSystem : ModSystem
 {

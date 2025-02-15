@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Projectiles;
 using ReLogic.Content;
+using SiriusMod.Content.Projectiles;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
@@ -11,7 +11,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.Utilities;
 
-namespace ProtoMod.Content.NPC;
+namespace SiriusMod.Content.NPC;
 
 [AutoloadHead]
 public class KORRO: ModNPC {
@@ -24,7 +24,7 @@ public class KORRO: ModNPC {
     public static bool Shop2 = false;
     public override void SetStaticDefaults()
     {
-        Texture_Glow = ModContent.Request<Texture2D>("ProtoMod/Content/NPC/KORRO_Glowmask", AssetRequestMode.ImmediateLoad);
+        Texture_Glow = ModContent.Request<Texture2D>("SiriusMod/Content/NPC/KORRO_Glowmask", AssetRequestMode.ImmediateLoad);
         NPC.Happiness
             .SetBiomeAffection<OceanBiome>(AffectionLevel.Like)
             .SetBiomeAffection<DesertBiome>(AffectionLevel.Dislike)
@@ -82,7 +82,7 @@ public class KORRO: ModNPC {
             BestiaryDatabaseNPCsPopulator.CommonTags.SpawnConditions.Biomes.Snow,
 
             // Sets your NPC's flavor text in the bestiary.
-            new FlavorTextBestiaryInfoElement("Mods.ProtoMod.Bestiary.KORRO"),
+            new FlavorTextBestiaryInfoElement("Mods.SiriusMod.Bestiary.KORRO"),
         });
     }
     public override bool PreDraw(SpriteBatch spriteBatch, Vector2 screenPos, Color drawColor)

@@ -1,22 +1,15 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Dusts;
 using Terraria;
-using Terraria.Audio;
 using Terraria.DataStructures;
-using Terraria.Enums;
-using Terraria.GameContent;
-using Terraria.GameContent.ObjectInteractions;
-using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-    public class LabScreenAtlas : ModTile
+    public class LabScreens : ModTile
     {
-        public override string Texture => "ProtoMod/Content/Tiles/LaboratoryTiles/LabScreenAtlas";
+        public override string Texture => "SiriusMod/Content/Tiles/LaboratoryTiles/LabScreenAtlas";
         
         public override void SetStaticDefaults()
         {

@@ -7,11 +7,11 @@ using Terraria;
 using Terraria.Graphics.Shaders;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content
+namespace SiriusMod.Content
 {
 	public class ProtoModMenu : ModMenu
 	{
-		private const string menuAssetPath = "ProtoMod/Assets/Textures/Menu";
+		private const string menuAssetPath = "SiriusMod/Assets/Textures/Menu";
 			// TODO: According to playthrough, needed a way to save these vars
 		public bool IsHALVAMet = false;
 		public Texture2D HALVAAsset => ModContent.Request<Texture2D>($"{menuAssetPath}/HALVA_Menu").Value;
@@ -56,8 +56,8 @@ namespace ProtoMod.Content
 
 		public override bool PreDrawLogo(SpriteBatch spriteBatch, ref Vector2 logoDrawCenter, ref float logoRotation, ref float logoScale, ref Color drawColor)
 		{
-			Texture2D texture2D = ModContent.Request<Texture2D>("ProtoMod/Assets/Textures/Backgrounds/ProtogenesisBackground_Static").Value;
-				FoggyNoise = ModContent.Request<Texture2D>("ProtoMod/Assets/ExtraTextures/FoggyNoise", AssetRequestMode.ImmediateLoad);
+			Texture2D texture2D = ModContent.Request<Texture2D>("SiriusMod/Assets/Textures/Backgrounds/ProtogenesisBackground_Static").Value;
+				FoggyNoise = ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/FoggyNoise", AssetRequestMode.ImmediateLoad);
 
 			Vector2 zero = Vector2.Zero;
 			float num1 = Main.screenWidth / (float) texture2D.Width;
@@ -131,7 +131,7 @@ namespace ProtoMod.Content
 		{
 			var fog = Mod.Assets.Request<Effect>("Assets/Effects/FogShader", AssetRequestMode.ImmediateLoad);
 			GameShaders.Misc["Protogenesis:FogOverlay"] = new MiscShaderData(fog, "FogPass");
-			Pixel = ModContent.Request<Texture2D>("ProtoMod/Assets/ExtraTextures/Pixel", AssetRequestMode.ImmediateLoad);
+			Pixel = ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Pixel", AssetRequestMode.ImmediateLoad);
 		}
 		
 	

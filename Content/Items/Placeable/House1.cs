@@ -1,11 +1,11 @@
 using Microsoft.Xna.Framework;
-using ProtoMod.Content.Projectiles.Typeless;
-using ProtoMod.Content.Tiles;
+using SiriusMod.Content.Projectiles;
+using SiriusMod.Content.Tiles;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Items.Placeable
+namespace SiriusMod.Content.Items.Placeable
 {
     public class House1 : ModItem
     {

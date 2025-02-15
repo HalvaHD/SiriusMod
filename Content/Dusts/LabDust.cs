@@ -1,7 +1,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Dusts
+namespace SiriusMod.Content.Dusts
 {
 	public class LabDust : ModDust
 	{

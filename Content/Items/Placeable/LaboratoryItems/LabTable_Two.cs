@@ -2,9 +2,9 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
+namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabBarrelAtomic : ModItem
+    public class LabTable_Two : ModItem
     {
         public override void SetDefaults()
         {

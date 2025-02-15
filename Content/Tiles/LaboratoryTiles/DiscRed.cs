@@ -1,11 +1,10 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Dusts;
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
     public class DiscRed : ModTile
     {

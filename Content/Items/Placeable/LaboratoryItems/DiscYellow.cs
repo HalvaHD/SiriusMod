@@ -1,5 +1,3 @@
-using System.Drawing;
-using System.Numerics;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using Terraria;
@@ -9,7 +7,7 @@ using Color = Microsoft.Xna.Framework.Color;
 using Rectangle = Microsoft.Xna.Framework.Rectangle;
 using Vector2 = Microsoft.Xna.Framework.Vector2;
 
-namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
+namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
     public class DiscYellow : ModItem
     {

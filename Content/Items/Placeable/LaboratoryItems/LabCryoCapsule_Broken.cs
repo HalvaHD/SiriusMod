@@ -1,9 +1,9 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
+namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabChair : ModItem
+    public class LabCryoCapsule_Broken : ModItem
     {
         public override void SetDefaults()
         {
@@ -16,7 +16,7 @@ namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 15;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
+            // Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
         }
 
         public override void AddRecipes()

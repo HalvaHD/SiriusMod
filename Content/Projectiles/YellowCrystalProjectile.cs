@@ -1,10 +1,8 @@
 using System.Collections.Generic;
-using Microsoft.Xna.Framework;
-using ProtoMod.Content.Buffs;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Projectiles
+namespace SiriusMod.Content.Projectiles
 {
     public class YellowCrystalProjectile : ModProjectile
     {

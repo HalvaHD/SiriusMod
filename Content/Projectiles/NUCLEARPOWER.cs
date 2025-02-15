@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Projectiles.HALVAMinions;
+namespace SiriusMod.Content.Projectiles;
 
 public class NUCLEARPOWER : ModProjectile
 {
@@ -65,7 +65,7 @@ public class NUCLEARPOWER : ModProjectile
             dust = Dust.NewDustDirect(new Vector2(Projectile.Center.X - 400, Projectile.Center.Y - 200), 800, Projectile.height, DustID.Torch, 0f, 0f, 100, default, 3f);
             dust.velocity *= 3f;
         }
-        SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/NUCLEAREXPLOSION") {Volume = 1f}; 
+        SoundStyle style = new SoundStyle("SiriusMod/Assets/Sounds/NUCLEAREXPLOSION") {Volume = 1f}; 
         
         SoundEngine.PlaySound(style);
         foreach (Terraria.NPC target in Main.ActiveNPCs)

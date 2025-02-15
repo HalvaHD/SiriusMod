@@ -1,19 +1,20 @@
-using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary.Core;
+using SiriusMod.Content.Projectiles;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.NPC.Bosses.Protector
+namespace SiriusMod.Content.Bosses.Protector
 {
-	public class ProtectorParticle : ParticleLibrary.Core.Particle
+	public class ProtectorParticle2 : ParticleLibrary.Core.Particle
 	{
 		public int timer = Main.rand.Next(50, 100);
-		public float speedX = Main.rand.NextFloat(4f, 9f);
 		public float mult = Main.rand.NextFloat(10f, 31f) / 200f;
 		public int timeLeftMax;
 		public float size = 0f;
+		public Projectile Owner;
+		public Vector2 InitPos;
 
 		public float VelocityMult { get; init; }
 
@@ -26,49 +27,16 @@ namespace ProtoMod.Content.NPC.Bosses.Protector
 		/// </summary>
 		/// <param name="timeLeft"></param>
 		/// <param name="velocityMult"></param>
-		public ProtectorParticle(int timeLeft, float velocityMult = 0.99f)
+		public ProtectorParticle2(int timeLeft, float velocityMult = 0.99f)
 		{
-			if (timeLeft <= timeLeftMax / 2f)
-			{
-
-				Opacity = MathHelper.Lerp(1f, 0f, (float)(timeLeftMax / 2f - timeLeft) / (timeLeftMax / 2f));
-			}
-
-			float sineX = (float)Math.Sin(Main.GlobalTimeWrappedHourly * speedX);
-
-			// Makes the particle change directions or speeds.
-			// Timer is used for keeping track of the current cycle
-			if (timer == 0)
-				NewMovementCycle();
-
-			// Adds the wind velocity to the particle.
-			// It adds less the faster it is already going.
-			Velocity += new Vector2(
-				Main.windSpeedCurrent * (Main.windPhysicsStrength * 3f) *
-				MathHelper.Lerp(1f, 0.1f, Math.Abs(Velocity.X) / 6f), 0f);
-			// Add the sine component to the velocity.
-			// This is scaled by the mult, which changes every cycle.
-			Velocity += new Vector2(sineX * mult, -Main.rand.NextFloat(1f, 2f) / 100f);
-
-			// Clamp the velocity so the particle doesnt go too fast.
-			Utils.Clamp(Velocity.X, -6f, 6f);
-			Utils.Clamp(Velocity.Y, -6f, 6f);
-		
-
-		// Decrement the timer
-			timer--;
-
 			TimeLeft = timeLeft;
-			VelocityMult = velocityMult;
-			VelocityAcceleration.X = VelocityMult;
-			VelocityAcceleration.Y = VelocityMult;
 		}
 
 	/// <summary>
 		/// This parameterless constructor allows us to use our particle in the NewParticle(T) methods without errors
 		/// It's a good idea to provide default values for your parameter constructor unless it's not necessary
 		/// </summary>
-		public ProtectorParticle() : this(100, 0.99f) { }
+		public ProtectorParticle2() : this(30, 0.99f) { }
 
 		/// <summary>
 		/// Runs when the particle is created
@@ -77,6 +45,19 @@ namespace ProtoMod.Content.NPC.Bosses.Protector
 		{
 			timeLeftMax = TimeLeft;
 			size = Main.rand.NextFloat(5f, 11f) / 10f;
+			foreach (var proj in Main.ActiveProjectiles)
+			{
+				if (proj.type == ModContent.ProjectileType<ProtectorBlast>())
+				{
+					Owner = proj;
+					
+				}
+			}
+
+			if (Owner != null)
+			{
+				InitPos = Owner.Center;
+			}
 		}
 
 		/// <summary>
@@ -84,7 +65,12 @@ namespace ProtoMod.Content.NPC.Bosses.Protector
 		/// </summary>
 		public override void Update()
 		{
-			Scale = (TimeLeft / 100f) * 2;
+			Scale = (TimeLeft / 20f) * 3;
+			if (Owner != null)
+			{
+				Vector2 DrawPos = Owner.Center - InitPos;
+				Position = Position + (Owner.Center - InitPos) * 0.12f;
+			}
 		}
 
 		/// <summary>
@@ -94,7 +80,7 @@ namespace ProtoMod.Content.NPC.Bosses.Protector
 		/// <param name="location">The visual location, already taking into account <see cref="Main.screenPosition"/></param>
 		public override void Draw(SpriteBatch spriteBatch, Vector2 location)
 		{
-			Texture2D ember = ModContent.Request<Texture2D>("ProtoMod/Content/NPC/Bosses/Protector/ProtectorParticle").Value;
+			Texture2D ember = ModContent.Request<Texture2D>("SiriusMod/Content/NPC/Bosses/Protector/ProtectorParticle2").Value;
 
 			Color bright = Color.Multiply(new(240, 149, 46, 0), Opacity);
 			Color mid = Color.Multiply(new(187, 63, 25, 0), Opacity);
@@ -110,15 +96,5 @@ namespace ProtoMod.Content.NPC.Bosses.Protector
 			spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.None, Main.Rasterizer, null, Main.GameViewMatrix.ZoomMatrix);
 
 		}
-
-		/// <summary>
-		/// Runs when <see cref="Core.Particle.TimeLeft"/> reaches 0 or when <see cref="Core.Particle.Kill"/> is called.
-		/// </summary>
-		private void NewMovementCycle()
-		{
-			timer = Main.rand.Next(50, 100);
-			speedX = Main.rand.NextFloat(3f, 10f);
-			mult = Main.rand.NextFloat(10f, 31f) / 200f;
-		}
-    }
+	}
 }

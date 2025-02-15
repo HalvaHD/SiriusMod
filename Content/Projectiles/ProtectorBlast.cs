@@ -1,28 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using CalamityMod;
-using CalamityMod.Items.Placeables.FurnitureMonolith;
-using CalamityMod.Projectiles.Boss;
-using Luminance.Common.Utilities;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ParticleLibrary.Core;
-using ProtoMod.Content.NPC.Bosses.Protector;
 using ReLogic.Utilities;
+using SiriusMod.Content.Bosses.Protector;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.GameContent;
-using Terraria.ID;
 using Terraria.ModLoader;
-using Particle = Luminance.Core.Graphics.Particle;
 
-namespace ProtoMod.Content.Projectiles
+namespace SiriusMod.Content.Projectiles
 {
     public class ProtectorBlast : ModProjectile
     {
-        public override string Texture => "ProtoMod/Content/Projectiles/ProtectorBlastCircle";
+        public override string Texture => "SiriusMod/Content/Projectiles/ProtectorBlastCircle";
         public Vector2 InitPos;
         public float a = 0.05f;
         public float b = 0.05f;
@@ -31,9 +24,9 @@ namespace ProtoMod.Content.Projectiles
         SlotId PreImpactSound;
         SlotId ImpactSound;
         SlotId ChargeSound;
-        readonly SoundStyle ImpactStyle = new SoundStyle("ProtoMod/Assets/Sounds/Impact");
-        private readonly SoundStyle ChargeStyle = new SoundStyle("ProtoMod/Assets/Sounds/Charge") { Volume = 0.8f };
-        readonly SoundStyle PreImpactStyle = new SoundStyle("ProtoMod/Assets/Sounds/Pre-Impact") {Volume = 5f};
+        readonly SoundStyle ImpactStyle = new SoundStyle("SiriusMod/Assets/Sounds/Impact");
+        private readonly SoundStyle ChargeStyle = new SoundStyle("SiriusMod/Assets/Sounds/Charge") { Volume = 0.8f };
+        readonly SoundStyle PreImpactStyle = new SoundStyle("SiriusMod/Assets/Sounds/Pre-Impact") {Volume = 5f};
         public static bool InvisibleDuringBoom = false;
         public static bool ImpactState;
 
@@ -67,7 +60,7 @@ namespace ProtoMod.Content.Projectiles
         public override void OnSpawn(IEntitySource source)
         {
             InitPos = Projectile.Center;
-            SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/Charge");
+            SoundStyle style = new SoundStyle("SiriusMod/Assets/Sounds/Charge");
             SoundEngine.SoundPlayer.Play(style);
             PreImpact = false;
             Impact = false;

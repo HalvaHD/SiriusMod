@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
+namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
     public class BrokenServers_DiscYellow : ModItem
     {

@@ -2,21 +2,21 @@ using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.Localization;
 
-namespace ProtoMod.Common.ItemDropRules.DropConditions
+namespace SiriusMod.Common.ItemDropRules.DropConditions
 {
     public class NextKillsDropCondition : IItemDropRuleCondition
     {
         private static LocalizedText Description;
 
         public NextKillsDropCondition() {
-            Description ??= Language.GetOrRegister("Mods.ProtoMod.DropConditions.NextKills");
+            Description ??= Language.GetOrRegister("Mods.SiriusMod.DropConditions.NextKills");
         }
 
         public bool CanDrop(DropAttemptInfo info)
         {
             NPC npc = info.npc;
             return npc.boss
-                   && ProtoMod.CheckKilledBosses.Contains(npc.type);
+                   && SiriusMod.CheckKilledBosses.Contains(npc.type);
         }
 
         public bool CanShowItemDropInUI() {

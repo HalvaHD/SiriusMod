@@ -2,7 +2,7 @@
 // using Terraria.ModLoader;
 // using Terraria;
 //
-// namespace ProtoMod.Content.Items.Placeable.Lab
+// namespace SiriusMod.Content.Items.Placeable.Lab
 // {
 //     public class Server : ModItem
 //     {

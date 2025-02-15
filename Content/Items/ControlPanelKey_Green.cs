@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Items
+namespace SiriusMod.Content.Items
 {
     public class ControlPanelKey_Green : ModItem
     {

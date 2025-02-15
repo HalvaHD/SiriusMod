@@ -1,9 +1,9 @@
 using Microsoft.Xna.Framework;
-using ProtoMod.Content.Items.Placeable;
+using SiriusMod.Content.Items.Placeable;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Projectiles.Typeless
+namespace SiriusMod.Content.Projectiles
 {
     public class StartingHouseVisual : ModProjectile
     {

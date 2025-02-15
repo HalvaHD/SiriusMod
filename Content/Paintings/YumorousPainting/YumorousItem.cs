@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Paintings.YumorousPainting
+namespace SiriusMod.Content.Paintings.YumorousPainting
 {
     internal class YumorousItem : ModItem
     {

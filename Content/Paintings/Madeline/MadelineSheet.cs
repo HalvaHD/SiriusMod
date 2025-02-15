@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Paintings.Madeline
+namespace SiriusMod.Content.Paintings.Madeline
 {
     internal class MadelineSheet : ModTile
     {

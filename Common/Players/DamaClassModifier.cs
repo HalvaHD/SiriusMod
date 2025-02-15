@@ -1,12 +1,12 @@
 using System.IO;
 using Microsoft.Xna.Framework;
-using ProtoMod.Content.Buffs;
+using SiriusMod.Content.Buffs;
 using Terraria;
 using Terraria.Audio;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Common.Players
+namespace SiriusMod.Common.Players
 {
     internal class DamageClassModifier : ModPlayer
     {
@@ -109,7 +109,7 @@ namespace ProtoMod.Common.Players
         public static void SendDodgeMessage(int whoAmI)
         {
             // This code is called by both the initial 
-            ModPacket packet = ModContent.GetInstance<ProtoMod>().GetPacket();
+            ModPacket packet = ModContent.GetInstance<SiriusMod>().GetPacket();
             // packet.Write((byte)Twig.MessageType.NanoDodge);
             packet.Write((byte)whoAmI);
             packet.Send(ignoreClient: whoAmI);

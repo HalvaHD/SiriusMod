@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Common.GlobalNPCs
+namespace SiriusMod.Common.GlobalNPCs
 {
     public class GlobalNPCHitModfiy : GlobalNPC
     {

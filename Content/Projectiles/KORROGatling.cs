@@ -1,11 +1,11 @@
 using Microsoft.Xna.Framework;
-using ProtoMod.Content.NPC;
+using SiriusMod.Content.NPC;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Projectiles
+namespace SiriusMod.Content.Projectiles
 {
     public class KORROGatling : ModProjectile
     {

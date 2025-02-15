@@ -1,7 +1,7 @@
 using Microsoft.Xna.Framework;
 using Terraria.GameContent.UI;
 
-namespace ProtoMod.Content.Currencies
+namespace SiriusMod.Content.Currencies
 {
 	public class StarCryPrice : CustomCurrencySingleCoin
 	{

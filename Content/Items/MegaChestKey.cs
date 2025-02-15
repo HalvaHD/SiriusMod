@@ -1,13 +1,8 @@
-using Microsoft.Xna.Framework.Graphics;
-using ReLogic.Content;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Color = Microsoft.Xna.Framework.Color;
-using Rectangle = Microsoft.Xna.Framework.Rectangle;
-using Vector2 = Microsoft.Xna.Framework.Vector2;
 
-namespace ProtoMod.Content.Items
+namespace SiriusMod.Content.Items
 {
     public class MegaChestKey : ModItem
     {

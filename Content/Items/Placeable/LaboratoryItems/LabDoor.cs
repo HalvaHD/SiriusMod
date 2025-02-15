@@ -1,9 +1,9 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
+namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabChair : ModItem
+    public class LabDoor : ModItem
     {
         public override void SetDefaults()
         {

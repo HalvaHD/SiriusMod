@@ -1,31 +1,20 @@
 using System.Collections.Generic;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Currencies;
-using ProtoMod.Content.Items;
-using ProtoMod.Content.Projectiles;
-using ProtoMod.Core;
 using ReLogic.Content;
 using ReLogic.Content.Sources;
-using Terraria.GameContent.UI;
+using SiriusMod.Core;
 using Terraria.ModLoader;
 
-namespace ProtoMod
+namespace SiriusMod
 {
-	public class ProtoMod : Mod
+	public class SiriusMod : Mod
 	{
-		public static string EffectsPath => "ProtoMod/Assets/Effects";
-		public static string ExtraTexturesPath => "ProtoMod/Assets/ExtraTextures";
-		public static string MusicPath => "ProtoMod/Assets/Music";
-		public static string SoundsPath => "ProtoMod/Assets/Sounds";
-		public static string TexturesPath => "ProtoMod/Assets/Textures";
+		public static string EffectsPath => "SiriusMod/Assets/Effects";
+		public static string ExtraTexturesPath => "SiriusMod/Assets/ExtraTextures";
+		public static string MusicPath => "SiriusMod/Assets/Music";
+		public static string SoundsPath => "SiriusMod/Assets/Sounds";
+		public static string TexturesPath => "SiriusMod/Assets/Textures";
 		
-		
-		
-		
-		
-		public static int CosmicCryCurrencyID;
-		public static int CosmicCryCurrencyID2;
-		public static int CosmicCryCurrencyID5;
 		public static List<int> CheckKilledBosses = new ();
 		
 		public static Effect SpriteRotation;

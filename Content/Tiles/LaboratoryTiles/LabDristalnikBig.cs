@@ -1,6 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Dusts;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
@@ -11,9 +10,9 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class LabDristalnik : ModTile
+	public class LabDristalnikBig : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -113,7 +112,7 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 		public override void MouseOver(int i, int j)
 		{
 			Player player = Main.LocalPlayer;
-			player.cursorItemIconID = ModContent.ItemType<Items.Placeable.LaboratoryItems.LabDristalnik>();
+			player.cursorItemIconID = ModContent.ItemType<Items.Placeable.LaboratoryItems.LabDristalnikBig>();
 			player.noThrow = 2;
 			player.cursorItemIconEnabled = true;
 		}

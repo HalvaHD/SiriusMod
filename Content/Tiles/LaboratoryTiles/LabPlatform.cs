@@ -1,11 +1,11 @@
 using Microsoft.Xna.Framework;
-using ProtoMod.Content.Dusts;
+using SiriusMod.Content.Dusts;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
 	public class LabPlatform : ModTile
 	{

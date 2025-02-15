@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.Localization;
 
-namespace ProtoMod.Common.ItemDropRules.DropConditions
+namespace SiriusMod.Common.ItemDropRules.DropConditions
 {
     // Very simple drop condition: drop during daytime
     public class FirstKillDropCondition : IItemDropRuleCondition
@@ -10,14 +10,14 @@ namespace ProtoMod.Common.ItemDropRules.DropConditions
         private static LocalizedText Description;
 
         public FirstKillDropCondition() {
-            Description ??= Language.GetOrRegister("Mods.ProtoMod.DropConditions.FirstKill");
+            Description ??= Language.GetOrRegister("Mods.SiriusMod.DropConditions.FirstKill");
         }
 
         public bool CanDrop(DropAttemptInfo info)
         {
             NPC npc = info.npc;
             return npc.boss
-                   && !ProtoMod.CheckKilledBosses.Contains(npc.type);
+                   && !SiriusMod.CheckKilledBosses.Contains(npc.type);
         }
 
         public bool CanShowItemDropInUI() {

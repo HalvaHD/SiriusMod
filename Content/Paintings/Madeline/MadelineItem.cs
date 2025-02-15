@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Paintings.Madeline
+namespace SiriusMod.Content.Paintings.Madeline
 {
     internal class MadelineItem : ModItem
     {

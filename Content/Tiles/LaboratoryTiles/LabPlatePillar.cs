@@ -1,9 +1,9 @@
 ﻿using Microsoft.Xna.Framework;
-using ProtoMod.Content.Dusts;
+using SiriusMod.Content.Dusts;
 using Terraria;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
 	public class LabPlatePillar : ModWall
 	{

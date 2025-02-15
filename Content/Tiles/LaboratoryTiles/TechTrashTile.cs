@@ -1,9 +1,9 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Common.Utilities;
-using ProtoMod.Content.Items;
-using ProtoMod.Content.NPC.Bosses.Protector;
-using ProtoMod.Systems;
+using SiriusMod.Common.Utilities;
+using SiriusMod.Content.Bosses.Protector;
+using SiriusMod.Content.Items;
+using SiriusMod.Systems;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameContent.ObjectInteractions;
@@ -11,7 +11,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
 	public class TechTrashTile : ModTile
 	{
@@ -88,8 +88,8 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 
 		public override bool PreDraw(int i, int j, SpriteBatch spriteBatch) {
 			Tile tile = Main.tile[i, j];
-			Texture2D texture = ModContent.Request<Texture2D>("ProtoMod/Content/Tiles/LaboratoryTiles/TechTrashTile").Value;
-			Texture2D glowTexture = ModContent.Request<Texture2D>("ProtoMod/Content/Tiles/LaboratoryTiles/TechTrashTile_Glow").Value;
+			Texture2D texture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/TechTrashTile").Value;
+			Texture2D glowTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/TechTrashTile_Glow").Value;
 
 			// If you are using ModTile.SpecialDraw or PostDraw or PreDraw, use this snippet and add zero to all calls to spriteBatch.Draw
 			// The reason for this is to accommodate the shift in drawing coordinates that occurs when using the different Lighting mode

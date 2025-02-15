@@ -1,9 +1,9 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod
+namespace SiriusMod
 {
-    public class ProtoModSets : ModSystem
+    public class SiriusModSets : ModSystem
     {
         // Спасибо тем, кто придумал эту систему!
         public class Items

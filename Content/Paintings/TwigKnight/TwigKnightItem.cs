@@ -1,7 +1,7 @@
 ﻿using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Paintings.TwigKnight
+namespace SiriusMod.Content.Paintings.TwigKnight
 {
     internal class TwigKnightItem : ModItem
     {

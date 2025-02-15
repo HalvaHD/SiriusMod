@@ -1,15 +1,15 @@
-﻿using Terraria.ID;
+﻿using Terraria;
+using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
 
-namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
+namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabScreen_Beer : ModItem
+    public class LabScreen_Off : ModItem
     {
 
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabScreenAtlas>(), 0);
+            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabScreens>(), 0);
             Item.width = 66;
             Item.height = 40;
             Item.maxStack = Item.CommonMaxStack;

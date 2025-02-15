@@ -1,7 +1,7 @@
-using ProtoMod.Common.GlobalNPCs;
+using SiriusMod.Common.GlobalNPCs;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Buffs
+namespace SiriusMod.Content.Buffs
 {
     public class DarkEnergyDebuff : ModBuff
     {

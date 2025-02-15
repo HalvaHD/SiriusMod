@@ -1,9 +1,9 @@
-﻿using ProtoMod.Content.Tiles.LaboratoryTiles;
+﻿using SiriusMod.Content.Tiles.LaboratoryTiles;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Terraria;
 
-namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
+namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
     public class LabScreen_Formula4 : ModItem
     {
@@ -12,7 +12,7 @@ namespace ProtoMod.Content.Items.Placeable.LaboratoryItems
 
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<LabScreenAtlas>(), 10);
+            Item.DefaultToPlaceableTile(ModContent.TileType<LabScreensBig>(), 10);
             Item.width = 62;
             Item.height = 40;
             Item.maxStack = Item.CommonMaxStack;

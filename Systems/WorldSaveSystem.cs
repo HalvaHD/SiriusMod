@@ -1,12 +1,10 @@
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using ProtoMod.Content.Projectiles;
 using Terraria;
-using Terraria.DataStructures;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 
-namespace ProtoMod.Core.Systems
+namespace SiriusMod.Systems
 {
     public class WorldSaveSystem : ModSystem
     {
@@ -22,12 +20,12 @@ namespace ProtoMod.Core.Systems
                 return;
             tag["TeleporterLocationX"] = TeleporterLocation.X;
             tag["TeleporterLocationY"] = TeleporterLocation.Y;
-            tag["KilledBosses"] = ProtoMod.CheckKilledBosses;
+            tag["KilledBosses"] = SiriusMod.CheckKilledBosses;
         }
 
         public override void LoadWorldData(TagCompound tag)
         {
-            ProtoMod.CheckKilledBosses = new List<int>(tag.GetList<int>("KilledBoss"));
+            SiriusMod.CheckKilledBosses = new List<int>(tag.GetList<int>("KilledBoss"));
         }
     }
 }

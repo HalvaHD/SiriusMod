@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Common.Players;
-using ProtoMod.Systems;
 using ReLogic.Utilities;
+using SiriusMod.Common.Players;
+using SiriusMod.Systems;
 using Terraria;
 using Terraria.Audio;
 using Terraria.GameContent.UI.Elements;
@@ -13,7 +13,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace ProtoMod.UI.DialogueUI
+namespace SiriusMod.UI.DialogueUI
 {
 	// This custom UI will show whenever the player is holding the ExampleCustomResourceWeapon item and will display the player's custom resource amounts that are tracked in ExampleResourcePlayer
 	internal class DialogueUI : UIState
@@ -33,7 +33,7 @@ namespace ProtoMod.UI.DialogueUI
 		public SlotId TextSound; 
 		public SlotId WindowSound; 
 		
-		public SoundStyle WindowSoundStyle = new SoundStyle("ProtoMod/Assets/Sounds/DialogueShow");
+		public SoundStyle WindowSoundStyle = new SoundStyle("SiriusMod/Assets/Sounds/DialogueShow");
 
 		public override void OnInitialize() {
 			// Create a UIElement for all the elements to sit on top of, this simplifies the numbers as nested elements can be positioned relative to the top left corner of this element. 
@@ -44,13 +44,13 @@ namespace ProtoMod.UI.DialogueUI
 			area.Width.Set(700, 0f); // We will be placing the following 2 UIElements within this 182x60 area.
 			area.Height.Set(300, 0f);
 
-			IconImage = new UIImage(ModContent.Request<Texture2D>("ProtoMod/UI/DialogueUI/HALVADefault")); // Frame of our resource bar
+			IconImage = new UIImage(ModContent.Request<Texture2D>("SiriusMod/UI/DialogueUI/HALVADefault")); // Frame of our resource bar
 			IconImage.Left.Set(45, 0f);
 			IconImage.Top.Set(25, 0f);
 			IconImage.Width.Set(100, 0f);
 			IconImage.Height.Set(34, 0f);
 			
-			// DialogueWindowText = new UIImage(ModContent.Request<Texture2D>("ProtoMod/UI/PPCDialogueWindow/Dialogue_UI_Copy")); // Frame of our resource bar
+			// DialogueWindowText = new UIImage(ModContent.Request<Texture2D>("SiriusMod/UI/PPCDialogueWindow/Dialogue_UI_Copy")); // Frame of our resource bar
 			// DialogueWindowText.Left.Set(5, 0f);
 			// DialogueWindowText.Top.Set(0, 0f);
 			// DialogueWindowText.Width.Set(138, 0f);
@@ -65,7 +65,7 @@ namespace ProtoMod.UI.DialogueUI
 			
 
 			
-			DialogueWindow = new UIImage(ModContent.Request<Texture2D>("ProtoMod/UI/DialogueUI/DialogueUI")); // Frame of our resource bar
+			DialogueWindow = new UIImage(ModContent.Request<Texture2D>("SiriusMod/UI/DialogueUI/DialogueUI")); // Frame of our resource bar
 			DialogueWindow.Left.Set(5, 0f);
 			DialogueWindow.Top.Set(0, 0f);
 			DialogueWindow.Width.Set(138, 0f);
@@ -117,7 +117,7 @@ namespace ProtoMod.UI.DialogueUI
 				if (Counter % 4 == 0)
 				{
 					AnimationCounter--;
-					DialogueWindow.SetImage(ModContent.Request<Texture2D>($"ProtoMod/UI/DialogueUI/start{AnimationCounter}"));
+					DialogueWindow.SetImage(ModContent.Request<Texture2D>($"SiriusMod/UI/DialogueUI/start{AnimationCounter}"));
 				}
 			}
 			else if (SkipDialouge == true && AnimationCounter == 1)
@@ -128,12 +128,12 @@ namespace ProtoMod.UI.DialogueUI
 			// Main.NewText("ААА");
 			if (Main.LocalPlayer.GetModPlayer<ProtoModPlayer>().DialogueShown != true)
 				return;
-			IconImage.SetImage(ModContent.Request<Texture2D>($"ProtoMod/UI/DialogueUI/{DialogueSystem.DialogueImage}"));
+			IconImage.SetImage(ModContent.Request<Texture2D>($"SiriusMod/UI/DialogueUI/{DialogueSystem.DialogueImage}"));
 			if (SkipDialouge != true)
 			{
 				if (AnimationCounter < 9)
 				{
-					DialogueWindow.SetImage(ModContent.Request<Texture2D>($"ProtoMod/UI/DialogueUI/start{AnimationCounter}"));
+					DialogueWindow.SetImage(ModContent.Request<Texture2D>($"SiriusMod/UI/DialogueUI/start{AnimationCounter}"));
 					if (Counter % 4 == 0)
 					{
 						AnimationCounter++;
@@ -242,7 +242,7 @@ namespace ProtoMod.UI.DialogueUI
 			int resourceBarIndex = layers.FindIndex(layer => layer.Name.Equals("Vanilla: Resource Bars"));
 			if (resourceBarIndex != -1) {
 				layers.Insert(resourceBarIndex, new LegacyGameInterfaceLayer(
-					"ProtoMod: DialogueUI",
+					"SiriusMod: DialogueUI",
 					delegate {
 						DialoguePPCUI.Draw(Main.spriteBatch, new GameTime());
 						return true;

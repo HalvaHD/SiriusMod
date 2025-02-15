@@ -4,7 +4,7 @@ using Terraria.Audio;
 using Terraria.DataStructures;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Projectiles.AutAnimation
+namespace SiriusMod.Content.Projectiles
 {
 	// This file shows an animated projectile
 	// This file also shows advanced drawing to center the drawn projectile correctly
@@ -68,10 +68,10 @@ namespace ProtoMod.Content.Projectiles.AutAnimation
 			}
 			if (Projectile.timeLeft == 1)
 			{
-				SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/AncientPortal") { Volume = 10f };
+				SoundStyle style = new SoundStyle("SiriusMod/Assets/Sounds/AncientPortal") { Volume = 10f };
 				SoundEngine.PlaySound(style);
 				Projectile.NewProjectile(new EntitySource_Film(), Projectile.Center, new Vector2(0),
-					ModContent.ProjectileType<AutPortal.AutPortal>(), 0, 0);	
+					ModContent.ProjectileType<AutPortal>(), 0, 0);	
 					
 				
 			}

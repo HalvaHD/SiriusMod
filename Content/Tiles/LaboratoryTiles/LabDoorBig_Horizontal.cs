@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Common.Utilities;
-using ProtoMod.Content.Dusts;
+using SiriusMod.Common.Utilities;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
@@ -10,9 +9,9 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class LabDoorDefault_Horizontal : ModTile
+	public class LabDoorBig_Horizontal : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -94,8 +93,8 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 		
 		public override bool PreDraw(int i, int j, SpriteBatch spriteBatch) {
 			Tile tile = Main.tile[i, j];
-			Texture2D texture = ModContent.Request<Texture2D>("ProtoMod/Content/Tiles/LaboratoryTiles/LabDoorDefault_Horizontal").Value;
-			Texture2D glowTexture = ModContent.Request<Texture2D>("ProtoMod/Content/Tiles/LaboratoryTiles/LabDoorDefault_Horizontal_Glow").Value;
+			Texture2D texture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/LabDoorBig_Horizontal").Value;
+			Texture2D glowTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/LabDoorDefault_Horizontal_Glow").Value;
 
 			// If you are using ModTile.SpecialDraw or PostDraw or PreDraw, use this snippet and add zero to all calls to spriteBatch.Draw
 			// The reason for this is to accommodate the shift in drawing coordinates that occurs when using the different Lighting mode
@@ -137,7 +136,7 @@ namespace ProtoMod.Content.Tiles.LaboratoryTiles
 		public override bool IsTileValidForEntity(int x, int y)
 		{
 			Tile tile = Main.tile[x, y];
-			return tile.HasTile && (int) tile.TileType == ModContent.TileType<LabDoorDefault_Horizontal>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
+			return tile.HasTile && (int) tile.TileType == ModContent.TileType<LabDoorBig_Horizontal>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
 		}
 		public override int Hook_AfterPlacement(int i, int j, int type, int style, int direction, int alternate)
 		{

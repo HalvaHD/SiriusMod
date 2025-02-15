@@ -2,16 +2,14 @@ using System.Collections.Generic;
 using Luminance.Core.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Items;
-using ProtoMod.Content.NPC;
+using SiriusMod.Content.Items;
+using SiriusMod.Content.NPC;
 using Terraria;
 using Terraria.DataStructures;
-using Terraria.GameContent;
-using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Projectiles.AutPortal
+namespace SiriusMod.Content.Projectiles
 {
     // This file shows an animated projectile
     // This file also shows advanced drawing to center the drawn projectile correctly
@@ -20,7 +18,7 @@ namespace ProtoMod.Content.Projectiles.AutPortal
         public static bool PortalOpen;
         public static bool ColorChange;
         
-        public override string Texture => "ProtoMod/Assets/Textures/Menu/BlankPixel";
+        public override string Texture => "SiriusMod/Assets/Textures/Menu/BlankPixel";
         public override void SetStaticDefaults()
         {
             // Total count animation frames
@@ -139,20 +137,20 @@ namespace ProtoMod.Content.Projectiles.AutPortal
                     (int)Projectile.Center.Y,
                     ModContent.NPCType<HALVA_Prime>(), Target: 255);
             }
-            Main.NewText((object)Language.GetTextValue("ProtoMod.Twig.ItemChat.AutNPCs"));
-            AutAnimation.AutAnimation.AutCanSpawn = true;
+            Main.NewText((object)Language.GetTextValue("SiriusMod.Twig.ItemChat.AutNPCs"));
+            AutAnimation.AutCanSpawn = true;
         }
 
         public override bool PreDraw(ref Color lightColor)
         {
-            Texture2D extraTexture1 = ModContent.Request<Texture2D>($"ProtoMod/Assets/ExtraTextures/Vortex").Value;
+            Texture2D extraTexture1 = ModContent.Request<Texture2D>($"SiriusMod/Assets/ExtraTextures/Vortex").Value;
 
             Main.spriteBatch.End();
             Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, Main.DefaultSamplerState,
-                DepthStencilState.None, Main.Rasterizer, ProtoMod.SpriteRotation, Main.GameViewMatrix.ZoomMatrix);
-            ProtoMod.SpriteRotation.Parameters["rotation"].SetValue(MathHelper.ToRadians(Main.GlobalTimeWrappedHourly * 180f));
+                DepthStencilState.None, Main.Rasterizer, SiriusMod.SpriteRotation, Main.GameViewMatrix.ZoomMatrix);
+            SiriusMod.SpriteRotation.Parameters["rotation"].SetValue(MathHelper.ToRadians(Main.GlobalTimeWrappedHourly * 180f));
             Color color = Color.Lerp(Color.White, Color.DarkRed, 0.6f);
-            ProtoMod.SpriteRotation.Parameters["uColor"].SetValue(color.ToVector4());
+            SiriusMod.SpriteRotation.Parameters["uColor"].SetValue(color.ToVector4());
 
             Main.spriteBatch.Draw(extraTexture1, Projectile.Center - Main.screenPosition, new Rectangle?(), Color.White,
                 Projectile.rotation, extraTexture1.Size() / 2f, Projectile.scale, SpriteEffects.None, 0f);

@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Content.Dusts;
+using SiriusMod.Content.Dusts;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -11,7 +11,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
-namespace ProtoMod.Content.Tiles.LaboratoryTiles
+namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
     public class LabChest : ModTile
     {

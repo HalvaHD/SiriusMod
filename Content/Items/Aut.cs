@@ -1,8 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using ProtoMod.Common.Players;
-using ProtoMod.Content.NPC;
-using ProtoMod.Content.Projectiles.AutAnimation;
+using SiriusMod.Common.Players;
+using SiriusMod.Content.NPC;
+using SiriusMod.Content.Projectiles;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -10,7 +10,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Items
+namespace SiriusMod.Content.Items
 {
     public class Aut : ModItem
     {
@@ -73,10 +73,10 @@ namespace ProtoMod.Content.Items
             {
                 if (AutAnimation.AutCanSpawn)
                 {
-                    Main.NewText((object)Language.GetTextValue("Mods.ProtoMod.ItemChat.AutSpawn"));
+                    Main.NewText((object)Language.GetTextValue("Mods.SiriusMod.ItemChat.AutSpawn"));
                     Projectile.NewProjectile(new EntitySource_ItemUse(player, Item), Main.LocalPlayer.position.X,
                         Main.LocalPlayer.position.Y, 0f, -3f, ModContent.ProjectileType<AutAnimation>(), 0, 0);
-                    SoundStyle style = new SoundStyle("ProtoMod/Assets/Sounds/AncientRoar") { Volume = 10f };
+                    SoundStyle style = new SoundStyle("SiriusMod/Assets/Sounds/AncientRoar") { Volume = 10f };
                     SoundEngine.PlaySound(style);
                     return true;
                 }
@@ -93,7 +93,7 @@ namespace ProtoMod.Content.Items
 
         public void TextShowUps()
         {
-            Main.NewText((object)Language.GetTextValue("Mods.ProtoMod.ItemChat.AutExist"));
+            Main.NewText((object)Language.GetTextValue("Mods.SiriusMod.ItemChat.AutExist"));
             TextShowUp = true;
             ProtoModPlayer.TextShowUpCD = 18;
 

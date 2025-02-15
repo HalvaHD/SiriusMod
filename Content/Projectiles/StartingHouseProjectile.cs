@@ -6,7 +6,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ProtoMod.Content.Projectiles.Typeless
+namespace SiriusMod.Content.Projectiles
 {
     public class StartingHouseProjectile : ModProjectile
     {

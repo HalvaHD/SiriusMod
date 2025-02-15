@@ -1,6 +1,6 @@
-displayName = Sirius [Alpha]
+displayName = Sirius [Pre-Alpha]
 author = WhySoSirius Team
-version = 0.1.0.0
+version = 0.1.0.1
 weakReferences = CalamityMod, ParticleLibrary
 modReferences = Luminance, StructureHelper
 buildIgnore = *.csproj, *.user, obj\*, bin\*, .vs\*, Luminance.dl, Luminance.pdb, Luminance.xml, .idea\*
