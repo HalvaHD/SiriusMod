@@ -3,7 +3,9 @@ using Microsoft.Xna.Framework.Graphics;
 using ProtoMod.Content.Currencies;
 using ProtoMod.Content.Items;
 using ProtoMod.Content.Projectiles;
+using ProtoMod.Core;
 using ReLogic.Content;
+using ReLogic.Content.Sources;
 using Terraria.GameContent.UI;
 using Terraria.ModLoader;
 
@@ -38,6 +40,13 @@ namespace ProtoMod
 		{
 			SpriteRotation = ModContent.Request<Effect>($"{EffectsPath}/SpriteRotation", AssetRequestMode.ImmediateLoad).Value;
 		}
+
+        public override IContentSource CreateDefaultContentSource()
+        {
+            PathRedirectContentSource contentSource = new PathRedirectContentSource(base.CreateDefaultContentSource());
+            contentSource.MapDirectory("Content", "Assets");
+            return contentSource;
+        }
 
 		public override void PostSetupContent()
 		{
