@@ -30,12 +30,12 @@ namespace SiriusMod
 			SpriteRotation = ModContent.Request<Effect>($"{EffectsPath}/SpriteRotation", AssetRequestMode.ImmediateLoad).Value;
 		}
 
-        public override IContentSource CreateDefaultContentSource()
-        {
-            PathRedirectContentSource contentSource = new PathRedirectContentSource(base.CreateDefaultContentSource());
-            contentSource.MapDirectory("Content", "Assets");
-            return contentSource;
-        }
+        // public override IContentSource CreateDefaultContentSource()
+        // {
+        //     PathRedirectContentSource contentSource = new PathRedirectContentSource(base.CreateDefaultContentSource());
+        //     contentSource.MapDirectory("Content", "Assets");
+        //     return contentSource;
+        // } // Doesn't required as for now
 
 		public override void PostSetupContent()
 		{

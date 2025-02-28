@@ -11,6 +11,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 	{
 		public override void SetStaticDefaults()
 		{
+
 			Main.tileLighted[Type] = true;
 			Main.tileFrameImportant[Type] = true;
 			Main.tileNoAttach[Type] = true;
