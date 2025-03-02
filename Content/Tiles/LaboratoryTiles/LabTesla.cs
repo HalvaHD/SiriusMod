@@ -1,31 +1,33 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using SiriusMod.Content.Dusts;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.Enums;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-using Terraria.Enums;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class LabBookshelf : ModTile
+	public class LabTesla : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
+
+			Main.tileLighted[Type] = true;
 			Main.tileFrameImportant[Type] = true;
-			Main.tileNoAttach[Type] = false;
+			Main.tileNoAttach[Type] = true;
 			Main.tileLavaDeath[Type] = false;
 			Main.tileWaterDeath[Type] = false;
-			Main.tileSolidTop[Type] = true;
-			Main.tileTable[Type] = true;
+			
 			
 			TileObjectData.newTile.Height = 4;
-			TileObjectData.newTile.Width = 3;
+			TileObjectData.newTile.Width = 2;
 			TileObjectData.newTile.CoordinateWidth = 16;
 			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16];
 			TileObjectData.newTile.CoordinatePadding = 2;
 			TileObjectData.newTile.Origin = new Point16(1, 3);
-			
+
 			TileObjectData.newTile.UsesCustomCanPlace = true;
 			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, TileObjectData.newTile.Width, 0);
 			
@@ -34,6 +36,10 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.addTile(Type);
 			AddMapEntry(new Color(123, 134, 145));
 		}
+
+		public override void NumDust(int i, int j, bool fail, ref int num)
+			=> num = fail ? 1 : 3;
+
 		public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
 		{
 			int xFrameOffset = Main.tile[i, j].TileFrameX;
@@ -49,5 +55,4 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 				spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 18, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
 		}
 	}
-	
 }

@@ -10,7 +10,7 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class LabTable_Two : ModTile
+	public class LabBigTableTwo : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -19,6 +19,8 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			Main.tileTable[Type] = true;
 			Main.tileLavaDeath[Type] = false;
 			Main.tileWaterDeath[Type] = false;
+			Main.tileSolidTop[Type] = true;
+			Main.tileTable[Type] = true;
 			
 			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
 			
@@ -32,8 +34,9 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newTile.CoordinateWidth = 16;
 			TileObjectData.newTile.CoordinateHeights = [16, 16, 16];
 			TileObjectData.newTile.CoordinatePadding = 2;
+			TileObjectData.newTile.Origin = new Point16(1, 2);
 			TileObjectData.newTile.UsesCustomCanPlace = true;
-			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, 2, 1);
+			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, TileObjectData.newTile.Width, 0);
 			TileObjectData.newTile.LavaDeath = false;
 			
 			TileObjectData.addTile(Type);

@@ -2,38 +2,48 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.Enums;
+using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
-using Terraria.Enums;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class LabBookshelf : ModTile
+	public class LabBigTableOne : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
 			Main.tileFrameImportant[Type] = true;
-			Main.tileNoAttach[Type] = false;
+			Main.tileSolidTop[Type] = true;
+			Main.tileTable[Type] = true;
 			Main.tileLavaDeath[Type] = false;
 			Main.tileWaterDeath[Type] = false;
 			Main.tileSolidTop[Type] = true;
 			Main.tileTable[Type] = true;
 			
-			TileObjectData.newTile.Height = 4;
-			TileObjectData.newTile.Width = 3;
-			TileObjectData.newTile.CoordinateWidth = 16;
-			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16];
-			TileObjectData.newTile.CoordinatePadding = 2;
-			TileObjectData.newTile.Origin = new Point16(1, 3);
+			AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
 			
+			AdjTiles = new int[] { TileID.Tables };
+
+
+			AddMapEntry(new Color(200, 200, 200), Language.GetText("MapObject.Table"));
+			
+			TileObjectData.newTile.Height = 3;
+			TileObjectData.newTile.Width = 4;
+			TileObjectData.newTile.CoordinateWidth = 16;
+			TileObjectData.newTile.CoordinateHeights = [16, 16, 16];
+			TileObjectData.newTile.CoordinatePadding = 2;
+			TileObjectData.newTile.Origin = new Point16(1, 2);
 			TileObjectData.newTile.UsesCustomCanPlace = true;
 			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, TileObjectData.newTile.Width, 0);
-			
 			TileObjectData.newTile.LavaDeath = false;
-
+			
+			
 			TileObjectData.addTile(Type);
 			AddMapEntry(new Color(123, 134, 145));
 		}
+
 		public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
 		{
 			int xFrameOffset = Main.tile[i, j].TileFrameX;
@@ -46,8 +56,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			if (!trackTile.IsHalfBlock && trackTile.Slope == 0)
 				spriteBatch.Draw(glowmask, drawPosition, new Rectangle(xFrameOffset, yFrameOffset, 16, 16), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
 			else if (trackTile.IsHalfBlock)
-				spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 18, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
+				spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 16, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
 		}
 	}
-	
 }

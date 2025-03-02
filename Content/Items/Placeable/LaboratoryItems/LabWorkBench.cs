@@ -4,12 +4,12 @@ using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabTable_One : ModItem
+    public class LabWorkBench : ModItem
     {
         public override void SetDefaults()
         {
-            Item.width = 21;
-            Item.height = 34;
+            Item.width = 32;
+            Item.height = 16;
             Item.maxStack = Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;

@@ -22,6 +22,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newTile.CoordinateWidth = 16;
 			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16];
 			TileObjectData.newTile.CoordinatePadding = 2;
+			TileObjectData.newTile.Origin = new Point16(1, 4);
 			
 			TileObjectData.newTile.UsesCustomCanPlace = true;
 			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, TileObjectData.newTile.Width, 0);

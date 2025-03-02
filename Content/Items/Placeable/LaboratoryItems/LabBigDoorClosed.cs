@@ -4,12 +4,12 @@ using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabDoorBig : ModItem
+    public class LabBigDoorClosed : ModItem
     {
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 136;
+            Item.width = 60;
+            Item.height = 272;
             Item.maxStack = Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;
@@ -17,11 +17,12 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 10;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            // Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
+            Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
         }
 
         public override void AddRecipes()
         {
         }
+        
     }
 }
