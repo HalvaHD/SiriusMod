@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabScreen_Warning : ModItem
+    public class LabScreenWarning : ModItem
     {
 
         public override void SetDefaults()

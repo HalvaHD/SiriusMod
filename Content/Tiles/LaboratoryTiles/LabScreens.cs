@@ -9,8 +9,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
     public class LabScreens : ModTile
     {
-        public override string Texture => "SiriusMod/Content/Tiles/LaboratoryTiles/LabScreenAtlas";
-        
         public override void SetStaticDefaults()
         {
 	        Main.tileFrameImportant[Type] = true;
@@ -21,7 +19,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 	        TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3Wall);
 	        TileObjectData.newTile.Height = 5;
 	        TileObjectData.newTile.Width = 9;
-	        TileObjectData.newTile.CoordinateHeights = new[] { 16, 16, 16, 16, 16 };
+	        TileObjectData.newTile.CoordinateHeights = [ 16, 16, 16, 16, 16];
 	        TileObjectData.newTile.CoordinateWidth = 16;
 	        TileObjectData.newTile.CoordinatePadding = 2;
 	        TileObjectData.newTile.Origin = new Point16(1, 4);

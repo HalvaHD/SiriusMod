@@ -3,12 +3,12 @@ using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class YellowCrateSmall : ModItem
+    public class RedSmallCrate : ModItem
     {
         public override void SetDefaults()
         {
-            Item.width = 16;
-            Item.height = 16;
+            Item.width = 26;
+            Item.height = 26;
             Item.maxStack = Terraria.Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;

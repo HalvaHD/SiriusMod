@@ -639,6 +639,21 @@ Mods: {
 				DisplayName: Pathfinder Sword
 				Tooltip: ""
 			}
+
+			LabScreenWarning: {
+				DisplayName: Lab Screen Warning
+				Tooltip: ""
+			}
+
+			RedSmallCrate: {
+				DisplayName: Red Small Crate
+				Tooltip: ""
+			}
+
+			YellowSmallCrate: {
+				DisplayName: Yellow Small Crate
+				Tooltip: ""
+			}
 		}
 
 		NPCs: {

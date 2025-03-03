@@ -10,22 +10,27 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class YellowCrateSmall : ModTile
+	public class YellowSmallCrate : ModTile
 	{
 		public int FrameCounter = 0;
 		public override void SetStaticDefaults() {
 			Main.tileFrameImportant[Type] = true;
+			Main.tileNoAttach[Type] = false;
+			Main.tileLavaDeath[Type] = false;
+			Main.tileWaterDeath[Type] = false;
 			Main.tileSolidTop[Type] = true;
 			Main.tileTable[Type] = true;
 			
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
 			TileObjectData.newTile.Height = 3;
 			TileObjectData.newTile.Width = 4;
-			TileObjectData.newTile.CoordinateHeights = [16, 16, 16];
 			TileObjectData.newTile.CoordinateWidth = 16;
-			TileObjectData.newTile.UsesCustomCanPlace    = true;
+			TileObjectData.newTile.CoordinateHeights = [16, 16, 16];
+			TileObjectData.newTile.Origin = new Point16(1, 2);
+			TileObjectData.newTile.UsesCustomCanPlace = true;
+			
 			TileObjectData.newTile.HookPostPlaceMyPlayer =
-				new PlacementHook(ModContent.GetInstance<YellowCrateSmallTileEntity>().Hook_AfterPlacement, -1, 0, true);
+				new PlacementHook(ModContent.GetInstance<YellowSmallCrateTileEntity>().Hook_AfterPlacement, -1, 0, true);
 			
 			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
 			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 2, 0);
@@ -40,12 +45,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.addAlternate(0);
 			
 			
-			
-			
-			
-			
 			TileObjectData.addTile(Type);
-			
 			AddMapEntry(new Color(88,94,107));
 			
 			AnimationFrameHeight = 54;
@@ -57,15 +57,13 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 
 		public override void KillMultiTile(int i, int j, int frameX, int frameY)
 		{
-			ModContent.GetInstance<YellowCrateSmallTileEntity>().Kill(i, j);
+			ModContent.GetInstance<YellowSmallCrateTileEntity>().Kill(i, j);
 		}
 
 		public override void AnimateIndividualTile(int type, int i, int j, ref int frameXOffset, ref int frameYOffset)
 		{
 			Tile tile = Main.tile[i, j];
-			YellowCrateSmallTileEntity tileEntity = TileUtils.FindTileEntity<YellowCrateSmallTileEntity>(i, j, 4, 3, 16);
-			
-			
+			YellowSmallCrateTileEntity tileEntity = TileUtils.FindTileEntity<YellowSmallCrateTileEntity>(i, j, 4, 3, 16);
 			
 		}
 
@@ -73,7 +71,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		public override bool RightClick(int i, int j)
 		{
 			Player player = Main.LocalPlayer;
-			YellowCrateSmallTileEntity tileEntity = TileUtils.FindTileEntity<YellowCrateSmallTileEntity>(i, j, 4, 3, 16);
+			YellowSmallCrateTileEntity tileEntity = TileUtils.FindTileEntity<YellowSmallCrateTileEntity>(i, j, 4, 3, 16);
 			Tile tile = Main.tile[i, j];
 
 			if (tileEntity != null && tileEntity.IsOpened != true)
@@ -87,36 +85,23 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		}
 
 		
-
-		public override bool PreDraw(int i, int j, SpriteBatch spriteBatch) {
-			Tile tile = Main.tile[i, j];
-			Texture2D texture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/YellowCrateSmall").Value;
-			Texture2D glowTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/YellowCrateSmall_Glow").Value;
-
-			// If you are using ModTile.SpecialDraw or PostDraw or PreDraw, use this snippet and add zero to all calls to spriteBatch.Draw
-			// The reason for this is to accommodate the shift in drawing coordinates that occurs when using the different Lighting mode
-			// Press Shift+F9 to change lighting modes quickly to verify your code works for all lighting modes
-			Vector2 zero = Main.drawToScreen ? Vector2.Zero : new Vector2(Main.offScreenRange);
-
-			// Offset along the Y axis depending on the current frame
-			int frameYOffset = Main.tileFrame[Type] * AnimationFrameHeight;
-
-			// Firstly we draw the original texture and then glow mask texture
-			spriteBatch.Draw(
-				texture,
-				new Vector2(i * 16 - (int)Main.screenPosition.X, j * 16 - (int)Main.screenPosition.Y) + zero,
-				new Rectangle(tile.TileFrameX, tile.TileFrameY + frameYOffset, 16, 16),
-				Lighting.GetColor(i, j), 0f, default, 1f, SpriteEffects.None, 0f);
-			spriteBatch.Draw(
-				glowTexture,
-				new Vector2(i * 16 - (int)Main.screenPosition.X, j * 16 - (int)Main.screenPosition.Y) + zero,
-				new Rectangle(tile.TileFrameX, tile.TileFrameY + frameYOffset, 16, 16),
-				Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
-			
-			return false;
+		public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
+		{
+			int xFrameOffset = Main.tile[i, j].TileFrameX;
+			int yFrameOffset = Main.tile[i, j].TileFrameY;
+			Texture2D glowmask = ModContent.Request<Texture2D>(Texture + "_Glow").Value;
+			Vector2 drawOffest = Main.drawToScreen ? Vector2.Zero : new Vector2(Main.offScreenRange);
+			Vector2 drawPosition = new Vector2(i * 16 - Main.screenPosition.X, j * 16 - Main.screenPosition.Y) + drawOffest;
+			Color drawColour = Color.White;
+			Tile trackTile = Main.tile[i, j];
+			if (!trackTile.IsHalfBlock && trackTile.Slope == 0)
+				spriteBatch.Draw(glowmask, drawPosition, new Rectangle(xFrameOffset, yFrameOffset, 16, 16), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
+			else if (trackTile.IsHalfBlock)
+				spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 18, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
 		}
+		
 	}
-	public class YellowCrateSmallTileEntity : ModTileEntity
+	public class YellowSmallCrateTileEntity : ModTileEntity
 	{
 		public bool IsOpened = false;
 		public int AnimationCounter = 0;
@@ -124,7 +109,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		public override bool IsTileValidForEntity(int x, int y)
 		{
 			Tile tile = Main.tile[x, y];
-			return tile.HasTile && (int) tile.TileType == ModContent.TileType<YellowCrateSmall>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
+			return tile.HasTile && (int) tile.TileType == ModContent.TileType<YellowSmallCrate>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
 		}
 		public override int Hook_AfterPlacement(int i, int j, int type, int style, int direction, int alternate)
 		{

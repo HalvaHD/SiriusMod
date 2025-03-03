@@ -15,8 +15,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			Main.tileFrameImportant[Type] = true;
 			Main.tileSolidTop[Type] = true;
 			Main.tileTable[Type] = true;
-			
-			
 			Main.tileLavaDeath[Type] = false;
 			Main.tileWaterDeath[Type] = false;
 			
@@ -25,6 +23,8 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newTile.Width = 7;
 			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16, 16];
 			TileObjectData.newTile.CoordinatePadding = 2;
+			TileObjectData.newTile.Origin = new Point16(1, 5);
+			
 			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide, 3, 0);
 			TileObjectData.newTile.LavaDeath = false;
 			
@@ -50,12 +50,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			
 			
 			TileObjectData.addTile(Type);
-			
-			
-			
-			
-			
-			
 			AddMapEntry(new Color(123, 134, 145));
 		}
 

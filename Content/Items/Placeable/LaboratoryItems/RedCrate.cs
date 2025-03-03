@@ -7,8 +7,8 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
     {
         public override void SetDefaults()
         {
-            Item.width = 16;
-            Item.height = 16;
+            Item.width = 32;
+            Item.height = 32;
             Item.maxStack = Terraria.Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;

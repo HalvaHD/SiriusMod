@@ -18,13 +18,16 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			Main.tileSolidTop[Type] = true;
 			Main.tileTable[Type] = true; 
 			
-			TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
+			//TileObjectData.newTile.CopyFrom(TileObjectData.Style2x2);
 			
 			TileObjectData.newTile.Height = 6;
 			TileObjectData.newTile.Width = 7;
 			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16, 16];
+			TileObjectData.newTile.CoordinatePadding = 2;
 			TileObjectData.newTile.CoordinateWidth = 16;
+			TileObjectData.newTile.Origin = new Point16(1, 5);
 			TileObjectData.newTile.UsesCustomCanPlace = true;
+			
 			TileObjectData.newTile.HookPostPlaceMyPlayer =
 				new PlacementHook(ModContent.GetInstance<YellowCrateTileEntity>().Hook_AfterPlacement, -1, 0, true); 
 			
@@ -83,7 +86,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			Player player = Main.LocalPlayer;
 			YellowCrateTileEntity tileEntity = TileUtils.FindTileEntity<YellowCrateTileEntity>(i, j, 7, 6, 16);
 			Tile tile = Main.tile[i, j];
-			Main.NewText(Main.tileSolidTop[Main.tile[i, j].TileType]);
 
 
 			if (tileEntity != null && tileEntity.IsOpened != true)
@@ -92,38 +94,24 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 				tileEntity.IsOpened = true;
 				tileEntity.AnimationCounter = 240;
 			}
-
 			return true;
 		}
 
 		
 
-		public override bool PreDraw(int i, int j, SpriteBatch spriteBatch) {
-			Tile tile = Main.tile[i, j];
-			Texture2D texture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/YellowCrate").Value;
-			Texture2D glowTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/YellowCrate_Glow").Value;
-
-			// If you are using ModTile.SpecialDraw or PostDraw or PreDraw, use this snippet and add zero to all calls to spriteBatch.Draw
-			// The reason for this is to accommodate the shift in drawing coordinates that occurs when using the different Lighting mode
-			// Press Shift+F9 to change lighting modes quickly to verify your code works for all lighting modes
-			Vector2 zero = Main.drawToScreen ? Vector2.Zero : new Vector2(Main.offScreenRange);
-
-			// Offset along the Y axis depending on the current frame
-			int frameYOffset = Main.tileFrame[Type] * AnimationFrameHeight;
-
-			// Firstly we draw the original texture and then glow mask texture
-			spriteBatch.Draw(
-				texture,
-				new Vector2(i * 16 - (int)Main.screenPosition.X, j * 16 - (int)Main.screenPosition.Y) + zero,
-				new Rectangle(tile.TileFrameX, tile.TileFrameY + frameYOffset, 16, 16),
-				Lighting.GetColor(i, j), 0f, default, 1f, SpriteEffects.None, 0f);
-			spriteBatch.Draw(
-				glowTexture,
-				new Vector2(i * 16 - (int)Main.screenPosition.X, j * 16 - (int)Main.screenPosition.Y) + zero,
-				new Rectangle(tile.TileFrameX, tile.TileFrameY + frameYOffset, 16, 16),
-				Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
-			
-			return false;
+		public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
+		{
+			int xFrameOffset = Main.tile[i, j].TileFrameX;
+			int yFrameOffset = Main.tile[i, j].TileFrameY;
+			Texture2D glowmask = ModContent.Request<Texture2D>(Texture + "_Glow").Value;
+			Vector2 drawOffest = Main.drawToScreen ? Vector2.Zero : new Vector2(Main.offScreenRange);
+			Vector2 drawPosition = new Vector2(i * 16 - Main.screenPosition.X, j * 16 - Main.screenPosition.Y) + drawOffest;
+			Color drawColour = Color.White;
+			Tile trackTile = Main.tile[i, j];
+			if (!trackTile.IsHalfBlock && trackTile.Slope == 0)
+				spriteBatch.Draw(glowmask, drawPosition, new Rectangle(xFrameOffset, yFrameOffset, 16, 16), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
+			else if (trackTile.IsHalfBlock)
+				spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 18, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
 		}
 	}
 	public class YellowCrateTileEntity : ModTileEntity
@@ -152,14 +140,13 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			int j = Position.Y;
 			Tile tile = Main.tile[i, j];
 			
-			
 			if (AnimationCounter > 0)
 			{
 				AnimationCounter--;
 				
 			}
 			
-			// Main.tileSolid[tile.TileType] = true;
+			//Main.tileSolid[tile.TileType] = true;
 
 			if (tile.HasTile && IsOpened == true)
 			{
@@ -204,7 +191,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 							IsOpened = false;
 							FrameCounter = 0;
 						}
-					
+						
 					}
 				}
 				

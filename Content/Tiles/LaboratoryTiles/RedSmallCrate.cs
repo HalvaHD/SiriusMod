@@ -8,7 +8,7 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-    public class RedCrateSmall : ModTile
+    public class RedSmallCrate : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -25,6 +25,8 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             TileObjectData.newTile.CoordinateHeights = [16, 16, 16];
             TileObjectData.newTile.CoordinateWidth = 16;
             TileObjectData.newTile.CoordinatePadding = 2;
+            TileObjectData.newTile.Origin = new Point16(1, 2);
+            
             TileObjectData.newTile.LavaDeath = false;
             
             TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
