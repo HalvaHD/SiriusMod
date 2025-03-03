@@ -624,6 +624,21 @@ Mods: {
 				DisplayName: Lab Table Two
 				Tooltip: ""
 			}
+
+			PathfinderPickaxe: {
+				DisplayName: Pathfinder Pickaxe
+				Tooltip: ""
+			}
+
+			PathfinderHamaxe: {
+				DisplayName: Pathfinder Hamaxe
+				Tooltip: ""
+			}
+
+			PathfinderSword: {
+				DisplayName: Pathfinder Sword
+				Tooltip: ""
+			}
 		}
 
 		NPCs: {
