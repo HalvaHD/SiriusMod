@@ -33,16 +33,30 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
             }
         }
         
-        int OverheatTimer = 0;
-        int CooldownTimer = 0;
-        public override bool? UseItem(Player player)
+        private int OverheatTimer = 0;
+        private int CooldownTimer = 0;
+        public override void HoldItem(Player player)
         {
-            OverheatTimer++;
-            if (OverheatTimer >= 420)
+            if (player.controlUseItem)
             {
-                player.AddBuff(BuffID.OnFire, 300);
-                CooldownTimer = 540;
-                OverheatTimer = 0;
+                if (CooldownTimer <= 0)
+                {
+                    OverheatTimer++;
+                }
+                
+                if (OverheatTimer >= 420)
+                {
+                    player.AddBuff(BuffID.OnFire, 300);
+                    CooldownTimer = 540;
+                    OverheatTimer = 0;
+                }
+            }
+        }
+
+        public override bool CanUseItem(Player player)
+        {
+            if (CooldownTimer > 0)
+            {
                 return false;
             }
             return true;
@@ -58,10 +72,12 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
                 }
             }
 
-            if (OverheatTimer > 0)
+            if (CooldownTimer > 0)
             {
-                OverheatTimer--;
+                CooldownTimer--;
             }
         }
+
+        
     }
 }
