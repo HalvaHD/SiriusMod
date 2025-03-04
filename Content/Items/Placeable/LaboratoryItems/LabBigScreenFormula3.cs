@@ -1,18 +1,17 @@
-﻿using Terraria;
+﻿using SiriusMod.Content.Tiles.LaboratoryTiles;
+using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class SignPlate : ModItem
+    public class LabBigScreenFormula3 : ModItem
     {
-        public override void SetStaticDefaults()
-            => Item.ResearchUnlockCount = 100;
-
         public override void SetDefaults()
         {
-            Item.width = 40;
-            Item.height = 20;
+            Item.DefaultToPlaceableTile(ModContent.TileType<LabBigScreens>(), 4);
+            Item.width = 132;
+            Item.height = 80;
             Item.maxStack = Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;
@@ -20,9 +19,7 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 7;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
         }
-
         public override void AddRecipes()
         {
         }

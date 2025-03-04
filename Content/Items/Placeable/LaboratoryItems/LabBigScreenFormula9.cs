@@ -5,16 +5,13 @@ using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabScreen_Formula6 : ModItem
+    public class LabBigScreenFormula9 : ModItem
     {
-        public override void SetStaticDefaults()
-            => Item.ResearchUnlockCount = 100;
-
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<LabScreensBig>(), 3);
-            Item.width = 62;
-            Item.height = 40;
+            Item.DefaultToPlaceableTile(ModContent.TileType<LabBigScreens>(), 10);
+            Item.width = 174;
+            Item.height = 80;
             Item.maxStack = Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;
@@ -22,9 +19,7 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 7;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-           
         }
-
         public override void AddRecipes()
         {
         }

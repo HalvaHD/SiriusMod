@@ -7,7 +7,7 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-    public class SignPlate : ModTile
+    public class LabSignPlate : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -21,22 +21,20 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             TileObjectData.newTile.Height = 3;
             TileObjectData.newTile.Width = 5;
             TileObjectData.newTile.CoordinateWidth = 16;
-            TileObjectData.newTile.CoordinateHeights = new[] { 16, 16, 16 };
+            TileObjectData.newTile.CoordinateHeights = [ 16, 16, 16 ];
             TileObjectData.newTile.CoordinatePadding = 2;
             TileObjectData.newTile.LavaDeath = false;
             
             AddMapEntry(new Color(71, 95, 114));
-            
             TileObjectData.addTile(Type);
         }
-
+        
         public override bool RightClick(int i, int j)
         {
             Sign.ReadSign(i, j, true);
             return true;
         }
-
-
+        
         public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
         {
             int xFrameOffset = Main.tile[i, j].TileFrameX;

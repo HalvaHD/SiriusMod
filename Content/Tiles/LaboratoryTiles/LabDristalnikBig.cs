@@ -55,12 +55,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.addAlternate(1);
 			
 			TileObjectData.addTile(Type);
-			
-			
-			
-			
-			
-			
 			AddMapEntry(new Color(123, 134, 145));
 		}
 		

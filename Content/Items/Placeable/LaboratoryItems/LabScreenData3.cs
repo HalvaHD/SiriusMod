@@ -4,14 +4,13 @@ using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabScreen_Pashalko : ModItem
+    public class LabScreenData3 : ModItem
     {
-
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabScreens>(), 0);
-            Item.width = 66;
-            Item.height = 40;
+            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabScreens>(), 4);
+            Item.width = 64;
+            Item.height = 32;
             Item.maxStack = Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;
@@ -19,9 +18,7 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 7;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-           
         }
-
         public override void AddRecipes()
         {
         }
