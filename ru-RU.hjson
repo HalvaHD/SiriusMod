@@ -654,6 +654,106 @@ Mods: {
 				// DisplayName: Yellow Small Crate
 				// Tooltip: ""
 			}
+
+			LabBigScreenBeer: {
+				// DisplayName: Lab Big Screen Beer
+				// Tooltip: ""
+			}
+
+			LabBigScreenBestWorker: {
+				// DisplayName: Lab Big Screen Best Worker
+				// Tooltip: ""
+			}
+
+			LabBigScreenFormula1: {
+				// DisplayName: Lab Big Screen Formula1
+				// Tooltip: ""
+			}
+
+			LabBigScreenFormula2: {
+				// DisplayName: Lab Big Screen Formula2
+				// Tooltip: ""
+			}
+
+			LabBigScreenFormula3: {
+				// DisplayName: Lab Big Screen Formula3
+				// Tooltip: ""
+			}
+
+			LabBigScreenFormula4: {
+				// DisplayName: Lab Big Screen Formula4
+				// Tooltip: ""
+			}
+
+			LabBigScreenFormula5: {
+				// DisplayName: Lab Big Screen Formula5
+				// Tooltip: ""
+			}
+
+			LabBigScreenFormula6: {
+				// DisplayName: Lab Big Screen Formula6
+				// Tooltip: ""
+			}
+
+			LabBigScreenFormula7: {
+				// DisplayName: Lab Big Screen Formula7
+				// Tooltip: ""
+			}
+
+			LabBigScreenFormula8: {
+				// DisplayName: Lab Big Screen Formula8
+				// Tooltip: ""
+			}
+
+			LabBigScreenFormula9: {
+				// DisplayName: Lab Big Screen Formula9
+				// Tooltip: ""
+			}
+
+			LabTerminal: {
+				// DisplayName: Lab Terminal
+				// Tooltip: ""
+			}
+
+			LabTerminalOff: {
+				// DisplayName: Lab Terminal Off
+				// Tooltip: ""
+			}
+
+			LabScreenData1: {
+				// DisplayName: Lab Screen Data1
+				// Tooltip: ""
+			}
+
+			LabScreenData2: {
+				// DisplayName: Lab Screen Data2
+				// Tooltip: ""
+			}
+
+			LabScreenData3: {
+				// DisplayName: Lab Screen Data3
+				// Tooltip: ""
+			}
+
+			LabScreenOff: {
+				// DisplayName: Lab Screen Off
+				// Tooltip: ""
+			}
+
+			LabSignPlate: {
+				// DisplayName: Lab Sign Plate
+				// Tooltip: ""
+			}
+
+			LabVent: {
+				// DisplayName: Lab Vent
+				// Tooltip: ""
+			}
+
+			LabVentBroken: {
+				// DisplayName: Lab Vent Broken
+				// Tooltip: ""
+			}
 		}
 
 		NPCs: {

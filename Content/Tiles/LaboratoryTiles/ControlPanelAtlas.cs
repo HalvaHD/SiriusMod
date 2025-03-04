@@ -64,8 +64,8 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             TileObjectData.newSubTile.CopyFrom(TileObjectData.newTile);
             TileObjectData.newSubTile.LinkedAlternates = true;
             TileObjectData.addSubTile(5);
+            
 			TileObjectData.newTile.LavaDeath = true;
-
 			TileObjectData.addTile(Type);
 			AddMapEntry(new Color(123, 134, 145));
 			

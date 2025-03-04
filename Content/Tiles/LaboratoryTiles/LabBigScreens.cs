@@ -2,30 +2,29 @@
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.Enums;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-    public class LabScreensBig : ModTile
+    public class LabBigScreens : ModTile
     {
-        public override string Texture => "SiriusMod/Content/Tiles/LaboratoryTiles/LabScreenAtlas";
-        
         public override void SetStaticDefaults()
         {
 	        Main.tileFrameImportant[Type] = true;
 	        Main.tileNoAttach[Type] = true;
 	        Main.tileLavaDeath[Type] = true;
 	        Main.tileWaterDeath[Type] = false;
-
+	        
 	        TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3Wall);
 	        TileObjectData.newTile.Height = 5;
 	        TileObjectData.newTile.Width = 9;
-	        TileObjectData.newTile.CoordinateHeights = new[] { 16, 16, 16, 16, 16 };
+	        TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16];
 	        TileObjectData.newTile.CoordinateWidth = 16;
 	        TileObjectData.newTile.CoordinatePadding = 2;
 	        TileObjectData.newTile.Origin = new Point16(1, 4);
-
+	        TileObjectData.newTile.UsesCustomCanPlace = true;
 	        TileObjectData.newTile.StyleWrapLimit = 2;
 	        TileObjectData.newTile.StyleHorizontal = true;
 	        TileObjectData.newTile.LavaDeath = true;

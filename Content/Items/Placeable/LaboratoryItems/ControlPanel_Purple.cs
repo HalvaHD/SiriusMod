@@ -18,7 +18,6 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
         }
-
         public override void AddRecipes()
         {
         }
