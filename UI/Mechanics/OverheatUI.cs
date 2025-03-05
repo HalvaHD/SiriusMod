@@ -25,7 +25,7 @@ internal class OverheatScale : UIState
     {
         // Vector2 screenPos = Main.LocalPlayer.Center - Main.screenPosition;
         area = new UIElement();
-        area.Left.Set(0, 0.5f);
+        area.Left.Set(-18, 0.5f);
         area.Top.Set(0, 0.55f);
         area.Width.Set(36, 0f);
         area.Height.Set(12, 0f);
@@ -33,8 +33,8 @@ internal class OverheatScale : UIState
         frame = new UIImage(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat"));
         frame.Left.Set(0, 0f);
         frame.Top.Set(0, 0f);
-        frame.Width.Set(36, 0f);
-        frame.Height.Set(12, 0f);
+        frame.Width.Set(36, 2f);
+        frame.Height.Set(12, 2f);
         
         progressBar = new UIImage(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat_Bar"));
         
@@ -45,7 +45,7 @@ internal class OverheatScale : UIState
 
     public override void Draw(SpriteBatch spriteBatch)
     { 
-        if (Main.LocalPlayer.HeldItem.ModItem is not PathfinderPickaxe)  // && !Main.LocalPlayer.controlUseItem
+        if (Main.LocalPlayer.HeldItem.ModItem is not Overheat)  // && !Main.LocalPlayer.controlUseItem
         {
             return;
         }
