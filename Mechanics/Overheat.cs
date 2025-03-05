@@ -14,8 +14,6 @@ namespace SiriusMod.Mechanics
         private SlotId OverheatBrokeID;
         public SoundStyle OverheatBroke = new SoundStyle("SiriusMod/Assets/Sounds/OverheatBroke");
         
-        
-
         public override void HoldItem(Player player)
         {
             if (player.controlUseItem)

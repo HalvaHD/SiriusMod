@@ -1,12 +1,13 @@
 using SiriusMod.Content.Dusts;
 using Microsoft.Xna.Framework;
+using SiriusMod.Mechanics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
 {
-    public class PathfinderPickaxe : ModItem
+    public class PathfinderPickaxe : Overheat
     {
         public override void SetDefaults()
         {
@@ -32,52 +33,5 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
                 Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, ModContent.DustType<LabMossDust>());
             }
         }
-        
-        private int OverheatTimer = 0;
-        private int CooldownTimer = 0;
-        public override void HoldItem(Player player)
-        {
-            if (player.controlUseItem)
-            {
-                if (CooldownTimer <= 0)
-                {
-                    OverheatTimer++;
-                }
-                
-                if (OverheatTimer >= 420)
-                {
-                    player.AddBuff(BuffID.OnFire, 300);
-                    CooldownTimer = 540;
-                    OverheatTimer = 0;
-                }
-            }
-        }
-
-        public override bool CanUseItem(Player player)
-        {
-            if (CooldownTimer > 0)
-            {
-                return false;
-            }
-            return true;
-        }
-
-        public override void UpdateInventory(Player player)
-        {
-            if (!player.controlUseItem)
-            {
-                if (OverheatTimer > 0)
-                {
-                    OverheatTimer--;
-                }
-            }
-
-            if (CooldownTimer > 0)
-            {
-                CooldownTimer--;
-            }
-        }
-
-        
     }
 }
