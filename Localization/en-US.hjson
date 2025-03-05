@@ -167,6 +167,690 @@ Buffs: {
 	}
 }
 
+Mods: {
+	SiriusMod: {
+		NPCs: {
+			KORRO: {
+				Census.SpawnCondition: Conditions unknown
+
+				TownNPCMood: {
+					Princess_LovesNPC: Мне нравится {NPCName}.
+					LikeNPC_Princess: Мне нравится {NPCName}.
+					HateNPC: Не терплю таких, как {NPCName}.
+					DislikeNPC: Мне не нравится {NPCName}.
+					LikeNPC: Мне нравится {NPCName}.
+					LoveNPC: Мне по душе {NPCName}.
+					DislikeBiome: Мне не нравится {BiomeName}.
+					LikeBiome: Мне нравится {BiomeName}.
+					HateCrowded: Я ненавижу, что тут людно.
+					DislikeCrowded: Мне не нравится, что тут людно.
+					LoveSpace: Мне нравится, как тут просторно.
+					FarFromHome: Я далеко от дома.
+					NoHome: Ужасно, что у меня нет дома.
+					Content: Я доволен.
+				}
+
+				DisplayName: K O R R O
+			}
+
+			HALVA_Prime: {
+				Census.SpawnCondition: Conditions unknown
+
+				TownNPCMood: {
+					Princess_LovesNPC: Мне нравится {NPCName}.
+					LikeNPC_Princess: Мне нравится {NPCName}.
+					HateNPC: Не терплю таких, как {NPCName}.
+					DislikeNPC: Мне не нравится {NPCName}.
+					LikeNPC: Мне нравится {NPCName}.
+					LoveNPC: Мне по душе {NPCName}.
+					HateBiome: Я ненавижу {BiomeName}.
+					LikeBiome: Мне нравится {BiomeName}.
+					LoveBiome: Мне по душе {BiomeName}.
+					HateCrowded: Я ненавижу, что тут людно.
+					DislikeCrowded: Мне не нравится, что тут людно.
+					LoveSpace: Мне нравится, как тут просторно.
+					FarFromHome: Я далеко от дома.
+					NoHome: Ужасно, что у меня нет дома.
+					Content: Я доволен.
+				}
+
+				DisplayName: H A L V A_ Prime
+			}
+
+			Protector.DisplayName: Protector
+		}
+
+		Projectiles: {
+			YellowCrystalProjectile.DisplayName: Yellow Crystal Projectile
+			WarriorMinion.DisplayName: Warrior Minion
+			StartingHouseVisual.DisplayName: Starting House Visual
+			StartingHouseProjectile.DisplayName: Starting House Projectile
+			ProtectorBlast.DisplayName: Protector Blast
+			NUCLEARPOWER.DisplayName: N U C L E A R P O W E R
+			KORROGatling.DisplayName: K O R R O Gatling
+			AutPortal.DisplayName: Aut Portal
+			AutAnimation.DisplayName: Aut Animation
+			ProtectorLightning.DisplayName: Protector Lightning
+		}
+
+		Items: {
+			YumorousItem: {
+				Tooltip: ""
+				DisplayName: Yumorous Item
+			}
+
+			TwigKnightItem: {
+				Tooltip: ""
+				DisplayName: Twig Knight Item
+			}
+
+			MadelineItem: {
+				Tooltip: ""
+				DisplayName: Madeline Item
+			}
+
+			YellowCrystalShard: {
+				Tooltip: ""
+				DisplayName: Yellow Crystal Shard
+			}
+
+			PathfinderSword: {
+				Tooltip: ""
+				DisplayName: Pathfinder Sword
+			}
+
+			PathfinderPickaxe: {
+				Tooltip: ""
+				DisplayName: Pathfinder Pickaxe
+			}
+
+			PathfinderHamaxe: {
+				Tooltip: ""
+				DisplayName: Pathfinder Hamaxe
+			}
+
+			YellowSmallCrate: {
+				Tooltip: ""
+				DisplayName: Yellow Small Crate
+			}
+
+			YellowCrate: {
+				Tooltip: ""
+				DisplayName: Yellow Crate
+			}
+
+			TrashcanItem: {
+				Tooltip: ""
+				DisplayName: Trashcan Item
+			}
+
+			RedSmallCrate: {
+				Tooltip: ""
+				DisplayName: Red Small Crate
+			}
+
+			RedCrate: {
+				Tooltip: ""
+				DisplayName: Red Crate
+			}
+
+			PinkLabLamp: {
+				Tooltip: ""
+				DisplayName: Pink Lab Lamp
+			}
+
+			MegaChestWall: {
+				Tooltip: ""
+				DisplayName: Mega Chest Wall
+			}
+
+			MegaChestLockedWall: {
+				Tooltip: ""
+				DisplayName: Mega Chest Locked Wall
+			}
+
+			MegaChestLocked: {
+				Tooltip: ""
+				DisplayName: Mega Chest Locked
+			}
+
+			MegaChest: {
+				Tooltip: ""
+				DisplayName: Mega Chest
+			}
+
+			LabWorkBench: {
+				Tooltip: ""
+				DisplayName: Lab Work Bench
+			}
+
+			LabVentBroken: {
+				Tooltip: ""
+				DisplayName: Lab Vent Broken
+			}
+
+			LabVent: {
+				Tooltip: ""
+				DisplayName: Lab Vent
+			}
+
+			LabTVBroken_Right: {
+				Tooltip: ""
+				DisplayName: Lab T V Broken_ Right
+			}
+
+			LabTVBroken_Left: {
+				Tooltip: ""
+				DisplayName: Lab T V Broken_ Left
+			}
+
+			LabTVBroken: {
+				Tooltip: ""
+				DisplayName: Lab T V Broken
+			}
+
+			LabTV_Right: {
+				Tooltip: ""
+				DisplayName: Lab T V_ Right
+			}
+
+			LabTV_Left: {
+				Tooltip: ""
+				DisplayName: Lab T V_ Left
+			}
+
+			LabTV: {
+				Tooltip: ""
+				DisplayName: Lab T V
+			}
+
+			LabTesla: {
+				Tooltip: ""
+				DisplayName: Lab Tesla
+			}
+
+			LabTerminalOff: {
+				Tooltip: ""
+				DisplayName: Lab Terminal Off
+			}
+
+			LabTerminal: {
+				Tooltip: ""
+				DisplayName: Lab Terminal
+			}
+
+			LabTableTwo: {
+				Tooltip: ""
+				DisplayName: Lab Table Two
+			}
+
+			LabTableOne: {
+				Tooltip: ""
+				DisplayName: Lab Table One
+			}
+
+			LabSofa: {
+				Tooltip: ""
+				DisplayName: Lab Sofa
+			}
+
+			LabSink: {
+				Tooltip: ""
+				DisplayName: Lab Sink
+			}
+
+			LabSignPlate: {
+				Tooltip: ""
+				DisplayName: Lab Sign Plate
+			}
+
+			LabScreenWarning: {
+				Tooltip: ""
+				DisplayName: Lab Screen Warning
+			}
+
+			LabScreenOff: {
+				Tooltip: ""
+				DisplayName: Lab Screen Off
+			}
+
+			LabScreenData3: {
+				Tooltip: ""
+				DisplayName: Lab Screen Data3
+			}
+
+			LabScreenData2: {
+				Tooltip: ""
+				DisplayName: Lab Screen Data2
+			}
+
+			LabScreenData1: {
+				Tooltip: ""
+				DisplayName: Lab Screen Data1
+			}
+
+			LabPot_3: {
+				Tooltip: ""
+				DisplayName: Lab Pot_3
+			}
+
+			LabPot_2: {
+				Tooltip: ""
+				DisplayName: Lab Pot_2
+			}
+
+			LabPot_1: {
+				Tooltip: ""
+				DisplayName: Lab Pot_1
+			}
+
+			LabPlatingWallMossy: {
+				Tooltip: ""
+				DisplayName: Lab Plating Wall Mossy
+			}
+
+			LabPlatingWallBetter: {
+				Tooltip: ""
+				DisplayName: Lab Plating Wall Better
+			}
+
+			LabPlatingWall: {
+				Tooltip: ""
+				DisplayName: Lab Plating Wall
+			}
+
+			LabPlatingMossy: {
+				Tooltip: ""
+				DisplayName: Lab Plating Mossy
+			}
+
+			LabPlatingBetter_Destroyed: {
+				Tooltip: ""
+				DisplayName: Lab Plating Better_ Destroyed
+			}
+
+			LabPlatingBetter: {
+				Tooltip: ""
+				DisplayName: Lab Plating Better
+			}
+
+			LabPlating: {
+				Tooltip: ""
+				DisplayName: Lab Plating
+			}
+
+			LabPlatform: {
+				Tooltip: ""
+				DisplayName: Lab Platform
+			}
+
+			LabPlatePillar: {
+				Tooltip: ""
+				DisplayName: Lab Plate Pillar
+			}
+
+			LabPlateBeam: {
+				Tooltip: ""
+				DisplayName: Lab Plate Beam
+			}
+
+			LabPiano: {
+				Tooltip: ""
+				DisplayName: Lab Piano
+			}
+
+			LabLustra: {
+				Tooltip: ""
+				DisplayName: Lab Lustra
+			}
+
+			LabLampAlt: {
+				Tooltip: ""
+				DisplayName: Lab Lamp Alt
+			}
+
+			LabLamp: {
+				Tooltip: ""
+				DisplayName: Lab Lamp
+			}
+
+			LabDristalnikBig: {
+				Tooltip: ""
+				DisplayName: Lab Dristalnik Big
+			}
+
+			LabDresser: {
+				Tooltip: ""
+				DisplayName: Lab Dresser
+			}
+
+			LabDoorClosed: {
+				Tooltip: ""
+				DisplayName: Lab Door Closed
+			}
+
+			LabDoorBig_Horizontal: {
+				Tooltip: ""
+				DisplayName: Lab Door Big_ Horizontal
+			}
+
+			LabDoor: {
+				Tooltip: ""
+				DisplayName: Lab Door
+			}
+
+			LabCryoCapsule_Broken: {
+				Tooltip: ""
+				DisplayName: Lab Cryo Capsule_ Broken
+			}
+
+			LabCryoCapsule: {
+				Tooltip: ""
+				DisplayName: Lab Cryo Capsule
+			}
+
+			LabClock: {
+				Tooltip: ""
+				DisplayName: Lab Clock
+			}
+
+			LabChest: {
+				Tooltip: ""
+				DisplayName: Lab Chest
+			}
+
+			LabChair: {
+				Tooltip: ""
+				DisplayName: Lab Chair
+			}
+
+			LabCamera_Off: {
+				Tooltip: ""
+				DisplayName: Lab Camera_ Off
+			}
+
+			LabCamera: {
+				Tooltip: ""
+				DisplayName: Lab Camera
+			}
+
+			LabBookshelf: {
+				Tooltip: ""
+				DisplayName: Lab Bookshelf
+			}
+
+			LabBigTableTwo: {
+				Tooltip: ""
+				DisplayName: Lab Big Table Two
+			}
+
+			LabBigTableOne: {
+				Tooltip: ""
+				DisplayName: Lab Big Table One
+			}
+
+			LabBigScreenFormula9: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula9
+			}
+
+			LabBigScreenFormula8: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula8
+			}
+
+			LabBigScreenFormula7: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula7
+			}
+
+			LabBigScreenFormula6: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula6
+			}
+
+			LabBigScreenFormula5: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula5
+			}
+
+			LabBigScreenFormula4: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula4
+			}
+
+			LabBigScreenFormula3: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula3
+			}
+
+			LabBigScreenFormula2: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula2
+			}
+
+			LabBigScreenFormula1: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula1
+			}
+
+			LabBigScreenBestWorker: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Best Worker
+			}
+
+			LabBigScreenBeer: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Beer
+			}
+
+			LabBigDoorClosed: {
+				Tooltip: ""
+				DisplayName: Lab Big Door Closed
+			}
+
+			LabBigDoor: {
+				Tooltip: ""
+				DisplayName: Lab Big Door
+			}
+
+			LabBath: {
+				Tooltip: ""
+				DisplayName: Lab Bath
+			}
+
+			LabBarrelBig: {
+				Tooltip: ""
+				DisplayName: Lab Barrel Big
+			}
+
+			LabBarrelAtomicBig: {
+				Tooltip: ""
+				DisplayName: Lab Barrel Atomic Big
+			}
+
+			LabBarrelAtomic: {
+				Tooltip: ""
+				DisplayName: Lab Barrel Atomic
+			}
+
+			LabBarrel: {
+				Tooltip: ""
+				DisplayName: Lab Barrel
+			}
+
+			GlassblackMossWall: {
+				Tooltip: ""
+				DisplayName: Glassblack Moss Wall
+			}
+
+			GlassblackMoss: {
+				Tooltip: ""
+				DisplayName: Glassblack Moss
+			}
+
+			DiscYellow: {
+				Tooltip: ""
+				DisplayName: Disc Yellow
+			}
+
+			DiscRed: {
+				Tooltip: ""
+				DisplayName: Disc Red
+			}
+
+			DiscBlue: {
+				Tooltip: ""
+				DisplayName: Disc Blue
+			}
+
+			ControlPanelLocked_Yellow: {
+				Tooltip: ""
+				DisplayName: Control Panel Locked_ Yellow
+			}
+
+			ControlPanelLocked_Purple: {
+				Tooltip: ""
+				DisplayName: Control Panel Locked_ Purple
+			}
+
+			ControlPanelLocked_Green: {
+				Tooltip: ""
+				DisplayName: Control Panel Locked_ Green
+			}
+
+			ControlPanel_Yellow: {
+				Tooltip: ""
+				DisplayName: Control Panel_ Yellow
+			}
+
+			ControlPanel_Purple: {
+				Tooltip: ""
+				DisplayName: Control Panel_ Purple
+			}
+
+			ControlPanel_Green: {
+				Tooltip: ""
+				DisplayName: Control Panel_ Green
+			}
+
+			BrokenServers_DiscYellow: {
+				Tooltip: ""
+				DisplayName: Broken Servers_ Disc Yellow
+			}
+
+			BrokenServers_DiscRed: {
+				Tooltip: ""
+				DisplayName: Broken Servers_ Disc Red
+			}
+
+			BrokenServers_DiscBlue: {
+				Tooltip: ""
+				DisplayName: Broken Servers_ Disc Blue
+			}
+
+			BrokenServers: {
+				Tooltip: ""
+				DisplayName: Broken Servers
+			}
+
+			BrokenServerChest: {
+				Tooltip: ""
+				DisplayName: Broken Server Chest
+			}
+
+			House1: {
+				Tooltip: ""
+				DisplayName: House1
+			}
+
+			MegaChestKey: {
+				Tooltip: ""
+				DisplayName: Mega Chest Key
+			}
+
+			ControlPanelKey_Yellow: {
+				Tooltip: ""
+				DisplayName: Control Panel Key_ Yellow
+			}
+
+			ControlPanelKey_Purple: {
+				Tooltip: ""
+				DisplayName: Control Panel Key_ Purple
+			}
+
+			ControlPanelKey_Green: {
+				Tooltip: ""
+				DisplayName: Control Panel Key_ Green
+			}
+
+			Aut: {
+				Tooltip: ""
+				DisplayName: Aut
+			}
+
+			DarkSamuraiHat: {
+				Tooltip: ""
+				DisplayName: Dark Samurai Hat
+			}
+		}
+
+		Buffs: {
+			NanoIssue: {
+				Description: Mods.SiriusMod.Buffs.NanoIssue.Description
+				DisplayName: Nano Issue
+			}
+
+			MotherOmlett: {
+				Description: Mods.SiriusMod.Buffs.MotherOmlett.Description
+				DisplayName: Mother Omlett
+			}
+
+			MedicinePipeBuff: {
+				Description: Mods.SiriusMod.Buffs.MedicinePipeBuff.Description
+				DisplayName: Medicine Pipe Buff
+			}
+
+			MedicineJokeBuff: {
+				Description: Mods.SiriusMod.Buffs.MedicineJokeBuff.Description
+				DisplayName: Medicine Joke Buff
+			}
+
+			LunarGravitationBuff: {
+				Description: Mods.SiriusMod.Buffs.LunarGravitationBuff.Description
+				DisplayName: Lunar Gravitation Buff
+			}
+
+			GracingEnergyBuff: {
+				Description: Mods.SiriusMod.Buffs.GracingEnergyBuff.Description
+				DisplayName: Gracing Energy Buff
+			}
+
+			DarkEnergyDebuff: {
+				Description: Mods.SiriusMod.Buffs.DarkEnergyDebuff.Description
+				DisplayName: Dark Energy Debuff
+			}
+
+			DarkEnergyBuff: {
+				Description: Mods.SiriusMod.Buffs.DarkEnergyBuff.Description
+				DisplayName: Dark Energy Buff
+			}
+		}
+
+		Tiles: {
+			StarRainOre.MapEntry: Star Rain Ore
+			StarBar.MapObject: Mods.SiriusMod.Tiles.StarBar.MapObject
+		}
+
+		UI.Dialogue: Mods.SiriusMod.UI.Dialogue
+
+		Keybinds: {
+			TeleporterDestroyKey.DisplayName: Teleporter Destroy Key
+			TeleporterCreateKey.DisplayName: Teleporter Create Key
+		}
+	}
+}
+
 Items: {
 	TwigPetItem: {
 		DisplayName: Рог Старого приятеля

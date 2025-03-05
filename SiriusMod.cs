@@ -7,27 +7,29 @@ using Terraria.ModLoader;
 
 namespace SiriusMod
 {
-	public class SiriusMod : Mod
+	public partial class SiriusMod : Mod
 	{
+
+		public static SiriusMod Instance { get; private set; }
 		public static string EffectsPath => "SiriusMod/Assets/Effects";
 		public static string ExtraTexturesPath => "SiriusMod/Assets/ExtraTextures";
 		public static string MusicPath => "SiriusMod/Assets/Music";
 		public static string SoundsPath => "SiriusMod/Assets/Sounds";
 		public static string TexturesPath => "SiriusMod/Assets/Textures";
+
+		public static Effect SpriteRotation;
 		
 		public static List<int> CheckKilledBosses = new ();
-		
-		public static Effect SpriteRotation;
 
-		public readonly List<Effect> Effects = new()
+		public SiriusMod()
 		{
-			SpriteRotation
-		};
+			Instance = this;
+		}
 			
 
 		public override void Load()
 		{
-			SpriteRotation = ModContent.Request<Effect>($"{EffectsPath}/SpriteRotation", AssetRequestMode.ImmediateLoad).Value;
+			SpriteRotation =  ModContent.Request<Effect>($"{EffectsPath}/SpriteRotation", AssetRequestMode.ImmediateLoad).Value;
 		}
 
         // public override IContentSource CreateDefaultContentSource()
