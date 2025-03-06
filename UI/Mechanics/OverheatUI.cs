@@ -36,14 +36,18 @@ internal class OverheatUI : UIState
         frame = new UIImage(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat"));
         frame.Left.Set(0, 0f);
         frame.Top.Set(0, 0f);
-        frame.Width.Set(36, 2f);
-        frame.Height.Set(12, 2f);
+        frame.ImageScale = 1.2f;
+        //frame.Width.Set(36, 0f);
+        //frame.Height.Set(12, 0f);
         
         progressBar = new UIImage(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat_Bar"));
+        progressBar.Left.Set(0, 0f);
+        progressBar.Top.Set(0, 0f);
+        progressBar.ImageScale = 1.2f;
         
         //К основной области добавляешь все элементы, которые должны "крепиться" к ней
         area.Append(frame);
-        // area.Append(progressBar);
+        area.Append(progressBar);
         // Добавляешь саму область на экран
         Append(area);
     }
@@ -57,6 +61,18 @@ internal class OverheatUI : UIState
         }
         
         base.Draw(spriteBatch);
+    }
+
+    public override void Update(GameTime gameTime)
+    {
+        base.Update(gameTime);
+
+        if (Main.LocalPlayer.HeldItem.ModItem is Overheat overheatItem)
+        {
+            float overheatRatio = MathHelper.Clamp(overheatItem.OverheatLevel / 420f, 0f, 1f);
+            progressBar.SetImage(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat_Bar"));
+            progressBar.GetClippingRectangle();
+        }
     }
 
     //Система для отрисовки UI, происходит только на стороне клиента, так как любая отрисовка только на стороне клиента!!!

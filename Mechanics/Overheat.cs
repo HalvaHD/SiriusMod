@@ -11,6 +11,7 @@ namespace SiriusMod.Mechanics
     {
         private int OverheatTimer = 0;
         private int CooldownTimer = 0;
+        public int OverheatLevel => OverheatTimer;
         private SlotId OverheatBrokeID;
         public SoundStyle OverheatBroke = new SoundStyle("SiriusMod/Assets/Sounds/OverheatBroke");
         
