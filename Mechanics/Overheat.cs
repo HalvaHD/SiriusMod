@@ -36,6 +36,7 @@ namespace SiriusMod.Mechanics
                     OverheatTimer = 0;
                 }
             }
+            Main.NewText(OverheatLevel);
         }
 
         public override bool CanUseItem(Player player)

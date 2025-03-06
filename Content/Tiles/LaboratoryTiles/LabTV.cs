@@ -8,7 +8,7 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-    public class LabTv : ModTile
+    public class LabTV : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -30,14 +30,14 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             TileObjectData.newTile.StyleWrapLimit = 3;
             TileObjectData.newTile.StyleHorizontal = true;
             
-            TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
-            TileObjectData.newAlternate.Direction = TileObjectDirection.PlaceRight;
-            TileObjectData.addAlternate(1);
             
             TileObjectData.newSubTile.CopyFrom(TileObjectData.newTile);
-            TileObjectData.newSubTile.LinkedAlternates = true;
-            TileObjectData.newTile.Direction = TileObjectDirection.PlaceLeft;
+            TileObjectData.newSubTile.Direction = TileObjectDirection.PlaceLeft;
             TileObjectData.addSubTile(1);
+            
+            TileObjectData.newAlternate.CopyFrom(TileObjectData.newSubTile);
+            TileObjectData.newAlternate.Direction = TileObjectDirection.PlaceRight;
+            TileObjectData.addAlternate(1);
             
             TileObjectData.addTile(Type);
             AddMapEntry(new Color(71, 95, 114));

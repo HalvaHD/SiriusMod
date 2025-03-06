@@ -8,6 +8,7 @@ using Terraria.GameContent;
 using Terraria.GameContent.Animations;
 using Terraria.GameContent.UI.Elements;
 using Terraria.ModLoader;
+using Terraria.Social.Steam;
 using Terraria.UI;
 
 namespace SiriusMod.UI.Mechanics
@@ -15,8 +16,8 @@ namespace SiriusMod.UI.Mechanics
     internal class OverheatUI : UIState
     {
         private UIElement area;
-        private UIImage frame;
-        private UIImageBar progressBar;
+        public static UIImage frame;
+        private BarLine progressBar;
 
         public override void OnInitialize()
         {
@@ -37,14 +38,13 @@ namespace SiriusMod.UI.Mechanics
             //frame.Width.Set(36, 0f);
             //frame.Height.Set(12, 0f);
 
-            progressBar = new UIImageBar(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat_Bar").Value);
+            progressBar = new BarLine();
             progressBar.Left.Set(0, 0f);
             progressBar.Top.Set(0, 0f);
-            progressBar.ImageScale = 1.5f;
 
             //К основной области добавляешь все элементы, которые должны "крепиться" к ней
-            //area.Append(frame);
-            area.Append(progressBar);
+            area.Append(frame);
+            frame.Append(progressBar);
             // Добавляешь саму область на экран
             Append(area);
         }
@@ -52,80 +52,96 @@ namespace SiriusMod.UI.Mechanics
         // Отрисовка UI, чтобы ее отменить возращаем return;
         public override void Draw(SpriteBatch spriteBatch)
         {
-            if (Main.LocalPlayer.HeldItem.ModItem is not Overheat) // && !Main.LocalPlayer.controlUseItem
+            if (Main.LocalPlayer.HeldItem.ModItem is not Overheat overheatItem) // && !Main.LocalPlayer.controlUseItem
             {
                 return;
             }
-
+        
             base.Draw(spriteBatch);
-        }
-        
-        
-        
-        
-        
-        //gpt
-        public override void Update(GameTime gameTime)
-        {
-            base.Update(gameTime);
-            
-            if (Main.LocalPlayer.HeldItem.ModItem is Overheat overheatItem)
-            {
-                float overheatRatio = overheatItem.OverheatLevel / 420f;
-                overheatRatio = MathHelper.Clamp(overheatRatio, 0f, 1f);
-                progressBar.FillPercent = overheatRatio;
-            }
-        }
-    }
-    
-    
-    
-    
-    // gpt
-    public class UIImageBar : UIElement
-    {
-        private Texture2D _texture;
-        public float FillPercent = 1f; // от 0 до 1
-        public float ImageScale { get; set; } = 1f;
-
-        public UIImageBar(Texture2D texture)
-        {
-            _texture = texture;
-            // Задаём элементу размеры, чтобы не были нулевыми
-            Width.Set(texture.Width, 0f);
-            Height.Set(texture.Height, 0f);
         }
 
         protected override void DrawSelf(SpriteBatch spriteBatch)
         {
             base.DrawSelf(spriteBatch);
-
-            // Берём фактические размеры, которые занял UIElement на экране
-            var dimensions = GetDimensions().ToRectangle();
-
-            // Ширина "заполненной" части текстуры
-            int fillWidth = (int)(_texture.Width * FillPercent);
-            // Защита от дурака, если fillWidth < 0
-            if (fillWidth < 0)
-                fillWidth = 0;
-            if (fillWidth > _texture.Width)
-                fillWidth = _texture.Width;
-
-            // Исходная часть текстуры, которую рисуем
-            Rectangle sourceRect = new Rectangle(0, 0, fillWidth, _texture.Height);
-
-            // Куда рисуем: ту же ширину, но учитываем масштаб
-            Rectangle destinationRect = new Rectangle(
-                dimensions.X,
-                dimensions.Y,
-                (int)(fillWidth * ImageScale),
-                (int)(_texture.Height * ImageScale)
-            );
-
-            // Рисуем только кусок текстуры
-            spriteBatch.Draw(_texture, destinationRect, sourceRect, Color.White);
+            if (Main.LocalPlayer.HeldItem.ModItem is not Overheat overheatItem) // && !Main.LocalPlayer.controlUseItem
+            {
+                return;
+            }
+            // Rectangle progressrect = frame.GetInnerDimensions().ToRectangle();
+            // progressrect.Width = (int)(36 * MathHelper.Clamp((overheatItem.OverheatLevel / 420f), 0f, 1f));
+            // Main.NewText($"Width - {progressrect.Width}");
+            // spriteBatch.Draw((ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat_Bar").Value), new Rectangle(750, 464, 36, 12), Color.White);
+            // Main.NewText(new Rectangle(progressrect.Left + 1, progressrect.Y, 1, progressrect.Height));
+            //
         }
     }
+
+
+    public class BarLine : UIElement
+    {
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            base.Draw(spriteBatch);
+            
+            if (Main.LocalPlayer.HeldItem.ModItem is not Overheat overheatItem) // && !Main.LocalPlayer.controlUseItem
+            {
+                return;
+            }
+            Rectangle progressrect = OverheatUI.frame.GetInnerDimensions().ToRectangle();
+            progressrect.Width = (int)(36 * MathHelper.Clamp((overheatItem.OverheatLevel / 420f), 0f, 1f));
+            Main.NewText($"Width - {progressrect.Width}");
+            spriteBatch.Draw((ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/KitKat_Bar").Value), new Vector2(progressrect.Left + 20, progressrect.Y + 20), new Rectangle?(new Rectangle(0, 0, progressrect.Width, 12)), Color.White, 0f,
+                (new Rectangle(0, 0, progressrect.Width, 12)).Size() / 2f, 1.5f, SpriteEffects.None, 0f);
+            Main.NewText(new Rectangle(progressrect.Left + 1, progressrect.Y, 1, progressrect.Height));
+            
+        }
+    }
+    
+    // gpt
+    // public class UIImageBar : UIElement
+    // {
+    //     private Texture2D _texture;
+    //     public float FillPercent = 1f; // от 0 до 1
+    //     public float ImageScale { get; set; } = 1f;
+    //
+    //     public UIImageBar(Texture2D texture)
+    //     {
+    //         _texture = texture;
+    //         // Задаём элементу размеры, чтобы не были нулевыми
+    //         Width.Set(texture.Width, 0f);
+    //         Height.Set(texture.Height, 0f);
+    //     }
+    //
+    //     protected override void DrawSelf(SpriteBatch spriteBatch)
+    //     {
+    //         base.DrawSelf(spriteBatch);
+    //
+    //         // Берём фактические размеры, которые занял UIElement на экране
+    //         var dimensions = GetDimensions().ToRectangle();
+    //
+    //         // Ширина "заполненной" части текстуры
+    //         int fillWidth = (int)(_texture.Width * FillPercent);
+    //         // Защита от дурака, если fillWidth < 0
+    //         if (fillWidth < 0)
+    //             fillWidth = 0;
+    //         if (fillWidth > _texture.Width)
+    //             fillWidth = _texture.Width;
+    //
+    //         // Исходная часть текстуры, которую рисуем
+    //         Rectangle sourceRect = new Rectangle(0, 0, fillWidth, _texture.Height);
+    //
+    //         // Куда рисуем: ту же ширину, но учитываем масштаб
+    //         Rectangle destinationRect = new Rectangle(
+    //             dimensions.X,
+    //             dimensions.Y,
+    //             (int)(fillWidth * ImageScale),
+    //             (int)(_texture.Height * ImageScale)
+    //         );
+    //
+    //         // Рисуем только кусок текстуры
+    //         spriteBatch.Draw(_texture, destinationRect, sourceRect, Color.White);
+    //     }
+    // }
 
     
     
@@ -170,6 +186,7 @@ namespace SiriusMod.UI.Mechanics
                     delegate
                     {
                         OverheatUIUserInterface.Draw(Main.spriteBatch, new GameTime());
+                        
                         return true;
                     },
                     // Здесь применяется тип скейла, в нашем случае - скейл интерфейс
