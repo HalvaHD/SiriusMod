@@ -1,19 +1,21 @@
 ﻿using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
+using Terraria.Enums;
 using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-    public class LabTV : ModTile
+    public class LabTv : ModTile
     {
         public override void SetStaticDefaults()
         {
             Main.tileFrameImportant[Type] = true;
             Main.tileNoAttach[Type] = true;
-            TileID.Sets.DisableSmartCursor[Type] = true;
+            Main.tileLavaDeath[Type] = true;
+            Main.tileWaterDeath[Type] = false;
             
             TileObjectData.newTile.Height = 3;
             TileObjectData.newTile.Width = 4;
@@ -25,19 +27,20 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             TileObjectData.newTile.AnchorWall = true;
             TileObjectData.newTile.LavaDeath = false;
 
+            TileObjectData.newTile.StyleWrapLimit = 3;
             TileObjectData.newTile.StyleHorizontal = true;
             
+            TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+            TileObjectData.newAlternate.Direction = TileObjectDirection.PlaceRight;
+            TileObjectData.addAlternate(1);
+            
             TileObjectData.newSubTile.CopyFrom(TileObjectData.newTile);
+            TileObjectData.newSubTile.LinkedAlternates = true;
+            TileObjectData.newTile.Direction = TileObjectDirection.PlaceLeft;
             TileObjectData.addSubTile(1);
             
-            TileObjectData.newSubTile.CopyFrom(TileObjectData.newTile);
-            TileObjectData.addSubTile(2);
-            
             TileObjectData.addTile(Type);
-            
             AddMapEntry(new Color(71, 95, 114));
         }
-        
-       
     }
 }

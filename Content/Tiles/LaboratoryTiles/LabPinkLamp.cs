@@ -9,7 +9,7 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class PinkLabLamp : ModTile
+	public class LabPinkLamp : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -19,13 +19,12 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			Main.tileLavaDeath[Type] = false;
 			Main.tileWaterDeath[Type] = false;
 			
-			
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style3x3Wall);
 			TileObjectData.newTile.Height = 2;
 			TileObjectData.newTile.Width = 2;
 			TileObjectData.newTile.CoordinatePadding = 2;
 			TileObjectData.newTile.CoordinateWidth = 16;
-			TileObjectData.newTile.CoordinateHeights = new[] { 16, 16 };
+			TileObjectData.newTile.CoordinateHeights =  [16, 16];
 			
 			TileObjectData.newTile.LavaDeath = false;
 			TileObjectData.newTile.WaterPlacement = LiquidPlacement.Allowed;

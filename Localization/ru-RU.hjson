@@ -793,6 +793,26 @@ Mods: {
 				// Tooltip: ""
 				// DisplayName: Dark Samurai Hat
 			}
+
+			LabTVSideview: {
+				// DisplayName: Lab T V Sideview
+				// Tooltip: ""
+			}
+
+			LabTv: {
+				// DisplayName: Lab Tv
+				// Tooltip: ""
+			}
+
+			LabTvSideview: {
+				// DisplayName: Lab Tv Sideview
+				// Tooltip: ""
+			}
+
+			LabPinkLamp: {
+				// DisplayName: Lab Pink Lamp
+				// Tooltip: ""
+			}
 		}
 
 		Buffs: {
@@ -1450,7 +1470,7 @@ Items: {
 	}
 
 	LabTV: {
-		// DisplayName: Lab T V
+		// DisplayName: Lab TV
 		// Tooltip: ""
 	}
 
@@ -1705,27 +1725,27 @@ Items: {
 	}
 
 	LabTV_Left: {
-		// DisplayName: Lab T V_ Left
+		// DisplayName: Lab TV_ Left
 		// Tooltip: ""
 	}
 
 	LabTV_Right: {
-		// DisplayName: Lab T V_ Right
+		// DisplayName: Lab TV_ Right
 		// Tooltip: ""
 	}
 
 	LabTVBroken: {
-		// DisplayName: Lab T V Broken
+		// DisplayName: Lab TV Broken
 		// Tooltip: ""
 	}
 
 	LabTVBroken_Left: {
-		// DisplayName: Lab T V Broken_ Left
+		// DisplayName: Lab TV Broken_ Left
 		// Tooltip: ""
 	}
 
 	LabTVBroken_Right: {
-		// DisplayName: Lab T V Broken_ Right
+		// DisplayName: Lab TV Broken_ Right
 		// Tooltip: ""
 	}
 
