@@ -1,87 +1,142 @@
-using SiriusMod.Content.Items;
 using SiriusMod.Mechanics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
 using ReLogic.Content;
-using SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe;
 using Terraria;
 using Terraria.GameContent;
 using Terraria.GameContent.Animations;
 using Terraria.GameContent.UI.Elements;
-using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.UI;
 
-namespace SiriusMod.UI.Mechanics;
-
-internal class OverheatUI : UIState
+namespace SiriusMod.UI.Mechanics
 {
-    private UIElement area;
-    private UIImage frame;
-    private UIImage progressBar;
-
-    public override void OnInitialize()
+    internal class OverheatUI : UIState
     {
-        // Инициализация элемента
-        area = new UIElement();
-        // Отступ от левого края в пикселях/процентах
-        area.Left.Set(-18, 0.5f);
-        // Оступ от верхнего края в пикселя/процентах
-        area.Top.Set(0, 0.55f);
-        // Размер области UI, роляет ток где надо на что-то кликать
-        area.Width.Set(36, 0f);
-        area.Height.Set(12, 0f);
+        private UIElement area;
+        private UIImage frame;
+        private UIImageBar progressBar;
 
-        frame = new UIImage(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat"));
-        frame.Left.Set(0, 0f);
-        frame.Top.Set(0, 0f);
-        frame.ImageScale = 1.2f;
-        //frame.Width.Set(36, 0f);
-        //frame.Height.Set(12, 0f);
-        
-        progressBar = new UIImage(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat_Bar"));
-        progressBar.Left.Set(0, 0f);
-        progressBar.Top.Set(0, 0f);
-        progressBar.ImageScale = 1.2f;
-        
-        //К основной области добавляешь все элементы, которые должны "крепиться" к ней
-        area.Append(frame);
-        area.Append(progressBar);
-        // Добавляешь саму область на экран
-        Append(area);
-    }
-
-    // Отрисовка UI, чтобы ее отменить возращаем return;
-    public override void Draw(SpriteBatch spriteBatch)
-    { 
-        if (Main.LocalPlayer.HeldItem.ModItem is not Overheat)  // && !Main.LocalPlayer.controlUseItem
+        public override void OnInitialize()
         {
-            return;
+            // Инициализация элемента
+            area = new UIElement();
+            // Отступ от левого края в пикселях/процентах
+            area.Left.Set(-18, 0.5f);
+            // Оступ от верхнего края в пикселя/процентах
+            area.Top.Set(0, 0.55f);
+            // Размер области UI, роляет ток где надо на что-то кликать
+            area.Width.Set(36, 0f);
+            area.Height.Set(12, 0f);
+
+            frame = new UIImage(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat"));
+            frame.Left.Set(0, 0f);
+            frame.Top.Set(0, 0f);
+            frame.ImageScale = 1.5f;
+            //frame.Width.Set(36, 0f);
+            //frame.Height.Set(12, 0f);
+
+            progressBar = new UIImageBar(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat_Bar").Value);
+            progressBar.Left.Set(0, 0f);
+            progressBar.Top.Set(0, 0f);
+            progressBar.ImageScale = 1.5f;
+
+            //К основной области добавляешь все элементы, которые должны "крепиться" к ней
+            //area.Append(frame);
+            area.Append(progressBar);
+            // Добавляешь саму область на экран
+            Append(area);
+        }
+
+        // Отрисовка UI, чтобы ее отменить возращаем return;
+        public override void Draw(SpriteBatch spriteBatch)
+        {
+            if (Main.LocalPlayer.HeldItem.ModItem is not Overheat) // && !Main.LocalPlayer.controlUseItem
+            {
+                return;
+            }
+
+            base.Draw(spriteBatch);
         }
         
-        base.Draw(spriteBatch);
-    }
-
-    public override void Update(GameTime gameTime)
-    {
-        base.Update(gameTime);
-
-        if (Main.LocalPlayer.HeldItem.ModItem is Overheat overheatItem)
+        
+        
+        
+        
+        //gpt
+        public override void Update(GameTime gameTime)
         {
-            float overheatRatio = MathHelper.Clamp(overheatItem.OverheatLevel / 420f, 0f, 1f);
-            progressBar.SetImage(ModContent.Request<Texture2D>("SiriusMod/Assets/ExtraTextures/Kitkat_Bar"));
-            progressBar.GetClippingRectangle();
+            base.Update(gameTime);
+            
+            if (Main.LocalPlayer.HeldItem.ModItem is Overheat overheatItem)
+            {
+                float overheatRatio = overheatItem.OverheatLevel / 420f;
+                overheatRatio = MathHelper.Clamp(overheatRatio, 0f, 1f);
+                progressBar.FillPercent = overheatRatio;
+            }
+        }
+    }
+    
+    
+    
+    
+    // gpt
+    public class UIImageBar : UIElement
+    {
+        private Texture2D _texture;
+        public float FillPercent = 1f; // от 0 до 1
+        public float ImageScale { get; set; } = 1f;
+
+        public UIImageBar(Texture2D texture)
+        {
+            _texture = texture;
+            // Задаём элементу размеры, чтобы не были нулевыми
+            Width.Set(texture.Width, 0f);
+            Height.Set(texture.Height, 0f);
+        }
+
+        protected override void DrawSelf(SpriteBatch spriteBatch)
+        {
+            base.DrawSelf(spriteBatch);
+
+            // Берём фактические размеры, которые занял UIElement на экране
+            var dimensions = GetDimensions().ToRectangle();
+
+            // Ширина "заполненной" части текстуры
+            int fillWidth = (int)(_texture.Width * FillPercent);
+            // Защита от дурака, если fillWidth < 0
+            if (fillWidth < 0)
+                fillWidth = 0;
+            if (fillWidth > _texture.Width)
+                fillWidth = _texture.Width;
+
+            // Исходная часть текстуры, которую рисуем
+            Rectangle sourceRect = new Rectangle(0, 0, fillWidth, _texture.Height);
+
+            // Куда рисуем: ту же ширину, но учитываем масштаб
+            Rectangle destinationRect = new Rectangle(
+                dimensions.X,
+                dimensions.Y,
+                (int)(fillWidth * ImageScale),
+                (int)(_texture.Height * ImageScale)
+            );
+
+            // Рисуем только кусок текстуры
+            spriteBatch.Draw(_texture, destinationRect, sourceRect, Color.White);
         }
     }
 
+    
+    
+    
     //Система для отрисовки UI, происходит только на стороне клиента, так как любая отрисовка только на стороне клиента!!!
     [Autoload(Side = ModSide.Client)]
     internal class OverheatUISystem : ModSystem
     {
         // Интерфейс игрока многослойный, поэтому чтобы нарисовать UI мы создаем еще один слой на котором будет рисоваться шкала
         private UserInterface OverheatUIUserInterface;
-        
+
         // Наследуем класс нашего UIState, который находится выше
         internal OverheatUI OverheatUI;
 
@@ -99,7 +154,7 @@ internal class OverheatUI : UIState
         {
             OverheatUIUserInterface?.Update(gameTime);
         }
-        
+
         // Чтобы встроить наш слой в кучу других слоев мы используем метод модификации слоев интерфейса
         public override void ModifyInterfaceLayers(List<GameInterfaceLayer> layers)
         {
@@ -110,7 +165,7 @@ internal class OverheatUI : UIState
             {
                 // Вставляем в слои, наш слой
                 layers.Insert(resourceBarIndex, new LegacyGameInterfaceLayer(
-                    "ExampleMod: Example Resource Bar",
+                    "SiriusMod: Overheat",
                     // Через delegate рисуем сам интерфейс
                     delegate
                     {

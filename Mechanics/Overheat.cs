@@ -50,6 +50,11 @@ namespace SiriusMod.Mechanics
 
         public override void UpdateInventory(Player player)
         {
+            if (OverheatTimer > 100)
+            {
+                Main.NewText(OverheatTimer);
+            }
+            
             if (!player.controlUseItem)
             {
                 if (OverheatTimer > 0)
