@@ -8,7 +8,7 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
     {
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabTV>(), 1);
+            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabTv>(), 1);
             Item.width = 60;
             Item.height = 44;
             Item.maxStack = Item.CommonMaxStack;

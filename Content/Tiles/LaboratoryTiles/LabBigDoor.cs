@@ -10,7 +10,7 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class LabDoorDefault : ModTile
+	public class LabBigDoor : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -18,19 +18,16 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			Main.tileSolid[Type] = true;
 			Main.tileNoAttach[Type] = true;
 			TileID.Sets.DrawsWalls[Type] = true;
-			
-			
-
-			
 			Main.tileLavaDeath[Type] = false;
 			Main.tileWaterDeath[Type] = false;
 			
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style5x4);
 			TileObjectData.newTile.UsesCustomCanPlace = true;
-			TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<LabDoorDefaultTileEntity>().Hook_AfterPlacement, -1, 0, true);
+			TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<LabBigDoorTileEntity>().Hook_AfterPlacement, -1, 0, true);
 			TileObjectData.newTile.Height = 17;
 			TileObjectData.newTile.Width = 4;
 			TileObjectData.newTile.CoordinatePadding = 2;
+			TileObjectData.newTile.Origin = new Point16(1, 16);
 			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16, 16 , 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16];
 			
 			TileObjectData.newTile.LavaDeath = false;
@@ -46,13 +43,13 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 
 		public override void KillMultiTile(int i, int j, int frameX, int frameY)
 		{
-			ModContent.GetInstance<LabDoorDefaultTileEntity>().Kill(i, j);
+			ModContent.GetInstance<LabBigDoorTileEntity>().Kill(i, j);
 		}
 
 		public override void AnimateIndividualTile(int type, int i, int j, ref int frameXOffset, ref int frameYOffset)
 		{
 			Tile tile = Main.tile[i, j];
-			LabDoorDefaultTileEntity tileEntity = TileUtils.FindTileEntity<LabDoorDefaultTileEntity>(i, j, 4, 17, 16);
+			LabBigDoorTileEntity tileEntity = TileUtils.FindTileEntity<LabBigDoorTileEntity>(i, j, 4, 17, 16);
 			if (tileEntity != null && tileEntity.AnimationCounter > 120)
 			{
 				tile.IsActuated = true;
@@ -62,8 +59,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 				tile.IsActuated = false;
 			}
 			
-			
-			
 		}
 		public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings) => true;
 
@@ -71,7 +66,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		public override bool RightClick(int i, int j)
 		{
 			Player player = Main.LocalPlayer;
-			LabDoorDefaultTileEntity tileEntity = TileUtils.FindTileEntity<LabDoorDefaultTileEntity>(i, j, 4, 17, 16);
+			LabBigDoorTileEntity tileEntity = TileUtils.FindTileEntity<LabBigDoorTileEntity>(i, j, 4, 17, 16);
 			
 			Tile tile = Main.tile[i, j];
 
@@ -87,8 +82,8 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		
 		public override bool PreDraw(int i, int j, SpriteBatch spriteBatch) {
 			Tile tile = Main.tile[i, j];
-			Texture2D texture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/LabDoorDefault").Value;
-			Texture2D glowTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/LabDoorDefault_Glow").Value;
+			Texture2D texture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/LabBigDoor").Value;
+			Texture2D glowTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/LabBigDoor_Glow").Value;
 
 			// If you are using ModTile.SpecialDraw or PostDraw or PreDraw, use this snippet and add zero to all calls to spriteBatch.Draw
 			// The reason for this is to accommodate the shift in drawing coordinates that occurs when using the different Lighting mode
@@ -120,7 +115,8 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		
 		}
 	}
-	public class LabDoorDefaultTileEntity : ModTileEntity
+	
+	public class LabBigDoorTileEntity : ModTileEntity
 	{
 		public bool IsOpened = false;
 		public int AnimationCounter = 0;
@@ -130,7 +126,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		public override bool IsTileValidForEntity(int x, int y)
 		{
 			Tile tile = Main.tile[x, y];
-			return tile.HasTile && (int) tile.TileType == ModContent.TileType<LabDoorDefault>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
+			return tile.HasTile && (int) tile.TileType == ModContent.TileType<LabBigDoor>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
 		}
 		public override int Hook_AfterPlacement(int i, int j, int type, int style, int direction, int alternate)
 		{

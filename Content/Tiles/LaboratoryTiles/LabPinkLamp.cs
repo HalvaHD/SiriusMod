@@ -51,10 +51,21 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 				b = 0f;
 			}
 		}
-		public override void HitWire(int i, int j)
-		{
-			Luminance.Common.Utilities.Utilities.LightHitWire(Type, i, j, 3, 3);
+		public override void HitWire(int i, int j) {
+			Tile tile = Main.tile[i, j];
+			int topY = j - tile.TileFrameY / 18 % 3;
+			short frameAdjustment = (short)(tile.TileFrameX > 0 ? -18 : 18);
+
+			Main.tile[i, topY].TileFrameX += frameAdjustment;
+			Main.tile[i, topY + 1].TileFrameX += frameAdjustment;
+			Main.tile[i, topY + 2].TileFrameX += frameAdjustment;
+
+			Wiring.SkipWire(i, topY);
+			Wiring.SkipWire(i, topY + 1);
+			Wiring.SkipWire(i, topY + 2);
+			
 		}
+
 
 		public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
 		{

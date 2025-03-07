@@ -18,8 +18,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			Main.tileSolidTop[Type] = true;
 			Main.tileTable[Type] = true; 
 			
-			
-			
 			TileObjectData.newTile.Height = 6;
 			TileObjectData.newTile.Width = 7;
 			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16, 16];
@@ -50,10 +48,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
 			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 4);
 			TileObjectData.addAlternate(0);
-			
-			
-			
-			
 			
 			TileObjectData.addTile(Type);
 			
@@ -86,7 +80,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			
 			if (tileEntity != null && tileEntity.IsOpened != true)
 			{
-				Main.NewText("ОТКРЫТОЙ НАХУЙ");
+				Main.NewText("ОТКРЫТО НАХУЙ");
 				tileEntity.IsOpened = true;
 				tileEntity.AnimationCounter = 240;
 			}
@@ -137,32 +131,30 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 				AnimationCounter--;
 				
 			}
-			
-			//Main.tileSolid[tile.TileType] = true;
 
 			if (tile.HasTile && IsOpened == true)
 			{
 				if (++FrameCounter % 10 == 0)
 				{
-					if (tile.TileFrameY != 108)
+					if (tile.TileFrameX != 126)
 					{
 						int topX = i - tile.TileFrameX % 126 / 16;
 						int topY = j - tile.TileFrameY % 108 / 16;
 						for (int x = topX; x < topX + 7; x++) {
 							for (int y = topY; y < topY + 6; y++) {
-								Main.tile[x, y].TileFrameY += 108;
+								Main.tile[x, y].TileFrameX += 126;
 															
 							}
 						}
 						
 					}
-					if (tile.TileFrameY == 108)
+					if (tile.TileFrameX == 126)
 					{
 						int topX = i - tile.TileFrameX % 126 / 16;
 
 						for (int x = topX; x < topX + 7; x++)
 						{
-							Main.tileSolid[Main.tile[x, 108].TileType] = true;
+							Main.tileSolid[Main.tile[126, j].TileType] = true;
 						}
 					}
 					
@@ -173,12 +165,12 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             
 						for (int x = topX; x < topX + 7; x++) {
 							for (int y = topY; y < topY + 6; y++) {
-								Main.tile[x, y].TileFrameY -= 108;
+								Main.tile[x, y].TileFrameX -= 126;
             							
 							}
 						}
 
-						if (tile.TileFrameY == 0)
+						if (tile.TileFrameX == 0)
 						{
 							IsOpened = false;
 							FrameCounter = 0;

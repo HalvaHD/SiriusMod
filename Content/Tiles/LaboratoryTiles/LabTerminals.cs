@@ -16,8 +16,8 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		    Main.tileNoAttach[Type] = true;
 		    Main.tileLavaDeath[Type] = true;
 		    Main.tileWaterDeath[Type] = false;
-		   // Main.tileSolidTop[Type] = true;
-		   // Main.tileTable[Type] = true;
+		    // Main.tileSolidTop[Type] = true;
+		    // Main.tileTable[Type] = true;
 
 		    TileObjectData.newTile.Height = 3;
 		    TileObjectData.newTile.Width = 5;

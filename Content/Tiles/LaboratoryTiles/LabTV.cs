@@ -8,7 +8,7 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-    public class LabTV : ModTile
+    public class LabTv : ModTile
     {
         public override void SetStaticDefaults()
         {

@@ -4,11 +4,11 @@ using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabTV : ModItem
+    public class LabTv : ModItem
     {
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabTV>(), 0);
+            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabTv>(), 0);
             Item.width = 56;
             Item.height = 44;
             Item.maxStack = Item.CommonMaxStack;

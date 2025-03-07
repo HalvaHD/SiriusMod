@@ -17,7 +17,7 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 10;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            //Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
+            Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
         }
 
         public override void AddRecipes()
