@@ -40,7 +40,7 @@ namespace SiriusMod.Mechanics
             //Main.NewText(OverheatLevel);
         }
 
-        public override bool CanUseItem(Player player)
+        /*public override bool CanUseItem(Player player)
         {
             if (CooldownTimer > 0)
             {
@@ -48,7 +48,7 @@ namespace SiriusMod.Mechanics
             }
             
             return true;
-        }
+        }*/
 
         public override void UpdateInventory(Player player)
         {
