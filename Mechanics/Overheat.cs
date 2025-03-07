@@ -12,6 +12,7 @@ namespace SiriusMod.Mechanics
         private int OverheatTimer = 0;
         private int CooldownTimer = 0;
         public int OverheatLevel => OverheatTimer;
+        public int CooldownLevel => CooldownTimer;
         private SlotId OverheatBrokeID;
         public SoundStyle OverheatBroke = new SoundStyle("SiriusMod/Assets/Sounds/OverheatBroke");
         
@@ -36,7 +37,7 @@ namespace SiriusMod.Mechanics
                     OverheatTimer = 0;
                 }
             }
-            Main.NewText(OverheatLevel);
+            //Main.NewText(OverheatLevel);
         }
 
         public override bool CanUseItem(Player player)
@@ -51,11 +52,6 @@ namespace SiriusMod.Mechanics
 
         public override void UpdateInventory(Player player)
         {
-            if (OverheatTimer > 100)
-            {
-                Main.NewText(OverheatTimer);
-            }
-            
             if (!player.controlUseItem)
             {
                 if (OverheatTimer > 0)
