@@ -25,7 +25,7 @@ namespace SiriusMod.Mechanics
                     OverheatTimer++;
                 }
 
-                if (OverheatTimer >= 420)
+                if (OverheatTimer >= 600)
                 {
                     if (!SoundEngine.TryGetActiveSound(OverheatBrokeID, out var sound3))
                     {
@@ -33,7 +33,7 @@ namespace SiriusMod.Mechanics
                     }
                     
                     player.AddBuff(BuffID.OnFire, 300);
-                    CooldownTimer = 540;
+                    CooldownTimer = 300;
                     OverheatTimer = 0;
                 }
             }

@@ -77,7 +77,7 @@ namespace SiriusMod.UI.Mechanics
                 // If the mouse is on top of the meter, show the player's accumulated sulphuric poisoning.
                 if (overheatItem.OverheatLevel > 0)
                 {
-                    string overheatText = (overheatItem.OverheatLevel / 420f * 100f).ToString("n2");
+                    string overheatText = (overheatItem.OverheatLevel / 600f * 100f).ToString("n2");
                     Main.instance.MouseText(overheatText, 0, 0, -1, -1, -1, -1);
                 }
 
@@ -120,26 +120,26 @@ namespace SiriusMod.UI.Mechanics
             {
                 float uiScale = Main.UIScale;
                 float offset = (frameTexture.Width - barTexture.Width) * 0.5f;
-                float completionRatio = MathHelper.Clamp(OverheatItem.OverheatLevel / 420f, 0f, 1f);
-                float colorRatio = MathHelper.Clamp(OverheatItem.OverheatLevel / 420f, 0.2f, 1f);
+                float completionRatio = MathHelper.Clamp(OverheatItem.OverheatLevel / 600f, 0f, 1f);
+                float colorRatio = MathHelper.Clamp(OverheatItem.OverheatLevel / 600f, 0.2f, 1f);
                 Rectangle barRectangle = new Rectangle(0, 0, (int)(barTexture.Width * completionRatio), barTexture.Width);
                 spriteBatch.Draw(frameTexture, screenPos, new Rectangle(0, 0, (frameTexture.Width), frameTexture.Height), Color.Lerp(Color.White, new Color(255, 67, 20), colorRatio), 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
                 spriteBatch.Draw(barTexture, screenPos + new Vector2(offset * uiScale, 0) + new Vector2(4, 0), barRectangle, Color.White, 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
             }
 
-            if (OverheatItem.CooldownLevel > 0 && OverheatItem.CooldownLevel <= 420)
+            if (OverheatItem.CooldownLevel > 0 && OverheatItem.CooldownLevel <= 200)
             {
                 float uiScale = Main.UIScale;
                 float offset = (frameTexture.Width - barTexture.Width) * 0.5f;
-                float completionRatio = MathHelper.Clamp(OverheatItem.CooldownLevel / 420f, 0f, 1f);
-                float colorRatio = MathHelper.Clamp(OverheatItem.CooldownLevel / 420f, 0.2f, 1f);
+                float completionRatio = MathHelper.Clamp(OverheatItem.CooldownLevel / 300f, 0f, 1f);
+                float colorRatio = MathHelper.Clamp(OverheatItem.CooldownLevel / 300f, 0.2f, 1f);
                 Rectangle barRectangle = new Rectangle(0, 0, (int)(barTexture.Width * completionRatio), barTexture.Width);
                 spriteBatch.Draw(frameTexture, screenPos, new Rectangle(0, 0, (frameTexture.Width), frameTexture.Height), Utilities.ColorSwap(new Color(255, 67, 20), Color.White, 0.5f), 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
                 spriteBatch.Draw(barTexture, screenPos + new Vector2(offset * uiScale, 0) + new Vector2(4, 0), barRectangle, Color.White, 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
                 
             }
 
-            if (OverheatItem.CooldownLevel > 420)
+            if (OverheatItem.CooldownLevel > 200)
             {
                 float uiScale = Main.UIScale;
                 float offset = (frameTexture.Width - barTexture.Width) * 0.5f;
