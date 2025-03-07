@@ -868,6 +868,27 @@ Mods: {
 			TeleporterDestroyKey.DisplayName: Teleporter Destroy Key
 			TeleporterCreateKey.DisplayName: Teleporter Create Key
 		}
+
+		Configs: {
+			SiriusConfig: {
+				DisplayName: Sirius Config
+
+				OverheatUIPosX: {
+					Label: Overheat U I Pos X
+					Tooltip: ""
+				}
+
+				OverheatUIPosY: {
+					Label: Overheat U I Pos Y
+					Tooltip: ""
+				}
+
+				BarsPosLock: {
+					Label: Bars Pos Lock
+					Tooltip: ""
+				}
+			}
+		}
 	}
 }
 

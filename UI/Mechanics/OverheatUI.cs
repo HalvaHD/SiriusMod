@@ -3,10 +3,9 @@ using SiriusMod.Mechanics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
-using CalamityMod;
-using CalamityMod.Cooldowns;
 using Microsoft.Xna.Framework.Input;
 using ReLogic.Content;
+using SiriusMod.Common;
 using SiriusMod.Helpers;
 using Terraria;
 using Terraria.GameContent;
@@ -51,17 +50,41 @@ namespace SiriusMod.UI.Mechanics
             {
                 return;
             }
-            //Main.NewText("Отрисовка идет");
-            Vector2 screenRatioPosition = new Vector2(DefaultPosX, DefaultPosY); // TODO: Add config pos
+            Vector2 screenRatioPosition = new Vector2(SiriusConfig.Instance.OverheatUIPosX, SiriusConfig.Instance.OverheatUIPosY);
+            if (screenRatioPosition.X < 0f || screenRatioPosition.X > 100f)
+                screenRatioPosition.X = DefaultPosX;
+            if (screenRatioPosition.Y < 0f || screenRatioPosition.Y > 100f)
+                screenRatioPosition.Y = DefaultPosY;
             
             float uiScale = Main.UIScale;
             Vector2 screenPos = screenRatioPosition;
             screenPos.X = (int)(screenPos.X * 0.01f * Main.screenWidth);
             screenPos.Y = (int)(screenPos.Y * 0.01f * Main.screenHeight);
-            
-            // Здесь отрисовываем шкалу
-            DrawOverheatBar(spriteBatch, overheatItem, screenPos);
 
+            if (overheatItem.OverheatLevel > 0 || overheatItem.CooldownLevel > 0)
+            {
+                DrawOverheatBar(spriteBatch, overheatItem, screenPos);
+            }
+            else
+            {
+                bool IsPosChanged = false;
+                if (SiriusConfig.Instance.OverheatUIPosX != screenRatioPosition.X)
+                {
+                    SiriusConfig.Instance.OverheatUIPosX = screenRatioPosition.X;
+                    IsPosChanged = true;
+                }
+                if (SiriusConfig.Instance.OverheatUIPosY != screenRatioPosition.Y)
+                {
+                    SiriusConfig.Instance.OverheatUIPosY = screenRatioPosition.Y;
+                    IsPosChanged = true;
+                }
+                if (IsPosChanged)
+                {
+                    SiriusMod.SaveConfig(SiriusConfig.Instance);
+                }
+                    
+            }
+            // Здесь отрисовываем шкалу
             Rectangle mouseHitbox = new Rectangle((int)Main.MouseScreen.X, (int)Main.MouseScreen.Y, 8, 8);
             Rectangle OverheatBarArea = Utils.CenteredRectangle(screenPos, frameTexture.Size() * uiScale);
 
@@ -82,34 +105,32 @@ namespace SiriusMod.UI.Mechanics
                 }
 
                 Vector2 newScreenRatioPosition = screenRatioPosition;
+                
+               
+                if (!SiriusConfig.Instance.BarsPosLock && ms.RightButton == ButtonState.Pressed)
+                {
+                    
+                    if (!dragOffset.HasValue)
+                        dragOffset = mousePos - screenPos;
 
-                // TODO: Add config moveability
-                // if (!SiriusConfig.Instance.MeterPosLock && ms.LeftButton == ButtonState.Pressed)
-                // {
-                //     // If the drag offset doesn't exist yet, create it.
-                //     if (!dragOffset.HasValue)
-                //         dragOffset = mousePos - screenPos;
-                //
-                //     // Given the mouse's absolute current position, compute where the corner of the water bar should be based on the original drag offset.
-                //     Vector2 newCorner = mousePos - dragOffset.GetValueOrDefault(Vector2.Zero);
-                //
-                //     // Convert the new corner position into a screen ratio position.
-                //     newScreenRatioPosition.X = (100f * newCorner.X) / Main.screenWidth;
-                //     newScreenRatioPosition.Y = (100f * newCorner.Y) / Main.screenHeight;
-                // }
+                    Vector2 newCorner = mousePos - dragOffset.GetValueOrDefault(Vector2.Zero);
+                    
+                    newScreenRatioPosition.X = (100f * newCorner.X) / Main.screenWidth;
+                    newScreenRatioPosition.Y = (100f * newCorner.Y) / Main.screenHeight;
+                }
 
                 // Compute the change in position. If it is large enough, actually move the meter
                 Vector2 delta = newScreenRatioPosition - screenRatioPosition;
                 if (Math.Abs(delta.X) >= MouseDragEpsilon || Math.Abs(delta.Y) >= MouseDragEpsilon)
                 {
-                    // newScreenRatioPosition.X
-                    // newScreenRatioPosition.Y
+                    SiriusConfig.Instance.OverheatUIPosX = newScreenRatioPosition.X;
+                    SiriusConfig.Instance.OverheatUIPosY = newScreenRatioPosition.Y;
                 }
-
-                // When the mouse is released, save the config and destroy the drag offset.
-                if (ms.LeftButton == ButtonState.Released)
+                
+                if (ms.RightButton == ButtonState.Released)
                 {
                     dragOffset = null;
+                    SiriusMod.SaveConfig(SiriusConfig.Instance);
                 }
             }
         }

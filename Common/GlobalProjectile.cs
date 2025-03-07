@@ -6,6 +6,7 @@ namespace SiriusMod.Common;
 
 public class GlobalProjectiles : GlobalProjectile
 {
+
     public override void OnSpawn(Projectile projectile, IEntitySource source)
     {
         if (source is EntitySource_Misc { Context: "KORROGatling" })

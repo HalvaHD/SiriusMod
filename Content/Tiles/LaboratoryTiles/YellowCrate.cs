@@ -25,13 +25,12 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			TileObjectData.newTile.CoordinateWidth = 16;
 			TileObjectData.newTile.Origin = new Point16(1, 5);
 			TileObjectData.newTile.UsesCustomCanPlace = true;
+			TileObjectData.newTile.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 0);
+
 			
 			TileObjectData.newTile.HookPostPlaceMyPlayer =
 				new PlacementHook(ModContent.GetInstance<YellowCrateTileEntity>().Hook_AfterPlacement, -1, 0, true); 
-			
-			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
-			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 0);
-			TileObjectData.addAlternate(0);
+
 			
 			TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
 			TileObjectData.newAlternate.AnchorBottom = new AnchorData(AnchorType.SolidTile | AnchorType.SolidWithTop | AnchorType.SolidSide | AnchorType.Table, 3, 1);
@@ -148,15 +147,15 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 						}
 						
 					}
-					if (tile.TileFrameX == 126)
-					{
-						int topX = i - tile.TileFrameX % 126 / 16;
-
-						for (int x = topX; x < topX + 7; x++)
-						{
-							Main.tileSolid[Main.tile[126, j].TileType] = true;
-						}
-					}
+					// if (tile.TileFrameX == 126)
+					// {
+					// 	int topX = i - tile.TileFrameX % 126 / 16;
+					//
+					// 	for (int x = topX; x < topX + 7; x++)
+					// 	{
+					// 		Main.tileSolid[Main.tile[126, j].TileType] = true;
+					// 	}
+					// }
 					
 					if (AnimationCounter == 0)
 					{

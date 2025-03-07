@@ -1,9 +1,12 @@
 using System.Collections.Generic;
+using System.Reflection;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
 using ReLogic.Content.Sources;
+using SiriusMod.Common;
 using SiriusMod.Core;
 using Terraria.ModLoader;
+using Terraria.ModLoader.Config;
 
 namespace SiriusMod
 {
@@ -47,6 +50,22 @@ namespace SiriusMod
 		public override void Unload()
 		{
 			base.Unload();
+		}
+		internal static void SaveConfig(SiriusConfig config)
+		{
+			// Чертов рефлешкн
+			try
+			{
+				MethodInfo saveMethodInfo = typeof(ConfigManager).GetMethod("Save", BindingFlags.Static | BindingFlags.NonPublic);
+				if (saveMethodInfo is not null)
+					saveMethodInfo.Invoke(null, [config]);
+				else
+					Instance.Logger.Error("Tmodloader reflection failed. Please let Sirius devs know about method signature changes.");
+			}
+			catch
+			{
+				Instance.Logger.Error("Error with Sirius configuration, ignore this message.");
+			}
 		}
 	}
 }
