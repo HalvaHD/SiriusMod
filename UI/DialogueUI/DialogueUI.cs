@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Utilities;
 using SiriusMod.Common.Players;
+using SiriusMod.Helpers;
 using SiriusMod.Systems;
 using Terraria;
 using Terraria.Audio;
@@ -80,7 +81,7 @@ namespace SiriusMod.UI.DialogueUI
 			if (i < DialogueSystem.DialogueLimit)
 			{
 				i = DialogueSystem.DialogueLimit;
-				text.SetText(Wrap(DialogueSystem.DialogueLine, 40));
+				text.SetText(Utilities.Wrap(DialogueSystem.DialogueLine, 40));
 			}
 			else
 			{
@@ -158,7 +159,7 @@ namespace SiriusMod.UI.DialogueUI
 			
 				if (i <= DialogueSystem.DialogueLimit)
 				{
-					text.SetText(Wrap(DialogueSystem.DialogueLine.Substring(0, i), 40));
+					text.SetText(Utilities.Wrap(DialogueSystem.DialogueLine.Substring(0, i), 40));
 					if (Counter % DialogueSystem.DialogueSpeed == 0)
 					{
 						i++;
@@ -173,45 +174,7 @@ namespace SiriusMod.UI.DialogueUI
 			base.Update(gameTime);
 		}
 		// Thank you for such cool code!!!!
-		internal static string Wrap(ReadOnlySpan<char> textt, int limit)
-		{
-			const int MaxNewLine = 8;
-			// Just try 2.275f and found it fits
-			limit = (GameCulture.CultureName)Language.ActiveCulture.LegacyId switch
-			{
-				GameCulture.CultureName.Chinese => (int)(limit / 2.275f),
-				_ => limit,
-			};
-			textt = textt.Trim();
-			int start = 0;
-			StringBuilder stringBuilder = new StringBuilder(textt.Length + MaxNewLine);
-			while (limit + start < textt.Length)
-			{
-				var line = textt.Slice(start, limit);
-				int length = line.Length, skip = 0;
-				for (int i = 0; i < line.Length; i++)
-				{
-					if (line[i] == '\n')
-					{
-						length = i;
-						skip = 1;
-						break;
-					}
-					else if (char.IsWhiteSpace(line[i]))
-					{
-						length = i;
-						skip = 1;
-					}
-				}
-				stringBuilder.Append(line[..length]).AppendLine();
-				start += length + skip;
-			}
-			stringBuilder.Append(textt[start..]);
-
-			//Bad memory copy
-			return stringBuilder.ToString();
 		
-        }
        
     
 	}

@@ -1,2059 +1,1495 @@
-Buffs: {
-	TwigPetBuff: {
-		// DisplayName: Приятный пушистик
-		// Description: Он свирепый, когда нужно...
-	}
-
-	YumBuff: {
-		// DisplayName: Yum's flying head
-		// Description: Flying white particles exist due to skill issue of the spriter.
-	}
-
-	SumBuff: {
-		// DisplayName: Sum's flying head
-		// Description: Kind-drunk-barmaid-admin
-	}
-
-	BlackCatBuff: {
-		// DisplayName: Forbidden Cat
-		// Description: Something wrong with it...
-	}
-
-	CatXBuff: {
-		// DisplayName: Floating cat? Fascinating...
-		// Description: It can reach your christmas tree even on a celling.
-	}
-
-	VedmaBuff: {
-		// DisplayName: A witch?
-		// Description: She has no broom!
-	}
-
-	LightTwigBuff: {
-		// DisplayName: Stuffed toy 'DeerFox'
-		// Description: How can it fly?
-	}
-
-	StepashaBuff: {
-		// DisplayName: Stepasha
-		// Description: Where did he lose his tooth?
-	}
-
-	StardyBuff: {
-		// DisplayName: Mysterious flower
-		// Description: What a charming glow!
-	}
-
-	BerserkBuff: {
-		// DisplayName: Elf's pollen
-		// Description: Soothes your physical pain.
-	}
-
-	PuhlaBuff: {
-		// DisplayName: Rainbow Star
-		// Description: Its sweater had seen too much.
-	}
-
-	SlimeRBuff: {
-		// DisplayName: Pink Slime
-		// Description: Usually these are left in the paddocks, but this one is persistently following you.
-	}
-
-	MotherOmlett: {
-		// DisplayName: NANOMACHINES, SON!
-		/* Description:
-			'''
-			"You can't hurt me, Jack!"
-			Damage received that exceeds 50% of the player's current health is nullified
-						
-			''' */
-	}
-
-	NanoIssue: {
-		// DisplayName: Nanomachines overloading
-		/* Description:
-			'''
-			"Nanomachines are overloaded! Your hands are shaking!"
-			-10% of all your damage
-			''' */
-	}
-
-	OldTwigBuff: {
-		// Description: С этого всё и началось.. классика, пф!
-		// DisplayName: Классический пушистик
-	}
-
-	SlimeHeroBuff: {
-		// DisplayName: Purple Slime
-		// Description: Is it... broken?
-	}
-
-	KeksikBuff: {
-		// DisplayName: Cupcake
-		// Description: A cupcake isn't a flashlight, okay? Got it?
-	}
-
-	RorBuff: {
-		// DisplayName: Medical drone
-		// Description: An indispensable friend among hostile fauna!
-	}
-
-	HelloBuff: {
-		// DisplayName: TV
-		// Description: Looking at this TV, you have a senseless desire to break it.
-	}
-
-	MedicinePipeBuff: {
-		// DisplayName: Дым лечебной трубки
-		/* Description:
-			'''
-			Увеличивает весь урон на {0}%
-			Увеличивает навык рыбной ловли на {1}
-			''' */
-	}
-
-	KORROKnockback: {
-		// DisplayName: KORRO Knockback
-		/* Description:
-			'''
-			[c/FF5733:THIS IS A SYSTEM BUFF. IT IS NOT INTENDED FOR PLAYERS!]
-			[c/FF5733:IF YOU SEE THIS BUFF, TELL THE DEVELOPER ABOUT THE ERROR!]
-			''' */
-	}
-
-	ContractSSSBuff: {
-		// DisplayName: Star Streamer from channel #BI-7623
-		// Description: With two small horns. A strange furry creature. Dokkaebi!
-	}
-
-	MomentumPotionBuff: {
-		// DisplayName: Momentum Potion Buff
-		// Description: Mods.Twig.Buffs.MomentumPotionBuff.Description
-	}
-
-	SkufBuff: {
-		// DisplayName: Skuf Buff
-		// Description: Mods.Twig.Buffs.SkufBuff.Description
-	}
-
-	LunarGravitationBuff: {
-		// DisplayName: Lunar Gravitation Buff
-		// Description: Mods.Twig.Buffs.LunarGravitationBuff.Description
-	}
-
-	DarkEnergyBuff: {
-		// DisplayName: Dark Energy Buff
-		// Description: Mods.Twig.Buffs.DarkEnergyBuff.Description
-	}
-
-	DarkEnergyDebuff: {
-		// DisplayName: Dark Energy Debuff
-		// Description: Mods.Twig.Buffs.DarkEnergyDebuff.Description
-	}
-
-	GracingEnergyBuff: {
-		// DisplayName: Gracing Energy Buff
-		// Description: Mods.Twig.Buffs.GracingEnergyBuff.Description
-	}
-
-	MedicineJokeBuff: {
-		// DisplayName: Medicine Joke Buff
-		// Description: Mods.Twig.Buffs.MedicineJokeBuff.Description
-	}
-
-	LitosObliteratorBuff: {
-		// DisplayName: Неисправное устройство смерти
-		// Description: Атаковать он не умеет, зато может быть отличным компаньоном!
-	}
-}
-
 Mods: {
 	SiriusMod: {
-		NPCs: {
-			KORRO: {
-				// Census.SpawnCondition: Conditions unknown
-
-				TownNPCMood: {
-					// Princess_LovesNPC: Мне нравится {NPCName}.
-					// LikeNPC_Princess: Мне нравится {NPCName}.
-					// HateNPC: Не терплю таких, как {NPCName}.
-					// DislikeNPC: Мне не нравится {NPCName}.
-					// LikeNPC: Мне нравится {NPCName}.
-					// LoveNPC: Мне по душе {NPCName}.
-					// DislikeBiome: Мне не нравится {BiomeName}.
-					// LikeBiome: Мне нравится {BiomeName}.
-					// HateCrowded: Я ненавижу, что тут людно.
-					// DislikeCrowded: Мне не нравится, что тут людно.
-					// LoveSpace: Мне нравится, как тут просторно.
-					// FarFromHome: Я далеко от дома.
-					// NoHome: Ужасно, что у меня нет дома.
-					// Content: Я доволен.
-				}
-
-				// DisplayName: K O R R O
-			}
-
-			HALVA_Prime: {
-				// Census.SpawnCondition: Conditions unknown
-
-				TownNPCMood: {
-					// Princess_LovesNPC: Мне нравится {NPCName}.
-					// LikeNPC_Princess: Мне нравится {NPCName}.
-					// HateNPC: Не терплю таких, как {NPCName}.
-					// DislikeNPC: Мне не нравится {NPCName}.
-					// LikeNPC: Мне нравится {NPCName}.
-					// LoveNPC: Мне по душе {NPCName}.
-					// HateBiome: Я ненавижу {BiomeName}.
-					// LikeBiome: Мне нравится {BiomeName}.
-					// LoveBiome: Мне по душе {BiomeName}.
-					// HateCrowded: Я ненавижу, что тут людно.
-					// DislikeCrowded: Мне не нравится, что тут людно.
-					// LoveSpace: Мне нравится, как тут просторно.
-					// FarFromHome: Я далеко от дома.
-					// NoHome: Ужасно, что у меня нет дома.
-					// Content: Я доволен.
-				}
-
-				// DisplayName: H A L V A_ Prime
-			}
-
-			// Protector.DisplayName: Protector
-		}
-
-		Projectiles: {
-			// YellowCrystalProjectile.DisplayName: Yellow Crystal Projectile
-			// WarriorMinion.DisplayName: Warrior Minion
-			// StartingHouseVisual.DisplayName: Starting House Visual
-			// StartingHouseProjectile.DisplayName: Starting House Projectile
-			// ProtectorBlast.DisplayName: Protector Blast
-			// NUCLEARPOWER.DisplayName: N U C L E A R P O W E R
-			// KORROGatling.DisplayName: K O R R O Gatling
-			// AutPortal.DisplayName: Aut Portal
-			// AutAnimation.DisplayName: Aut Animation
-			// ProtectorLightning.DisplayName: Protector Lightning
-		}
-
-		Items: {
-			YumorousItem: {
-				// Tooltip: ""
-				// DisplayName: Yumorous Item
-			}
-
-			TwigKnightItem: {
-				// Tooltip: ""
-				// DisplayName: Twig Knight Item
-			}
-
-			MadelineItem: {
-				// Tooltip: ""
-				// DisplayName: Madeline Item
-			}
-
-			YellowCrystalShard: {
-				// Tooltip: ""
-				// DisplayName: Yellow Crystal Shard
-			}
-
-			PathfinderSword: {
-				// Tooltip: ""
-				// DisplayName: Pathfinder Sword
-			}
-
-			PathfinderPickaxe: {
-				// Tooltip: ""
-				// DisplayName: Pathfinder Pickaxe
-			}
-
-			PathfinderHamaxe: {
-				// Tooltip: ""
-				// DisplayName: Pathfinder Hamaxe
-			}
-
-			YellowSmallCrate: {
-				// Tooltip: ""
-				// DisplayName: Yellow Small Crate
-			}
-
-			YellowCrate: {
-				// Tooltip: ""
-				// DisplayName: Yellow Crate
-			}
-
-			TrashcanItem: {
-				// Tooltip: ""
-				// DisplayName: Trashcan Item
-			}
-
-			RedSmallCrate: {
-				// Tooltip: ""
-				// DisplayName: Red Small Crate
-			}
-
-			RedCrate: {
-				// Tooltip: ""
-				// DisplayName: Red Crate
-			}
-
-			PinkLabLamp: {
-				// Tooltip: ""
-				// DisplayName: Pink Lab Lamp
-			}
-
-			MegaChestWall: {
-				// Tooltip: ""
-				// DisplayName: Mega Chest Wall
-			}
-
-			MegaChestLockedWall: {
-				// Tooltip: ""
-				// DisplayName: Mega Chest Locked Wall
-			}
-
-			MegaChestLocked: {
-				// Tooltip: ""
-				// DisplayName: Mega Chest Locked
-			}
-
-			MegaChest: {
-				// Tooltip: ""
-				// DisplayName: Mega Chest
-			}
-
-			LabWorkBench: {
-				// Tooltip: ""
-				// DisplayName: Lab Work Bench
-			}
-
-			LabVentBroken: {
-				// Tooltip: ""
-				// DisplayName: Lab Vent Broken
-			}
-
-			LabVent: {
-				// Tooltip: ""
-				// DisplayName: Lab Vent
-			}
-
-			LabTVBroken_Right: {
-				// Tooltip: ""
-				// DisplayName: Lab T V Broken_ Right
-			}
-
-			LabTVBroken_Left: {
-				// Tooltip: ""
-				// DisplayName: Lab T V Broken_ Left
-			}
-
-			LabTVBroken: {
-				// Tooltip: ""
-				// DisplayName: Lab T V Broken
-			}
-
-			LabTV_Right: {
-				// Tooltip: ""
-				// DisplayName: Lab T V_ Right
-			}
-
-			LabTV_Left: {
-				// Tooltip: ""
-				// DisplayName: Lab T V_ Left
-			}
-
-			LabTV: {
-				// Tooltip: ""
-				// DisplayName: Lab T V
-			}
-
-			LabTesla: {
-				// Tooltip: ""
-				// DisplayName: Lab Tesla
-			}
-
-			LabTerminalOff: {
-				// Tooltip: ""
-				// DisplayName: Lab Terminal Off
-			}
-
-			LabTerminal: {
-				// Tooltip: ""
-				// DisplayName: Lab Terminal
-			}
-
-			LabTableTwo: {
-				// Tooltip: ""
-				// DisplayName: Lab Table Two
-			}
-
-			LabTableOne: {
-				// Tooltip: ""
-				// DisplayName: Lab Table One
-			}
-
-			LabSofa: {
-				// Tooltip: ""
-				// DisplayName: Lab Sofa
-			}
-
-			LabSink: {
-				// Tooltip: ""
-				// DisplayName: Lab Sink
-			}
-
-			LabSignPlate: {
-				// Tooltip: ""
-				// DisplayName: Lab Sign Plate
-			}
-
-			LabScreenWarning: {
-				// Tooltip: ""
-				// DisplayName: Lab Screen Warning
-			}
-
-			LabScreenOff: {
-				// Tooltip: ""
-				// DisplayName: Lab Screen Off
-			}
-
-			LabScreenData3: {
-				// Tooltip: ""
-				// DisplayName: Lab Screen Data3
-			}
-
-			LabScreenData2: {
-				// Tooltip: ""
-				// DisplayName: Lab Screen Data2
-			}
-
-			LabScreenData1: {
-				// Tooltip: ""
-				// DisplayName: Lab Screen Data1
-			}
-
-			LabPot_3: {
-				// Tooltip: ""
-				// DisplayName: Lab Pot_3
-			}
-
-			LabPot_2: {
-				// Tooltip: ""
-				// DisplayName: Lab Pot_2
-			}
-
-			LabPot_1: {
-				// Tooltip: ""
-				// DisplayName: Lab Pot_1
-			}
-
-			LabPlatingWallMossy: {
-				// Tooltip: ""
-				// DisplayName: Lab Plating Wall Mossy
-			}
-
-			LabPlatingWallBetter: {
-				// Tooltip: ""
-				// DisplayName: Lab Plating Wall Better
-			}
-
-			LabPlatingWall: {
-				// Tooltip: ""
-				// DisplayName: Lab Plating Wall
-			}
-
-			LabPlatingMossy: {
-				// Tooltip: ""
-				// DisplayName: Lab Plating Mossy
-			}
-
-			LabPlatingBetter_Destroyed: {
-				// Tooltip: ""
-				// DisplayName: Lab Plating Better_ Destroyed
-			}
-
-			LabPlatingBetter: {
-				// Tooltip: ""
-				// DisplayName: Lab Plating Better
-			}
-
-			LabPlating: {
-				// Tooltip: ""
-				// DisplayName: Lab Plating
-			}
-
-			LabPlatform: {
-				// Tooltip: ""
-				// DisplayName: Lab Platform
-			}
-
-			LabPlatePillar: {
-				// Tooltip: ""
-				// DisplayName: Lab Plate Pillar
-			}
-
-			LabPlateBeam: {
-				// Tooltip: ""
-				// DisplayName: Lab Plate Beam
-			}
-
-			LabPiano: {
-				// Tooltip: ""
-				// DisplayName: Lab Piano
-			}
-
-			LabLustra: {
-				// Tooltip: ""
-				// DisplayName: Lab Lustra
-			}
-
-			LabLampAlt: {
-				// Tooltip: ""
-				// DisplayName: Lab Lamp Alt
-			}
-
-			LabLamp: {
-				// Tooltip: ""
-				// DisplayName: Lab Lamp
-			}
-
-			LabDristalnikBig: {
-				// Tooltip: ""
-				// DisplayName: Lab Dristalnik Big
-			}
-
-			LabDresser: {
-				// Tooltip: ""
-				// DisplayName: Lab Dresser
-			}
-
-			LabDoorClosed: {
-				// Tooltip: ""
-				// DisplayName: Lab Door Closed
-			}
-
-			LabDoorBig_Horizontal: {
-				// Tooltip: ""
-				// DisplayName: Lab Door Big_ Horizontal
-			}
-
-			LabDoor: {
-				// Tooltip: ""
-				// DisplayName: Lab Door
-			}
-
-			LabCryoCapsule_Broken: {
-				// Tooltip: ""
-				// DisplayName: Lab Cryo Capsule_ Broken
-			}
-
-			LabCryoCapsule: {
-				// Tooltip: ""
-				// DisplayName: Lab Cryo Capsule
-			}
-
-			LabClock: {
-				// Tooltip: ""
-				// DisplayName: Lab Clock
-			}
-
-			LabChest: {
-				// Tooltip: ""
-				// DisplayName: Lab Chest
-			}
-
-			LabChair: {
-				// Tooltip: ""
-				// DisplayName: Lab Chair
-			}
-
-			LabCamera_Off: {
-				// Tooltip: ""
-				// DisplayName: Lab Camera_ Off
-			}
-
-			LabCamera: {
-				// Tooltip: ""
-				// DisplayName: Lab Camera
-			}
-
-			LabBookshelf: {
-				// Tooltip: ""
-				// DisplayName: Lab Bookshelf
-			}
-
-			LabBigTableTwo: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Table Two
-			}
-
-			LabBigTableOne: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Table One
-			}
-
-			LabBigScreenFormula9: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Formula9
-			}
-
-			LabBigScreenFormula8: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Formula8
-			}
-
-			LabBigScreenFormula7: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Formula7
-			}
-
-			LabBigScreenFormula6: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Formula6
-			}
-
-			LabBigScreenFormula5: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Formula5
-			}
-
-			LabBigScreenFormula4: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Formula4
-			}
-
-			LabBigScreenFormula3: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Formula3
-			}
-
-			LabBigScreenFormula2: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Formula2
-			}
-
-			LabBigScreenFormula1: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Formula1
-			}
-
-			LabBigScreenBestWorker: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Best Worker
-			}
-
-			LabBigScreenBeer: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Screen Beer
-			}
-
-			LabBigDoorClosed: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Door Closed
-			}
-
-			LabBigDoor: {
-				// Tooltip: ""
-				// DisplayName: Lab Big Door
-			}
-
-			LabBath: {
-				// Tooltip: ""
-				// DisplayName: Lab Bath
-			}
-
-			LabBarrelBig: {
-				// Tooltip: ""
-				// DisplayName: Lab Barrel Big
-			}
-
-			LabBarrelAtomicBig: {
-				// Tooltip: ""
-				// DisplayName: Lab Barrel Atomic Big
-			}
-
-			LabBarrelAtomic: {
-				// Tooltip: ""
-				// DisplayName: Lab Barrel Atomic
-			}
-
-			LabBarrel: {
-				// Tooltip: ""
-				// DisplayName: Lab Barrel
-			}
-
-			GlassblackMossWall: {
-				// Tooltip: ""
-				// DisplayName: Glassblack Moss Wall
-			}
-
-			GlassblackMoss: {
-				// Tooltip: ""
-				// DisplayName: Glassblack Moss
-			}
-
-			DiscYellow: {
-				// Tooltip: ""
-				// DisplayName: Disc Yellow
-			}
-
-			DiscRed: {
-				// Tooltip: ""
-				// DisplayName: Disc Red
-			}
-
-			DiscBlue: {
-				// Tooltip: ""
-				// DisplayName: Disc Blue
-			}
-
-			ControlPanelLocked_Yellow: {
-				// Tooltip: ""
-				// DisplayName: Control Panel Locked_ Yellow
-			}
-
-			ControlPanelLocked_Purple: {
-				// Tooltip: ""
-				// DisplayName: Control Panel Locked_ Purple
-			}
-
-			ControlPanelLocked_Green: {
-				// Tooltip: ""
-				// DisplayName: Control Panel Locked_ Green
-			}
-
-			ControlPanel_Yellow: {
-				// Tooltip: ""
-				// DisplayName: Control Panel_ Yellow
-			}
-
-			ControlPanel_Purple: {
-				// Tooltip: ""
-				// DisplayName: Control Panel_ Purple
-			}
-
-			ControlPanel_Green: {
-				// Tooltip: ""
-				// DisplayName: Control Panel_ Green
-			}
-
-			BrokenServers_DiscYellow: {
-				// Tooltip: ""
-				// DisplayName: Broken Servers_ Disc Yellow
-			}
-
-			BrokenServers_DiscRed: {
-				// Tooltip: ""
-				// DisplayName: Broken Servers_ Disc Red
-			}
-
-			BrokenServers_DiscBlue: {
-				// Tooltip: ""
-				// DisplayName: Broken Servers_ Disc Blue
-			}
-
-			BrokenServers: {
-				// Tooltip: ""
-				// DisplayName: Broken Servers
-			}
-
-			BrokenServerChest: {
-				// Tooltip: ""
-				// DisplayName: Broken Server Chest
-			}
-
-			House1: {
-				// Tooltip: ""
-				// DisplayName: House1
-			}
-
-			MegaChestKey: {
-				// Tooltip: ""
-				// DisplayName: Mega Chest Key
-			}
-
-			ControlPanelKey_Yellow: {
-				// Tooltip: ""
-				// DisplayName: Control Panel Key_ Yellow
-			}
-
-			ControlPanelKey_Purple: {
-				// Tooltip: ""
-				// DisplayName: Control Panel Key_ Purple
-			}
-
-			ControlPanelKey_Green: {
-				// Tooltip: ""
-				// DisplayName: Control Panel Key_ Green
-			}
-
-			Aut: {
-				// Tooltip: ""
-				// DisplayName: Aut
-			}
-
-			DarkSamuraiHat: {
-				// Tooltip: ""
-				// DisplayName: Dark Samurai Hat
-			}
-
-			LabTVSideview: {
-				// DisplayName: Lab T V Sideview
-				// Tooltip: ""
-			}
-
-			LabTv: {
-				// DisplayName: Lab Tv
-				// Tooltip: ""
-			}
-
-			LabTvSideview: {
-				// DisplayName: Lab Tv Sideview
-				// Tooltip: ""
-			}
-
-			LabPinkLamp: {
-				// DisplayName: Lab Pink Lamp
-				// Tooltip: ""
-			}
-		}
-
 		Buffs: {
 			NanoIssue: {
-				// Description: Mods.SiriusMod.Buffs.NanoIssue.Description
-				// DisplayName: Nano Issue
+				Description: Mods.SiriusMod.Buffs.NanoIssue.Description
+				DisplayName: Nano Issue
 			}
 
 			MotherOmlett: {
-				// Description: Mods.SiriusMod.Buffs.MotherOmlett.Description
-				// DisplayName: Mother Omlett
+				Description: Mods.SiriusMod.Buffs.MotherOmlett.Description
+				DisplayName: Mother Omlett
 			}
 
 			MedicinePipeBuff: {
-				// Description: Mods.SiriusMod.Buffs.MedicinePipeBuff.Description
-				// DisplayName: Medicine Pipe Buff
+				Description: Mods.SiriusMod.Buffs.MedicinePipeBuff.Description
+				DisplayName: Medicine Pipe Buff
 			}
 
 			MedicineJokeBuff: {
-				// Description: Mods.SiriusMod.Buffs.MedicineJokeBuff.Description
-				// DisplayName: Medicine Joke Buff
+				Description: Mods.SiriusMod.Buffs.MedicineJokeBuff.Description
+				DisplayName: Medicine Joke Buff
 			}
 
 			LunarGravitationBuff: {
-				// Description: Mods.SiriusMod.Buffs.LunarGravitationBuff.Description
-				// DisplayName: Lunar Gravitation Buff
+				Description: Mods.SiriusMod.Buffs.LunarGravitationBuff.Description
+				DisplayName: Lunar Gravitation Buff
 			}
 
 			GracingEnergyBuff: {
-				// Description: Mods.SiriusMod.Buffs.GracingEnergyBuff.Description
-				// DisplayName: Gracing Energy Buff
+				Description: Mods.SiriusMod.Buffs.GracingEnergyBuff.Description
+				DisplayName: Gracing Energy Buff
 			}
 
 			DarkEnergyDebuff: {
-				// Description: Mods.SiriusMod.Buffs.DarkEnergyDebuff.Description
-				// DisplayName: Dark Energy Debuff
+				Description: Mods.SiriusMod.Buffs.DarkEnergyDebuff.Description
+				DisplayName: Dark Energy Debuff
 			}
 
 			DarkEnergyBuff: {
-				// Description: Mods.SiriusMod.Buffs.DarkEnergyBuff.Description
-				// DisplayName: Dark Energy Buff
+				Description: Mods.SiriusMod.Buffs.DarkEnergyBuff.Description
+				DisplayName: Dark Energy Buff
+			}
+		}
+
+		NPCs: {
+			KORRO: {
+				DisplayName: K O R R O
+				Census.SpawnCondition: Conditions unknown
+
+				TownNPCMood: {
+					Content: Я доволен.
+					NoHome: Ужасно, что у меня нет дома.
+					FarFromHome: Я далеко от дома.
+					DislikeCrowded: Мне не нравится, что тут людно.
+					HateCrowded: Я ненавижу, что тут людно.
+					LikeNPC_Princess: Мне нравится {NPCName}.
+					Princess_LovesNPC: Мне нравится {NPCName}.
+					LoveSpace: Мне нравится, как тут просторно.
+					HateNPC: Не терплю таких, как {NPCName}.
+					DislikeNPC: Мне не нравится {NPCName}.
+					LikeNPC: Мне нравится {NPCName}.
+					DislikeBiome: Мне не нравится {BiomeName}.
+					LikeBiome: Мне нравится {BiomeName}.
+					LoveNPC: Мне по душе {NPCName}.
+				}
+
+				Chat: {
+					// Normal1: Извини, дружок, но без тебя здесь было гораздо спокойнее.
+					// Normal2: Пришел отдохнуть? Все хорошо. Отдых действительно важен.
+					// Normal3: У меня есть приёмная дочь - Рей звать. Многие люди боятся к неё подходить.
+					// Normal4: Ты ведь тоже оказался здесь не по своей прихоти, верно? Что ж, у нас есть много времени чтобы обсудить это.
+					// Normal7: В вашей вселенной процветает употребление людей в пищу? Как нет?
+					// Normal8: Можешь подержать мою наручную цепь? Спасибо.
+					// Normal9: Хороший сценарий не может быть построен на использовании одних лишь клише.
+					// Normal10: В этой вселенной есть что-то вроде Легенды? В нашей была одна: Сценарист, он хотел создать Величайшую Сцену, он нанял огромное количество актеров для сцены. И я один из них. Но в отличии от других я сохранил здравие. Ты даже не представляешь, что происходило с людьми в тот момент.
+					// Normal11: Как и я, Рей хотела желать лучшего мира. Но, к сожалению, множество факторов находились не на нашей стороне.
+					// Normal12: Я подарил Рей жизнь, и теперь ей приходится убивать ради нашего продвижения. Я обрёк её на это, и даже не знаю, поступил-ли я правильно оставив её в живых.
+					// Normal13: Некоторые задумываются: Почему он ходит без охраны? Я отвечу: Не твое дело.
+					// Normal14: Квадрат 13 был начальной точкой того, что предвещало конец.
+					// Normal15: В детстве Рей приходилось давать множество успокоительных. Препараты, используемые на неё были достаточно болезненными. Думаю эта часть все же сказалась на её нынешнем характере.
+					// Normal16: Компания, которой я руководил занималась заказными убийствами. Сначала мы убивали конкретных личностей, но со временем нами заинтересовалась корпорация, расположенная ближе к центру города. Условия сотрудничества, на удивление, достаточно щедрыми, чтобы отказаться от такого предложения. Благодаря им мы получили доступ к большим участкам города, и все же, наш контракт был анонимен, а информация контракта предоставлялась сторонним лицам в ложном варианте.
+					// Normal17: Множество людей не принимает мой выбор о замене человеческих конечностей. Я понимаю почему они так считают. Тем не менее, я считаю иначе.
+					// Normal18: Не думаю, что Рей нравилась её работа. Тем не менее она выполняла все указания.
+					// Normal19: Мне всегда нравилась музыка, которая воспроизводилась на Актах Сцены. Интересно, Сценарист был её композитором? Вряд-ли, такое количество музыки и её разный стиль.
+					// Normal20: Благодаря победе на войне между Квадратами мы продвинулись на несколько Кубов выше. Понимаешь-ли ты меня, или нет, но это огромный успех.
+					// Normal21: Иногда из моего корпуса течет кровь.
+					// Normal22: Я большой фанат пошаговых игр. Если у тебя есть желание сыграть во что-либо - буду только рад.
+					// Normal23: Можно-ли назвать Сценариста "Психом"? Без понятия, но художник он действительно хороший.
+					// Normal24: Сложно назвать тебя психом, в отличии от них ты ищешь способы уничтожить цель как можно быстрее, а не искать способы заставить её дольше страдать.
+					// Normal25: У нас над городом были огромные темные облака, не пропускающие лучи солнца. Появились они в результате одной из войн между Кубами.
+					// Normal26: Результаты... удручающие.
+					// Normal27: Я слышал пару раз о странной групе людей, занимающихся заказными убийствами, или что-то в этом духе. Честно говоря, я до конца не смог понять, что они из себя представляют. Но кажется они смогли завершить пару сцен. Это достаточно большое достижение.
+					// Normal28: Весь мир для тебя - Сцена, твоя сцена.
+					// Normal29: Рей не любила сладкое. Вероятно, её болезнь не позволяла ей его употреблять. Ну или, возможно, она повторяет случай одного моего приятеля, который ну о-о-очень любил кофе БЕЗ сахара.
+					// Normal30: Что насчет обычных людей в городе? Обычно люди заказывали себе защитников, лишь в некоторых Кубах было действительно безопасно.
+					// Normal31: Надеюсь на грандиозный финал.
+				}
+
+				// ModItems: Pets
+			}
+
+			HALVA: {
+				// DisplayName: Chronomium's agent
+				// Census.SpawnCondition: Unknown
+				// NameHALVA: Warlock
+
+				Chat: {
+					// Normal1: While I'm here, I have a variety of trinkets for sale. These items were accidentally left behind or lost by different heroes and villains while we served them in our organization.
+					// Normal2: Do you want to know more about me?.. Well, it's a bit complicated. I am a researcher and an agent for the interdimensional organization Chronomium. Specifically, I work in the Department of Reincarnation and Regression, where I study and communicate with the souls of the dead who have to be reborn or returned in time.
+					// Normal3: This world is quite interesting, and I am here due to the prediction of our machine "Oracle". A huge, terrible creature is supposed to be reborn here, which must then be destroyed and samples taken for research. After that, my job will be done and I will return to the headquarters.
+					// Normal4: Recently, the workload of the department has significantly increased, and more worthy people who need a second life have begun to die. The worst part is for those who have to complete paperwork for each new arrival, ha-ha-ha.
+					// Normal5: Do you wonder why we give some people a second chance? In this vast universe, there are two types of people that come to us: impervious idiots and young heroes. The former often need regression, as understanding their mistakes only comes with death, whereas the latter need a reward and a chance to prove themselves even better.
+					// Normal6: You can enter our organization in two ways: either on the recommendation of a supervisor, although there are few of them, or by merit in your own world. I entered in the first way. All the employees died in their worlds one way or another, so none of us remember what happened before death or what kind of life we led. It's somewhat annoying, but it's reasonable.
+					// Normal7: You're an extremely strange creature. You don't have a lifespan, at least I can't see one. I see that you can resurrect, although I know several beings who can do that, but they will die in a couple of hundred thousand years, unlike you. In your case, I don't even know where your life force comes from...
+					// Normal8: Different worlds have different levels of complexity, although the concept is quite abstract. Every world has energy, information, and other parameters. We have devices that can measure the complexity of a world on a scale of 1 to 100, after a thorough assessment. I would give this world an approximate rating of {0}/100.
+					// Normal9: I've dealt with an interesting slime, his name was Rimuru. His strength didn't match the world he lived in, but he refused to move to a more complex and diverse world. I like people who have principles and are willing to give up mindless power seeking.
+					// Normal10: Some regressors are simply impassable. They need to die more than 100 times to understand even a tiny part of their mistakes. I wish every "Yoo Joong-Hyuk" had their own "Kim Dokja".
+					// Normal11: Perhaps you fall under the concept of "Main Character", as described to me by a teenage boy on one planet. When the whole world revolves around you and no matter what trouble you get into, you will not die until there is no one to take your place, he said.
+					// Normal12: I believe that you should achieve your goals no matter what. After my original death, I have become a different person with different ideals, desires, and dreams without memories of what I wanted before. Live your life without regret... Although I don't understand why I said that.
+					// Normal13: After fulfilling the prediction, I will leave this place, as there is still a lot of work at the headquarters.
+					// Normal14: I rarely use powerful spells. The destruction of the planet promises a mountain of paperwork and a report.
+					// Normal15: Working with reincarnators, one out of ten is a crazy pervert who is obsessed with digitally drawn images of females of their race. Of 1000 of these, only one achieves something, right, Rudeus?
+					// Normal16: My ability to see the date of death is not unique. I have met someone with similar abilities, high ambitions, and excellent skills. I was surprised to learn that he had lost his own battle. Unfortunately, i can't remember his name...
+					// Normal17: In fact, worlds are categorized into 4 types: inferior, middle, supreme and out-of-bounds. Inferior world cannot exceed 30/100 rating. Middle world cannot exceed 70/100 and Supreme world cannot exceed 100. An even more complex system is used to categorize out-of bounds worlds, which are rare but have a terrifying power.
+					// BloodMoon1: This red glow... It reminds me of a sea of the same color, in a universe where all the stars have gone out and there are bloody oceans everywhere. Prisoners are sent in bathyscaphes to explore the depths... None return alive, only research texts.
+					// BloodMoon2: Watching this event, I think it helps you to vent your anger by killing monsters. Is it a kind of entertainment? Perhaps it was once used as a test of combat skills.
+					// Night1: The night light is not ordinary. It accelerates the regeneration of dead tissue. Something like a method for zombie resurrection.
+					// Night2: Quiet nights, if not for the hordes of monsters. I can't interfere without a reason, I believe in you.
+					// Eclipse1: This eclipse reminds me of a similar event from one guy world. It happens every 216 years, and it is unbearably cruel.
+					// Eclispe2: Monsters are enhanced not by the sun, but by the moon, which covers it. Magically speaking, the moon amplifies the rays of the sun and gives them its own properties. Who lives on the moon?
+					// KORRO1: The story of the world {0} is one of the most violent I've ever heard. I am interested in his world, it is not in our registry, maybe it's in another multiverse..?
+					// KORRO2: "{0} doesn't seem to care about returning to his world. Although I can't drag anyone to the headquarters either."
+					// BestiaryGirl1: Lycanthropy... A dangerous disease and a powerful curse. Maybe I could help {0}, but she doesn't want to involve others in this.
+					// BestiaryGirl2: Animals are very fond of {0}. They consider her their relative. Such interesting effect of the disease...
+					// Guide1: "{0} doesn't understand why he's here. There is nothing in his memories, it's like he was born with this world, and immediately became like this. His magical energy is close to demonic, which is quite strange..."
+					// Guide2: I like {0} because he is open to any new knowledge. This is what any researcher should strive for!
+					// EasterEgg: "[c/d90429:You. I'm starting to see a little bit that you're just a puppet. I will find the one who controls you one day...]"
+					// ColorTheWorld: You have an amazing thing that can color weapons with one swipe. It's a pity that this is ancient magic, not technology. I could make a good patent...
+				}
+
+				// Nano.Failed: I can't give you another dose, it should take 1-2 minutes.
+				/*Stories: {
+				1: I call them "Nanoviruses" because by origin they are bacteriophages with a rewritten genome that inject their DNA into cells. They are limited only by the capabilities of the human body, but I am trying to teach them how to infect machines even then... Then I will be able to resist the robots on the planet Terminus-6077.
+				2: I am truly immortal and almost entirely made up of my own virus. Your ability to endlessly resurrect is not from this world.  Without it, your path to perfection would be closed. One day I'll find out who gifted it with such thing.
+				}*/
+				
+				// ShareNanomachines: Inject a nanovirus
+				// LostThings: Lost things
+
+				TownNPCMood: {
+					// Content: Everything is fine.
+					// NoHome: Objectively, I don't need a house, I'm only here for a mission, but I wouldn't mind if you gave me a room from where I can keep an eye on everything.
+					// FarFromHome: I think I've gone too far from home exploring the area here.
+					// DislikeCrowded: I don't like such large gatherings of people... It makes it difficult to concentrate.
+					// HateCrowded: There are more and more people, I hate crowds, even in the Department of Space Inquisition, which is the most violent department in our organization, they respect personal space.
+					// LikeBiome: I like that it's cold here, you don't have to worry about the suit overheating. I saw a similar picture in one of the worlds, but it was only a consequence of the cruelty of people and nuclear bombs.
+					// DislikeBiome: The sea air here is different from what I know, it has an extremely negative effect on my components, causing them to corrode, although in fact this is impossible. I do not know why this is happening.
+					// HateBiome: I really like this place, I'm used to such landscapes, but something pulls me out of here. It's as if nature itself is calling back, strangely, very strangely... Let's get out of here.
+					// LoveNPC: "{NPCName} is an extremely unhappy creature. The brutality of his world is not unique, but his story is... I will try to get a mission from the headquarters in his world. I'm interested."
+					// LikeNPC: "{NPCName} is an extremely erudite person. I love asking him about all the wonders of your world. It's a pity he can't tell me why he knows all this."
+					// DislikeNPC: I don't like petty people. {NPCName} is very meticulous about the amount of money for his treatment. She's trying to figure out how my costume works, violating the rules of decency. There is a limit to my patience, as well as to her life...
+					// HateNPC: I hate {NPCName}, his way of speaking and behavior reminds me of our bureaucrats in the organization. However, unlike them, {NPCName} has no concept of conscience and honor. He's a demonic entity and I'm not killing him just because you need him.
+					// LikeNPC_Princess: "{NPCName} is a very interesting representative of your world. I don't mind her company, but it really bothers me that absolutely everyone here loves her for no particular reason. Does she have hearts painted instead of the date of death?... Maybe she doesn't know about her charm abilities, and there's no need to tell her about it."
+					// Princess_LovesNPC: I like {NPCName}. Am I not in control of my speech? What?..
+					// LoveBiome: This magic is all around... I can use high-ranked spells without much difficulty. I like it.
+					// LoveSpace: A large space always reminds me of a landfill for sending souls. A place where we send creatures on their new circle of life.
+				}
+			}
+
+			// WarriorMinion.DisplayName: Warrior Minion
+			// FABSOLO.DisplayName: F A B S O L O
+			Protector.DisplayName: Protector
+
+			HALVA_Prime: {
+				Census.SpawnCondition: Conditions unknown
+
+				TownNPCMood: {
+					Princess_LovesNPC: Мне нравится {NPCName}.
+					LikeNPC_Princess: Мне нравится {NPCName}.
+					HateNPC: Не терплю таких, как {NPCName}.
+					DislikeNPC: Мне не нравится {NPCName}.
+					LikeNPC: Мне нравится {NPCName}.
+					LoveNPC: Мне по душе {NPCName}.
+					HateBiome: Я ненавижу {BiomeName}.
+					LikeBiome: Мне нравится {BiomeName}.
+					LoveBiome: Мне по душе {BiomeName}.
+					HateCrowded: Я ненавижу, что тут людно.
+					DislikeCrowded: Мне не нравится, что тут людно.
+					LoveSpace: Мне нравится, как тут просторно.
+					FarFromHome: Я далеко от дома.
+					NoHome: Ужасно, что у меня нет дома.
+					Content: Я доволен.
+				}
+
+				DisplayName: H A L V A_ Prime
+			}
+		}
+
+		Projectiles: {
+			// TwigPetProjectile.DisplayName: Twig Pet Projectile
+			// YumProjectile.DisplayName: Yum Projectile
+			// SumProjectile.DisplayName: Sum Projectile
+			// BlackCatProjectile.DisplayName: Black Cat Projectile
+			// CatXProjectile.DisplayName: Cat X Projectile
+			// VedmaProjectile.DisplayName: Vedma Projectile
+			// LightTwigProjectile.DisplayName: Light Twig Projectile
+			// StepashaProjectile.DisplayName: Stepasha Projectile
+			// StardyProjectile.DisplayName: Stardy Projectile
+			// BerserkProjectile.DisplayName: Berserk Projectile
+			// RelaxProjectile.DisplayName: Relax Projectile
+			// PuhlaProjectile.DisplayName: Puhla Projectile
+			// SlimeRProjectile.DisplayName: Slime R Projectile
+			// HALVA_Projectile.DisplayName: The soul of 10 thousands monsters
+			// KORRO_Projectile.DisplayName: Laser XR-42
+			// OldTwigProjectile.DisplayName: Old Twig Projectile
+			// SlimeHeroProjectile.DisplayName: Slime Hero Projectile
+			// KeksikProjectile.DisplayName: Keksik Projectile
+			// RorProjectile.DisplayName: Ror Projectile
+			AutAnimation.DisplayName: Aut Animation
+			// KOPPO_Projectile.DisplayName: K O P P O_ Projectile
+			// HelloProjectile.DisplayName: Hello Projectile
+			AutPortal.DisplayName: Aut Portal
+			// TeleporterInstance.DisplayName: Teleporter Instance
+			// LigCatProjectile.DisplayName: Lig Cat Projectile
+			// StarPickaxeProjectile.DisplayName: Star Pickaxe Projectile
+			// AutoTwigProj.DisplayName: Auto Twig Proj
+			// MedicinePipeAnimation.DisplayName: Medicine Pipe Animation
+			// MedicinePipeSecondVariantAnimation.DisplayName: Medicine Pipe Second Variant Animation
+			// Melee.KORROChain.DisplayName: KORROChain
+			// KORROChain.DisplayName: KORROChain
+			// ContractSSSProjectile.DisplayName: Contract S S S Projectile
+			// QIKaboom.DisplayName: Q I Kaboom
+			// QIKaboomDamage.DisplayName: Q I Kaboom Damage
+			// SkufProjectile.DisplayName: Skuf Projectile
+			WarriorMinion.DisplayName: Warrior Minion
+			NUCLEARPOWER.DisplayName: N U C L E A R P O W E R
+			KORROGatling.DisplayName: K O R R O Gatling
+			// DarkEnergyOrb.DisplayName: Dark Energy Orb
+			// GracingEnergyOrb.DisplayName: Gracing Energy Orb
+			StartingHouseProjectile.DisplayName: Starting House Projectile
+			StartingHouseVisual.DisplayName: Starting House Visual
+			// FABSOLOProj.DisplayName: F A B S O L O Proj
+			// MedicineJokeAnimation.DisplayName: Medicine Joke Animation
+			// StarPickaxeHoldout.DisplayName: Star Pickaxe Holdout
+			// LitosObliteratorProjectile.DisplayName: Litos Obliterator Projectile
+			// StarPickaxeCrystal.DisplayName: Star Pickaxe Crystal
+			// ChargedExplosion.DisplayName: Charged Explosion
+			// AresPulseBlast.DisplayName: Ares Pulse Blast
+			ProtectorBlast.DisplayName: Protector Blast
+			ProtectorLightning.DisplayName: Protector Lightning
+			YellowCrystalProjectile.DisplayName: Yellow Crystal Projectile
+		}
+
+		Items: {
+			TwigPetItem: {
+				// DisplayName: Рог Старого приятеля
+				/* Tooltip:
+					'''
+					Summons the Deer-fox
+					"No! Its red scarf not only for beauty!"
+					[c/8F000A:"And once upon a time, he used to hunt all sorts of critters too. It's funny to realize]
+					[c/8F000A:that even the smallest and most innocent creatures also shed blood to continue their lives..."]
+					[c/DB000B:Developer item - Gorffy]
+
+					''' */
+			}
+
+			YumItem: {
+				// DisplayName: Huge Pork Bone
+				/* Tooltip:
+					'''
+					Summons Yum's flying head
+					[c/BF75FF:"Yum's flying head will follow you]
+					[c/BF75FF:until you find a translation mistake and tell about it to your mom."]
+					[c/DB6700:"You hear endless echoes about forbidding black cats...."]
+					[c/C800DB:Developer item - Yum]
+					[c/7B68EE:- Joke item -]
+					''' */
+
+				YumChatter: {
+					// Phrase1: I'm an evil-redneck-talentless-ticktocker
+					// Phrase2: I am sick of translating Thorium...
+					// Phrase3: Where are my incubated eggs?
+					// Phrase4: I got a dude out on my screen
+					// Phrase5: Osaka is punished!
+					// Phrase6: Tiktokuses are coming
+					// Phrase7: Afkashers on a bottle!!!
+					// Phrase8: Topnado, what are you doing?!!!
+				}
+			}
+
+			SumItem: {
+				// DisplayName: A mention?
+				/* Tooltip:
+					'''
+					Summons Sum's flying head
+					[c/5000D6:Mentioning her could be an irreparable mistake.....]
+					[c/7B68EE:Item ordered by players - Виталя and miauuuu2773]
+					[c/7B68EE:- Joke item -]
+					''' */
+			}
+
+			Aut: {
+				DisplayName: Aut
+				Tooltip: ""
+			}
+
+			BlackCatItem: {
+				// DisplayName: A shabby toy of a black cat
+				/* Tooltip:
+					'''
+					Summons the black cat
+					[c/CC38FF:"Eventually this very cat was turned into a regular stuffed toy......"]
+					"One day it was forbidden."
+					''' */
+			}
+
+			CatXItem: {
+				// DisplayName: Suspicious ball of fur
+				/* Tooltip:
+					'''
+					Summons the floating cat
+					[c/CC38FF:"It generates an endless stream of scary ideas!"]
+					[c/8F000A:"Chubrik?"]
+					[c/7B68EE: Item ordered by the player - Чубрик]
+					[c/7B68EE:- Joke item -]
+					''' */
+			}
+
+			VedmaItem: {
+				// DisplayName: Forbidden hat
+				/* Tooltip:
+					'''
+					Summons the Little Witch
+					[c/DB6700:"The headdress of the legendary Little Witch."]
+					[c/7B68EE: IItem ordered by the player - Чубрик]
+					[c/7B68EE:- Joke item -]
+					''' */
+			}
+
+			LightTwigItem: {
+				// DisplayName: Squishy toy that looks like DeerFox
+				/* Tooltip:
+					'''
+					Summons the floating squishy Deer-fox toy
+					"Just like a regular 'DeerFox', but even more softer!!!"
+					"And it can glow! What a technology!"
+					"It hates everything living in this world, and will try to attack."
+					[c/8F000A: A joke item developed by gods...]
+					[c/7B68EE:- Joke item -]
+					''' */
+			}
+
+			StepashaItem: {
+				// DisplayName: Mysterious artifact
+				/* Tooltip:
+					'''
+					Summons the flying head of a swamp troll.
+					"Floating Stepasha will follow you."
+					"He's, uh. very useful?"
+					[c/7B68EE:- Joke item -]
+					''' */
+			}
+
+			StardyItem: {
+				// DisplayName: Strange petal
+				/* Tooltip:
+					'''
+					Summons the Mysterious Pot
+					"Happy memories fascinate you....."
+					"Wow! What a charming glow!"
+					''' */
+			}
+
+			BerserkItem: {
+				// DisplayName: Danan
+				/* Tooltip:
+					'''
+					Summons Puck
+					[c/DB000B:"Coincidentally, this creature met you as a wanderer, a crude,]
+					[c/DB000B:cynical man adhering to the "great goal" of destroying all living things,]
+					[c/DB000B:but I don't think his speeches will make you stop."]
+					[c/7B68EE: Item order by the player - monax3148]
+					''' */
+			}
+
+			PuhlaItem: {
+				// DisplayName: Beautiful, Fancy, Exotic Red Sunglasses
+				/* Tooltip:
+					'''
+					Summons Waddles
+					"Red sunglasses are an accessory of great importance."
+					"Its greatness is so global that even you can't wear it as an accessory."
+					"How did the piglet get them?"
+					''' */
+			}
+
+			SlimeRItem: {
+				// DisplayName: Galactic berry
+				/* Tooltip:
+					'''
+					Summons the Pink Slime
+					"The berry only grows for 1 day, unbelievable!"
+					[c/FF52F0:"Don't forget to feed them! A fed Slime is a good Slime!"]
+					''' */
+			}
+
+			YumeItem: {
+				// DisplayName: Painting "Two girls from dreamworld"
+				/* Tooltip:
+					'''
+					"We don't explore the dreamworld, we live in it."
+					"Your diary is bursting with notes about the days you've spent in it."
+					''' */
+			}
+
+			MadelineItem: {
+				DisplayName: Madeline Item
+				Tooltip: ""
+			}
+
+			TKItem: {
+				// DisplayName: Painting "I Fits"
+				/* Tooltip:
+					'''
+					"Who put a cat in a box?!"
+					"A cat? Which cat?"
+					''' */
+			}
+
+			MeiItem: {
+				// DisplayName: Painting "Maeve"
+				/* Tooltip:
+					'''
+					"Maeve clutched at her mother's tail."
+					"She will soon bring you a beer."
+					''' */
+			}
+
+			YumorousItem: {
+				DisplayName: Yumorous Item
+				Tooltip: ""
+			}
+
+			TwigKnightItem: {
+				DisplayName: Twig Knight Item
+				Tooltip: ""
+			}
+
+			KeksikItem: {
+				// DisplayName: Suspicious board
+				/* Tooltip:
+					'''
+					Summons a Flying Drone
+					"The name 'Cupcake' is highlighted on the back of its case."
+					[c/990000:"SANABI"] 
+					''' */
+			}
+
+			OldTwigItem: {
+				// DisplayName: The broken horn of Deer-fox
+				/* Tooltip:
+					'''
+					Summons old Deer-fox
+					"He's still doing his job.. even if not completely."
+					''' */
+			}
+
+			RorItem: {
+				// DisplayName: Auxiliary box
+				/* Tooltip:
+					'''
+					Summons a Medical Drone
+					"Captain! It seems that the threat of rain is beginning."
+
+					''' */
+			}
+
+			SlimeHeroItem: {
+				// DisplayName: Graniter
+				// Tooltip: The purple thing.. It looks delicious!
+			}
+
+			HelloItem: {
+				// DisplayName: A box with Soul data
+				/* Tooltip:
+					'''
+					Summons a Flying TV
+					"Eventually you realize that the world is just a stage for mindless entertainment..."
+					[c/990000:"Do not change the channel."]
+					''' */
+			}
+
+			ContractSSSItem: {
+				// DisplayName: SSS-rank contract
+				/* Tooltip:
+					'''
+					Summons the streamer of the Star Stream.
+					[c/22b290:"How can an incarnation sign a contract with a streamer? It turns out they can!"]
+					[c/22b290:"All scenarios were passed long ago, and the channel has developed to the limit. Meet Bihyung!"]
+					[c/22b290:"A unique contract without obligations for a mutual entertainment."]
+					[c/f1ff00:Developer item — Ink of the Eternity]
+					''' */
+			}
+
+			Teleporter: {
+				// DisplayName: Quantum rim
+				/* Tooltip:
+					'''
+					Advanced development from a far away planet.
+					Based on Einstein's adapted theory of relativity.
+					Creates a spatial anchor that you can teleport to from anywhere.
+					[c/06d6a0:"If they lost it, it means they have it as an ordinary trinket.]
+					[c/06d6a0:How advanced is their world then?" —] [c/ffd166:Warlock]
+					''' */
+			}
+
+			StarPickaxe: {
+				// DisplayName: Star Pickaxe
+				/* Tooltip:
+					'''
+					Sparkilng pickaxe created from star metal.
+					Right-click summons a rotating pickaxe that destroys everything on its way.
+					Consume 20 mana on use.
+					''' */
+			}
+
+			StarCry: {
+				// DisplayName: Star Tear
+				/* Tooltip:
+					'''
+					[c/06d6a0:"It is impossible to live without regrets.]
+					[c/06d6a0:Unable to influence, the stars are just watching.]
+					[c/06d6a0:And their tears are the proof of all your decisions.]
+					[c/06d6a0:Whether you're a villain or a hero, the stars see everything." —] [c/ffd166:Warlock]
+					''' */
+			}
+
+			CosmicCry: {
+				// DisplayName: Cosmic Tear
+				/* Tooltip:
+					'''
+					[c/06d6a0:"When God dies, who mourns its death?]
+					[c/06d6a0:When the world dies, who can capture it?]
+					[c/06d6a0:When the universe dies, who will remember it?]
+					[c/06d6a0:The cosmos is the only witness to the grief of all things" —] [c/ffd166:Warlock]
+					''' */
+			}
+
+			StarBar: {
+				// DisplayName: Star Rain Bar
+				/* Tooltip:
+					'''
+					It gapes with the light of a thousand star rains...
+					[c/06d6a0:"How could the ore for such an ingot end up deep underground?"]
+					''' */
+			}
+
+			StarOre: {
+				// DisplayName: Star Rain Ore
+				// Tooltip: Despite the dryness, the ore feels wet...
+			}
+
+			ColorTheWorldTransparent: {
+				// DisplayName: Color the world — Transparent
+				// Tooltip: "      3 seconds after use, the player's item in the hand is cleared of any color."
+			}
+
+			MedicinePipe: {
+				// DisplayName: Лечебная трубка
+				/* Tooltip:
+					'''
+					Лечит при использовании.
+					Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
+					[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
+					''' */
+				// RestoreLifeText: "{0}"
+			}
+
+			MedicinePipeSecondTier: {
+				// DisplayName: Лечебная трубка — [2 уровень]
+				/* Tooltip:
+					'''
+					Лечит при использовании.
+					Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
+					[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
+					''' */
+				// RestoreLifeText: "{0}"
+			}
+
+			MedicinePipeThirdTier: {
+				// DisplayName: Лечебная трубка — [3 уровень]
+				/* Tooltip:
+					'''
+					Лечит при использовании.
+					Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
+					[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
+					''' */
+				// RestoreLifeText: "{0}"
+			}
+
+			Accessories: {
+				RainyBracelet: {
+					// DisplayName: A bracelet forgotten in the rain
+					/* Tooltip:
+						'''
+						Increases movement speed by 10%.
+						With some chance homing stars flying out when dealing damage.
+						When taking damage, this effect is also triggered.
+						[c/06d6a0:A long-lost bracelet that finally found new bearer...]
+						''' */
+				}
+			}
+
+			QIConvertion: {
+				// DisplayName: Преобразование ЦИ
+				/* Tooltip:
+					'''
+					Каждые 5 секунд даёт возможность сделать рывок во врага, игнорируя весь входящий урон и накладывая на него талисман.
+					Талисман сдетонирует через некоторое время после наложения.
+					[c/bf0000:"Ха-ха! Я приглашаю тебя на интимную дуэль! Приходи ко мне, я отправил координаты на твоё устройство."]
+					''' */
+			}
+
+			MomentumPotion: {
+				// DisplayName: Momentum Potion
+				// Tooltip: ""
+			}
+
+			MedicinePipeFourthTier: {
+				// RestoreLifeText: "{0}"
+				// DisplayName: Лечебная трубка — [4 уровень]
+				/* Tooltip:
+					'''
+					Лечит при использовании.
+					Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
+					[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
+					''' */
+			}
+
+			MedicinePipeFifthTier: {
+				// RestoreLifeText: "{0}"
+				// DisplayName: Лечебная трубка — [5 уровень]
+				/* Tooltip:
+					'''
+					Лечит при использовании.
+					Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
+					[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
+					''' */
+			}
+
+			SkufItem: {
+				// DisplayName: Скуфяра
+				/* Tooltip:
+					'''
+					Здесь должно быть описание.
+					Чтобы оно нормально работало, кек.
+					''' */
+
+				BrotKripChatter: {
+					// Phrase1: Я ЛУЧШАЯ ДЕВОЧКА СЕРВЕРА!
+					// Phrase2: Хочешь перевод? Скинь денюшек!
+					// Phrase3: Фабсольный фабсолит фабсоль.
+					// Phrase4: Слово перевод и слово смерть для вас означает одно и то же.
+					// Phrase5: ЭСТРОГЕНОВЫЕ РАКЕТЫ НАЦЕЛЕНЫ, ИДЁТ ПОДГОТОВКА К ЗАПУСКУ!
+					// Phrase6: Свет взбитые сливки переоценены!
+					// Phrase7: Я не токсик...
+					// Phrase8: ДАЁШЬ ОПУСТОШИТЕЛЯ ВМЕСТО РАЗРУШИТЕЛЯ!
+					// Phrase9: Короче, Юм, мы тебя спасли и в благородство...
+					// Phrase10: Геноцид - это выход?
+					// Phrase11: Все глобальные моды - продукты нашей команды
+					// Phrase12: Зафиксировать 'пациента' на животе, аккуратно срезать со спины кожу...
+					// Phrase13: МС КИСЛОТНЫЙ, ПЕСНЯ КРИНЖОПЛЬ ЗА ОКНОМ!!!
+					// Phrase14: Люблю сестру больше чем сестру!
+				}
+			}
+
+			LunarGravitationPotion: {
+				// DisplayName: Стимулятор "Космический странник"
+				/* Tooltip:
+					'''
+					Увеличивает высоту и скорость прыжка. Накладывает бафф Пёрышка.
+					"Колонизации всей Солнечной системы породила проблему длительных путешествий."
+					"Как хорошо, что теперь можно путешствовать по космосу в одиночку!"
+					''' */
+			}
+
+			DarkEnergyPotion: {
+				// DisplayName: Стимулятор "Кошмар-83"
+				/* Tooltip:
+					'''
+					Накладывает дебафф Разложение души, который создаёт теневые сферы, отравляющие противника
+					      "Разработка знаменитой корпорации. Насыщает кровь кошмарной энергией. Враги чувствуют всю ненависть убитых."
+					      "Некоторые пиццерии всё еще не могут оправиться, после того инцидента..."
+					''' */
+			}
+
+			GracingEnergyPotion: {
+				// DisplayName: Стимулятор "Кровь Апостолов"
+				/* Tooltip:
+					'''
+					Накладывает бафф Лживый хранитель, создающий светлые сферы, восстанавливающие здоровье.
+					"Стимулятор массового производства от знаменитой корпорации. В соств входит кровь ангелов."
+					"Вырезать стражей рая, создавая из них фермы - это богохульство, но деньги не пахнут..."
+					''' */
+			}
+
+			House1: {
+				DisplayName: House1
+				Tooltip: ""
+			}
+
+			DarkSamuraiHat: {
+				DisplayName: Dark Samurai Hat
+				Tooltip: ""
+			}
+
+			MedicineJoke: {
+				// DisplayName: Medicine Joke
+				// Tooltip: ""
+			}
+
+			LitosObliteratorItem: {
+				// DisplayName: Неисправное устройство смерти
+				/* Tooltip:
+					'''
+					Призывает неисправную машину облитерации.
+					Был найден в комиссионке, и после анализа выяснилось, 
+					что из-за сильного повреждения вся его боевая мощь сведена на 0.
+					''' */
+			}
+
+			ShockwaveSword: {
+				// DisplayName: Shockwave Sword
+				// Tooltip: ""
+			}
+
+			StarTrainTicket: {
+				// DisplayName: Star Train Ticket
+				// Tooltip: ""
+			}
+
+			SoulBlade: {
+				// UsesXSoulResource: Mods.ProtoMod.Items.SoulBlade.UsesXSoulResource
+				// DisplayName: Soul Blade
+			}
+
+			YellowCrystalShard: {
+				DisplayName: Yellow Crystal Shard
+				Tooltip: ""
+			}
+
+			TechTrashItem: {
+				// DisplayName: Tech Trash Item
+				// Tooltip: ""
+			}
+
+			LabChest: {
+				DisplayName: Lab Chest
+				Tooltip: ""
+			}
+
+			LabLamp: {
+				DisplayName: Lab Lamp
+				Tooltip: ""
+			}
+
+			LabLampAlt: {
+				DisplayName: Lab Lamp Alt
+				Tooltip: ""
+			}
+
+			LabLustra: {
+				DisplayName: Lab Lustra
+				Tooltip: ""
+			}
+
+			LabPlatform: {
+				DisplayName: Lab Platform
+				Tooltip: ""
+			}
+
+			LabPlating: {
+				DisplayName: Lab Plating
+				Tooltip: ""
+			}
+
+			LabPlatingMossy: {
+				DisplayName: Lab Plating Mossy
+				Tooltip: ""
+			}
+
+			LabPlatingWall: {
+				DisplayName: Lab Plating Wall
+				Tooltip: ""
+			}
+
+			LabPlatingWallMossy: {
+				DisplayName: Lab Plating Wall Mossy
+				Tooltip: ""
+			}
+
+			Tesla: {
+				// DisplayName: Tesla
+				// Tooltip: ""
+			}
+
+			TrashcanItem: {
+				DisplayName: Trashcan Item
+				Tooltip: ""
+			}
+
+			GlassblackMoss: {
+				DisplayName: Glassblack Moss
+				Tooltip: ""
+			}
+
+			Server: {
+				// DisplayName: Server
+				// Tooltip: ""
+			}
+
+			LabPlatingBetter: {
+				DisplayName: Lab Plating Better
+				Tooltip: ""
+			}
+
+			LabTV: {
+				DisplayName: Lab T V
+				Tooltip: ""
+			}
+
+			PinkLabLamp: {
+				DisplayName: Pink Lab Lamp
+				Tooltip: ""
+			}
+
+			LabBalk: {
+				// DisplayName: Lab Balk
+				// Tooltip: ""
+			}
+
+			LabBarrel: {
+				DisplayName: Lab Barrel
+				Tooltip: ""
+			}
+
+			LabBarrelAtomic: {
+				DisplayName: Lab Barrel Atomic
+				Tooltip: ""
+			}
+
+			LabDoor: {
+				DisplayName: Lab Door
+				Tooltip: ""
+			}
+
+			LabDoorDefault: {
+				// DisplayName: Lab Door Default
+				// Tooltip: ""
+			}
+
+			LabPlateBeam: {
+				DisplayName: Lab Plate Beam
+				Tooltip: ""
+			}
+
+			LabPlatePillar: {
+				DisplayName: Lab Plate Pillar
+				Tooltip: ""
+			}
+
+			RedCrate: {
+				DisplayName: Red Crate
+				Tooltip: ""
+			}
+
+			RedCrateSmall: {
+				// DisplayName: Red Crate Small
+				// Tooltip: ""
+			}
+
+			YellowCrate: {
+				DisplayName: Yellow Crate
+				Tooltip: ""
+			}
+
+			YellowCrateSmall: {
+				// DisplayName: Yellow Crate Small
+				// Tooltip: ""
+			}
+
+			BrokenServers: {
+				DisplayName: Broken Servers
+				Tooltip: ""
+			}
+
+			DiscBlue: {
+				DisplayName: Disc Blue
+				Tooltip: ""
+			}
+
+			DiscRed: {
+				DisplayName: Disc Red
+				Tooltip: ""
+			}
+
+			DiscYellow: {
+				DisplayName: Disc Yellow
+				Tooltip: ""
+			}
+
+			BrokenServerChest: {
+				DisplayName: Broken Server Chest
+				Tooltip: ""
+			}
+
+			BrokenServers_DiscBlue: {
+				DisplayName: Broken Servers_ Disc Blue
+				Tooltip: ""
+			}
+
+			BrokenServers_DiscRed: {
+				DisplayName: Broken Servers_ Disc Red
+				Tooltip: ""
+			}
+
+			BrokenServers_DiscYellow: {
+				DisplayName: Broken Servers_ Disc Yellow
+				Tooltip: ""
+			}
+
+			LabDoorDefault_Horizontal: {
+				// DisplayName: Lab Door Default_ Horizontal
+				// Tooltip: ""
+			}
+
+			LabPlatingWallBetter: {
+				Tooltip: ""
+				DisplayName: Lab Plating Wall Better
+			}
+
+			GlassblackMossWall: {
+				Tooltip: ""
+				DisplayName: Glassblack Moss Wall
+			}
+
+			ControlPanelKey_Green: {
+				DisplayName: Control Panel Key_ Green
+				Tooltip: ""
+			}
+
+			ControlPanelKey_Purple: {
+				DisplayName: Control Panel Key_ Purple
+				Tooltip: ""
+			}
+
+			ControlPanelKey_Yellow: {
+				DisplayName: Control Panel Key_ Yellow
+				Tooltip: ""
+			}
+
+			MegaChestKey: {
+				DisplayName: Mega Chest Key
+				Tooltip: ""
+			}
+
+			MegaChest: {
+				DisplayName: Mega Chest
+				Tooltip: ""
+			}
+
+			ControlPanel_Green: {
+				DisplayName: Control Panel_ Green
+				Tooltip: ""
+			}
+
+			ControlPanel_Purple: {
+				DisplayName: Control Panel_ Purple
+				Tooltip: ""
+			}
+
+			ControlPanel_Yellow: {
+				DisplayName: Control Panel_ Yellow
+				Tooltip: ""
+			}
+
+			ControlPanelLocked_Green: {
+				DisplayName: Control Panel Locked_ Green
+				Tooltip: ""
+			}
+
+			ControlPanelLocked_Purple: {
+				DisplayName: Control Panel Locked_ Purple
+				Tooltip: ""
+			}
+
+			ControlPanelLocked_Yellow: {
+				DisplayName: Control Panel Locked_ Yellow
+				Tooltip: ""
+			}
+
+			LabChair: {
+				DisplayName: Lab Chair
+				Tooltip: ""
+			}
+
+			LabCryoCapsule: {
+				DisplayName: Lab Cryo Capsule
+				Tooltip: ""
+			}
+
+			LabDristalnik: {
+				// DisplayName: Lab Dristalnik
+				// Tooltip: ""
+			}
+
+			LabScreen_Beer: {
+				// DisplayName: Lab Screen_ Beer
+				// Tooltip: ""
+			}
+
+			LabScreen_BestWorker: {
+				// DisplayName: Lab Screen_ Best Worker
+				// Tooltip: ""
+			}
+
+			LabScreen_Formula1: {
+				// DisplayName: Lab Screen_ Formula1
+				// Tooltip: ""
+			}
+
+			LabScreen_Formula2: {
+				// DisplayName: Lab Screen_ Formula2
+				// Tooltip: ""
+			}
+
+			LabScreen_Formula3: {
+				// DisplayName: Lab Screen_ Formula3
+				// Tooltip: ""
+			}
+
+			LabScreen_Formula4: {
+				// DisplayName: Lab Screen_ Formula4
+				// Tooltip: ""
+			}
+
+			LabScreen_Formula5: {
+				// DisplayName: Lab Screen_ Formula5
+				// Tooltip: ""
+			}
+
+			LabScreen_Formula6: {
+				// DisplayName: Lab Screen_ Formula6
+				// Tooltip: ""
+			}
+
+			LabScreen_Formula7: {
+				// DisplayName: Lab Screen_ Formula7
+				// Tooltip: ""
+			}
+
+			LabScreen_Formula8: {
+				// DisplayName: Lab Screen_ Formula8
+				// Tooltip: ""
+			}
+
+			LabScreen_Formula9: {
+				// DisplayName: Lab Screen_ Formula9
+				// Tooltip: ""
+			}
+
+			LabTable_One: {
+				// DisplayName: Lab Table_ One
+				// Tooltip: ""
+			}
+
+			LabTable_Two: {
+				// DisplayName: Lab Table_ Two
+				// Tooltip: ""
+			}
+
+			LabTV_Left: {
+				DisplayName: Lab T V_ Left
+				Tooltip: ""
+			}
+
+			LabTV_Right: {
+				DisplayName: Lab T V_ Right
+				Tooltip: ""
+			}
+
+			LabTVBroken: {
+				DisplayName: Lab T V Broken
+				Tooltip: ""
+			}
+
+			LabTVBroken_Left: {
+				DisplayName: Lab T V Broken_ Left
+				Tooltip: ""
+			}
+
+			LabTVBroken_Right: {
+				DisplayName: Lab T V Broken_ Right
+				Tooltip: ""
+			}
+
+			MegaChestLocked: {
+				DisplayName: Mega Chest Locked
+				Tooltip: ""
+			}
+
+			SignPlate: {
+				// DisplayName: Sign Plate
+				// Tooltip: ""
+			}
+
+			MegaChestLockedWall: {
+				DisplayName: Mega Chest Locked Wall
+				Tooltip: ""
+			}
+
+			MegaChestWall: {
+				DisplayName: Mega Chest Wall
+				Tooltip: ""
+			}
+
+			PathfinderSword: {
+				Tooltip: ""
+				DisplayName: Pathfinder Sword
+			}
+
+			PathfinderPickaxe: {
+				Tooltip: ""
+				DisplayName: Pathfinder Pickaxe
+			}
+
+			PathfinderHamaxe: {
+				Tooltip: ""
+				DisplayName: Pathfinder Hamaxe
+			}
+
+			YellowSmallCrate: {
+				Tooltip: ""
+				DisplayName: Yellow Small Crate
+			}
+
+			RedSmallCrate: {
+				Tooltip: ""
+				DisplayName: Red Small Crate
+			}
+
+			LabWorkBench: {
+				Tooltip: ""
+				DisplayName: Lab Work Bench
+			}
+
+			LabVentBroken: {
+				Tooltip: ""
+				DisplayName: Lab Vent Broken
+			}
+
+			LabVent: {
+				Tooltip: ""
+				DisplayName: Lab Vent
+			}
+
+			LabTvSideview: {
+				Tooltip: ""
+				DisplayName: Lab Tv Sideview
+			}
+
+			LabTesla: {
+				Tooltip: ""
+				DisplayName: Lab Tesla
+			}
+
+			LabTerminalOff: {
+				Tooltip: ""
+				DisplayName: Lab Terminal Off
+			}
+
+			LabTerminal: {
+				Tooltip: ""
+				DisplayName: Lab Terminal
+			}
+
+			LabTableTwo: {
+				Tooltip: ""
+				DisplayName: Lab Table Two
+			}
+
+			LabTableOne: {
+				Tooltip: ""
+				DisplayName: Lab Table One
+			}
+
+			LabSofa: {
+				Tooltip: ""
+				DisplayName: Lab Sofa
+			}
+
+			LabSink: {
+				Tooltip: ""
+				DisplayName: Lab Sink
+			}
+
+			LabSignPlate: {
+				Tooltip: ""
+				DisplayName: Lab Sign Plate
+			}
+
+			LabScreenWarning: {
+				Tooltip: ""
+				DisplayName: Lab Screen Warning
+			}
+
+			LabScreenOff: {
+				Tooltip: ""
+				DisplayName: Lab Screen Off
+			}
+
+			LabScreenData3: {
+				Tooltip: ""
+				DisplayName: Lab Screen Data3
+			}
+
+			LabScreenData2: {
+				Tooltip: ""
+				DisplayName: Lab Screen Data2
+			}
+
+			LabScreenData1: {
+				Tooltip: ""
+				DisplayName: Lab Screen Data1
+			}
+
+			LabPot_3: {
+				Tooltip: ""
+				DisplayName: Lab Pot_3
+			}
+
+			LabPot_2: {
+				Tooltip: ""
+				DisplayName: Lab Pot_2
+			}
+
+			LabPot_1: {
+				Tooltip: ""
+				DisplayName: Lab Pot_1
+			}
+
+			LabPlatingBetter_Destroyed: {
+				Tooltip: ""
+				DisplayName: Lab Plating Better_ Destroyed
+			}
+
+			LabPinkLamp: {
+				Tooltip: ""
+				DisplayName: Lab Pink Lamp
+			}
+
+			LabPiano: {
+				Tooltip: ""
+				DisplayName: Lab Piano
+			}
+
+			LabDristalnikBig: {
+				Tooltip: ""
+				DisplayName: Lab Dristalnik Big
+			}
+
+			LabDresser: {
+				Tooltip: ""
+				DisplayName: Lab Dresser
+			}
+
+			LabDoorClosed: {
+				Tooltip: ""
+				DisplayName: Lab Door Closed
+			}
+
+			LabDoorBig_Horizontal: {
+				Tooltip: ""
+				DisplayName: Lab Door Big_ Horizontal
+			}
+
+			LabCryoCapsule_Broken: {
+				Tooltip: ""
+				DisplayName: Lab Cryo Capsule_ Broken
+			}
+
+			LabClock: {
+				Tooltip: ""
+				DisplayName: Lab Clock
+			}
+
+			LabCamera_Off: {
+				Tooltip: ""
+				DisplayName: Lab Camera_ Off
+			}
+
+			LabCamera: {
+				Tooltip: ""
+				DisplayName: Lab Camera
+			}
+
+			LabBookshelf: {
+				Tooltip: ""
+				DisplayName: Lab Bookshelf
+			}
+
+			LabBigTableTwo: {
+				Tooltip: ""
+				DisplayName: Lab Big Table Two
+			}
+
+			LabBigTableOne: {
+				Tooltip: ""
+				DisplayName: Lab Big Table One
+			}
+
+			LabBigScreenFormula9: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula9
+			}
+
+			LabBigScreenFormula8: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula8
+			}
+
+			LabBigScreenFormula7: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula7
+			}
+
+			LabBigScreenFormula6: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula6
+			}
+
+			LabBigScreenFormula5: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula5
+			}
+
+			LabBigScreenFormula4: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula4
+			}
+
+			LabBigScreenFormula3: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula3
+			}
+
+			LabBigScreenFormula2: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula2
+			}
+
+			LabBigScreenFormula1: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Formula1
+			}
+
+			LabBigScreenBestWorker: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Best Worker
+			}
+
+			LabBigScreenBeer: {
+				Tooltip: ""
+				DisplayName: Lab Big Screen Beer
+			}
+
+			LabBigDoorClosed: {
+				Tooltip: ""
+				DisplayName: Lab Big Door Closed
+			}
+
+			LabBigDoor: {
+				Tooltip: ""
+				DisplayName: Lab Big Door
+			}
+
+			LabBath: {
+				Tooltip: ""
+				DisplayName: Lab Bath
+			}
+
+			LabBarrelBig: {
+				Tooltip: ""
+				DisplayName: Lab Barrel Big
+			}
+
+			LabBarrelAtomicBig: {
+				Tooltip: ""
+				DisplayName: Lab Barrel Atomic Big
+			}
+
+			Gameraiders101_Pashalko: {
+				Tooltip: ""
+				DisplayName: Gameraiders101_ Pashalko
+			}
+
+			LabTemplateSign: {
+				// DisplayName: Lab Template Sign
+				// Tooltip: ""
 			}
 		}
 
 		Tiles: {
-			// StarRainOre.MapEntry: Star Rain Ore
-			// StarBar.MapObject: Mods.SiriusMod.Tiles.StarBar.MapObject
+			StarRainOre.MapEntry: Star Rain Ore
+			StarBar.MapObject: Mods.SiriusMod.Tiles.StarBar.MapObject
+			// GlassblackMossGrass.MapEntry: Glassblack Moss Grass
 		}
 
-		// UI.Dialogue: Mods.SiriusMod.UI.Dialogue
-
 		Keybinds: {
-			// TeleporterDestroyKey.DisplayName: Teleporter Destroy Key
-			// TeleporterCreateKey.DisplayName: Teleporter Create Key
+			TeleporterCreateKey.DisplayName: Teleporter Create Key
+			TeleporterDestroyKey.DisplayName: Teleporter Destroy Key
 		}
 
 		Configs: {
 			SiriusConfig: {
-				// DisplayName: Sirius Config
+				DisplayName: Sirius Config
 
 				OverheatUIPosX: {
-					// Label: Overheat U I Pos X
-					// Tooltip: ""
+					Label: Overheat U I Pos X
+					Tooltip: ""
 				}
 
 				OverheatUIPosY: {
-					// Label: Overheat U I Pos Y
-					// Tooltip: ""
+					Label: Overheat U I Pos Y
+					Tooltip: ""
 				}
 
 				BarsPosLock: {
-					// Label: Bars Pos Lock
-					// Tooltip: ""
+					Label: Bars Pos Lock
+					Tooltip: ""
 				}
 			}
 		}
-	}
-}
 
-Items: {
-	TwigPetItem: {
-		// DisplayName: Рог Старого приятеля
-		/* Tooltip:
-			'''
-			Summons the Deer-fox
-			"No! Its red scarf not only for beauty!"
-			[c/8F000A:"And once upon a time, he used to hunt all sorts of critters too. It's funny to realize]
-			[c/8F000A:that even the smallest and most innocent creatures also shed blood to continue their lives..."]
-			[c/DB000B:Developer item - Gorffy]
-
-			''' */
-	}
-
-	YumItem: {
-		// DisplayName: Huge Pork Bone
-		/* Tooltip:
-			'''
-			Summons Yum's flying head
-			[c/BF75FF:"Yum's flying head will follow you]
-			[c/BF75FF:until you find a translation mistake and tell about it to your mom."]
-			[c/DB6700:"You hear endless echoes about forbidding black cats...."]
-			[c/C800DB:Developer item - Yum]
-			[c/7B68EE:- Joke item -]
-			''' */
-
-		YumChatter: {
-			// Phrase1: I'm an evil-redneck-talentless-ticktocker
-			// Phrase2: I am sick of translating Thorium...
-			// Phrase3: Where are my incubated eggs?
-			// Phrase4: I got a dude out on my screen
-			// Phrase5: Osaka is punished!
-			// Phrase6: Tiktokuses are coming
-			// Phrase7: Afkashers on a bottle!!!
-			// Phrase8: Topnado, what are you doing?!!!
-		}
-	}
-
-	SumItem: {
-		// DisplayName: A mention?
-		/* Tooltip:
-			'''
-			Summons Sum's flying head
-			[c/5000D6:Mentioning her could be an irreparable mistake.....]
-			[c/7B68EE:Item ordered by players - Виталя and miauuuu2773]
-			[c/7B68EE:- Joke item -]
-			''' */
-	}
-
-	Aut: {
-		// DisplayName: Танатоклизм
-		/* Tooltip:
-			'''
-			Используйте, чтобы увидеть его истинное предназначение.
-			[c/FFAF3D:"Пока вы держите этот предмет в руке, вы чувствуете,]
-			[c/FFAF3D:что ваша кровь начинает гореть."]
-			[c/8F000A:"Изгнание прокляло сына божьего. Отец возненавидел его существование.]
-			[c/8F000A:Теперь он шастает среди простого люда, являясь таким же смертным и никчемным."]
-			[c/8F000A:"Порез, оставленный отцовским гневом на его лице невозможно залечить. ]
-			[c/8F000A:С него бесконечно льется кровь смертного, смертного, кем он не является."]
-
-			Список разработчиков:
-			Gorffy: Художник, Гейм-дизайнер
-			Ink of the Eternity: Главный Программист
-			Litos the Lithium: Главный художник, дизайнер
-			Yum: Помощник по техническим неполадкам
-			''' */
-	}
-
-	BlackCatItem: {
-		// DisplayName: A shabby toy of a black cat
-		/* Tooltip:
-			'''
-			Summons the black cat
-			[c/CC38FF:"Eventually this very cat was turned into a regular stuffed toy......"]
-			"One day it was forbidden."
-			''' */
-	}
-
-	CatXItem: {
-		// DisplayName: Suspicious ball of fur
-		/* Tooltip:
-			'''
-			Summons the floating cat
-			[c/CC38FF:"It generates an endless stream of scary ideas!"]
-			[c/8F000A:"Chubrik?"]
-			[c/7B68EE: Item ordered by the player - Чубрик]
-			[c/7B68EE:- Joke item -]
-			''' */
-	}
-
-	VedmaItem: {
-		// DisplayName: Forbidden hat
-		/* Tooltip:
-			'''
-			Summons the Little Witch
-			[c/DB6700:"The headdress of the legendary Little Witch."]
-			[c/7B68EE: IItem ordered by the player - Чубрик]
-			[c/7B68EE:- Joke item -]
-			''' */
-	}
-
-	LightTwigItem: {
-		// DisplayName: Squishy toy that looks like DeerFox
-		/* Tooltip:
-			'''
-			Summons the floating squishy Deer-fox toy
-			"Just like a regular 'DeerFox', but even more softer!!!"
-			"And it can glow! What a technology!"
-			"It hates everything living in this world, and will try to attack."
-			[c/8F000A: A joke item developed by gods...]
-			[c/7B68EE:- Joke item -]
-			''' */
-	}
-
-	StepashaItem: {
-		// DisplayName: Mysterious artifact
-		/* Tooltip:
-			'''
-			Summons the flying head of a swamp troll.
-			"Floating Stepasha will follow you."
-			"He's, uh. very useful?"
-			[c/7B68EE:- Joke item -]
-			''' */
-	}
-
-	StardyItem: {
-		// DisplayName: Strange petal
-		/* Tooltip:
-			'''
-			Summons the Mysterious Pot
-			"Happy memories fascinate you....."
-			"Wow! What a charming glow!"
-			''' */
-	}
-
-	BerserkItem: {
-		// DisplayName: Danan
-		/* Tooltip:
-			'''
-			Summons Puck
-			[c/DB000B:"Coincidentally, this creature met you as a wanderer, a crude,]
-			[c/DB000B:cynical man adhering to the "great goal" of destroying all living things,]
-			[c/DB000B:but I don't think his speeches will make you stop."]
-			[c/7B68EE: Item order by the player - monax3148]
-			''' */
-	}
-
-	PuhlaItem: {
-		// DisplayName: Beautiful, Fancy, Exotic Red Sunglasses
-		/* Tooltip:
-			'''
-			Summons Waddles
-			"Red sunglasses are an accessory of great importance."
-			"Its greatness is so global that even you can't wear it as an accessory."
-			"How did the piglet get them?"
-			''' */
-	}
-
-	SlimeRItem: {
-		// DisplayName: Galactic berry
-		/* Tooltip:
-			'''
-			Summons the Pink Slime
-			"The berry only grows for 1 day, unbelievable!"
-			[c/FF52F0:"Don't forget to feed them! A fed Slime is a good Slime!"]
-			''' */
-	}
-
-	YumeItem: {
-		// DisplayName: Painting "Two girls from dreamworld"
-		/* Tooltip:
-			'''
-			"We don't explore the dreamworld, we live in it."
-			"Your diary is bursting with notes about the days you've spent in it."
-			''' */
-	}
-
-	MadelineItem: {
-		// DisplayName: Painting "Medlin"
-		// Tooltip: '''"We have to climb the mountain high and discuss this adventure."'''
-	}
-
-	TKItem: {
-		// DisplayName: Painting "I Fits"
-		/* Tooltip:
-			'''
-			"Who put a cat in a box?!"
-			"A cat? Which cat?"
-			''' */
-	}
-
-	MeiItem: {
-		// DisplayName: Painting "Maeve"
-		/* Tooltip:
-			'''
-			"Maeve clutched at her mother's tail."
-			"She will soon bring you a beer."
-			''' */
-	}
-
-	YumorousItem: {
-		// DisplayName: Painting "Yum"
-		// Tooltip: '''"Do you know the person in this picture?"'''
-	}
-
-	TwigKnightItem: {
-		// DisplayName: Painting "Deer-fox with a knife"
-		/* Tooltip:
-			'''
-			"Question: Where did he get the knife?!
-			Answer: [c/FF6683:He has big plans for] [c/DB000B:you."]
-			''' */
-	}
-
-	KeksikItem: {
-		// DisplayName: Suspicious board
-		/* Tooltip:
-			'''
-			Summons a Flying Drone
-			"The name 'Cupcake' is highlighted on the back of its case."
-			[c/990000:"SANABI"] 
-			''' */
-	}
-
-	OldTwigItem: {
-		// DisplayName: The broken horn of Deer-fox
-		/* Tooltip:
-			'''
-			Summons old Deer-fox
-			"He's still doing his job.. even if not completely."
-			''' */
-	}
-
-	RorItem: {
-		// DisplayName: Auxiliary box
-		/* Tooltip:
-			'''
-			Summons a Medical Drone
-			"Captain! It seems that the threat of rain is beginning."
-
-			''' */
-	}
-
-	SlimeHeroItem: {
-		// DisplayName: Graniter
-		// Tooltip: The purple thing.. It looks delicious!
-	}
-
-	HelloItem: {
-		// DisplayName: A box with Soul data
-		/* Tooltip:
-			'''
-			Summons a Flying TV
-			"Eventually you realize that the world is just a stage for mindless entertainment..."
-			[c/990000:"Do not change the channel."]
-			''' */
-	}
-
-	ContractSSSItem: {
-		// DisplayName: SSS-rank contract
-		/* Tooltip:
-			'''
-			Summons the streamer of the Star Stream.
-			[c/22b290:"How can an incarnation sign a contract with a streamer? It turns out they can!"]
-			[c/22b290:"All scenarios were passed long ago, and the channel has developed to the limit. Meet Bihyung!"]
-			[c/22b290:"A unique contract without obligations for a mutual entertainment."]
-			[c/f1ff00:Developer item — Ink of the Eternity]
-			''' */
-	}
-
-	Teleporter: {
-		// DisplayName: Quantum rim
-		/* Tooltip:
-			'''
-			Advanced development from a far away planet.
-			Based on Einstein's adapted theory of relativity.
-			Creates a spatial anchor that you can teleport to from anywhere.
-			[c/06d6a0:"If they lost it, it means they have it as an ordinary trinket.]
-			[c/06d6a0:How advanced is their world then?" —] [c/ffd166:Warlock]
-			''' */
-	}
-
-	StarPickaxe: {
-		// DisplayName: Star Pickaxe
-		/* Tooltip:
-			'''
-			Sparkilng pickaxe created from star metal.
-			Right-click summons a rotating pickaxe that destroys everything on its way.
-			Consume 20 mana on use.
-			''' */
-	}
-
-	StarCry: {
-		// DisplayName: Star Tear
-		/* Tooltip:
-			'''
-			[c/06d6a0:"It is impossible to live without regrets.]
-			[c/06d6a0:Unable to influence, the stars are just watching.]
-			[c/06d6a0:And their tears are the proof of all your decisions.]
-			[c/06d6a0:Whether you're a villain or a hero, the stars see everything." —] [c/ffd166:Warlock]
-			''' */
-	}
-
-	CosmicCry: {
-		// DisplayName: Cosmic Tear
-		/* Tooltip:
-			'''
-			[c/06d6a0:"When God dies, who mourns its death?]
-			[c/06d6a0:When the world dies, who can capture it?]
-			[c/06d6a0:When the universe dies, who will remember it?]
-			[c/06d6a0:The cosmos is the only witness to the grief of all things" —] [c/ffd166:Warlock]
-			''' */
-	}
-
-	StarBar: {
-		// DisplayName: Star Rain Bar
-		/* Tooltip:
-			'''
-			It gapes with the light of a thousand star rains...
-			[c/06d6a0:"How could the ore for such an ingot end up deep underground?"]
-			''' */
-	}
-
-	StarOre: {
-		// DisplayName: Star Rain Ore
-		// Tooltip: Despite the dryness, the ore feels wet...
-	}
-
-	ColorTheWorldTransparent: {
-		// DisplayName: Color the world — Transparent
-		// Tooltip: "      3 seconds after use, the player's item in the hand is cleared of any color."
-	}
-
-	MedicinePipe: {
-		// DisplayName: Лечебная трубка
-		/* Tooltip:
-			'''
-			Лечит при использовании.
-			Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
-			[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
-			''' */
-		// RestoreLifeText: "{0}"
-	}
-
-	MedicinePipeSecondTier: {
-		// DisplayName: Лечебная трубка — [2 уровень]
-		/* Tooltip:
-			'''
-			Лечит при использовании.
-			Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
-			[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
-			''' */
-		// RestoreLifeText: "{0}"
-	}
-
-	MedicinePipeThirdTier: {
-		// DisplayName: Лечебная трубка — [3 уровень]
-		/* Tooltip:
-			'''
-			Лечит при использовании.
-			Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
-			[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
-			''' */
-		// RestoreLifeText: "{0}"
-	}
-
-	Accessories: {
-		RainyBracelet: {
-			// DisplayName: A bracelet forgotten in the rain
-			/* Tooltip:
-				'''
-				Increases movement speed by 10%.
-				With some chance homing stars flying out when dealing damage.
-				When taking damage, this effect is also triggered.
-				[c/06d6a0:A long-lost bracelet that finally found new bearer...]
-				''' */
-		}
-	}
-
-	QIConvertion: {
-		// DisplayName: Преобразование ЦИ
-		/* Tooltip:
-			'''
-			Каждые 5 секунд даёт возможность сделать рывок во врага, игнорируя весь входящий урон и накладывая на него талисман.
-			Талисман сдетонирует через некоторое время после наложения.
-			[c/bf0000:"Ха-ха! Я приглашаю тебя на интимную дуэль! Приходи ко мне, я отправил координаты на твоё устройство."]
-			''' */
-	}
-
-	MomentumPotion: {
-		// DisplayName: Momentum Potion
-		// Tooltip: ""
-	}
-
-	MedicinePipeFourthTier: {
-		// RestoreLifeText: "{0}"
-		// DisplayName: Лечебная трубка — [4 уровень]
-		/* Tooltip:
-			'''
-			Лечит при использовании.
-			Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
-			[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
-			''' */
-	}
-
-	MedicinePipeFifthTier: {
-		// RestoreLifeText: "{0}"
-		// DisplayName: Лечебная трубка — [5 уровень]
-		/* Tooltip:
-			'''
-			Лечит при использовании.
-			Все получаемые усиления и кол-во восстанавливаемого зддоровья увеличиваются с повышением уровня трубки.
-			[c/40ff76:"Иногда приятно просто взять и отдохнуть на самодельном диване. Сянь-сянь, он ведь.. ээ.. не сломается?"]
-			''' */
-	}
-
-	SkufItem: {
-		// DisplayName: Скуфяра
-		/* Tooltip:
-			'''
-			Здесь должно быть описание.
-			Чтобы оно нормально работало, кек.
-			''' */
-
-		BrotKripChatter: {
-			// Phrase1: Я ЛУЧШАЯ ДЕВОЧКА СЕРВЕРА!
-			// Phrase2: Хочешь перевод? Скинь денюшек!
-			// Phrase3: Фабсольный фабсолит фабсоль.
-			// Phrase4: Слово перевод и слово смерть для вас означает одно и то же.
-			// Phrase5: ЭСТРОГЕНОВЫЕ РАКЕТЫ НАЦЕЛЕНЫ, ИДЁТ ПОДГОТОВКА К ЗАПУСКУ!
-			// Phrase6: Свет взбитые сливки переоценены!
-			// Phrase7: Я не токсик...
-			// Phrase8: ДАЁШЬ ОПУСТОШИТЕЛЯ ВМЕСТО РАЗРУШИТЕЛЯ!
-			// Phrase9: Короче, Юм, мы тебя спасли и в благородство...
-			// Phrase10: Геноцид - это выход?
-			// Phrase11: Все глобальные моды - продукты нашей команды
-			// Phrase12: Зафиксировать 'пациента' на животе, аккуратно срезать со спины кожу...
-			// Phrase13: МС КИСЛОТНЫЙ, ПЕСНЯ КРИНЖОПЛЬ ЗА ОКНОМ!!!
-			// Phrase14: Люблю сестру больше чем сестру!
-		}
-	}
-
-	LunarGravitationPotion: {
-		// DisplayName: Стимулятор "Космический странник"
-		/* Tooltip:
-			'''
-			Увеличивает высоту и скорость прыжка. Накладывает бафф Пёрышка.
-			"Колонизации всей Солнечной системы породила проблему длительных путешествий."
-			"Как хорошо, что теперь можно путешствовать по космосу в одиночку!"
-			''' */
-	}
-
-	DarkEnergyPotion: {
-		// DisplayName: Стимулятор "Кошмар-83"
-		/* Tooltip:
-			'''
-			Накладывает дебафф Разложение души, который создаёт теневые сферы, отравляющие противника
-			      "Разработка знаменитой корпорации. Насыщает кровь кошмарной энергией. Враги чувствуют всю ненависть убитых."
-			      "Некоторые пиццерии всё еще не могут оправиться, после того инцидента..."
-			''' */
-	}
-
-	GracingEnergyPotion: {
-		// DisplayName: Стимулятор "Кровь Апостолов"
-		/* Tooltip:
-			'''
-			Накладывает бафф Лживый хранитель, создающий светлые сферы, восстанавливающие здоровье.
-			"Стимулятор массового производства от знаменитой корпорации. В соств входит кровь ангелов."
-			"Вырезать стражей рая, создавая из них фермы - это богохульство, но деньги не пахнут..."
-			''' */
-	}
-
-	House1: {
-		// DisplayName: House1
-		// Tooltip: ""
-	}
-
-	DarkSamuraiHat: {
-		// DisplayName: Подозрительно знакомый головной убор
-		/* Tooltip:
-			'''
-			      "Железная и покрыта чужой кровью."
-			      "Данный головной убор присутствует лишь в одном экземпляре.. вернее, присутствовал, пока кто-то не решил создать точную копию. 
-			      Не знаю кто это был, но этот человек гений!"
-			''' */
-	}
-
-	MedicineJoke: {
-		// DisplayName: Medicine Joke
-		// Tooltip: ""
-	}
-
-	LitosObliteratorItem: {
-		// DisplayName: Неисправное устройство смерти
-		/* Tooltip:
-			'''
-			Призывает неисправную машину облитерации.
-			Был найден в комиссионке, и после анализа выяснилось, 
-			что из-за сильного повреждения вся его боевая мощь сведена на 0.
-			''' */
-	}
-
-	ShockwaveSword: {
-		// DisplayName: Shockwave Sword
-		// Tooltip: ""
-	}
-
-	StarTrainTicket: {
-		// DisplayName: Star Train Ticket
-		// Tooltip: ""
-	}
-
-	SoulBlade: {
-		// UsesXSoulResource: Mods.ProtoMod.Items.SoulBlade.UsesXSoulResource
-		// DisplayName: Soul Blade
-	}
-
-	YellowCrystalShard: {
-		// DisplayName: Yellow Crystal Shard
-		// Tooltip: ""
-	}
-
-	TechTrashItem: {
-		// DisplayName: Tech Trash Item
-		// Tooltip: ""
-	}
-
-	LabChest: {
-		// DisplayName: Lab Chest
-		// Tooltip: ""
-	}
-
-	LabLamp: {
-		// DisplayName: Lab Lamp
-		// Tooltip: ""
-	}
-
-	LabLampAlt: {
-		// DisplayName: Lab Lamp Alt
-		// Tooltip: ""
-	}
-
-	LabLustra: {
-		// DisplayName: Lab Lustra
-		// Tooltip: ""
-	}
-
-	LabPlatform: {
-		// DisplayName: Lab Platform
-		// Tooltip: ""
-	}
-
-	LabPlating: {
-		// DisplayName: Lab Plating
-		// Tooltip: ""
-	}
-
-	LabPlatingMossy: {
-		// DisplayName: Lab Plating Mossy
-		// Tooltip: ""
-	}
-
-	LabPlatingWall: {
-		// DisplayName: Lab Plating Wall
-		// Tooltip: ""
-	}
-
-	LabPlatingWallMossy: {
-		// DisplayName: Lab Plating Wall Mossy
-		// Tooltip: ""
-	}
-
-	Tesla: {
-		// DisplayName: Tesla
-		// Tooltip: ""
-	}
-
-	TrashcanItem: {
-		// DisplayName: Trashcan Item
-		// Tooltip: ""
-	}
-
-	GlassblackMoss: {
-		// DisplayName: Glassblack Moss
-		// Tooltip: ""
-	}
-
-	Server: {
-		// DisplayName: Server
-		// Tooltip: ""
-	}
-
-	LabPlatingBetter: {
-		// DisplayName: Lab Plating Better
-		// Tooltip: ""
-	}
-
-	LabTV: {
-		// DisplayName: Lab TV
-		// Tooltip: ""
-	}
-
-	PinkLabLamp: {
-		// DisplayName: Pink Lab Lamp
-		// Tooltip: ""
-	}
-
-	LabBalk: {
-		// DisplayName: Lab Balk
-		// Tooltip: ""
-	}
-
-	LabBarrel: {
-		// DisplayName: Lab Barrel
-		// Tooltip: ""
-	}
-
-	LabBarrelAtomic: {
-		// DisplayName: Lab Barrel Atomic
-		// Tooltip: ""
-	}
-
-	LabDoor: {
-		// DisplayName: Lab Door
-		// Tooltip: ""
-	}
-
-	LabDoorDefault: {
-		// DisplayName: Lab Door Default
-		// Tooltip: ""
-	}
-
-	LabPlateBeam: {
-		// DisplayName: Lab Plate Beam
-		// Tooltip: ""
-	}
-
-	LabPlatePillar: {
-		// DisplayName: Lab Plate Pillar
-		// Tooltip: ""
-	}
-
-	RedCrate: {
-		// DisplayName: Red Crate
-		// Tooltip: ""
-	}
-
-	RedCrateSmall: {
-		// DisplayName: Red Crate Small
-		// Tooltip: ""
-	}
-
-	YellowCrate: {
-		// DisplayName: Yellow Crate
-		// Tooltip: ""
-	}
-
-	YellowCrateSmall: {
-		// DisplayName: Yellow Crate Small
-		// Tooltip: ""
-	}
-
-	BrokenServers: {
-		// DisplayName: Broken Servers
-		// Tooltip: ""
-	}
-
-	DiscBlue: {
-		// DisplayName: Disc Blue
-		// Tooltip: ""
-	}
-
-	DiscRed: {
-		// DisplayName: Disc Red
-		// Tooltip: ""
-	}
-
-	DiscYellow: {
-		// DisplayName: Disc Yellow
-		// Tooltip: ""
-	}
-
-	BrokenServerChest: {
-		// DisplayName: Broken Server Chest
-		// Tooltip: ""
-	}
-
-	BrokenServers_DiscBlue: {
-		// DisplayName: Broken Servers_ Disc Blue
-		// Tooltip: ""
-	}
-
-	BrokenServers_DiscRed: {
-		// DisplayName: Broken Servers_ Disc Red
-		// Tooltip: ""
-	}
-
-	BrokenServers_DiscYellow: {
-		// DisplayName: Broken Servers_ Disc Yellow
-		// Tooltip: ""
-	}
-
-	LabDoorDefault_Horizontal: {
-		// DisplayName: Lab Door Default_ Horizontal
-		// Tooltip: ""
-	}
-
-	LabPlatingWallBetter: {
-		// Tooltip: ""
-		// DisplayName: Lab Plating Wall Better
-	}
-
-	GlassblackMossWall: {
-		// Tooltip: ""
-		// DisplayName: Glassblack Moss Wall
-	}
-
-	ControlPanelKey_Green: {
-		// DisplayName: Control Panel Key_ Green
-		// Tooltip: ""
-	}
-
-	ControlPanelKey_Purple: {
-		// DisplayName: Control Panel Key_ Purple
-		// Tooltip: ""
-	}
-
-	ControlPanelKey_Yellow: {
-		// DisplayName: Control Panel Key_ Yellow
-		// Tooltip: ""
-	}
-
-	MegaChestKey: {
-		// DisplayName: Mega Chest Key
-		// Tooltip: ""
-	}
-
-	MegaChest: {
-		// DisplayName: Mega Chest
-		// Tooltip: ""
-	}
-
-	ControlPanel_Green: {
-		// DisplayName: Control Panel_ Green
-		// Tooltip: ""
-	}
-
-	ControlPanel_Purple: {
-		// DisplayName: Control Panel_ Purple
-		// Tooltip: ""
-	}
-
-	ControlPanel_Yellow: {
-		// DisplayName: Control Panel_ Yellow
-		// Tooltip: ""
-	}
-
-	ControlPanelLocked_Green: {
-		// DisplayName: Control Panel Locked_ Green
-		// Tooltip: ""
-	}
-
-	ControlPanelLocked_Purple: {
-		// DisplayName: Control Panel Locked_ Purple
-		// Tooltip: ""
-	}
-
-	ControlPanelLocked_Yellow: {
-		// DisplayName: Control Panel Locked_ Yellow
-		// Tooltip: ""
-	}
-
-	LabChair: {
-		// DisplayName: Lab Chair
-		// Tooltip: ""
-	}
-
-	LabCryoCapsule: {
-		// DisplayName: Lab Cryo Capsule
-		// Tooltip: ""
-	}
-
-	LabDristalnik: {
-		// DisplayName: Lab Dristalnik
-		// Tooltip: ""
-	}
-
-	LabScreen_Beer: {
-		// DisplayName: Lab Screen_ Beer
-		// Tooltip: ""
-	}
-
-	LabScreen_BestWorker: {
-		// DisplayName: Lab Screen_ Best Worker
-		// Tooltip: ""
-	}
-
-	LabScreen_Formula1: {
-		// DisplayName: Lab Screen_ Formula1
-		// Tooltip: ""
-	}
-
-	LabScreen_Formula2: {
-		// DisplayName: Lab Screen_ Formula2
-		// Tooltip: ""
-	}
-
-	LabScreen_Formula3: {
-		// DisplayName: Lab Screen_ Formula3
-		// Tooltip: ""
-	}
-
-	LabScreen_Formula4: {
-		// DisplayName: Lab Screen_ Formula4
-		// Tooltip: ""
-	}
-
-	LabScreen_Formula5: {
-		// DisplayName: Lab Screen_ Formula5
-		// Tooltip: ""
-	}
-
-	LabScreen_Formula6: {
-		// DisplayName: Lab Screen_ Formula6
-		// Tooltip: ""
-	}
-
-	LabScreen_Formula7: {
-		// DisplayName: Lab Screen_ Formula7
-		// Tooltip: ""
-	}
-
-	LabScreen_Formula8: {
-		// DisplayName: Lab Screen_ Formula8
-		// Tooltip: ""
-	}
-
-	LabScreen_Formula9: {
-		// DisplayName: Lab Screen_ Formula9
-		// Tooltip: ""
-	}
-
-	LabTable_One: {
-		// DisplayName: Lab Table_ One
-		// Tooltip: ""
-	}
-
-	LabTable_Two: {
-		// DisplayName: Lab Table_ Two
-		// Tooltip: ""
-	}
-
-	LabTV_Left: {
-		// DisplayName: Lab TV_ Left
-		// Tooltip: ""
-	}
-
-	LabTV_Right: {
-		// DisplayName: Lab TV_ Right
-		// Tooltip: ""
-	}
-
-	LabTVBroken: {
-		// DisplayName: Lab TV Broken
-		// Tooltip: ""
-	}
-
-	LabTVBroken_Left: {
-		// DisplayName: Lab TV Broken_ Left
-		// Tooltip: ""
-	}
-
-	LabTVBroken_Right: {
-		// DisplayName: Lab TV Broken_ Right
-		// Tooltip: ""
-	}
-
-	MegaChestLocked: {
-		// DisplayName: Mega Chest Locked
-		// Tooltip: ""
-	}
-
-	SignPlate: {
-		// DisplayName: Sign Plate
-		// Tooltip: ""
-	}
-
-	MegaChestLockedWall: {
-		// DisplayName: Mega Chest Locked Wall
-		// Tooltip: ""
-	}
-
-	MegaChestWall: {
-		// DisplayName: Mega Chest Wall
-		// Tooltip: ""
-	}
-}
-
-ItemChat: {
-	// AutSpawn: You opened the mysterious gates to nowhere.
-	// AutNPCs: Two souls had enough power to travel through it.
-	// AutExist: The item lost its tether to this world.
-}
-
-Projectiles: {
-	// TwigPetProjectile.DisplayName: Twig Pet Projectile
-	// YumProjectile.DisplayName: Yum Projectile
-	// SumProjectile.DisplayName: Sum Projectile
-	// BlackCatProjectile.DisplayName: Black Cat Projectile
-	// CatXProjectile.DisplayName: Cat X Projectile
-	// VedmaProjectile.DisplayName: Vedma Projectile
-	// LightTwigProjectile.DisplayName: Light Twig Projectile
-	// StepashaProjectile.DisplayName: Stepasha Projectile
-	// StardyProjectile.DisplayName: Stardy Projectile
-	// BerserkProjectile.DisplayName: Berserk Projectile
-	// RelaxProjectile.DisplayName: Relax Projectile
-	// PuhlaProjectile.DisplayName: Puhla Projectile
-	// SlimeRProjectile.DisplayName: Slime R Projectile
-	// HALVA_Projectile.DisplayName: The soul of 10 thousands monsters
-	// KORRO_Projectile.DisplayName: Laser XR-42
-	// OldTwigProjectile.DisplayName: Old Twig Projectile
-	// SlimeHeroProjectile.DisplayName: Slime Hero Projectile
-	// KeksikProjectile.DisplayName: Keksik Projectile
-	// RorProjectile.DisplayName: Ror Projectile
-	// AutAnimation.DisplayName: Aut Animation
-	// KOPPO_Projectile.DisplayName: K O P P O_ Projectile
-	// HelloProjectile.DisplayName: Hello Projectile
-	// AutPortal.DisplayName: Aut Portal
-	// TeleporterInstance.DisplayName: Teleporter Instance
-	// LigCatProjectile.DisplayName: Lig Cat Projectile
-	// StarPickaxeProjectile.DisplayName: Star Pickaxe Projectile
-	// AutoTwigProj.DisplayName: Auto Twig Proj
-	// MedicinePipeAnimation.DisplayName: Medicine Pipe Animation
-	// MedicinePipeSecondVariantAnimation.DisplayName: Medicine Pipe Second Variant Animation
-	// Melee.KORROChain.DisplayName: KORROChain
-	// KORROChain.DisplayName: KORROChain
-	// ContractSSSProjectile.DisplayName: Contract S S S Projectile
-	// QIKaboom.DisplayName: Q I Kaboom
-	// QIKaboomDamage.DisplayName: Q I Kaboom Damage
-	// SkufProjectile.DisplayName: Skuf Projectile
-	// WarriorMinion.DisplayName: Warrior Minion
-	// NUCLEARPOWER.DisplayName: N U C L E A R P O W E R
-	// KORROGatling.DisplayName: K O R R O Gatling
-	// DarkEnergyOrb.DisplayName: Dark Energy Orb
-	// GracingEnergyOrb.DisplayName: Gracing Energy Orb
-	// StartingHouseProjectile.DisplayName: Starting House Projectile
-	// StartingHouseVisual.DisplayName: Starting House Visual
-	// FABSOLOProj.DisplayName: F A B S O L O Proj
-	// MedicineJokeAnimation.DisplayName: Medicine Joke Animation
-	// StarPickaxeHoldout.DisplayName: Star Pickaxe Holdout
-	// LitosObliteratorProjectile.DisplayName: Litos Obliterator Projectile
-	// StarPickaxeCrystal.DisplayName: Star Pickaxe Crystal
-	// ChargedExplosion.DisplayName: Charged Explosion
-	// AresPulseBlast.DisplayName: Ares Pulse Blast
-	// ProtectorBlast.DisplayName: Protector Blast
-	// ProtectorLightning.DisplayName: Protector Lightning
-	// YellowCrystalProjectile.DisplayName: Yellow Crystal Projectile
-}
-
-NPCs: {
-	KORRO: {
-		// DisplayName: KORRO
-		// Census.SpawnCondition: Unknown
-
-		TownNPCMood: {
-			// Content: I don't care.
-			// NoHome: I don't care.
-			// FarFromHome: I don't care.
-			// DislikeCrowded: I don't care.
-			// HateCrowded: I don't care.
-			// LikeNPC_Princess: I don't care about living with {NPCName}.
-			// Princess_LovesNPC: I don't care about living with {NPCName}.
-			// LoveSpace: I don't care about space.
-			// HateNPC: I don't care about living with {NPCName}.
-			// DislikeNPC: I don't care about living with {NPCName}.
-			// LikeNPC: I don't care about living with {NPCName}.
-			// DislikeBiome: I don't care.
-			// LikeBiome: I don't care.
-			// LoveNPC: Мне по душе {NPCName}.
+		ItemChat: {
+			// AutSpawn: You opened the mysterious gates to nowhere.
+			// AutNPCs: Two souls had enough power to travel through it.
+			// AutExist: The item lost its tether to this world.
 		}
 
-		Chat: {
-			// Normal1: Извини, дружок, но без тебя здесь было гораздо спокойнее.
-			// Normal2: Пришел отдохнуть? Все хорошо. Отдых действительно важен.
-			// Normal3: У меня есть приёмная дочь - Рей звать. Многие люди боятся к неё подходить.
-			// Normal4: Ты ведь тоже оказался здесь не по своей прихоти, верно? Что ж, у нас есть много времени чтобы обсудить это.
-			// Normal7: В вашей вселенной процветает употребление людей в пищу? Как нет?
-			// Normal8: Можешь подержать мою наручную цепь? Спасибо.
-			// Normal9: Хороший сценарий не может быть построен на использовании одних лишь клише.
-			// Normal10: В этой вселенной есть что-то вроде Легенды? В нашей была одна: Сценарист, он хотел создать Величайшую Сцену, он нанял огромное количество актеров для сцены. И я один из них. Но в отличии от других я сохранил здравие. Ты даже не представляешь, что происходило с людьми в тот момент.
-			// Normal11: Как и я, Рей хотела желать лучшего мира. Но, к сожалению, множество факторов находились не на нашей стороне.
-			// Normal12: Я подарил Рей жизнь, и теперь ей приходится убивать ради нашего продвижения. Я обрёк её на это, и даже не знаю, поступил-ли я правильно оставив её в живых.
-			// Normal13: Некоторые задумываются: Почему он ходит без охраны? Я отвечу: Не твое дело.
-			// Normal14: Квадрат 13 был начальной точкой того, что предвещало конец.
-			// Normal15: В детстве Рей приходилось давать множество успокоительных. Препараты, используемые на неё были достаточно болезненными. Думаю эта часть все же сказалась на её нынешнем характере.
-			// Normal16: Компания, которой я руководил занималась заказными убийствами. Сначала мы убивали конкретных личностей, но со временем нами заинтересовалась корпорация, расположенная ближе к центру города. Условия сотрудничества, на удивление, достаточно щедрыми, чтобы отказаться от такого предложения. Благодаря им мы получили доступ к большим участкам города, и все же, наш контракт был анонимен, а информация контракта предоставлялась сторонним лицам в ложном варианте.
-			// Normal17: Множество людей не принимает мой выбор о замене человеческих конечностей. Я понимаю почему они так считают. Тем не менее, я считаю иначе.
-			// Normal18: Не думаю, что Рей нравилась её работа. Тем не менее она выполняла все указания.
-			// Normal19: Мне всегда нравилась музыка, которая воспроизводилась на Актах Сцены. Интересно, Сценарист был её композитором? Вряд-ли, такое количество музыки и её разный стиль.
-			// Normal20: Благодаря победе на войне между Квадратами мы продвинулись на несколько Кубов выше. Понимаешь-ли ты меня, или нет, но это огромный успех.
-			// Normal21: Иногда из моего корпуса течет кровь.
-			// Normal22: Я большой фанат пошаговых игр. Если у тебя есть желание сыграть во что-либо - буду только рад.
-			// Normal23: Можно-ли назвать Сценариста "Психом"? Без понятия, но художник он действительно хороший.
-			// Normal24: Сложно назвать тебя психом, в отличии от них ты ищешь способы уничтожить цель как можно быстрее, а не искать способы заставить её дольше страдать.
-			// Normal25: У нас над городом были огромные темные облака, не пропускающие лучи солнца. Появились они в результате одной из войн между Кубами.
-			// Normal26: Результаты... удручающие.
-			// Normal27: Я слышал пару раз о странной групе людей, занимающихся заказными убийствами, или что-то в этом духе. Честно говоря, я до конца не смог понять, что они из себя представляют. Но кажется они смогли завершить пару сцен. Это достаточно большое достижение.
-			// Normal28: Весь мир для тебя - Сцена, твоя сцена.
-			// Normal29: Рей не любила сладкое. Вероятно, её болезнь не позволяла ей его употреблять. Ну или, возможно, она повторяет случай одного моего приятеля, который ну о-о-очень любил кофе БЕЗ сахара.
-			// Normal30: Что насчет обычных людей в городе? Обычно люди заказывали себе защитников, лишь в некоторых Кубах было действительно безопасно.
-			// Normal31: Надеюсь на грандиозный финал.
+		Bestiary: {
+			// HALVA: An agent and researcher from the Department of Reincarnation and Regression in the interdimensional organization Chronomium. He came to this world because of the prophecy of the machine "Oracle" that a strong space monster would be reborn here, which must be destroyed. After fulfilling the prediction, he will return to headquarters.
+			// KORRO: He can provide you with an assortment of animals from other universes... or rather, copies of them from the rift.
 		}
 
-		// ModItems: Pets
+		Status: {
+			// NoGates: There is no active portal...
+			// OpenedGates: Portal activated!
+			// ClosedGates: Portal deactivated!
+		}
+
+		UI: {
+			// SoulsCurrent: "{0}"
+			// SoulResource: Mods.ProtoMod.UI.SoulResource
+			// ExampleResource: Mods.ProtoMod.UI.ExampleResource
+			Dialogue: Mods.SiriusMod.UI.Dialogue
+		}
+
+		Currency: {
+			// StarCry: Star tear
+			// CosmicCry: Cosmic tear
+			// StarCry2: Star tears
+			// StarCry5: Cosmic tears
+			// CosmicCry2: Star tears
+			// CosmicCry5: Cosmic tears
+		}
+
+		DropConditions: {
+			// FirstKill: On first kill
+			// NextKills: On subsequent kills
+		}
+
+		// DamageClasses.SoulDamage.DisplayName: Soul Damage
+
+		Dialogues: {
+			// Test: Это че за хуйня....?
+			// Test2: Ты че творишь!!!
+			// Test3: Увы.
+			// TrashCan0: Засёек открытый шлюз, перенаправляю потоки воздуха, через пару секунд получишь подарок.
+		}
+
+		GratitudeText: Дорогой Gameraiders101, спасибо большое за твою работу в течение многих лет и поддержку маленьких модов и текстурпаков. Команда WhySoSirius вдохновлена твоими стараниями и благодарна за твою работу. Особенное спасибо от — Litos the Lithium и его текстурпаков.
 	}
-
-	HALVA: {
-		// DisplayName: Chronomium's agent
-		// Census.SpawnCondition: Unknown
-		// NameHALVA: Warlock
-
-		Chat: {
-			// Normal1: While I'm here, I have a variety of trinkets for sale. These items were accidentally left behind or lost by different heroes and villains while we served them in our organization.
-			// Normal2: Do you want to know more about me?.. Well, it's a bit complicated. I am a researcher and an agent for the interdimensional organization Chronomium. Specifically, I work in the Department of Reincarnation and Regression, where I study and communicate with the souls of the dead who have to be reborn or returned in time.
-			// Normal3: This world is quite interesting, and I am here due to the prediction of our machine "Oracle". A huge, terrible creature is supposed to be reborn here, which must then be destroyed and samples taken for research. After that, my job will be done and I will return to the headquarters.
-			// Normal4: Recently, the workload of the department has significantly increased, and more worthy people who need a second life have begun to die. The worst part is for those who have to complete paperwork for each new arrival, ha-ha-ha.
-			// Normal5: Do you wonder why we give some people a second chance? In this vast universe, there are two types of people that come to us: impervious idiots and young heroes. The former often need regression, as understanding their mistakes only comes with death, whereas the latter need a reward and a chance to prove themselves even better.
-			// Normal6: You can enter our organization in two ways: either on the recommendation of a supervisor, although there are few of them, or by merit in your own world. I entered in the first way. All the employees died in their worlds one way or another, so none of us remember what happened before death or what kind of life we led. It's somewhat annoying, but it's reasonable.
-			// Normal7: You're an extremely strange creature. You don't have a lifespan, at least I can't see one. I see that you can resurrect, although I know several beings who can do that, but they will die in a couple of hundred thousand years, unlike you. In your case, I don't even know where your life force comes from...
-			// Normal8: Different worlds have different levels of complexity, although the concept is quite abstract. Every world has energy, information, and other parameters. We have devices that can measure the complexity of a world on a scale of 1 to 100, after a thorough assessment. I would give this world an approximate rating of {0}/100.
-			// Normal9: I've dealt with an interesting slime, his name was Rimuru. His strength didn't match the world he lived in, but he refused to move to a more complex and diverse world. I like people who have principles and are willing to give up mindless power seeking.
-			// Normal10: Some regressors are simply impassable. They need to die more than 100 times to understand even a tiny part of their mistakes. I wish every "Yoo Joong-Hyuk" had their own "Kim Dokja".
-			// Normal11: Perhaps you fall under the concept of "Main Character", as described to me by a teenage boy on one planet. When the whole world revolves around you and no matter what trouble you get into, you will not die until there is no one to take your place, he said.
-			// Normal12: I believe that you should achieve your goals no matter what. After my original death, I have become a different person with different ideals, desires, and dreams without memories of what I wanted before. Live your life without regret... Although I don't understand why I said that.
-			// Normal13: After fulfilling the prediction, I will leave this place, as there is still a lot of work at the headquarters.
-			// Normal14: I rarely use powerful spells. The destruction of the planet promises a mountain of paperwork and a report.
-			// Normal15: Working with reincarnators, one out of ten is a crazy pervert who is obsessed with digitally drawn images of females of their race. Of 1000 of these, only one achieves something, right, Rudeus?
-			// Normal16: My ability to see the date of death is not unique. I have met someone with similar abilities, high ambitions, and excellent skills. I was surprised to learn that he had lost his own battle. Unfortunately, i can't remember his name...
-			// Normal17: In fact, worlds are categorized into 4 types: inferior, middle, supreme and out-of-bounds. Inferior world cannot exceed 30/100 rating. Middle world cannot exceed 70/100 and Supreme world cannot exceed 100. An even more complex system is used to categorize out-of bounds worlds, which are rare but have a terrifying power.
-			// BloodMoon1: This red glow... It reminds me of a sea of the same color, in a universe where all the stars have gone out and there are bloody oceans everywhere. Prisoners are sent in bathyscaphes to explore the depths... None return alive, only research texts.
-			// BloodMoon2: Watching this event, I think it helps you to vent your anger by killing monsters. Is it a kind of entertainment? Perhaps it was once used as a test of combat skills.
-			// Night1: The night light is not ordinary. It accelerates the regeneration of dead tissue. Something like a method for zombie resurrection.
-			// Night2: Quiet nights, if not for the hordes of monsters. I can't interfere without a reason, I believe in you.
-			// Eclipse1: This eclipse reminds me of a similar event from one guy world. It happens every 216 years, and it is unbearably cruel.
-			// Eclispe2: Monsters are enhanced not by the sun, but by the moon, which covers it. Magically speaking, the moon amplifies the rays of the sun and gives them its own properties. Who lives on the moon?
-			// KORRO1: The story of the world {0} is one of the most violent I've ever heard. I am interested in his world, it is not in our registry, maybe it's in another multiverse..?
-			// KORRO2: "{0} doesn't seem to care about returning to his world. Although I can't drag anyone to the headquarters either."
-			// BestiaryGirl1: Lycanthropy... A dangerous disease and a powerful curse. Maybe I could help {0}, but she doesn't want to involve others in this.
-			// BestiaryGirl2: Animals are very fond of {0}. They consider her their relative. Such interesting effect of the disease...
-			// Guide1: "{0} doesn't understand why he's here. There is nothing in his memories, it's like he was born with this world, and immediately became like this. His magical energy is close to demonic, which is quite strange..."
-			// Guide2: I like {0} because he is open to any new knowledge. This is what any researcher should strive for!
-			// EasterEgg: "[c/d90429:You. I'm starting to see a little bit that you're just a puppet. I will find the one who controls you one day...]"
-			// ColorTheWorld: You have an amazing thing that can color weapons with one swipe. It's a pity that this is ancient magic, not technology. I could make a good patent...
-		}
-
-		// Nano.Failed: I can't give you another dose, it should take 1-2 minutes.
-		/*Stories: {
-		1: I call them "Nanoviruses" because by origin they are bacteriophages with a rewritten genome that inject their DNA into cells. They are limited only by the capabilities of the human body, but I am trying to teach them how to infect machines even then... Then I will be able to resist the robots on the planet Terminus-6077.
-		2: I am truly immortal and almost entirely made up of my own virus. Your ability to endlessly resurrect is not from this world.  Without it, your path to perfection would be closed. One day I'll find out who gifted it with such thing.
-		}*/
-		
-		// ShareNanomachines: Inject a nanovirus
-		// LostThings: Lost things
-
-		TownNPCMood: {
-			// Content: Everything is fine.
-			// NoHome: Objectively, I don't need a house, I'm only here for a mission, but I wouldn't mind if you gave me a room from where I can keep an eye on everything.
-			// FarFromHome: I think I've gone too far from home exploring the area here.
-			// DislikeCrowded: I don't like such large gatherings of people... It makes it difficult to concentrate.
-			// HateCrowded: There are more and more people, I hate crowds, even in the Department of Space Inquisition, which is the most violent department in our organization, they respect personal space.
-			// LikeBiome: I like that it's cold here, you don't have to worry about the suit overheating. I saw a similar picture in one of the worlds, but it was only a consequence of the cruelty of people and nuclear bombs.
-			// DislikeBiome: The sea air here is different from what I know, it has an extremely negative effect on my components, causing them to corrode, although in fact this is impossible. I do not know why this is happening.
-			// HateBiome: I really like this place, I'm used to such landscapes, but something pulls me out of here. It's as if nature itself is calling back, strangely, very strangely... Let's get out of here.
-			// LoveNPC: "{NPCName} is an extremely unhappy creature. The brutality of his world is not unique, but his story is... I will try to get a mission from the headquarters in his world. I'm interested."
-			// LikeNPC: "{NPCName} is an extremely erudite person. I love asking him about all the wonders of your world. It's a pity he can't tell me why he knows all this."
-			// DislikeNPC: I don't like petty people. {NPCName} is very meticulous about the amount of money for his treatment. She's trying to figure out how my costume works, violating the rules of decency. There is a limit to my patience, as well as to her life...
-			// HateNPC: I hate {NPCName}, his way of speaking and behavior reminds me of our bureaucrats in the organization. However, unlike them, {NPCName} has no concept of conscience and honor. He's a demonic entity and I'm not killing him just because you need him.
-			// LikeNPC_Princess: "{NPCName} is a very interesting representative of your world. I don't mind her company, but it really bothers me that absolutely everyone here loves her for no particular reason. Does she have hearts painted instead of the date of death?... Maybe she doesn't know about her charm abilities, and there's no need to tell her about it."
-			// Princess_LovesNPC: I like {NPCName}. Am I not in control of my speech? What?..
-			// LoveBiome: This magic is all around... I can use high-ranked spells without much difficulty. I like it.
-			// LoveSpace: A large space always reminds me of a landfill for sending souls. A place where we send creatures on their new circle of life.
-		}
-	}
-
-	// WarriorMinion.DisplayName: Warrior Minion
-	// FABSOLO.DisplayName: F A B S O L O
-	// Protector.DisplayName: Protector
-
-	HALVA_Prime: {
-		// Census.SpawnCondition: Conditions unknown
-
-		TownNPCMood: {
-			// Princess_LovesNPC: Мне нравится {NPCName}.
-			// LikeNPC_Princess: Мне нравится {NPCName}.
-			// HateNPC: Не терплю таких, как {NPCName}.
-			// DislikeNPC: Мне не нравится {NPCName}.
-			// LikeNPC: Мне нравится {NPCName}.
-			// LoveNPC: Мне по душе {NPCName}.
-			// HateBiome: Я ненавижу {BiomeName}.
-			// LikeBiome: Мне нравится {BiomeName}.
-			// LoveBiome: Мне по душе {BiomeName}.
-			// HateCrowded: Я ненавижу, что тут людно.
-			// DislikeCrowded: Мне не нравится, что тут людно.
-			// LoveSpace: Мне нравится, как тут просторно.
-			// FarFromHome: Я далеко от дома.
-			// NoHome: Ужасно, что у меня нет дома.
-			// Content: Я доволен.
-		}
-
-		// DisplayName: H A L V A_ Prime
-	}
-}
-
-Bestiary: {
-	// HALVA: An agent and researcher from the Department of Reincarnation and Regression in the interdimensional organization Chronomium. He came to this world because of the prophecy of the machine "Oracle" that a strong space monster would be reborn here, which must be destroyed. After fulfilling the prediction, he will return to headquarters.
-	// KORRO: He can provide you with an assortment of animals from other universes... or rather, copies of them from the rift.
-}
-
-Tiles: {
-	// StarRainOre.MapEntry: Star Rain Ore
-	// StarBar.MapObject: Star Rain Bar
-	// GlassblackMossGrass.MapEntry: Glassblack Moss Grass
-}
-
-Keybinds: {
-	// TeleporterCreateKey.DisplayName: Create portal key
-	// TeleporterDestroyKey.DisplayName: Destroy portal key
-}
-
-Status: {
-	// NoGates: There is no active portal...
-	// OpenedGates: Portal activated!
-	// ClosedGates: Portal deactivated!
-}
-
-UI: {
-	// SoulsCurrent: "{0}"
-	// SoulResource: Mods.ProtoMod.UI.SoulResource
-	// ExampleResource: Mods.ProtoMod.UI.ExampleResource
-	// Dialogue: Mods.ProtoMod.UI.Dialogue
-}
-
-Currency: {
-	// StarCry: Star tear
-	// CosmicCry: Cosmic tear
-	// StarCry2: Star tears
-	// StarCry5: Cosmic tears
-	// CosmicCry2: Star tears
-	// CosmicCry5: Cosmic tears
-}
-
-DropConditions: {
-	// FirstKill: On first kill
-	// NextKills: On subsequent kills
-}
-
-// DamageClasses.SoulDamage.DisplayName: Soul Damage
-
-Dialogues: {
-	// Test: Это че за хуйня....?
-	// Test2: Ты че творишь!!!
-	// Test3: Увы.
-	// TrashCan0: Засёек открытый шлюз, перенаправляю потоки воздуха, через пару секунд получишь подарок.
 }

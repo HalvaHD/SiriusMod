@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
+using SiriusMod.UI;
 using SiriusMod.UI.Mechanics;
 using Terraria;
 using Terraria.ModLoader;
@@ -24,10 +25,17 @@ namespace SiriusMod.Systems
             if (Index != -1)
             {
 
-                // Sulphuric water poison bar
+                // Overheat UI Bar
                 layers.Insert(Index, new LegacyGameInterfaceLayer("Overheat UI", () =>
                 {
                     OverheatUI.Draw(Main.spriteBatch, Main.LocalPlayer);
+                    return true;
+                }, InterfaceScaleType.None));
+                
+                // Gameraiders101 UI
+                layers.Insert(Index, new LegacyGameInterfaceLayer("Pashalko UI", () =>
+                {
+                    PashalkoUI.Draw(Main.spriteBatch, Main.LocalPlayer);
                     return true;
                 }, InterfaceScaleType.None));
             }
