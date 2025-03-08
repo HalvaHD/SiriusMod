@@ -24,8 +24,9 @@ namespace SiriusMod.Mechanics
                 {
                     OverheatTimer++;
                 }
-
-                if (OverheatTimer >= 600)
+                
+                int maxOverheat = player.GetModPlayer<SiriusModPlayer>().MaxOverheat;
+                if (OverheatTimer >= maxOverheat)
                 {
                     if (!SoundEngine.TryGetActiveSound(OverheatBrokeID, out var sound3))
                     {
@@ -68,3 +69,11 @@ namespace SiriusMod.Mechanics
     }
 }
 
+
+/*ДЛЯ ШЛЕМА СЕТ БОНУС
+    
+public override void UpdateArmorSet(Player player)
+{
+    player.setBonus = "Перегрев теперь 20 секунд вместо 10";
+    player.GetModPlayer<SiriusModPlayer>().MaxOverheat = 1200; // увеличиваем до 20 сек
+}*/
