@@ -42,46 +42,6 @@ namespace SiriusMod.Helpers
                 spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 18, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
 
         }
-        
-        public static string Wrap(ReadOnlySpan<char> textt, int limit)
-        {
-            const int MaxNewLine = 8;
-            // Just try 2.275f and found it fits
-            limit = (GameCulture.CultureName)Language.ActiveCulture.LegacyId switch
-            {
-                GameCulture.CultureName.Chinese => (int)(limit / 2.275f),
-                _ => limit,
-            };
-            textt = textt.Trim();
-            int start = 0;
-            StringBuilder stringBuilder = new StringBuilder(textt.Length + MaxNewLine);
-            while (limit + start < textt.Length)
-            {
-                var line = textt.Slice(start, limit);
-                int length = line.Length, skip = 0;
-                for (int i = 0; i < line.Length; i++)
-                {
-                    if (line[i] == '\n')
-                    {
-                        length = i;
-                        skip = 1;
-                        break;
-                    }
-                    else if (char.IsWhiteSpace(line[i]))
-                    {
-                        length = i;
-                        skip = 1;
-                    }
-                }
-                stringBuilder.Append(line[..length]).AppendLine();
-                start += length + skip;
-            }
-            stringBuilder.Append(textt[start..]);
-
-            //Bad memory copy
-            return stringBuilder.ToString();
-		
-        }
     }
     
     

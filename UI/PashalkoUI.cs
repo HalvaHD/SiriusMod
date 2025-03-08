@@ -50,7 +50,7 @@ namespace SiriusMod.UI
                 screenPos.X = (int)(screenPos.X * 0.01f * Main.screenWidth);
                 screenPos.Y = (int)(screenPos.Y * 0.01f * Main.screenHeight);
                 
-                string text = Utilities.Wrap(GratitudeText.Substring(0, i), 50);
+                string text = FontAssets.MouseText.Value.CreateWrappedText(GratitudeText.Substring(0, i), frameTexture.Width - 15f);
                 if (i < GratitudeText.Length)
                 {
                     i++;

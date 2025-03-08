@@ -9,6 +9,7 @@ using SiriusMod.Helpers;
 using SiriusMod.Systems;
 using Terraria;
 using Terraria.Audio;
+using Terraria.GameContent;
 using Terraria.GameContent.UI.Elements;
 using Terraria.Localization;
 using Terraria.ModLoader;
@@ -81,7 +82,9 @@ namespace SiriusMod.UI.DialogueUI
 			if (i < DialogueSystem.DialogueLimit)
 			{
 				i = DialogueSystem.DialogueLimit;
-				text.SetText(Utilities.Wrap(DialogueSystem.DialogueLine, 40));
+				// Я не знаю как это вызвать, так что длинну текста подкорректируйте сами
+				string wrappedText = FontAssets.MouseText.Value.CreateWrappedText(DialogueSystem.DialogueLine, area.Width.Pixels - 15f);
+				text.SetText(wrappedText);
 			}
 			else
 			{
@@ -159,7 +162,9 @@ namespace SiriusMod.UI.DialogueUI
 			
 				if (i <= DialogueSystem.DialogueLimit)
 				{
-					text.SetText(Utilities.Wrap(DialogueSystem.DialogueLine.Substring(0, i), 40));
+					// Я не знаю как это вызвать, так что длинну текста подкорректируйте сами
+					string wrappedText = FontAssets.MouseText.Value.CreateWrappedText(DialogueSystem.DialogueLine.Substring(0, i), area.Width.Pixels - 15f);
+					text.SetText(wrappedText);
 					if (Counter % DialogueSystem.DialogueSpeed == 0)
 					{
 						i++;
