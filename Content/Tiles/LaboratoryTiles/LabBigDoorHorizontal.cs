@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using SiriusMod.Common.Utilities;
+using SiriusMod.Helpers;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
@@ -11,7 +12,7 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class LabDoorBig_Horizontal : ModTile
+	public class LabBigDoorHorizontal : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -20,15 +21,10 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			Main.tileNoAttach[Type] = true;
 			TileID.Sets.DrawsWalls[Type] = true;
 			
-			
-
-			
 			Main.tileLavaDeath[Type] = false;
 			Main.tileWaterDeath[Type] = false;
-			
-			TileObjectData.newTile.CopyFrom(TileObjectData.Style5x4);
 			TileObjectData.newTile.UsesCustomCanPlace = true;
-			TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<LabDoorDefaultHorizontalTileEntity>().Hook_AfterPlacement, -1, 0, true);
+			TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<LabBigDoorHorizontalTileEntity>().Hook_AfterPlacement, -1, 0, true);
 			TileObjectData.newTile.Height = 4;
 			TileObjectData.newTile.Width = 17;
 			TileObjectData.newTile.CoordinatePadding = 2;
@@ -52,13 +48,13 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 
 		public override void KillMultiTile(int i, int j, int frameX, int frameY)
 		{
-			ModContent.GetInstance<LabDoorDefaultHorizontalTileEntity>().Kill(i, j);
+			ModContent.GetInstance<LabBigDoorHorizontalTileEntity>().Kill(i, j);
 		}
 
 		public override void AnimateIndividualTile(int type, int i, int j, ref int frameXOffset, ref int frameYOffset)
 		{
 			Tile tile = Main.tile[i, j];
-			LabDoorDefaultHorizontalTileEntity tileEntity = TileUtils.FindTileEntity<LabDoorDefaultHorizontalTileEntity>(i, j, 17, 4, 16);
+			LabBigDoorHorizontalTileEntity tileEntity = TileUtils.FindTileEntity<LabBigDoorHorizontalTileEntity>(i, j, 17, 4, 16);
 			if (tileEntity != null && tileEntity.AnimationCounter > 120)
 			{
 				tile.IsActuated = true;
@@ -68,8 +64,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 				tile.IsActuated = false;
 			}
 			
-			
-			
 		}
 		public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings) => true;
 
@@ -77,7 +71,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		public override bool RightClick(int i, int j)
 		{
 			Player player = Main.LocalPlayer;
-			LabDoorDefaultHorizontalTileEntity tileEntity = TileUtils.FindTileEntity<LabDoorDefaultHorizontalTileEntity>(i, j, 17, 4, 16);
+			LabBigDoorHorizontalTileEntity tileEntity = TileUtils.FindTileEntity<LabBigDoorHorizontalTileEntity>(i, j, 17, 4, 16);
 			
 			Tile tile = Main.tile[i, j];
 
@@ -91,42 +85,13 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			return true;
 		}
 		
-		public override bool PreDraw(int i, int j, SpriteBatch spriteBatch) {
-			Tile tile = Main.tile[i, j];
-			Texture2D texture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/LabDoorBig_Horizontal").Value;
-			Texture2D glowTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Tiles/LaboratoryTiles/LabDoorDefault_Horizontal_Glow").Value;
-
-			// If you are using ModTile.SpecialDraw or PostDraw or PreDraw, use this snippet and add zero to all calls to spriteBatch.Draw
-			// The reason for this is to accommodate the shift in drawing coordinates that occurs when using the different Lighting mode
-			// Press Shift+F9 to change lighting modes quickly to verify your code works for all lighting modes
-			Vector2 zero = Main.drawToScreen ? Vector2.Zero : new Vector2(Main.offScreenRange);
-
-			// Because height of third tile is different we change it
-			int height = 27;
-
-			// Offset along the Y axis depending on the current frame
-			int frameYOffset = Main.tileFrame[Type] * AnimationFrameHeight;
-
-			// Firstly we draw the original texture and then glow mask texture
-			spriteBatch.Draw(
-				texture,
-				new Vector2(i * 16 - (int)Main.screenPosition.X, j * 16 - (int)Main.screenPosition.Y) + zero,
-				new Rectangle(tile.TileFrameX, tile.TileFrameY + frameYOffset, 16, 16),
-				Lighting.GetColor(i, j), 0f, default, 1f, SpriteEffects.None, 0f);
-			// Make sure to draw with Color.White or at least a color that is fully opaque
-			// Achieve opaqueness by increasing the alpha channel closer to 255. (lowering closer to 0 will achieve transparency)
-			spriteBatch.Draw(
-				glowTexture,
-				new Vector2(i * 16 - (int)Main.screenPosition.X, j * 16 - (int)Main.screenPosition.Y) + zero,
-				new Rectangle(tile.TileFrameX, tile.TileFrameY + frameYOffset, 16, 16),
-				Color.White, 0f, Vector2.Zero, 1f, SpriteEffects.None, 0f);
-
-			// Return false to stop vanilla draw
-			return false;
-		
+		public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
+		{
+			Utilities.SimpleGlowmask(i, j, spriteBatch, Texture);
 		}
 	}
-	public class LabDoorDefaultHorizontalTileEntity : ModTileEntity
+	
+	public class LabBigDoorHorizontalTileEntity : ModTileEntity
 	{
 		public bool IsOpened = false;
 		public int AnimationCounter = 0;
@@ -136,7 +101,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		public override bool IsTileValidForEntity(int x, int y)
 		{
 			Tile tile = Main.tile[x, y];
-			return tile.HasTile && (int) tile.TileType == ModContent.TileType<LabDoorBig_Horizontal>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
+			return tile.HasTile && (int) tile.TileType == ModContent.TileType<LabBigDoorHorizontal>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
 		}
 		public override int Hook_AfterPlacement(int i, int j, int type, int style, int direction, int alternate)
 		{
@@ -154,30 +119,29 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			{
 				AnimationCounter--;
 			}
-
 			
 			int i = Position.X;
 			int j = Position.Y;
 			Tile tile = Main.tile[i, j];
-			if (AnimationCounter <= 0 && tile.TileFrameY != 0)
+			if (AnimationCounter <= 0 && tile.TileFrameX != 0)
 			{	
 				FullyOpened = true;
 			}
 			if (tile.HasTile && IsOpened == true)
 			{
 				FrameCounter++;
-				if (FrameCounter % 2 == 0)
+				if (FrameCounter % 6 == 0)
 				{
-					if (tile.TileFrameY != 288 && FullyOpened == false)
+					if (tile.TileFrameY != 650 && FullyOpened == false)
 					{
 						for (int k = 0; k < 1; k++)
 						{
 							int topX = i - tile.TileFrameX % 306 / 16;
-							int topY = j - tile.TileFrameY % 72 / 16;
+							int topY = j - tile.TileFrameY % 66/ 16;
 							
-							for (int x = topX; x < topX + 17; x++) {
-								for (int y = topY; y < topY + 4; y++) {
-									Main.tile[x, y].TileFrameY += 72;
+							for (int x = topX; x < topX + 4; x++) {
+								for (int y = topY; y < topY + 17; y++) {
+									Main.tile[x, y].TileFrameY += 66;
             					
 								}
 							}
@@ -185,7 +149,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 						}
 					}
 
-					if (tile.TileFrameY >= 288)
+					if (tile.TileFrameY >= 650)
 					{
 						Main.tileSolid[Main.tile[i,j].TileType] = false;
 
@@ -197,13 +161,13 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 							for (int k = 0; k < 1; k++)
 							{
 								int topX = i - tile.TileFrameX % 306 / 16;
-								int topY = j - tile.TileFrameY % 72 / 16;
+								int topY = j - tile.TileFrameY % 66/ 16;
 
-								for (int x = topX; x < topX + 17; x++)
+								for (int x = topX; x < topX + 4; x++)
 								{
-									for (int y = topY; y < topY + 4; y++)
+									for (int y = topY; y < topY + 17; y++)
 									{
-										Main.tile[x, y].TileFrameY -= 72;
+										Main.tile[x, y].TileFrameY -= 66;
 									}
 								}
 
@@ -222,5 +186,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 				}
 			}
 		}
+		
 	}
 }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using SiriusMod.Helpers;
 using Terraria;
 using Terraria.Enums;
 using Terraria.ID;
@@ -51,35 +52,12 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 				b = 0f;
 			}
 		}
-		public override void HitWire(int i, int j) {
-			Tile tile = Main.tile[i, j];
-			int topY = j - tile.TileFrameY / 18 % 3;
-			short frameAdjustment = (short)(tile.TileFrameX > 0 ? -18 : 18);
-
-			Main.tile[i, topY].TileFrameX += frameAdjustment;
-			Main.tile[i, topY + 1].TileFrameX += frameAdjustment;
-			Main.tile[i, topY + 2].TileFrameX += frameAdjustment;
-
-			Wiring.SkipWire(i, topY);
-			Wiring.SkipWire(i, topY + 1);
-			Wiring.SkipWire(i, topY + 2);
-			
-		}
-
-
+	//	public override void HitWire(int i, int j) {
+	//	}
+		
 		public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
 		{
-			int xFrameOffset = Main.tile[i, j].TileFrameX;
-			int yFrameOffset = Main.tile[i, j].TileFrameY;
-			Texture2D glowmask = ModContent.Request<Texture2D>(Texture + "_Glow").Value;
-			Vector2 drawOffest = Main.drawToScreen ? Vector2.Zero : new Vector2(Main.offScreenRange);
-			Vector2 drawPosition = new Vector2(i * 16 - Main.screenPosition.X, j * 16 - Main.screenPosition.Y) + drawOffest;
-			Color drawColour = Color.White;
-			Tile trackTile = Main.tile[i, j];
-			if (!trackTile.IsHalfBlock && trackTile.Slope == 0)
-				spriteBatch.Draw(glowmask, drawPosition, new Rectangle(xFrameOffset, yFrameOffset, 16, 16), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
-			else if (trackTile.IsHalfBlock)
-				spriteBatch.Draw(glowmask, drawPosition + new Vector2(0f, 8f), new Rectangle(xFrameOffset, yFrameOffset, 18, 8), drawColour, 0.0f, Vector2.Zero, 1f, SpriteEffects.None, 0.0f);
+			Utilities.SimpleGlowmask(i, j, spriteBatch, Texture);
 		}
 	}
 }

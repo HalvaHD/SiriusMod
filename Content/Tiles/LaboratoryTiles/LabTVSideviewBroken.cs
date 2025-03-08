@@ -2,13 +2,12 @@
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
-using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-    public class LabTV : ModTile
+    public class LabTVSideviewBroken : ModTile
     {
         public override void SetStaticDefaults()
         {
@@ -25,10 +24,20 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             TileObjectData.newTile.Origin = new Point16(1, 2);
             TileObjectData.newTile.UsesCustomCanPlace = true;
             TileObjectData.newTile.AnchorWall = true;
+            
+            TileObjectData.newTile.StyleWrapLimit = 2;
+            TileObjectData.newTile.StyleMultiplier = 2;
+            TileObjectData.newTile.StyleHorizontal = true;
             TileObjectData.newTile.LavaDeath = false;
+            TileObjectData.newTile.Direction = TileObjectDirection.PlaceLeft;
+            
+            TileObjectData.newAlternate.CopyFrom(TileObjectData.newTile);
+            TileObjectData.newAlternate.Direction = TileObjectDirection.PlaceRight;
+            TileObjectData.addAlternate(1);
             
             TileObjectData.addTile(Type);
             AddMapEntry(new Color(71, 95, 114));
         }
+        
     }
 }

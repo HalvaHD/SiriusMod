@@ -1419,6 +1419,16 @@ Mods: {
 				// DisplayName: Lab Big Toilet
 				// Tooltip: ""
 			}
+
+			LabTVSideviewBroken: {
+				// DisplayName: Lab T V Sideview Broken
+				// Tooltip: ""
+			}
+
+			LabBigDoorHorizontal: {
+				// DisplayName: Lab Big Door Horizontal
+				// Tooltip: ""
+			}
 		}
 
 		Tiles: {

@@ -29,6 +29,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		    TileObjectData.newTile.UsesCustomCanPlace = true;
 
 		    TileObjectData.newTile.StyleWrapLimit = 2;
+		    TileObjectData.newTile.StyleMultiplier = 2;
 		    TileObjectData.newTile.StyleHorizontal = true;
 		    TileObjectData.newTile.LavaDeath = true;
 		    TileObjectData.newTile.Direction = TileObjectDirection.PlaceRight;
