@@ -11,7 +11,7 @@ using Terraria.ObjectData;
 
 namespace SiriusMod.Content.Tiles.LaboratoryTiles
 {
-	public class LabBigDoor : ModTile
+	public class LabDoor : ModTile
 	{
 		public override void SetStaticDefaults()
 		{
@@ -24,12 +24,12 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			
 			TileObjectData.newTile.CopyFrom(TileObjectData.Style5x4);
 			TileObjectData.newTile.UsesCustomCanPlace = true;
-			TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<LabBigDoorTileEntity>().Hook_AfterPlacement, -1, 0, true);
-			TileObjectData.newTile.Height = 17;
-			TileObjectData.newTile.Width = 4;
+			TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<LabDoorTileEntity>().Hook_AfterPlacement, -1, 0, true);
+			TileObjectData.newTile.Height = 7;
+			TileObjectData.newTile.Width = 2;
 			TileObjectData.newTile.CoordinatePadding = 2;
-			TileObjectData.newTile.Origin = new Point16(1, 16);
-			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16, 16 , 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16];
+			TileObjectData.newTile.Origin = new Point16(1, 6);
+			TileObjectData.newTile.CoordinateHeights = [16, 16, 16, 16, 16, 16, 16];
 			
 			TileObjectData.newTile.LavaDeath = false;
 			
@@ -44,13 +44,13 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 
 		public override void KillMultiTile(int i, int j, int frameX, int frameY)
 		{
-			ModContent.GetInstance<LabBigDoorTileEntity>().Kill(i, j);
+			ModContent.GetInstance<LabDoorTileEntity>().Kill(i, j);
 		}
 
 		public override void AnimateIndividualTile(int type, int i, int j, ref int frameXOffset, ref int frameYOffset)
 		{
 			Tile tile = Main.tile[i, j];
-			LabBigDoorTileEntity tileEntity = TileUtils.FindTileEntity<LabBigDoorTileEntity>(i, j, 4, 17, 16);
+			LabDoorTileEntity tileEntity = TileUtils.FindTileEntity<LabDoorTileEntity>(i, j, 2, 7, 16);
 			if (tileEntity != null && tileEntity.AnimationCounter > 120)
 			{
 				tile.IsActuated = true;
@@ -67,7 +67,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		public override bool RightClick(int i, int j)
 		{
 			Player player = Main.LocalPlayer;
-			LabBigDoorTileEntity tileEntity = TileUtils.FindTileEntity<LabBigDoorTileEntity>(i, j, 4, 17, 16);
+			LabDoorTileEntity tileEntity = TileUtils.FindTileEntity<LabDoorTileEntity>(i, j, 2, 7, 16);
 			
 			Tile tile = Main.tile[i, j];
 
@@ -75,7 +75,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			{
 				Main.NewText("ОТКРЫТО");
 				tileEntity.IsOpened = true;
-				tileEntity.AnimationCounter = 300;
+				tileEntity.AnimationCounter = 240;
 			}
 			return true;
 		}
@@ -86,7 +86,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		}
 	}
 	
-	public class LabBigDoorTileEntity : ModTileEntity
+	public class LabDoorTileEntity : ModTileEntity
 	{
 		public bool IsOpened = false;
 		public int AnimationCounter = 0;
@@ -96,7 +96,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 		public override bool IsTileValidForEntity(int x, int y)
 		{
 			Tile tile = Main.tile[x, y];
-			return tile.HasTile && (int) tile.TileType == ModContent.TileType<LabBigDoor>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
+			return tile.HasTile && (int) tile.TileType == ModContent.TileType<LabDoor>() && tile.TileFrameX == (short) 0 && tile.TileFrameY == (short) 0;
 		}
 		public override int Hook_AfterPlacement(int i, int j, int type, int style, int direction, int alternate)
 		{
@@ -127,16 +127,16 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 				FrameCounter++;
 				if (FrameCounter % 6 == 0)
 				{
-					if (tile.TileFrameX != 576 && FullyOpened == false)
+					if (tile.TileFrameX != 288 && FullyOpened == false)
 					{
 						for (int k = 0; k < 1; k++)
 						{
-							int topX = i - tile.TileFrameX % 72 / 16;
-							int topY = j - tile.TileFrameY % 306 / 16;
+							int topX = i - tile.TileFrameX % 36 / 16;
+							int topY = j - tile.TileFrameY % 127 / 16;
 							
-							for (int x = topX; x < topX + 4; x++) {
-								for (int y = topY; y < topY + 17; y++) {
-									Main.tile[x, y].TileFrameX += 72;
+							for (int x = topX; x < topX + 2; x++) {
+								for (int y = topY; y < topY + 7; y++) {
+									Main.tile[x, y].TileFrameX += 36;
             					
 								}
 							}
@@ -144,7 +144,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 						}
 					}
 
-					if (tile.TileFrameX >= 576)
+					if (tile.TileFrameX >= 288)
 					{
 						Main.tileSolid[Main.tile[i,j].TileType] = false;
 
@@ -155,20 +155,19 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 						{
 							for (int k = 0; k < 1; k++)
 							{
-								int topX = i - tile.TileFrameX % 72 / 16;
-								int topY = j - tile.TileFrameY % 306 / 16;
+								int topX = i - tile.TileFrameX % 36 / 16;
+								int topY = j - tile.TileFrameY % 127 / 16;
 
-								for (int x = topX; x < topX + 4; x++)
+								for (int x = topX; x < topX + 2; x++)
 								{
-									for (int y = topY; y < topY + 17; y++)
+									for (int y = topY; y < topY + 7; y++)
 									{
-										Main.tile[x, y].TileFrameX -= 72;
+										Main.tile[x, y].TileFrameX -= 36;
 									}
 								}
 
 							}
 						}
-
 						Main.tileSolid[Main.tile[i,j].TileType] = true;
 						if (tile.TileFrameX == 0)
 						{

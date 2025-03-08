@@ -30,7 +30,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             TileObjectData.newTile.StyleWrapLimit = 3;
             TileObjectData.newTile.StyleHorizontal = true;
             
-            
             TileObjectData.newSubTile.CopyFrom(TileObjectData.newTile);
             TileObjectData.newSubTile.Direction = TileObjectDirection.PlaceLeft;
             TileObjectData.addSubTile(1);

@@ -1409,6 +1409,16 @@ Mods: {
 				// DisplayName: Lab Template Sign
 				// Tooltip: ""
 			}
+
+			LabTVSideview: {
+				// DisplayName: Lab T V Sideview
+				// Tooltip: ""
+			}
+
+			LabBigToilet: {
+				// DisplayName: Lab Big Toilet
+				// Tooltip: ""
+			}
 		}
 
 		Tiles: {

@@ -18,7 +18,6 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
             Item.consumable = true;
             Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
         }
-
         public override void AddRecipes()
         {
         }

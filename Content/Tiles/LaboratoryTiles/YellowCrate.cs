@@ -80,7 +80,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			
 			if (tileEntity != null && tileEntity.IsOpened != true)
 			{
-				Main.NewText("ОТКРЫТО НАХУЙ");
+				Main.NewText("ОТКРЫТО");
 				tileEntity.IsOpened = true;
 				tileEntity.AnimationCounter = 240;
 			}
@@ -138,15 +138,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 						}
 						
 					}
-					// if (tile.TileFrameX == 126)
-					// {
-					// 	int topX = i - tile.TileFrameX % 126 / 16;
-					//
-					// 	for (int x = topX; x < topX + 7; x++)
-					// 	{
-					// 		Main.tileSolid[Main.tile[126, j].TileType] = true;
-					// 	}
-					// }
 					
 					if (AnimationCounter == 0)
 					{

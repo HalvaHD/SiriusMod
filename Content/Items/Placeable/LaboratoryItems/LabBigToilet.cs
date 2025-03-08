@@ -3,12 +3,12 @@ using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabDristalnikBig : ModItem
+    public class LabBigToilet : ModItem
     {
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 35;
+            Item.width = 60;
+            Item.height = 70;
             Item.maxStack = Terraria.Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;

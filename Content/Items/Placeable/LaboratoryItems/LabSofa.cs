@@ -7,8 +7,8 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
     {
         public override void SetDefaults()
         {
-            Item.width = 26;
-            Item.height = 41;
+            Item.width = 46;
+            Item.height = 26;
             Item.maxStack = Terraria.Item.CommonMaxStack;
             Item.useTurn = true;
             Item.autoReuse = true;
@@ -16,9 +16,8 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 15;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
-            // Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
+            Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
         }
-
         public override void AddRecipes()
         {
         }

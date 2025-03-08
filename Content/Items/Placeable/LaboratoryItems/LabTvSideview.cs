@@ -4,7 +4,7 @@ using Terraria.ModLoader;
 
 namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
 {
-    public class LabTvSideview : ModItem
+    public class LabTVSideview : ModItem
     {
         public override void SetDefaults()
         {

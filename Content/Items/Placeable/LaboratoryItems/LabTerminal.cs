@@ -8,7 +8,6 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
     {
         public override void SetDefaults()
         {
-            Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.LaboratoryTiles.LabTerminals>(), 0);
             Item.width = 80;
             Item.height = 48;
             Item.maxStack = Item.CommonMaxStack;
@@ -18,6 +17,7 @@ namespace SiriusMod.Content.Items.Placeable.LaboratoryItems
             Item.useTime = 7;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.consumable = true;
+            Item.createTile = Mod.Find<ModTile>(GetType().Name).Type;
         }
         public override void AddRecipes()
         {

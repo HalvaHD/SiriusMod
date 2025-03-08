@@ -67,8 +67,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			YellowSmallCrateTileEntity tileEntity = TileUtils.FindTileEntity<YellowSmallCrateTileEntity>(i, j, 4, 3, 16);
 			
 		}
-
-
+		
 		public override bool RightClick(int i, int j)
 		{
 			Player player = Main.LocalPlayer;
@@ -77,14 +76,13 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 
 			if (tileEntity != null && tileEntity.IsOpened != true)
 			{
-				Main.NewText("ОТКРЫТОЙ НАХУЙ");
+				Main.NewText("ОТКРЫТО");
 				tileEntity.IsOpened = true;
 				tileEntity.AnimationCounter = 240;
 			}
 
 			return true;
 		}
-
 		
 		public override void PostDraw(int i, int j, SpriteBatch spriteBatch)
 		{
@@ -108,7 +106,6 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			{
 				return Place(i, j);
 			}
-
 			return -1;
 		}
 
@@ -125,7 +122,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
 			{
 				if (++FrameCounter % 10 == 0)
 				{
-					if (tile.TileFrameY != 54)
+					if (tile.TileFrameX != 74)
 					{
 						
 						int topX = i - tile.TileFrameX % 74 / 16;
@@ -133,7 +130,7 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             
 						for (int x = topX; x < topX + 4; x++) {
 							for (int y = topY; y < topY + 3; y++) {
-								Main.tile[x, y].TileFrameY += 54;
+								Main.tile[x, y].TileFrameX += 74;
 								Main.tileSolidTop[Type] = true; 
             							
 							}
@@ -146,12 +143,12 @@ namespace SiriusMod.Content.Tiles.LaboratoryTiles
             
 						for (int x = topX; x < topX + 4; x++) {
 							for (int y = topY; y < topY + 3; y++) {
-								Main.tile[x, y].TileFrameY -= 54;
+								Main.tile[x, y].TileFrameX -= 74;
             							
 							}
 						}
 
-						if (tile.TileFrameY == 0)
+						if (tile.TileFrameX == 0)
 						{
 							IsOpened = false;
 							FrameCounter = 0;
