@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 using CalamityMod;
 using CalamityMod.NPCs.DevourerofGods;
 using CalamityMod.Items.SummonItems;
-
+using Terraria.DataStructures;
 
 
 namespace SiriusMod.Mechanics
@@ -89,30 +89,15 @@ namespace SiriusMod.Mechanics
                 
                 if (aprilFoolsTimer == 120)
                 {
+                    aprilFoolsTimer = 0; // сбрасываем таймер
                     if (Main.netMode != NetmodeID.MultiplayerClient)
                     {
-                        int head = NPC.NewNPC(null, (int)player.position.X, (int)player.position.Y - 200, ModContent.NPCType<DevourerofGodsHead>());
+                        int dog = NPC.NewNPC(new EntitySource_WorldEvent(), (int)player.position.X, (int)player.position.Y - 200, ModContent.NPCType<DevourerofGodsHead>());
+                        NPC npc = Main.npc[dog];
+                        npc.life = (int)(npc.lifeMax * 0.6f);
 
-                        if (head >= 0 && head < Main.maxNPCs)
-                        {
-                            NPC npc = Main.npc[head];
-                            npc.ai[0] = 1; // СРАЗУ запускаем вторую фазу
-                            npc.netUpdate = true;
-
-                            // Спавним тело
-                            int lastSegment = head;
-                            for (int i = 0; i < 50; i++) // 50 сегментов тела
-                            {
-                                lastSegment = NPC.NewNPC(null, (int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<DevourerofGodsBody>(), lastSegment);
-                            }
-
-                            // Спавним хвост
-                            int tail = NPC.NewNPC(null, (int)npc.Center.X, (int)npc.Center.Y, ModContent.NPCType<DevourerofGodsTail>(), lastSegment);
-
-                            Main.NewText("Ты перегрел кирку... Теперь тебя выебет админ", Color.Crimson);
-                        }
+                        Main.NewText("Ты перегрел кирку... Теперь тебя выебет админ", Color.Crimson);
                     }
-                    aprilFoolsTimer = 0; // сбрасываем таймер
                 }
             }
         }
