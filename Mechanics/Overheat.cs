@@ -41,16 +41,6 @@ namespace SiriusMod.Mechanics
             //Main.NewText(OverheatLevel);
         }
 
-        /*public override bool CanUseItem(Player player)
-        {
-            if (CooldownTimer > 0)
-            {
-                return false;
-            }
-            
-            return true;
-        }*/
-
         public override void UpdateInventory(Player player)
         {
             if (!player.controlUseItem)
@@ -68,6 +58,29 @@ namespace SiriusMod.Mechanics
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+// старая механика
+
+/*public override bool CanUseItem(Player player)
+{
+    if (CooldownTimer > 0)
+    {
+        return false;
+    }
+
+    return true;
+}*/
+
+
 
 
 /*ДЛЯ ШЛЕМА СЕТ БОНУС

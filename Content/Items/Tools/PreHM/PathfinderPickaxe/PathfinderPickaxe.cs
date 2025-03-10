@@ -1,3 +1,4 @@
+using System;
 using SiriusMod.Content.Dusts;
 using Microsoft.Xna.Framework;
 using SiriusMod.Mechanics;
@@ -33,7 +34,35 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
                 Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, ModContent.DustType<LabMossDust>());
             }
         }
-        
-        
+
+        public float pickSDP = 20f;
+        public override void HoldItem(Player player)
+        {
+            base.HoldItem(player);
+            
+            if (player.controlUseItem)
+            {
+                if (OverheatLevel >= 300 && OverheatLevel < player.GetModPlayer<SiriusModPlayer>().MaxOverheat)
+                {
+                    float bonusRatio = (OverheatLevel - 300f) / (player.GetModPlayer<SiriusModPlayer>().MaxOverheat - 300f);
+                    player.pickSpeed -= MathHelper.Clamp(bonusRatio * pickSDP, 0f, pickSDP) * 0.01f;
+                }
+            }
+        }
+
+        public override void UpdateInventory(Player player)
+        {
+            base.UpdateInventory(player);
+            
+            if (CooldownLevel > 0)
+            {
+                player.pickSpeed = Math.Max(player.pickSpeed, 1.0f);
+                Item.useTime = 15;
+            }
+            else
+            {
+                Item.useTime = 9;
+            }
+        }
     }
 }
