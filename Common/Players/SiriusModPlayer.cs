@@ -5,11 +5,13 @@ namespace SiriusMod.Mechanics
 {
     public class SiriusModPlayer : ModPlayer
     {
-        public int MaxOverheat = 600;
+        public float  MaxOverheat = 600f;
+        public float pickSDP = 20f;
 
         public override void ResetEffects()
         {
-            MaxOverheat = 600;
+            MaxOverheat = 600f;
+            pickSDP = 20f;
         }
     }
 }

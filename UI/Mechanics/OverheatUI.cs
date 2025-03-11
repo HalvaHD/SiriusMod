@@ -1,19 +1,14 @@
 using System;
-using SiriusMod.Mechanics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using System.Collections.Generic;
 using Microsoft.Xna.Framework.Input;
+using Terraria;
+using Terraria.ModLoader;
 using ReLogic.Content;
 using SiriusMod.Common;
+using SiriusMod.Common.Players;
 using SiriusMod.Helpers;
-using Terraria;
-using Terraria.GameContent;
-using Terraria.GameContent.Animations;
-using Terraria.GameContent.UI.Elements;
-using Terraria.ModLoader;
-using Terraria.Social.Steam;
-using Terraria.UI;
+using SiriusMod.Mechanics;
 
 namespace SiriusMod.UI.Mechanics
 {
@@ -63,7 +58,7 @@ namespace SiriusMod.UI.Mechanics
 
             if (overheatItem.OverheatLevel > 0 || overheatItem.CooldownLevel > 0)
             {
-                DrawOverheatBar(spriteBatch, overheatItem, screenPos);
+                DrawOverheatBar(spriteBatch, player, overheatItem, screenPos);
             }
             else
             {
@@ -135,17 +130,17 @@ namespace SiriusMod.UI.Mechanics
             }
         }
         
-        private static void DrawOverheatBar(SpriteBatch spriteBatch, Overheat OverheatItem, Vector2 screenPos)
+        private static void DrawOverheatBar(SpriteBatch spriteBatch, Player player, Overheat OverheatItem, Vector2 screenPos)
         {
             if (OverheatItem.OverheatLevel > 0)
             {
                 float uiScale = Main.UIScale;
                 float offset = (frameTexture.Width - barTexture.Width) * 0.5f;
-                float completionRatio = MathHelper.Clamp(OverheatItem.OverheatLevel / 600f, 0f, 1f);
-                float colorRatio = MathHelper.Clamp(OverheatItem.OverheatLevel / 600f, 0.2f, 1f);
+                float completionRatio = MathHelper.Clamp(OverheatItem.OverheatLevel / player.GetModPlayer<SiriusModPlayer>().MaxOverheat, 0f, 1f);
+                float colorRatio = MathHelper.Clamp(OverheatItem.OverheatLevel / player.GetModPlayer<SiriusModPlayer>().MaxOverheat, 0.2f, 1f);
                 Rectangle barRectangle = new Rectangle(0, 0, (int)(barTexture.Width * completionRatio), barTexture.Width);
-                spriteBatch.Draw(frameTexture, screenPos, new Rectangle(0, 0, (frameTexture.Width), frameTexture.Height), Color.Lerp(Color.White, new Color(255, 67, 20), colorRatio), 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
-                spriteBatch.Draw(barTexture, screenPos + new Vector2(offset * uiScale, 0) + new Vector2(4, 0), barRectangle, Color.White, 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
+                spriteBatch.Draw(frameTexture, screenPos, new Rectangle(0, 0, (frameTexture.Width), frameTexture.Height), Color.Lerp(Color.White, new Color(255, 67, 20), colorRatio), 0f, frameTexture.Size() * 0.5f, uiScale * 1.75f, SpriteEffects.None, 0);
+                spriteBatch.Draw(barTexture, screenPos + new Vector2(offset * uiScale, 0) + new Vector2(4, 0), barRectangle, Color.White, 0f, frameTexture.Size() * 0.5f, uiScale * 1.75f, SpriteEffects.None, 0);
             }
 
             if (OverheatItem.CooldownLevel > 0 && OverheatItem.CooldownLevel <= 200)
@@ -153,10 +148,10 @@ namespace SiriusMod.UI.Mechanics
                 float uiScale = Main.UIScale;
                 float offset = (frameTexture.Width - barTexture.Width) * 0.5f;
                 float completionRatio = MathHelper.Clamp(OverheatItem.CooldownLevel / 300f, 0f, 1f);
-                float colorRatio = MathHelper.Clamp(OverheatItem.CooldownLevel / 300f, 0.2f, 1f);
+                //float colorRatio = MathHelper.Clamp(OverheatItem.CooldownLevel / 300f, 0.2f, 1f);
                 Rectangle barRectangle = new Rectangle(0, 0, (int)(barTexture.Width * completionRatio), barTexture.Width);
-                spriteBatch.Draw(frameTexture, screenPos, new Rectangle(0, 0, (frameTexture.Width), frameTexture.Height), Utilities.ColorSwap(new Color(255, 67, 20), Color.White, 0.5f), 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
-                spriteBatch.Draw(barTexture, screenPos + new Vector2(offset * uiScale, 0) + new Vector2(4, 0), barRectangle, Color.White, 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
+                spriteBatch.Draw(frameTexture, screenPos, new Rectangle(0, 0, (frameTexture.Width), frameTexture.Height), Utilities.ColorSwap(new Color(255, 67, 20), Color.White, 0.5f), 0f, frameTexture.Size() * 0.5f, uiScale * 1.75f, SpriteEffects.None, 0);
+                spriteBatch.Draw(barTexture, screenPos + new Vector2(offset * uiScale, 0) + new Vector2(4, 0), barRectangle, Color.White, 0f, frameTexture.Size() * 0.5f, uiScale * 1.75f, SpriteEffects.None, 0);
                 
             }
 
@@ -164,8 +159,8 @@ namespace SiriusMod.UI.Mechanics
             {
                 float uiScale = Main.UIScale;
                 float offset = (frameTexture.Width - barTexture.Width) * 0.5f;
-                spriteBatch.Draw(frameTexture, screenPos, new Rectangle(0, 0, (frameTexture.Width), frameTexture.Height), new Color(255, 51, 0), 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
-                spriteBatch.Draw(barTexture, screenPos + new Vector2(offset * uiScale, 0) + new Vector2(4, 0), new Rectangle(0,0, (barTexture.Width), barTexture.Height), Color.White, 0f, frameTexture.Size() * 0.5f, uiScale * 2f, SpriteEffects.None, 0);
+                spriteBatch.Draw(frameTexture, screenPos, new Rectangle(0, 0, (frameTexture.Width), frameTexture.Height), new Color(255, 51, 0), 0f, frameTexture.Size() * 0.5f, uiScale * 1.75f, SpriteEffects.None, 0);
+                spriteBatch.Draw(barTexture, screenPos + new Vector2(offset * uiScale, 0) + new Vector2(4, 0), new Rectangle(0,0, (barTexture.Width), barTexture.Height), Color.White, 0f, frameTexture.Size() * 0.5f, uiScale * 1.75f, SpriteEffects.None, 0);
             }
         }
     }

@@ -94,7 +94,7 @@ namespace SiriusMod.Content.Bosses.Protector
 		/// <param name="location">The visual location, already taking into account <see cref="Main.screenPosition"/></param>
 		public override void Draw(SpriteBatch spriteBatch, Vector2 location)
 		{
-			Texture2D ember = ModContent.Request<Texture2D>("SiriusMod/Content/NPC/Bosses/Protector/ProtectorParticle").Value;
+			Texture2D ember = ModContent.Request<Texture2D>("SiriusMod/Content/Bosses/Protector/ProtectorParticle").Value;
 
 			Color bright = Color.Multiply(new(240, 149, 46, 0), Opacity);
 			Color mid = Color.Multiply(new(187, 63, 25, 0), Opacity);

@@ -1126,18 +1126,18 @@ Mods: {
 			}
 
 			PathfinderSword: {
-				Tooltip: ""
-				DisplayName: Pathfinder Sword
+				// Tooltip: ""
+				DisplayName: Меч первопроходца
 			}
 
 			PathfinderPickaxe: {
-				Tooltip: ""
-				DisplayName: Pathfinder Pickaxe
+				// Tooltip: ""
+				DisplayName: Кирка первопроходца
 			}
 
 			PathfinderHamaxe: {
-				Tooltip: ""
-				DisplayName: Pathfinder Hamaxe
+				// Tooltip: ""
+				DisplayName: Молотопор первопроходца
 			}
 
 			YellowSmallCrate: {
@@ -1429,6 +1429,27 @@ Mods: {
 				// DisplayName: Lab Big Door Horizontal
 				// Tooltip: ""
 			}
+
+			BrokenPathfinderBreastplate: {
+				DisplayName: Сломанный нагрудник первопроходца
+				// Tooltip: ""
+			}
+
+			BrokenPathfinderHelmet: {
+				DisplayName: Сломанный шлем первопроходца
+				// Tooltip: ""
+				SetBonus:
+					'''
+					+2 ед. защиты
+					Увеличивает общий таймер [c/da3a3a:шкалы перегрева] до 25 секунд
+					Увеличивает бонус кирки от [c/da3a3a:перегрева] до 40%
+					'''
+			}
+
+			BrokenPathfinderLeggings: {
+				DisplayName: Сломанные ботинки первопроходца
+				// Tooltip: ""
+			}
 		}
 
 		Tiles: {
@@ -1444,20 +1465,20 @@ Mods: {
 
 		Configs: {
 			SiriusConfig: {
-				DisplayName: Sirius Config
+				DisplayName: Конфиг
 
 				OverheatUIPosX: {
-					Label: Overheat U I Pos X
-					Tooltip: ""
+					Label: Позиция шкалы перегрева по X
+					Tooltip: Перемещает шкалу перегрева по координатам X
 				}
 
 				OverheatUIPosY: {
-					Label: Overheat U I Pos Y
-					Tooltip: ""
+					Label: Позиция шкалы перегрева по Y
+					Tooltip: Перемещает шкалу перегрева по координатам Y
 				}
 
 				BarsPosLock: {
-					Label: Bars Pos Lock
+					Label: Закрепить шкалу перегрева
 					Tooltip: ""
 				}
 			}

@@ -34,8 +34,7 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
                 Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, ModContent.DustType<LabMossDust>());
             }
         }
-
-        public float pickSDP = 20f;
+        
         public override void HoldItem(Player player)
         {
             base.HoldItem(player);
@@ -45,7 +44,7 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
                 if (OverheatLevel >= 300 && OverheatLevel < player.GetModPlayer<SiriusModPlayer>().MaxOverheat)
                 {
                     float bonusRatio = (OverheatLevel - 300f) / (player.GetModPlayer<SiriusModPlayer>().MaxOverheat - 300f);
-                    player.pickSpeed -= MathHelper.Clamp(bonusRatio * pickSDP, 0f, pickSDP) * 0.01f;
+                    player.pickSpeed -= MathHelper.Clamp(bonusRatio * player.GetModPlayer<SiriusModPlayer>().pickSDP, 0f, player.GetModPlayer<SiriusModPlayer>().pickSDP) * 0.01f;
                 }
             }
         }
@@ -57,11 +56,13 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
             if (CooldownLevel > 0)
             {
                 player.pickSpeed = Math.Max(player.pickSpeed, 1.0f);
-                Item.useTime = 15;
+                Item.useTime = 50;
+                Item.useAnimation = 30;
             }
             else
             {
                 Item.useTime = 9;
+                Item.useAnimation = 20;
             }
         }
     }

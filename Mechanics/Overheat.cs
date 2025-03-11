@@ -7,6 +7,7 @@ using Terraria.ModLoader;
 using CalamityMod;
 using CalamityMod.NPCs.DevourerofGods;
 using CalamityMod.Items.SummonItems;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria.DataStructures;
 
 
@@ -14,8 +15,6 @@ namespace SiriusMod.Mechanics
 {
     public abstract class Overheat : ModItem
     {
-        private int aprilFoolsTimer = 0; // смешно не правда ли?
-
         private int OverheatTimer = 0;
         private int CooldownTimer = 0;
         public int OverheatLevel => OverheatTimer;
@@ -32,7 +31,7 @@ namespace SiriusMod.Mechanics
                     OverheatTimer++;
                 }
                 
-                int maxOverheat = player.GetModPlayer<SiriusModPlayer>().MaxOverheat;
+                float maxOverheat = player.GetModPlayer<SiriusModPlayer>().MaxOverheat;
                 if (OverheatTimer >= maxOverheat)
                 {
                     if (!SoundEngine.TryGetActiveSound(OverheatBrokeID, out var sound3))
@@ -41,12 +40,20 @@ namespace SiriusMod.Mechanics
                     }
                     
                     player.AddBuff(BuffID.OnFire, 300);
-                    CooldownTimer = 300;
+                    if (maxOverheat == 600)
+                    {
+                        CooldownTimer = 300;
+                    }
+
+                    if (maxOverheat == 1200)
+                    {
+                        CooldownTimer = 420;
+                    }
                     OverheatTimer = 0;
-                    aprilFoolsTimer = 1;
                 }
             }
-            //Main.NewText(OverheatLevel);
+            //Main.NewText(player.GetModPlayer<SiriusModPlayer>().MaxOverheat);
+            //Main.NewText(player.GetModPlayer<SiriusModPlayer>().pickSDP);
         }
 
         public override void UpdateInventory(Player player)
@@ -63,75 +70,40 @@ namespace SiriusMod.Mechanics
             {
                 CooldownTimer--;
             }
-
-
-            if (aprilFoolsTimer > 0)
+        }
+        
+        public Texture2D glowTexture = null;
+        public int glowOffsetY = 0;
+        public int glowOffsetX = 0;
+        public override bool InstancePerEntity => true;
+        public override GlobalItem Clone(Item item, Item itemClone)
+        {
+            return base.Clone(item, itemClone);
+        }
+        public override void PostDrawInWorld(Item item, SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
+        {
+            if (glowTexture != null)
             {
-                aprilFoolsTimer++;
-
-                if (aprilFoolsTimer == 30)
-                {
-                    for (int i = 1; i <= 10; i++)
-                    {
-                        Vector2 pos = player.Center + new Vector2(Main.rand.Next(-50, 50), Main.rand.Next(-50, 50));
-                        Projectile.NewProjectile(null, pos, Vector2.Zero, ProjectileID.FireworkFountainBlue + Main.rand.Next(4), 0, 0, Main.myPlayer);
-                    }
-                }
-
-                if (aprilFoolsTimer > 60 && aprilFoolsTimer % 60 == 0 && aprilFoolsTimer <= 660)
-                {
-                    for (int i = 0; i < 5; i++)
-                    {
-                        Vector2 pos = player.Center + new Vector2(Main.rand.Next(-40, 40), Main.rand.Next(-40, 40));
-                        Projectile.NewProjectile(null, pos, Vector2.Zero, ProjectileID.Bomb, 100, 10, Main.myPlayer);
-                    }
-                }
-                
-                if (aprilFoolsTimer == 120)
-                {
-                    aprilFoolsTimer = 0; // сбрасываем таймер
-                    if (Main.netMode != NetmodeID.MultiplayerClient)
-                    {
-                        int dog = NPC.NewNPC(new EntitySource_WorldEvent(), (int)player.position.X, (int)player.position.Y - 200, ModContent.NPCType<DevourerofGodsHead>());
-                        NPC npc = Main.npc[dog];
-                        npc.life = (int)(npc.lifeMax * 0.6f);
-
-                        Main.NewText("Ты перегрел кирку... Теперь тебя выебет админ", Color.Crimson);
-                    }
-                }
+                Texture2D texture = glowTexture;
+                spriteBatch.Draw
+                (
+                    texture,
+                    new Vector2
+                    (
+                        item.position.X - Main.screenPosition.X + item.width * 0.5f,
+                        item.position.Y - Main.screenPosition.Y + item.height - texture.Height * 0.5f + 2f
+                    ),
+                    new Rectangle(0, 0, texture.Width, texture.Height),
+                    Color.White,
+                    rotation,
+                    texture.Size() * 0.5f,
+                    scale,
+                    SpriteEffects.None,
+                    0f
+                );
             }
+            base.PostDrawInWorld(item, spriteBatch, lightColor, alphaColor, rotation, scale, whoAmI);
         }
     }
-}
-
-
-
-
-
-
-
-
-
-
-// старая механика
-
-/*public override bool CanUseItem(Player player)
-{
-    if (CooldownTimer > 0)
-    {
-        return false;
     }
-
-    return true;
-}*/
-
-
-
-
-/*ДЛЯ ШЛЕМА СЕТ БОНУС
-    
-public override void UpdateArmorSet(Player player)
-{
-    player.setBonus = "Перегрев теперь 20 секунд вместо 10";
-    player.GetModPlayer<SiriusModPlayer>().MaxOverheat = 1200; // увеличиваем до 20 сек
-}*/
+}

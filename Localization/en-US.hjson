@@ -1453,6 +1453,22 @@ Mods: {
 				DisplayName: Lab Big Door Horizontal
 				Tooltip: ""
 			}
+
+			BrokenPathfinderBreastplate: {
+				DisplayName: Broken Pathfinder Breastplate
+				Tooltip: ""
+			}
+
+			BrokenPathfinderHelmet: {
+				DisplayName: Broken Pathfinder Helmet
+				Tooltip: ""
+				SetBonus: Hui pizda
+			}
+
+			BrokenPathfinderLeggings: {
+				DisplayName: Broken Pathfinder Leggings
+				Tooltip: ""
+			}
 		}
 
 		Tiles: {
