@@ -27,12 +27,12 @@ namespace SiriusMod.Content.Items.Armor.PreHM.BrokenPathfinderArmor
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = Language.GetTextValue("Mods.SiriusMod.Items.BrokenPathfinderHelmet.SetBonus");
-            player.GetModPlayer<SiriusModPlayer>().MaxOverheat = 1500f;
+            SiriusModPlayer siriusPlayer = player.GetModPlayer<SiriusModPlayer>();
+            
+            player.setBonus = this.GetLocalizedValue("SetBonus");
             player.statDefense += 2;
-
-            player.GetModPlayer<SiriusModPlayer>().pickSDP = 40f;
+            siriusPlayer.MaxOverheat = 1500f;
+            siriusPlayer.pickSDP = 40f;
         }
-        
     }
 }
