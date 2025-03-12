@@ -45,15 +45,16 @@ namespace SiriusMod.Mechanics
                         CooldownTimer = 300;
                     }
 
-                    if (maxOverheat == 1200)
+                    if (maxOverheat == 1500)
                     {
                         CooldownTimer = 420;
                     }
                     OverheatTimer = 0;
                 }
             }
-            //Main.NewText(player.GetModPlayer<SiriusModPlayer>().MaxOverheat);
-            //Main.NewText(player.GetModPlayer<SiriusModPlayer>().pickSDP);
+            Main.NewText(player.GetModPlayer<SiriusModPlayer>().MaxOverheat);
+            Main.NewText(player.GetModPlayer<SiriusModPlayer>().pickSDP);
+            Main.NewText(CooldownLevel);
         }
 
         public override void UpdateInventory(Player player)
@@ -72,14 +73,9 @@ namespace SiriusMod.Mechanics
             }
         }
         
-        public Texture2D glowTexture = null;
+        /*public Texture2D glowTexture = null;
         public int glowOffsetY = 0;
         public int glowOffsetX = 0;
-        public override bool InstancePerEntity => true;
-        public override GlobalItem Clone(Item item, Item itemClone)
-        {
-            return base.Clone(item, itemClone);
-        }
         public override void PostDrawInWorld(Item item, SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
         {
             if (glowTexture != null)
@@ -103,7 +99,6 @@ namespace SiriusMod.Mechanics
                 );
             }
             base.PostDrawInWorld(item, spriteBatch, lightColor, alphaColor, rotation, scale, whoAmI);
-        }
-    }
+        }*/
     }
 }

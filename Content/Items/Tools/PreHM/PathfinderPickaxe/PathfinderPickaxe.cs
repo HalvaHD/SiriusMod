@@ -1,6 +1,7 @@
 using System;
 using SiriusMod.Content.Dusts;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using SiriusMod.Mechanics;
 using Terraria;
 using Terraria.ID;
@@ -65,5 +66,33 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
                 Item.useAnimation = 20;
             }
         }
+        
+        /*public Texture2D glowTexture = ModContent.Request<Texture2D>(Texture + "_Glow").Value;
+        public int glowOffsetY = 0;
+        public int glowOffsetX = 0;
+        public override void PostDrawInWorld(Item item, SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
+        {
+            if (glowTexture != null)
+            {
+                Texture2D texture = glowTexture;
+                spriteBatch.Draw
+                (
+                    texture,
+                    new Vector2
+                    (
+                        item.position.X - Main.screenPosition.X + item.width * 0.5f,
+                        item.position.Y - Main.screenPosition.Y + item.height - texture.Height * 0.5f + 2f
+                    ),
+                    new Rectangle(0, 0, texture.Width, texture.Height),
+                    Color.White,
+                    rotation,
+                    texture.Size() * 0.5f,
+                    scale,
+                    SpriteEffects.None,
+                    0f
+                );
+            }
+            base.PostDrawInWorld(item, spriteBatch, lightColor, alphaColor, rotation, scale, whoAmI);
+        }*/
     }
 }

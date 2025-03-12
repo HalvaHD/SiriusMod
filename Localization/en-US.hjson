@@ -1469,6 +1469,36 @@ Mods: {
 				DisplayName: Broken Pathfinder Leggings
 				Tooltip: ""
 			}
+
+			PathfinderBreastplate: {
+				DisplayName: Pathfinder Breastplate
+				Tooltip: ""
+			}
+
+			PathfinderHelmMage: {
+				DisplayName: Pathfinder Helm Mage
+				Tooltip: ""
+			}
+
+			PathfinderHelmMelee: {
+				DisplayName: Pathfinder Helm Melee
+				Tooltip: ""
+			}
+
+			PathfinderHelmRange: {
+				DisplayName: Pathfinder Helm Range
+				Tooltip: ""
+			}
+
+			PathfinderHelmSummon: {
+				DisplayName: Pathfinder Helm Summon
+				Tooltip: ""
+			}
+
+			PathfinderLeggings: {
+				DisplayName: Pathfinder Leggings
+				Tooltip: ""
+			}
 		}
 
 		Tiles: {

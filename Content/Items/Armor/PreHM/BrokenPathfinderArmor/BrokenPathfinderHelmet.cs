@@ -31,6 +31,7 @@ namespace SiriusMod.Content.Items.Armor.PreHM.BrokenPathfinderArmor
             
             player.setBonus = this.GetLocalizedValue("SetBonus");
             player.statDefense += 2;
+            
             siriusPlayer.MaxOverheat = 1500f;
             siriusPlayer.pickSDP = 40f;
         }
