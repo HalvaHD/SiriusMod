@@ -67,10 +67,10 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
             }
         }
         
-        /*public Texture2D glowTexture = ModContent.Request<Texture2D>(Texture + "_Glow").Value;
+        public Texture2D glowTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Items/Tools/PreHM/PathfinderPickaxe/PathfinderPickaxe_Glow").Value;
         public int glowOffsetY = 0;
         public int glowOffsetX = 0;
-        public override void PostDrawInWorld(Item item, SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
+        public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
         {
             if (glowTexture != null)
             {
@@ -80,8 +80,8 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
                     texture,
                     new Vector2
                     (
-                        item.position.X - Main.screenPosition.X + item.width * 0.5f,
-                        item.position.Y - Main.screenPosition.Y + item.height - texture.Height * 0.5f + 2f
+                        Item.position.X - Main.screenPosition.X + Item.width * 0.5f,
+                        Item.position.Y - Main.screenPosition.Y + Item.height - texture.Height * 0.5f + 2f
                     ),
                     new Rectangle(0, 0, texture.Width, texture.Height),
                     Color.White,
@@ -92,7 +92,7 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
                     0f
                 );
             }
-            base.PostDrawInWorld(item, spriteBatch, lightColor, alphaColor, rotation, scale, whoAmI);
-        }*/
+            base.PostDrawInWorld(spriteBatch, lightColor, alphaColor, rotation, scale, whoAmI);
+        }
     }
 }
