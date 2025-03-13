@@ -4,6 +4,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using SiriusMod.Mechanics;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
@@ -67,32 +68,45 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
             }
         }
         
-        public Texture2D glowTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Items/Tools/PreHM/PathfinderPickaxe/PathfinderPickaxe_Glow").Value;
-        public int glowOffsetY = 0;
-        public int glowOffsetX = 0;
         public override void PostDrawInWorld(SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
         {
-            if (glowTexture != null)
+            Texture2D glowmaskTexture = ModContent.Request<Texture2D>(Texture + "_Glow").Value;
+            Vector2 origin = glowmaskTexture.Size() / 2f;
+
+            spriteBatch.Draw(glowmaskTexture, Item.Center - Main.screenPosition, null, Color.White, rotation, origin, 1f, SpriteEffects.None, 0f);
+        }
+    }
+
+    public class PathfinderPickaxeGlowMaskLayer : PlayerDrawLayer
+    {
+        public override Position GetDefaultPosition() => new BeforeParent(PlayerDrawLayers.ArmOverItem);
+
+        protected override void Draw(ref PlayerDrawSet drawInfo)
+        {
+            Player player = drawInfo.drawPlayer;
+            float maxOverheat = player.GetModPlayer<SiriusModPlayer>().MaxOverheat;
+            float overheatLevel = 0f;
+            if (player.HeldItem.ModItem is PathfinderPickaxe pickaxe)
             {
-                Texture2D texture = glowTexture;
-                spriteBatch.Draw
-                (
-                    texture,
-                    new Vector2
-                    (
-                        Item.position.X - Main.screenPosition.X + Item.width * 0.5f,
-                        Item.position.Y - Main.screenPosition.Y + Item.height - texture.Height * 0.5f + 2f
-                    ),
-                    new Rectangle(0, 0, texture.Width, texture.Height),
-                    Color.White,
-                    rotation,
-                    texture.Size() * 0.5f,
-                    scale,
-                    SpriteEffects.None,
-                    0f
-                );
+                overheatLevel = pickaxe.OverheatLevel;
             }
-            base.PostDrawInWorld(spriteBatch, lightColor, alphaColor, rotation, scale, whoAmI);
+ 
+            if (player.itemAnimation == 0 || player.HeldItem.type != ModContent.ItemType<PathfinderPickaxe>())
+                return;
+            
+            Texture2D glowmaskTexture = ModContent.Request<Texture2D>("SiriusMod/Content/Items/Tools/PreHM/PathfinderPickaxe/PathfinderPickaxe_Animated").Value;
+            
+            int frameCount = 7;
+            int frameHeight = glowmaskTexture.Height / frameCount;
+            int currentFrame = (int) (overheatLevel / (maxOverheat / frameCount));
+            currentFrame = Math.Clamp(currentFrame, 1, frameCount);
+            
+            Rectangle itemFrame = glowmaskTexture.Frame(1, frameCount, 0, currentFrame);
+            Vector2 origin = new Vector2(player.direction == 1 ? 0 : glowmaskTexture.Width, player.gravDir == -1f ? 0 : frameHeight);
+
+            DrawData data = new DrawData(glowmaskTexture, drawInfo.ItemLocation - Main.screenPosition, itemFrame, Color.White, player.itemRotation, origin, player.HeldItem.scale, drawInfo.playerEffect);
+            
+            drawInfo.DrawDataCache.Add(data);
         }
     }
 }
