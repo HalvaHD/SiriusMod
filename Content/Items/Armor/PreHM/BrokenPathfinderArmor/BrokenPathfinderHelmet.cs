@@ -13,13 +13,13 @@ namespace SiriusMod.Content.Items.Armor.PreHM.BrokenPathfinderArmor
     {
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 20;
+            Item.width = 26;
+            Item.height = 22;
             Item.value = Item.sellPrice(silver: 50);
             Item.rare = ItemRarityID.Green;
             Item.defense = 1;
         }
-
+        
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
             return body.type == ModContent.ItemType<BrokenPathfinderBreastplate>() && legs.type == ModContent.ItemType<BrokenPathfinderLeggings>();

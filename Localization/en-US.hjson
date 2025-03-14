@@ -1478,21 +1478,25 @@ Mods: {
 			PathfinderHelmMage: {
 				DisplayName: Pathfinder Helm Mage
 				Tooltip: ""
+				SetBonus: Hui pizda
 			}
 
 			PathfinderHelmMelee: {
 				DisplayName: Pathfinder Helm Melee
 				Tooltip: ""
+				SetBonus: Hui pizda
 			}
 
 			PathfinderHelmRange: {
 				DisplayName: Pathfinder Helm Range
 				Tooltip: ""
+				SetBonus: Hui pizda
 			}
 
 			PathfinderHelmSummon: {
 				DisplayName: Pathfinder Helm Summon
 				Tooltip: ""
+				SetBonus: Hui pizda
 			}
 
 			PathfinderLeggings: {

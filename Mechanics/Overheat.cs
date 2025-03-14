@@ -8,6 +8,7 @@ using CalamityMod;
 using CalamityMod.NPCs.DevourerofGods;
 using CalamityMod.Items.SummonItems;
 using Microsoft.Xna.Framework.Graphics;
+using SiriusMod.Content.Items.Weapons.PreHM.Melee.PathfinderSword;
 using Terraria.DataStructures;
 
 
@@ -52,8 +53,8 @@ namespace SiriusMod.Mechanics
                     OverheatTimer = 0;
                 }
             }
-            Main.NewText(player.GetModPlayer<SiriusModPlayer>().MaxOverheat);
-            Main.NewText(player.GetModPlayer<SiriusModPlayer>().pickSDP);
+            //Main.NewText(player.GetModPlayer<SiriusModPlayer>().MaxOverheat);
+            Main.NewText(OverheatLevel);
             Main.NewText(CooldownLevel);
         }
 

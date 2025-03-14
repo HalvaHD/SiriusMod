@@ -13,18 +13,27 @@ namespace SiriusMod.Content.Items.Armor.PreHM.PathfinderArmor
     {
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 20;
+            Item.width = 22;
+            Item.height = 18;
             Item.value = Item.sellPrice(silver: 50);
             Item.rare = ItemRarityID.Blue;
-            Item.defense = 1;
+            Item.defense = 9;
         }
         
         public override bool IsArmorSet(Item head, Item body, Item legs)
         {
             return body.type == ModContent.ItemType<PathfinderBreastplate>() && legs.type == ModContent.ItemType<PathfinderLeggings>();
         }
-        
-        
+
+        public override void UpdateArmorSet(Player player)
+        {
+            SiriusModPlayer siriusPlayer = player.GetModPlayer<SiriusModPlayer>();
+
+            player.setBonus = this.GetLocalizedValue("SetBonus");
+            player.GetAttackSpeed(DamageClass.Melee) += 0.05f;
+            
+            siriusPlayer.MaxOverheat = 1500f;
+            siriusPlayer.swordDMG = 60f;
+        }
     }
 }

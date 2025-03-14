@@ -37,5 +37,13 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderHamaxe
                 Dust.NewDust(new Vector2(hitbox.X, hitbox.Y), hitbox.Width, hitbox.Height, ModContent.DustType<LabMossDust>());
             }
         }
+        
+        public override void OnHitNPC(Player player, Terraria.NPC target, Terraria.NPC.HitInfo hit, int damageDone)
+        {
+            if (CooldownLevel > 0)
+            {
+                target.AddBuff(BuffID.OnFire, 60);
+            }
+        }
     }
 }

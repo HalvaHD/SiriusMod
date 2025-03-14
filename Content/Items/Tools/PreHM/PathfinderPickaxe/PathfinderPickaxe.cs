@@ -38,6 +38,14 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
             }
         }
         
+        public override void OnHitNPC(Player player, Terraria.NPC target, Terraria.NPC.HitInfo hit, int damageDone)
+        {
+            if (CooldownLevel > 0)
+            {
+                target.AddBuff(BuffID.OnFire, 60);
+            }
+        }
+        
         public override void HoldItem(Player player)
         {
             base.HoldItem(player);
@@ -58,7 +66,6 @@ namespace SiriusMod.Content.Items.Tools.PreHM.PathfinderPickaxe
             
             if (CooldownLevel > 0)
             {
-                player.pickSpeed = Math.Max(player.pickSpeed, 1.0f);
                 Item.useTime = 50;
                 Item.useAnimation = 30;
             }

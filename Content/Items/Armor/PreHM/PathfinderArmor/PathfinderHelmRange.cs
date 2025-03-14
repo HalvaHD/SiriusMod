@@ -13,8 +13,8 @@ namespace SiriusMod.Content.Items.Armor.PreHM.PathfinderArmor
     {
         public override void SetDefaults()
         {
-            Item.width = 30;
-            Item.height = 20;
+            Item.width = 22;
+            Item.height = 18;
             Item.value = Item.sellPrice(silver: 50);
             Item.rare = ItemRarityID.Blue;
             Item.defense = 1;

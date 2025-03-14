@@ -13,7 +13,7 @@ namespace SiriusMod.Content.Items.Armor.PreHM.PathfinderArmor
             Item.height = 20;
             Item.value = Item.sellPrice(silver: 50);
             Item.rare = ItemRarityID.Blue;
-            Item.defense = 1;
+            Item.defense = 4;
         }
     }
 }

@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
 using SiriusMod.Content.Items.Armor.PreHM.BrokenPathfinderArmor;
+using SiriusMod.Content.Items.Armor.PreHM.PathfinderArmor;
 using SiriusMod.Helpers;
 using Terraria;
 using Terraria.ModLoader;
@@ -20,6 +21,15 @@ namespace SiriusMod.Content.Items
                 if (player.HasArmor(ItemType<BrokenPathfinderHelmet>(), ItemType<BrokenPathfinderBreastplate>(), ItemType<BrokenPathfinderLeggings>()))
                 {
                     ItemHelper.AdjustSetBonusColor(tooltip, new Color(218, 58, 58)); //hex-код #da3a3a как в локализации
+                }
+            }
+
+            foreach (var tooltip in tooltips.Where(tooltip => tooltip.Name == "SetBonus"))
+            {
+                if (player.HasArmor(ItemType<PathfinderHelmMelee>(), ItemType<PathfinderBreastplate>(),
+                        ItemType<PathfinderLeggings>()))
+                {
+                    ItemHelper.AdjustSetBonusColor(tooltip, "6C8898");
                 }
             }
         }

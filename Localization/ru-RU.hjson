@@ -1459,21 +1459,31 @@ Mods: {
 			PathfinderHelmMage: {
 				// DisplayName: Pathfinder Helm Mage
 				// Tooltip: ""
+				// SetBonus: Hui pizda
 			}
 
 			PathfinderHelmMelee: {
-				// DisplayName: Pathfinder Helm Melee
+				DisplayName: Шлем бля
 				// Tooltip: ""
+				SetBonus:
+					'''
+					+5% к скорости атаки ближнего боя
+					Увеличивает общий таймер [c/da3a3a:шкалы перегрева] до 25 секунд
+					Увеличивает бонус кирки от [c/da3a3a:перегрева] до 40%
+					Увеличивает бонус меча от [c/da3a3a:перегрева] до 60%
+					'''
 			}
 
 			PathfinderHelmRange: {
 				// DisplayName: Pathfinder Helm Range
 				// Tooltip: ""
+				// SetBonus: Hui pizda
 			}
 
 			PathfinderHelmSummon: {
 				// DisplayName: Pathfinder Helm Summon
 				// Tooltip: ""
+				// SetBonus: Hui pizda
 			}
 
 			PathfinderLeggings: {
