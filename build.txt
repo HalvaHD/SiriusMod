@@ -1,4 +1,4 @@
-displayName = Sirius [Pre-Alpha]
+displayName = [c/00ffff:Sirius] [c/ff6391:(Pre-Alpha)]
 author = WhySoSirius Team
 version = 0.1.0.1
 weakReferences = CalamityMod, ParticleLibrary
