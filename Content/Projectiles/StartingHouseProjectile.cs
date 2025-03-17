@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+/*using Microsoft.Xna.Framework;
 using StructureHelper;
 using Terraria;
 using Terraria.Audio;
@@ -42,4 +42,4 @@ namespace SiriusMod.Content.Projectiles
             
         }
     }
-}
+}*/

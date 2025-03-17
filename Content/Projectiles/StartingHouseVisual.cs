@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+/*using Microsoft.Xna.Framework;
 using SiriusMod.Content.Items.Placeable;
 using Terraria;
 using Terraria.ModLoader;
@@ -42,4 +42,4 @@ namespace SiriusMod.Content.Projectiles
             Projectile.hide = Projectile.owner != Main.myPlayer;
         }
     }
-}
+}*/

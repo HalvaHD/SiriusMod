@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+/*using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using SiriusMod.Content.Projectiles;
 using Terraria;
@@ -41,4 +41,4 @@ namespace SiriusMod.Content.Tiles
             return false;
         }
     }
-}
+}*/

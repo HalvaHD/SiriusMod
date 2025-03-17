@@ -1,4 +1,4 @@
-using Microsoft.Xna.Framework;
+/*using Microsoft.Xna.Framework;
 using SiriusMod.Content.Projectiles;
 using SiriusMod.Content.Tiles;
 using Terraria;
@@ -37,4 +37,4 @@ namespace SiriusMod.Content.Items.Placeable
         }
         
     }
-}
+}*/
