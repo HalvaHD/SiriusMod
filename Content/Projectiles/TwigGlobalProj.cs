@@ -56,9 +56,9 @@ namespace SiriusMod.Content.Projectiles
             {
                 return false;
             }
-            bool noDungeon = !Terraria.NPC.downedBoss3 && (SiriusModSets.Walls.DungeonWall[tile.WallType] || SiriusModSets.Tiles.DungeonTile[tile.TileType]);
+            bool noDungeon = !Terraria.NPC.downedBoss3 && (CustomSiriusSets.DungeonWall[tile.WallType] || CustomSiriusSets.DungeonTile[tile.TileType]);
 
-            bool noHMOre = SiriusModSets.Tiles.HardmodeOre[tile.TileType] && !Terraria.NPC.downedMechBossAny;
+            bool noHMOre = CustomSiriusSets.HardmodeOre[tile.TileType] && !Terraria.NPC.downedMechBossAny;
             bool noChloro = tile.TileType == TileID.Chlorophyte && !(Terraria.NPC.downedMechBoss1 && Terraria.NPC.downedMechBoss2 && Terraria.NPC.downedMechBoss3);
             bool noLihzahrd = (tile.TileType == TileID.LihzahrdBrick || tile.WallType == WallID.LihzahrdBrickUnsafe) && !Terraria.NPC.downedGolemBoss;
             bool noAbyss = false;
@@ -70,8 +70,8 @@ namespace SiriusMod.Content.Projectiles
             }
 
             if (noDungeon || noHMOre || noChloro || noLihzahrd || noAbyss ||
-                SiriusModSets.Tiles.InstaCannotDestroy[tile.TileType] ||
-                SiriusModSets.Walls.InstaCannotDestroy[tile.WallType])
+                CustomSiriusSets.InstaUnbreakable[tile.TileType] ||
+                CustomSiriusSets.InstaUnbreakable[tile.WallType])
                 return false;
 
             return true;
