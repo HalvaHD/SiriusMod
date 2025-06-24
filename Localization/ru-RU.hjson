@@ -1490,6 +1490,11 @@ Mods: {
 				// DisplayName: Pathfinder Leggings
 				// Tooltip: ""
 			}
+
+			PathfinderShield: {
+				// DisplayName: Pathfinder Shield
+				// Tooltip: ""
+			}
 		}
 
 		Tiles: {

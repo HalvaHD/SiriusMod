@@ -1,3 +1,4 @@
+using SiriusMod.Content.Items.Accessories;
 using Terraria;
 using Terraria.ModLoader;
 
@@ -19,6 +20,11 @@ namespace SiriusMod.Common.GlobalNPCs
             {
                 npc.lifeRegen -= 12; 
             }
+        }
+
+        public override bool CanHitPlayer(NPC npc, Player target, ref int cooldownSlot)
+        {
+            return true;
         }
     }
 }
